@@ -467,5 +467,20 @@
     }
    }
   }
+ },
+ "_credentialSecret": "15d670d80413d4ec7d1bad00876b29d4d76eae20e68b7e5ad92ec2da452a8c0b",
+ "users": {
+  "_": {
+   "editor": {
+    "view": {
+     "view-grid-size": 20,
+     "view-node-status": true,
+     "view-node-show-label": true,
+     "view-show-tips": true,
+     "view-snap-grid": true,
+     "view-show-grid": true
+    }
+   }
+  }
  }
 }
