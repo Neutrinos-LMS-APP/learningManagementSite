@@ -23,14 +23,16 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class instructorregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+   // firstname;
 
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-
+onSave(value){
+    console.log(value);
+}
     ngOnInit() {
-
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
