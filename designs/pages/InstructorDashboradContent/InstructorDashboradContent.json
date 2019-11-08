@@ -1,0 +1,13 @@
+{
+    "appPageId": "d06eeeed-3362-9378-aa29-c50b25a260dc",
+    "appPageName": "InstructorDashboradContent",
+    "componentName": "instructordashboradcontentComponent",
+    "selectorName": "bh-instructordashboradcontent",
+    "htmlFileName": "instructordashboradcontent.template.html",
+    "tsFileName": "instructordashboradcontent.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

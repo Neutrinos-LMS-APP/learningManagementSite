@@ -58,5 +58,20 @@
         "appPageName": "Contactus",
         "componentName": "contactusComponent",
         "isEntry": false
+    },
+    "2886d6c8-c543-a889-c169-8a3de32ed611": {
+        "appPageName": "addcourse",
+        "componentName": "addcourseComponent",
+        "isEntry": false
+    },
+    "d06eeeed-3362-9378-aa29-c50b25a260dc": {
+        "appPageName": "InstructorDashboradContent",
+        "componentName": "instructordashboradcontentComponent",
+        "isEntry": false
+    },
+    "d2e51c81-979a-dd65-7794-bae25241ad6a": {
+        "appPageName": "courselist",
+        "componentName": "courselistComponent",
+        "isEntry": false
     }
 }

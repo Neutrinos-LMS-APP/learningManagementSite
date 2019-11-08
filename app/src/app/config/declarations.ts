@@ -14,6 +14,12 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-courselistComponent
+import { courselistComponent } from '../components/courselistComponent/courselist.component';
+//CORE_REFERENCE_IMPORT-instructordashboradcontentComponent
+import { instructordashboradcontentComponent } from '../components/instructordashboradcontentComponent/instructordashboradcontent.component';
+//CORE_REFERENCE_IMPORT-addcourseComponent
+import { addcourseComponent } from '../components/addcourseComponent/addcourse.component';
 //CORE_REFERENCE_IMPORT-contactusComponent
 import { contactusComponent } from '../components/contactusComponent/contactus.component';
 //CORE_REFERENCE_IMPORT-loginformComponent
@@ -73,6 +79,12 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselistComponent
+courselistComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructordashboradcontentComponent
+instructordashboradcontentComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-addcourseComponent
+addcourseComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-contactusComponent
 contactusComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginformComponent
@@ -124,5 +136,7 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
-children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: '', redirectTo: 'adminDashboard', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
+children: [{path: 'addcourse', component: addcourseComponent,
+children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
