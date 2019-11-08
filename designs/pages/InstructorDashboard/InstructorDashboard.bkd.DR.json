@@ -871,7 +871,7 @@
                         },
                         {
                             "_key": "routerLink",
-                            "_value": "courses",
+                            "_value": "courseList",
                             "_type": "kv",
                             "_attrDef": "p"
                         }

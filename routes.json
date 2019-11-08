@@ -51,6 +51,20 @@
             "redirectTo": ""
         },
         {
+            "path": "traineedashboard",
+            "component": "traineedashboardComponent",
+            "children": [
+                {
+                    "path": "traineedashboardcontent",
+                    "component": "traineedashboardcontentComponent"
+                },
+                {
+                    "path": "selfjoinedcourses",
+                    "component": "selfjoinedcoursesComponent"
+                }
+            ]
+        },
+        {
             "path": "''",
             "redirectTo": "/instructorregistration",
             "pathMatch": "full",

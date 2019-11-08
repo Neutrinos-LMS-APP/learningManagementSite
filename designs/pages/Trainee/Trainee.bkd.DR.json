@@ -212,7 +212,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "background-color:rgba(200,200,200,.4);",
                             "_type": "kv",
                             "_attrDef": "p"
                         },

@@ -73,5 +73,20 @@
         "appPageName": "courselist",
         "componentName": "courselistComponent",
         "isEntry": false
+    },
+    "349cf4f6-e3ee-368f-a6c3-80e4ef50f63d": {
+        "appPageName": "traineeDashboard",
+        "componentName": "traineedashboardComponent",
+        "isEntry": false
+    },
+    "ce7b296e-aae8-0656-e6ab-220f74b820e6": {
+        "appPageName": "traineeDashboardContent",
+        "componentName": "traineedashboardcontentComponent",
+        "isEntry": false
+    },
+    "be65411e-d722-529b-0122-8b88d16223e2": {
+        "appPageName": "selfjoinedcourses",
+        "componentName": "selfjoinedcoursesComponent",
+        "isEntry": false
     }
 }
