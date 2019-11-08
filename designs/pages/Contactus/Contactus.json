@@ -1,0 +1,13 @@
+{
+    "appPageId": "b6873d0b-e765-5bbc-b276-c34bbb654e41",
+    "appPageName": "Contactus",
+    "componentName": "contactusComponent",
+    "selectorName": "bh-contactus",
+    "htmlFileName": "contactus.template.html",
+    "tsFileName": "contactus.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

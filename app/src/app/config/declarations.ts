@@ -14,6 +14,30 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-contactusComponent
+import { contactusComponent } from '../components/contactusComponent/contactus.component';
+//CORE_REFERENCE_IMPORT-loginformComponent
+import { loginformComponent } from '../components/loginformComponent/loginform.component';
+//CORE_REFERENCE_IMPORT-homeComponent
+import { homeComponent } from '../components/homeComponent/home.component';
+//CORE_REFERENCE_IMPORT-learningmanagementsystemComponent
+import { learningmanagementsystemComponent } from '../components/learningmanagementsystemComponent/learningmanagementsystem.component';
+//CORE_REFERENCE_IMPORT-instructordashboardComponent
+import { instructordashboardComponent } from '../components/instructordashboardComponent/instructordashboard.component';
+//CORE_REFERENCE_IMPORT-dashboardcontentComponent
+import { dashboardcontentComponent } from '../components/dashboardcontentComponent/dashboardcontent.component';
+//CORE_REFERENCE_IMPORT-coursesComponent
+import { coursesComponent } from '../components/coursesComponent/courses.component';
+//CORE_REFERENCE_IMPORT-traineeComponent
+import { traineeComponent } from '../components/traineeComponent/trainee.component';
+//CORE_REFERENCE_IMPORT-instructorsComponent
+import { instructorsComponent } from '../components/instructorsComponent/instructors.component';
+//CORE_REFERENCE_IMPORT-admindashboardComponent
+import { admindashboardComponent } from '../components/admindashboardComponent/admindashboard.component';
+//CORE_REFERENCE_IMPORT-traineeregistrationComponent
+import { traineeregistrationComponent } from '../components/traineeregistrationComponent/traineeregistration.component';
+//CORE_REFERENCE_IMPORT-instructorregistrationComponent
+import { instructorregistrationComponent } from '../components/instructorregistrationComponent/instructorregistration.component';
 
 /**
  * Reads datasource object and injects the datasource object into window object
@@ -49,6 +73,30 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-contactusComponent
+contactusComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginformComponent
+loginformComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
+homeComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-learningmanagementsystemComponent
+learningmanagementsystemComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructordashboardComponent
+instructordashboardComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dashboardcontentComponent
+dashboardcontentComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-coursesComponent
+coursesComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineeComponent
+traineeComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructorsComponent
+instructorsComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-admindashboardComponent
+admindashboardComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineeregistrationComponent
+traineeregistrationComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructorregistrationComponent
+instructorregistrationComponent,
 
 ];
 

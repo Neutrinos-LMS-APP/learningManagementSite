@@ -1,0 +1,13 @@
+{
+    "appPageId": "b73773cd-1483-67f5-9d39-766e3e1c3dc8",
+    "appPageName": "traineeRegistration",
+    "componentName": "traineeregistrationComponent",
+    "selectorName": "bh-traineeregistration",
+    "htmlFileName": "traineeregistration.template.html",
+    "tsFileName": "traineeregistration.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

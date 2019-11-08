@@ -1,0 +1,13 @@
+{
+    "appPageId": "8e8fbeb1-c2ff-eff6-8f5a-27d2e882ffe0",
+    "appPageName": "Instructors",
+    "componentName": "instructorsComponent",
+    "selectorName": "bh-instructors",
+    "htmlFileName": "instructors.template.html",
+    "tsFileName": "instructors.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

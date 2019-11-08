@@ -1,0 +1,13 @@
+{
+    "appPageId": "7921c561-0f27-69cd-fd6f-77aae2180e1d",
+    "appPageName": "Trainee",
+    "componentName": "traineeComponent",
+    "selectorName": "bh-trainee",
+    "htmlFileName": "trainee.template.html",
+    "tsFileName": "trainee.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

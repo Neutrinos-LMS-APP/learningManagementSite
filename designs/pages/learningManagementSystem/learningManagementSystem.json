@@ -1,0 +1,13 @@
+{
+    "appPageId": "3b483c8d-7677-1bd0-40d5-43a9a828b572",
+    "appPageName": "learningManagementSystem",
+    "componentName": "learningmanagementsystemComponent",
+    "selectorName": "bh-learningmanagementsystem",
+    "htmlFileName": "learningmanagementsystem.template.html",
+    "tsFileName": "learningmanagementsystem.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

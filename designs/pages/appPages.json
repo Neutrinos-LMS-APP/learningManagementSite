@@ -1,0 +1,62 @@
+{
+    "1d10ba60-fa5a-b098-93b9-f72e225b7a63": {
+        "appPageName": "instructorRegistration",
+        "componentName": "instructorregistrationComponent",
+        "isEntry": false
+    },
+    "b73773cd-1483-67f5-9d39-766e3e1c3dc8": {
+        "appPageName": "traineeRegistration",
+        "componentName": "traineeregistrationComponent",
+        "isEntry": false
+    },
+    "d056cdcb-1013-f6f8-da2c-5a30a109d698": {
+        "appPageName": "adminDashboard",
+        "componentName": "admindashboardComponent",
+        "isEntry": false
+    },
+    "8e8fbeb1-c2ff-eff6-8f5a-27d2e882ffe0": {
+        "appPageName": "Instructors",
+        "componentName": "instructorsComponent",
+        "isEntry": false
+    },
+    "7921c561-0f27-69cd-fd6f-77aae2180e1d": {
+        "appPageName": "Trainee",
+        "componentName": "traineeComponent",
+        "isEntry": false
+    },
+    "9914c36a-8e6e-9b89-3227-354889b1e60c": {
+        "appPageName": "Courses",
+        "componentName": "coursesComponent",
+        "isEntry": false
+    },
+    "07a7da7a-4da3-870b-bd83-81dec4028326": {
+        "appPageName": "DashboardContent",
+        "componentName": "dashboardcontentComponent",
+        "isEntry": false
+    },
+    "a7f194de-82e7-3297-7724-4fb6d0c3eb73": {
+        "appPageName": "InstructorDashboard",
+        "componentName": "instructordashboardComponent",
+        "isEntry": false
+    },
+    "3b483c8d-7677-1bd0-40d5-43a9a828b572": {
+        "appPageName": "learningManagementSystem",
+        "componentName": "learningmanagementsystemComponent",
+        "isEntry": false
+    },
+    "9d4a33af-f2df-d3aa-8d93-b95e502948e7": {
+        "appPageName": "Home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "8fad8db2-9847-993c-feae-1f36d901c916": {
+        "appPageName": "LoginForm",
+        "componentName": "loginformComponent",
+        "isEntry": false
+    },
+    "b6873d0b-e765-5bbc-b276-c34bbb654e41": {
+        "appPageName": "Contactus",
+        "componentName": "contactusComponent",
+        "isEntry": false
+    }
+}

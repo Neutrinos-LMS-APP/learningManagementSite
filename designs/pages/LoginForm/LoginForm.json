@@ -1,0 +1,13 @@
+{
+    "appPageId": "8fad8db2-9847-993c-feae-1f36d901c916",
+    "appPageName": "LoginForm",
+    "componentName": "loginformComponent",
+    "selectorName": "bh-loginform",
+    "htmlFileName": "loginform.template.html",
+    "tsFileName": "loginform.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}
