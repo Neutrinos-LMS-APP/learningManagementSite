@@ -1,7 +1,7 @@
 {
     "routes": [
         {
-<<<<<<< Updated upstream
+            
             "path": "instructorregistration",
             "component": "instructorregistrationComponent"
         },
@@ -10,9 +10,8 @@
             "component": "traineeregistrationComponent"
         },
         {
-            "path": "''",
-            "redirectTo": "/instructorregistration",
-=======
+            
+
             "path": "adminDashboard",
             "component": "admindashboardComponent",
             "children": [
@@ -36,8 +35,7 @@
         },
         {
             "path": "''",
-            "redirectTo": "adminDashboard",
->>>>>>> Stashed changes
+            "redirectTo": "/instructorregistration",
             "pathMatch": "full",
             "default": true
         },
@@ -47,3 +45,9 @@
         }
     ]
 }
+
+
+
+
+
+
