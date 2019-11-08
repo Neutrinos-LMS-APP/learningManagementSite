@@ -29,6 +29,10 @@ export class traineeregistrationComponent extends NBaseComponent implements OnIn
         this.mm = new ModelMethods(bdms);
     }
 
+    onSubmit(value){
+        console.log(value);
+    }
+
     ngOnInit() {
 
     }

@@ -1,9 +1,18 @@
 {
     "routes": [
         {
+            "path": "instructorregistration",
+            "component": "instructorregistrationComponent"
+        },
+        {
+            "path": "traineeregistration",
+            "component": "traineeregistrationComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "/instructorregistration",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",

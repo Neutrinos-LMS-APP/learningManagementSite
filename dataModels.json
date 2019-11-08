@@ -1,0 +1,114 @@
+{
+    "4db5dcc2-fc88-b245-12c0-16bc8ed6c359": {
+        "dataModelId": "4db5dcc2-fc88-b245-12c0-16bc8ed6c359",
+        "name": "instructordetails",
+        "description": "Details of the instructor",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "firstName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "lastName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "date",
+                "fieldType": 3,
+                "isArray": false,
+                "type": "Date"
+            },
+            {
+                "name": "email",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "mobile",
+                "fieldType": 1,
+                "isArray": false,
+                "type": "number"
+            },
+            {
+                "name": "country",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "gender",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
+    },
+    "8554588c-b218-5567-b438-fb6112e8af9b": {
+        "dataModelId": "8554588c-b218-5567-b438-fb6112e8af9b",
+        "name": "traineedetails",
+        "description": "Details of the trainee",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "firstName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "lastName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "date",
+                "fieldType": 3,
+                "isArray": false,
+                "type": "Date"
+            },
+            {
+                "name": "mobile",
+                "fieldType": 1,
+                "isArray": false,
+                "type": "number"
+            },
+            {
+                "name": "gender",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "email",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "country",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
+    }
+}
