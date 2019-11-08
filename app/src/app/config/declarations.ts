@@ -123,5 +123,10 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
+<<<<<<< Updated upstream
 export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+=======
+export const appRoutes = [{path: 'adminDashboard', component: admindashboardComponent,
+children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: '', redirectTo: 'adminDashboard', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+>>>>>>> Stashed changes
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

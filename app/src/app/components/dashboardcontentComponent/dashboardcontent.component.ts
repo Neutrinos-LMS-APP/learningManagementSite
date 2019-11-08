@@ -23,14 +23,14 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class dashboardcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-
+    cardlenght;
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-
+        this.cardlenght=['a','b','c','d','e','f','g','h','i'];
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

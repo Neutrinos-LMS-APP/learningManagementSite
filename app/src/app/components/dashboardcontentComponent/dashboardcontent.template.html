@@ -1,1 +1,58 @@
-<div>default page template</div>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" class="class5" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="height:100px;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div>
+                <h3>Instructor Request Approvals</h3>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-card *ngFor="let i of cardlenght" class="class3">
+                  <mat-card-title>Instrcutors</mat-card-title>
+
+                  <mat-card-content></mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div>
+                <h3>Trainee Request Approvals</h3>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-card *ngFor="let i of cardlenght" class="class3">
+                  <mat-card-title>Instrcutors</mat-card-title>
+
+                  <mat-card-content></mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div>
+                <h3>Courses Request Approvals</h3>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-card *ngFor="let i of cardlenght" class="class3">
+                  <mat-card-title>Instrcutors</mat-card-title>
+
+                  <mat-card-content></mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
