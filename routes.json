@@ -1,7 +1,6 @@
 {
     "routes": [
         {
-            
             "path": "instructorregistration",
             "component": "instructorregistrationComponent"
         },
@@ -10,7 +9,6 @@
             "component": "traineeregistrationComponent"
         },
         {
-
             "path": "adminDashboard",
             "component": "admindashboardComponent",
             "children": [
@@ -78,9 +76,3 @@
         }
     ]
 }
-
-
-
-
-
-
