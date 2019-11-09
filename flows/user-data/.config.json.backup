@@ -484,6 +484,7 @@
      "file": "C:\\Users\\hi\\neutrinos-studio\\learningManagementSite\\flows\\user-data\\node_modules\\node-red-contrib-mongodb3\\mongodb\\mongodb.js"
     }
    }
+<<<<<<< Updated upstream
   },
   "node-red-contrib-objectid": {
    "name": "node-red-contrib-objectid",
@@ -501,6 +502,8 @@
      "file": "C:\\Users\\hi\\neutrinos-studio\\learningManagementSite\\flows\\user-data\\node_modules\\node-red-contrib-objectid\\objectid.js"
     }
    }
+=======
+>>>>>>> Stashed changes
   }
  },
  "_credentialSecret": "15d670d80413d4ec7d1bad00876b29d4d76eae20e68b7e5ad92ec2da452a8c0b",
@@ -511,9 +514,7 @@
      "view-grid-size": 20,
      "view-node-status": true,
      "view-node-show-label": true,
-     "view-show-tips": true,
-     "view-snap-grid": true,
-     "view-show-grid": true
+     "view-show-tips": true
     }
    }
   }
