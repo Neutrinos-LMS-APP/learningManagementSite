@@ -3,8 +3,7 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
 
-<<<<<<< HEAD
-
+/*Importing default angular material css theme. */
 .mat-card.box.mat-card {
     padding: 30px;
      border:1px solid;
@@ -26,10 +25,7 @@
     background-image:url('assets/Web/contact.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-=======
-/*Importing default angular material css theme. */
-
-
+}
 .class1{
 // <<<<<<< Updated upstream
     background-color:#696969;;
@@ -73,5 +69,7 @@
     background-color: #696969;
 // =======
 // >>>>>>> Stashed changes
->>>>>>> 0fbdd422c24c484dd10dd203ae4d8411e65f8236
 }
+/*Importing default angular material css theme. */
+
+
