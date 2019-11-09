@@ -488,7 +488,7 @@
   "node-red-contrib-objectid": {
    "name": "node-red-contrib-objectid",
    "version": "0.7.2",
-   "local": false,
+   "local": true,
    "nodes": {
     "objectid": {
      "name": "objectid",
