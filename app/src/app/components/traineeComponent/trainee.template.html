@@ -1,12 +1,8 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <div fxLayout="column wrap" style="width:100%;height:80%;margin-top:5%;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxHide]="displayView">
-<<<<<<< Updated upstream
-      <mat-card style="background-color:rgba(200,200,200,.4);">
-=======
+    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="!displayView">
       <mat-card>
->>>>>>> Stashed changes
-        <mat-card-title>Card Title</mat-card-title>
+        <mat-card-title>{{username}} Details</mat-card-title>
 
         <mat-card-content>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -14,35 +10,61 @@
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <mat-icon>home</mat-icon>
               </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <h2>{{username}}</h2>
+                </div>
+              </div>
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <mat-icon>home</mat-icon>
               </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <h2>{{username}}</h2>
+                </div>
+              </div>
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <mat-icon>home</mat-icon>
               </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <h2>{{username}}</h2>
+                </div>
+              </div>
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <mat-icon>home</mat-icon>
               </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <h2>{{username}}</h2>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <h2>{{username}}</h2>
+                </div>
+              </div>
             </div>
           </div>
         </mat-card-content>
 
         <mat-card-footer>
-          <div fxLayout="row wrap" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button (click)="displayTable()">Ok</button><button mat-button>Delete</button></div>
+          <div fxLayout="row wrap" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button color="primary" (click)="displayTable()">Ok</button><button mat-button>Delete</button></div>
         </mat-card-footer>
       </mat-card>
     </div>
-    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxShow]="displaytable" [fxHide]="false">
+    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
       <div fxLayout="column" style="width:80%;">
 
         <div fxLayout="row" fxLayoutAlign="end">
@@ -53,7 +75,7 @@
           </div>
         </div>
         <table mat-table [dataSource]="dataSource" class="table-width-fix">
-
+          <tr mat-header-row *matHeaderRowDef="[&apos;position&apos;,&apos;name&apos;,&apos;weight&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
           <tr mat-row *matRowDef="let row; columns: [&apos;position&apos;,&apos;name&apos;,&apos;weight&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
 
           <ng-container matColumnDef="position">
