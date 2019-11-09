@@ -1,1 +1,25 @@
-<div>default page template</div>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <router-outlet></router-outlet>
+</div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-card style="height:2.8em;width:100%;">
+      <mat-card-content>
+        <div fxLayout="row " fxFlex="100" fxLayoutAlign="space-between none" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/logo2.jpeg.png" style="width:50px;"></div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h2 style="color:#D92830;">
+                  LMS</h2>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false"><button mat-button style="color:blue;font-size:13px;font-weight:800;" routerLink="/home">Home</button><button mat-button style="color:blue;font-size:13px;font-weight:800;">Product</button><button mat-button style="color:blue;font-size:13px;font-weight:800;">Course</button><button mat-button style="color:blue;font-size:13px;font-weight:800;" routerLink="/contactus">Contact Us</button></div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

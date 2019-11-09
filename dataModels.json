@@ -1,0 +1,22 @@
+{
+    "ea76cde5-0f95-d1d6-ef03-2172e38f228a": {
+        "dataModelId": "ea76cde5-0f95-d1d6-ef03-2172e38f228a",
+        "name": "logindetails",
+        "description": "Details of Login",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "userName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
+    }
+}

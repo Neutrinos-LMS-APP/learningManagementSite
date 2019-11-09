@@ -1,1 +1,70 @@
-<div>default page template</div>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <router-outlet></router-outlet>
+</div>
+<div fxLayout="column wrap" style="background-color:grey;height:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" fxFlex="50" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+          <h2 style="margin:0;">
+            Register Now!</h2>
+          <div fxLayout="row wrap" style="margin-top:20px;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" style="margin-right:5em;" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin:0.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin-right:20px;width:230px;" color="primary">Instructor</button></div>
+              <div fxLayout="column wrap" style="margin:1em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:230px;" color="accent">Trainee</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div class="linedraw">
+      </div>
+    </div>
+    <div fxLayout="row wrap" style="margin-left:8em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <form #lform="ngForm">
+        <mat-card style="width:100%;">
+          <mat-card-content>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/images.jpg" style="width:100px;height:100px;"></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <h4 style="Text-align:center;">
+                Login In</h4>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon style="color:blue;margin-right:10px;">person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput [(ngModel)]="dm.logindetails.userName" name="userName" placeholder="UserName" required>
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;color:blue;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>lock</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput [(ngModel)]="dm.logindetails.password" name="password" type="password" placeholder="Password" required>
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" style="margin-left:20px;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-checkbox required></mat-checkbox>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Remember Me</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:130px;" color="primary" (click)="onloginSubmit(lform.value)">Submit</button><button mat-raised-button style="width:130px;margin-left:20px;" routerLink="/home" color="warn">Cancel</button></div>
+          </mat-card-content>
+        </mat-card>
+      </form>
+    </div>
+  </div>
+</div>

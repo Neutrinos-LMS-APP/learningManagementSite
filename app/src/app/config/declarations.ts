@@ -123,5 +123,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{ path: '', redirectTo: '/', pathMatch: 'full' }, { path: '**', component: PageNotFoundComponent }];
+export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

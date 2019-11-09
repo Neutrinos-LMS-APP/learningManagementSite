@@ -1,9 +1,22 @@
 {
     "routes": [
         {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
+            "path": "login",
+            "component": "loginformComponent"
+        },
+        {
+            "path": "contactus",
+            "component": "contactusComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "/home",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",
