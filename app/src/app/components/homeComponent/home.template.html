@@ -1,1 +1,47 @@
-<div>default page template</div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <router-outlet></router-outlet>
+</div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-card style="height:2.8em;width:100%;">
+        <mat-card-content>
+          <div fxLayout="row " fxFlex="100" fxLayoutAlign="space-between none" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/logo.jpeg.png" style="width:50px;"></div>
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h2 style="color:#D92830;">
+                    LMS</h2>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false"><button mat-button style="color:blue;font-size:13px;font-weight:800;">Home</button><button mat-button style="color:blue;font-size:13px;font-weight:800;">Product</button><button mat-button style="color:blue;font-size:13px;font-weight:800;">Course</button><button mat-button style="color:blue;font-size:13px;font-weight:800;" routerLink="/contactus">Contact Us</button></div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxLayout="row wrap" style="height:400px;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" style="width:100%;" class="divimage" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" style="margin-top:15em;" class="btn" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:200px" routerLink="/login" color="primary">Login/Register</button></div>
+      </div>
+    </div>
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+        <h2 style="color:blue;">
+          About LMS</h2>
+      </div>
+      <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" style="padding:20px;" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis. Etiam erat velit scelerisque in dictum non consectetur a erat. Sem nulla pharetra diam sit amet nisl suscipit. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Nec dui nunc mattis enim ut tellus elementum. Eget nullam non nisi est sit amet. Nunc mi ipsum faucibus vitae. Odio morbi quis commodo odio aenean. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque.
+            <br><br>
+            Est pellentesque elit ullamcorper dignissim cras tincidunt. Sit amet est placerat in egestas erat imperdiet. Tellus at urna condimentum mattis pellentesque id nibh tortor. Massa eget egestas purus viverra. Mattis enim ut tellus elementum sagittis vitae. Justo nec ultrices dui sapien eget. Vel fringilla est ullamcorper eget nulla facilisi etiam. Ut tellus elementum sagittis vitae. Urna nec tincidunt praesent semper feugiat. Tellus id interdum velit laoreet id donec ultrices tincidunt. Faucibus in ornare quam viverra orci sagittis eu. Amet consectetur adipiscing elit pellentesque.</p>
+        </div>
+        <div fxLayout="row wrap" style="padding:20px;" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Neutrinos-Gif-2.gif" style="height:300px; width:500px;"></div>
+      </div>
+    </div>
+  </div>
+</div>

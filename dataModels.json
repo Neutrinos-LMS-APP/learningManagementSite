@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+    "ea76cde5-0f95-d1d6-ef03-2172e38f228a": {
+        "dataModelId": "ea76cde5-0f95-d1d6-ef03-2172e38f228a",
+        "name": "logindetails",
+        "description": "Details of Login",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "userName",
+=======
     "4db5dcc2-fc88-b245-12c0-16bc8ed6c359": {
         "dataModelId": "4db5dcc2-fc88-b245-12c0-16bc8ed6c359",
         "name": "instructordetails",
@@ -69,6 +79,7 @@
             },
             {
                 "name": "lastName",
+>>>>>>> 0fbdd422c24c484dd10dd203ae4d8411e65f8236
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"
@@ -78,6 +89,8 @@
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"
+<<<<<<< HEAD
+=======
             },
             {
                 "name": "date",
@@ -108,6 +121,7 @@
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"
+>>>>>>> 0fbdd422c24c484dd10dd203ae4d8411e65f8236
             }
         ]
     }
