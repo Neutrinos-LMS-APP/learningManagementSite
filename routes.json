@@ -1,6 +1,7 @@
 {
     "routes": [
         {
+            
             "path": "instructorregistration",
             "component": "instructorregistrationComponent"
         },
@@ -9,6 +10,70 @@
             "component": "traineeregistrationComponent"
         },
         {
+<<<<<<< Updated upstream
+=======
+            
+
+>>>>>>> Stashed changes
+            "path": "adminDashboard",
+            "component": "admindashboardComponent",
+            "children": [
+                {
+                    "path": "instructors",
+                    "component": "instructorsComponent"
+                },
+                {
+                    "path": "trainee",
+                    "component": "traineeComponent"
+                },
+                {
+                    "path": "courses",
+                    "component": "coursesComponent"
+                },
+                {
+                    "path": "\"",
+                    "component": "dashboardcontentComponent"
+                }
+            ]
+        },
+        {
+<<<<<<< Updated upstream
+            "path": "instructordashboard",
+            "component": "instructordashboardComponent",
+            "children": [
+                {
+                    "path": "addcourse",
+                    "component": "addcourseComponent",
+                    "children": []
+                },
+                {
+                    "path": "instructorDashboardContent",
+                    "component": "instructordashboradcontentComponent"
+                },
+                {
+                    "path": "courseList",
+                    "component": "courselistComponent"
+                }
+            ],
+            "redirectTo": ""
+        },
+        {
+            "path": "traineedashboard",
+            "component": "traineedashboardComponent",
+            "children": [
+                {
+                    "path": "traineedashboardcontent",
+                    "component": "traineedashboardcontentComponent"
+                },
+                {
+                    "path": "selfjoinedcourses",
+                    "component": "selfjoinedcoursesComponent"
+                }
+            ]
+        },
+        {
+=======
+>>>>>>> Stashed changes
             "path": "''",
             "redirectTo": "/instructorregistration",
             "pathMatch": "full",
@@ -20,3 +85,9 @@
         }
     ]
 }
+
+
+
+
+
+
