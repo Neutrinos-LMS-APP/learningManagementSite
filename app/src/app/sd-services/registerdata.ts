@@ -32,7 +32,7 @@ declare const window: any;
 declare const cordova: any;
 
 @Injectable()
-export class instructorService {
+export class registerdata {
   systemService = NSystemService.getInstance();
   appProperties;
 
@@ -56,9 +56,9 @@ export class instructorService {
     private fileIOService: NFileIOService
   ) {}
 
-  //   service flows_instructorService
+  //   service flows_registerdata
 
-  //appendnew_flow_instructorService_Start
+  //appendnew_flow_registerdata_Start
 
   //appendnew_node
 

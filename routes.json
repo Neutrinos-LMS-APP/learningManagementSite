@@ -1,7 +1,6 @@
 {
     "routes": [
         {
-<<<<<<< Updated upstream
             "path": "instructorregistration",
             "component": "instructorregistrationComponent"
         },
@@ -64,10 +63,6 @@
                     "component": "selfjoinedcoursesComponent"
                 }
             ]
-=======
-            "component": "instructorregistrationComponent",
-            "path": "instructorregistration"
->>>>>>> Stashed changes
         },
         {
             "path": "''",
