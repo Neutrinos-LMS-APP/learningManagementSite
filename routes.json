@@ -10,11 +10,7 @@
             "component": "traineeregistrationComponent"
         },
         {
-<<<<<<< Updated upstream
-=======
-            
 
->>>>>>> Stashed changes
             "path": "adminDashboard",
             "component": "admindashboardComponent",
             "children": [
@@ -37,7 +33,6 @@
             ]
         },
         {
-<<<<<<< Updated upstream
             "path": "instructordashboard",
             "component": "instructordashboardComponent",
             "children": [
@@ -72,8 +67,6 @@
             ]
         },
         {
-=======
->>>>>>> Stashed changes
             "path": "''",
             "redirectTo": "/instructorregistration",
             "pathMatch": "full",
