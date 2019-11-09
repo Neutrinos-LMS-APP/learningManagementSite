@@ -1,0 +1,13 @@
+{
+    "appPageId": "be65411e-d722-529b-0122-8b88d16223e2",
+    "appPageName": "selfjoinedcourses",
+    "componentName": "selfjoinedcoursesComponent",
+    "selectorName": "bh-selfjoinedcourses",
+    "htmlFileName": "selfjoinedcourses.template.html",
+    "tsFileName": "selfjoinedcourses.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

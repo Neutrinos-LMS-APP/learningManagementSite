@@ -1,0 +1,13 @@
+{
+    "appPageId": "2886d6c8-c543-a889-c169-8a3de32ed611",
+    "appPageName": "addcourse",
+    "componentName": "addcourseComponent",
+    "selectorName": "bh-addcourse",
+    "htmlFileName": "addcourse.template.html",
+    "tsFileName": "addcourse.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

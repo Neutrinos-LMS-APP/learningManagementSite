@@ -1,0 +1,13 @@
+{
+    "appPageId": "d2e51c81-979a-dd65-7794-bae25241ad6a",
+    "appPageName": "courselist",
+    "componentName": "courselistComponent",
+    "selectorName": "bh-courselist",
+    "htmlFileName": "courselist.template.html",
+    "tsFileName": "courselist.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

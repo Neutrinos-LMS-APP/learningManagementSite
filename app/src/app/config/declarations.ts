@@ -14,6 +14,18 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-selfjoinedcoursesComponent
+import { selfjoinedcoursesComponent } from '../components/selfjoinedcoursesComponent/selfjoinedcourses.component';
+//CORE_REFERENCE_IMPORT-traineedashboardcontentComponent
+import { traineedashboardcontentComponent } from '../components/traineedashboardcontentComponent/traineedashboardcontent.component';
+//CORE_REFERENCE_IMPORT-traineedashboardComponent
+import { traineedashboardComponent } from '../components/traineedashboardComponent/traineedashboard.component';
+//CORE_REFERENCE_IMPORT-courselistComponent
+import { courselistComponent } from '../components/courselistComponent/courselist.component';
+//CORE_REFERENCE_IMPORT-instructordashboradcontentComponent
+import { instructordashboradcontentComponent } from '../components/instructordashboradcontentComponent/instructordashboradcontent.component';
+//CORE_REFERENCE_IMPORT-addcourseComponent
+import { addcourseComponent } from '../components/addcourseComponent/addcourse.component';
 //CORE_REFERENCE_IMPORT-contactusComponent
 import { contactusComponent } from '../components/contactusComponent/contactus.component';
 //CORE_REFERENCE_IMPORT-loginformComponent
@@ -73,6 +85,18 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selfjoinedcoursesComponent
+selfjoinedcoursesComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineedashboardcontentComponent
+traineedashboardcontentComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineedashboardComponent
+traineedashboardComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselistComponent
+courselistComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructordashboradcontentComponent
+instructordashboradcontentComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-addcourseComponent
+addcourseComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-contactusComponent
 contactusComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginformComponent
@@ -123,5 +147,17 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
+<<<<<<< HEAD
 export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+=======
+<<<<<<< Updated upstream
+export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
+children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
+children: [{path: 'addcourse', component: addcourseComponent,
+children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+=======
+export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+>>>>>>> Stashed changes
+>>>>>>> 0fbdd422c24c484dd10dd203ae4d8411e65f8236
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

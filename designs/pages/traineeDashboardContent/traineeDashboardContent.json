@@ -1,0 +1,13 @@
+{
+    "appPageId": "ce7b296e-aae8-0656-e6ab-220f74b820e6",
+    "appPageName": "traineeDashboardContent",
+    "componentName": "traineedashboardcontentComponent",
+    "selectorName": "bh-traineedashboardcontent",
+    "htmlFileName": "traineedashboardcontent.template.html",
+    "tsFileName": "traineedashboardcontent.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

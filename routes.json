@@ -1,20 +1,72 @@
 {
     "routes": [
         {
-            "path": "home",
-            "component": "homeComponent"
+            "path": "instructorregistration",
+            "component": "instructorregistrationComponent"
         },
         {
-            "path": "login",
-            "component": "loginformComponent"
+            "path": "traineeregistration",
+            "component": "traineeregistrationComponent"
         },
         {
-            "path": "contactus",
-            "component": "contactusComponent"
+            "path": "adminDashboard",
+            "component": "admindashboardComponent",
+            "children": [
+                {
+                    "path": "instructors",
+                    "component": "instructorsComponent"
+                },
+                {
+                    "path": "trainee",
+                    "component": "traineeComponent"
+                },
+                {
+                    "path": "courses",
+                    "component": "coursesComponent"
+                },
+                {
+                    "path": "\"",
+                    "component": "dashboardcontentComponent"
+                }
+            ]
+        },
+        {
+            "path": "instructordashboard",
+            "component": "instructordashboardComponent",
+            "children": [
+                {
+                    "path": "addcourse",
+                    "component": "addcourseComponent",
+                    "children": []
+                },
+                {
+                    "path": "instructorDashboardContent",
+                    "component": "instructordashboradcontentComponent"
+                },
+                {
+                    "path": "courseList",
+                    "component": "courselistComponent"
+                }
+            ],
+            "redirectTo": ""
+        },
+        {
+            "path": "traineedashboard",
+            "component": "traineedashboardComponent",
+            "children": [
+                {
+                    "path": "traineedashboardcontent",
+                    "component": "traineedashboardcontentComponent"
+                },
+                {
+                    "path": "selfjoinedcourses",
+                    "component": "selfjoinedcoursesComponent"
+                }
+            ]
         },
         {
             "path": "''",
-            "redirectTo": "/home",
+            "redirectTo": "/instructorregistration",
             "pathMatch": "full",
             "default": true
         },
