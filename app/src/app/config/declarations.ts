@@ -155,5 +155,5 @@ children: []},{path: 'instructorDashboardContent', component: instructordashbora
 children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // =======
 children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: '', redirectTo: 'adminDashboard', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
->>>>>>> Stashed changes
+// >>>>>>> Stashed changes
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
