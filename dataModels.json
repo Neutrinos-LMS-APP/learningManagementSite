@@ -129,5 +129,37 @@
                 "type": "string"
             }
         ]
+    },
+    "68b4a43d-4d57-2110-0c40-b330c35c30c7": {
+        "dataModelId": "68b4a43d-4d57-2110-0c40-b330c35c30c7",
+        "name": "addcourse",
+        "description": "Details of the course",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "courseName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "courseStream",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "duration",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "price",
+                "fieldType": 1,
+                "isArray": false,
+                "type": "number"
+            }
+        ]
     }
 }

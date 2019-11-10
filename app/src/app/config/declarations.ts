@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-courselandingComponent
+import { courselandingComponent } from '../components/courselandingComponent/courselanding.component';
 //CORE_REFERENCE_IMPORT-selfjoinedcoursesComponent
 import { selfjoinedcoursesComponent } from '../components/selfjoinedcoursesComponent/selfjoinedcourses.component';
 //CORE_REFERENCE_IMPORT-traineedashboardcontentComponent
@@ -85,6 +87,8 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselandingComponent
+courselandingComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selfjoinedcoursesComponent
 selfjoinedcoursesComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineedashboardcontentComponent
@@ -147,9 +151,20 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
+<<<<<<< Updated upstream
 export const appRoutes = [{path: 'home', component: homeComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
 children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
 children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+=======
+export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent,
+children: []},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
+children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent,
+children: []},{path: 'courses', component: coursesComponent,
+children: []},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
+children: [{path: 'addcourse', component: addcourseComponent,
+children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselanding', component: courselandingComponent},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+>>>>>>> Stashed changes
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

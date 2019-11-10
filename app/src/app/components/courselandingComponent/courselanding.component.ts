@@ -17,30 +17,17 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
  */
 
 @Component({
-    selector: 'bh-addcourse',
-    templateUrl: './addcourse.template.html'
+    selector: 'bh-courselanding',
+    templateUrl: './courselanding.template.html'
 })
 
-export class addcourseComponent extends NBaseComponent implements OnInit {
+export class courselandingComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-
-    duration = [
-   {value: 'oneweek', viewValue: '1 week'},
-   {value: 'twoweeks', viewValue: '2 weeks'},
-   {value: 'threeweeks', viewValue: '3 weeks'},
-   {value: 'fourweeks', viewValue: '4 weeks'},
-   {value: 'fiveweeks', viewValue: '5 weeks'},
-   {value: 'sixweeks', viewValue: '6 weeks'},
- ];
-
- oncourseSave(value){
-     console.log(value);
- }
 
     ngOnInit() {
 

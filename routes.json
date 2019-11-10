@@ -1,8 +1,14 @@
 {
     "routes": [
         {
+<<<<<<< Updated upstream
             "path": "home",
             "component": "homeComponent"
+=======
+            "path": "instructorregistration",
+            "component": "instructorregistrationComponent",
+            "children": []
+>>>>>>> Stashed changes
         },
         {
             "path": "traineeregistration",
@@ -18,11 +24,13 @@
                 },
                 {
                     "path": "trainee",
-                    "component": "traineeComponent"
+                    "component": "traineeComponent",
+                    "children": []
                 },
                 {
                     "path": "courses",
-                    "component": "coursesComponent"
+                    "component": "coursesComponent",
+                    "children": []
                 },
                 {
                     "path": "\"",
@@ -63,6 +71,13 @@
                     "component": "selfjoinedcoursesComponent"
                 }
             ]
+<<<<<<< Updated upstream
+=======
+        },
+        {
+            "path": "courselanding",
+            "component": "courselandingComponent"
+>>>>>>> Stashed changes
         },
         {
             "path": "''",

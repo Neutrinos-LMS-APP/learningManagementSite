@@ -346,7 +346,7 @@
                                 "_attrDef": "p"
                             },
                             {
-                                "_key": "#form",
+                                "_key": "#cform",
                                 "_value": "ngForm",
                                 "_type": "kv",
                                 "_attrDef": "c"
@@ -786,7 +786,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.firstName",
+                                                        "_value": "dm.addcourse.courseName",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -798,7 +798,7 @@
                                                     },
                                                     {
                                                         "_key": "name",
-                                                        "_value": "firstName",
+                                                        "_value": "courseName",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1186,7 +1186,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.lastName",
+                                                        "_value": "dm.addcourse.courseStream",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1198,7 +1198,7 @@
                                                     },
                                                     {
                                                         "_key": "name",
-                                                        "_value": "lastName",
+                                                        "_value": "courseStream",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1541,8 +1541,8 @@
                                                     "_attrDef": "p"
                                                 }
                                             ],
-                                            "417eca73-6375-b54d-b239-a39e1fbeba34": {
-                                                "paletteKey": "NG-Input",
+                                            "3050bd70-90ec-f295-ebe7-0738eec5760d": {
+                                                "paletteKey": "NG-Select",
                                                 "parentEditorKey": "141173d3-d306-8fff-0fb4-2cd0c16c0e90",
                                                 "isAdvancedComponent": true,
                                                 "designerReference": [
@@ -1566,9 +1566,72 @@
                                                         "_useAsLabel": true
                                                     },
                                                     {
-                                                        "_key": "value",
+                                                        "_key": "datasource",
+                                                        "_value": "duration",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[groupOptions]",
+                                                        "_value": "noGroup",
+                                                        "_type": "dav",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[groupLabels]",
                                                         "_value": "",
                                                         "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_visibility": false
+                                                    },
+                                                    {
+                                                        "_key": "[disableGroup]",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_visibility": false
+                                                    },
+                                                    {
+                                                        "_key": "[optionDatasource]",
+                                                        "_value": "",
+                                                        "_type": "a",
+                                                        "_attrDef": "p",
+                                                        "_visibility": false
+                                                    },
+                                                    {
+                                                        "_key": "optionValue",
+                                                        "_value": "option.value",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "optionView",
+                                                        "_value": "{{option.viewValue}}",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[(ngModel)]",
+                                                        "_value": "dm.addcourse.duration",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[(value)]",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "required",
+                                                        "_value": "required",
+                                                        "_type": "a",
                                                         "_attrDef": "p"
                                                     },
                                                     {
@@ -1578,65 +1641,78 @@
                                                         "_attrDef": "p"
                                                     },
                                                     {
-                                                        "_key": "required",
-                                                        "_value": "required",
+                                                        "_key": "[floatLabel]",
+                                                        "_value": "'auto'",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[disableRipple]",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "multiple",
+                                                        "_value": "",
+                                                        "_type": "dav",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "CustomTriggerValue",
+                                                        "_value": "",
                                                         "_type": "a",
                                                         "_attrDef": "p",
-                                                        "_customAttributeFlag": true
+                                                        "_visibility": false
                                                     },
                                                     {
-                                                        "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.email",
-                                                        "_type": "kv",
-                                                        "_attrDef": "p"
-                                                    },
-                                                    {
-                                                        "_key": "color",
+                                                        "_key": "(openedChange)",
                                                         "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
-                                                        "_key": "name",
-                                                        "_value": "email",
-                                                        "_type": "kv",
-                                                        "_attrDef": "p"
-                                                    },
-                                                    {
-                                                        "_key": "type",
+                                                        "_key": "(selectionChange)",
                                                         "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
-                                                        "_key": "[formControl]",
-                                                        "_value": "",
-                                                        "_type": "kv",
+                                                        "_key": "selectCustomOption",
+                                                        "_value": [],
+                                                        "_type": "a",
                                                         "_attrDef": "p"
                                                     },
                                                     {
-                                                        "_key": "readonly",
+                                                        "_key": "selectStyle",
+                                                        "_value": "Basic",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "panelClass",
                                                         "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
                                                         "_key": "[disabled]",
-                                                        "_value": "false",
-                                                        "_type": "kv",
-                                                        "_attrDef": "p"
-                                                    },
-                                                    {
-                                                        "_key": "id",
                                                         "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
-                                                        "_key": "[floatLabel]",
-                                                        "_value": "'auto'",
+                                                        "_key": "[errorStateMatcher]",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "option",
+                                                        "_value": "option",
+                                                        "_type": "a",
+                                                        "_attrDef": "p",
+                                                        "_visibility": false
                                                     },
                                                     {
                                                         "_key": "matError",
@@ -1646,60 +1722,10 @@
                                                         "_visibility": true
                                                     },
                                                     {
-                                                        "_key": "inputHint",
-                                                        "_value": [],
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "Label",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "Suffix Icon",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "(suffixIconClick)",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "Prefix Icon",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "(prefixIconClick)",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "Prefix",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
-                                                    },
-                                                    {
-                                                        "_key": "Suffix",
-                                                        "_value": "",
-                                                        "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_visibility": true
+                                                        "_key": "name",
+                                                        "_value": "duration",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -1986,7 +2012,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.password",
+                                                        "_value": "dm.addcourse.price",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1998,13 +2024,13 @@
                                                     },
                                                     {
                                                         "_key": "name",
-                                                        "_value": "password",
+                                                        "_value": "price",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
                                                         "_key": "type",
-                                                        "_value": "password",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -2228,7 +2254,7 @@
                                             },
                                             {
                                                 "_key": "(click)",
-                                                "_value": "onSave(form.value)",
+                                                "_value": "oncourseSave(cform.value)",
                                                 "_type": "kv",
                                                 "_attrDef": "p"
                                             },
