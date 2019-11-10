@@ -1,10 +1,7 @@
 {
     "dataSource": {
-<<<<<<< HEAD
-        "logindetails": "neutrinos-training-rt"
-=======
         "instructordetails": "neutrinos-training-rt",
-        "traineedetails": "neutrinos-training-rt"
->>>>>>> 0fbdd422c24c484dd10dd203ae4d8411e65f8236
+        "traineedetails": "neutrinos-training-rt",
+        "logindetails": "neutrinos-training-rt"
     }
 }
