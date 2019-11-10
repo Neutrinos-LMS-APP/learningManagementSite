@@ -1,14 +1,9 @@
 {
     "routes": [
         {
-<<<<<<< Updated upstream
-            "path": "home",
-            "component": "homeComponent"
-=======
             "path": "instructorregistration",
             "component": "instructorregistrationComponent",
             "children": []
->>>>>>> Stashed changes
         },
         {
             "path": "traineeregistration",
@@ -71,17 +66,14 @@
                     "component": "selfjoinedcoursesComponent"
                 }
             ]
-<<<<<<< Updated upstream
-=======
         },
         {
             "path": "courselanding",
             "component": "courselandingComponent"
->>>>>>> Stashed changes
         },
         {
             "path": "''",
-            "redirectTo": "/home",
+            "redirectTo": "/instructorregistration",
             "pathMatch": "full",
             "default": true
         },
