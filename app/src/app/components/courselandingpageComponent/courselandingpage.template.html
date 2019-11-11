@@ -1,0 +1,25 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" class="class1" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img style="height:50px;width:50px;"></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <h2>
+            LMS</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" class="class7" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" style="height:300px;background-color:black;" fxFlex="45" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+    <div fxLayout="column wrap" fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
+      <h1>
+        Learn by with easy schedule and Joy..</h1>
+      <h2>
+        Study any topic, anytime.<br> Choose from thousands of expert-led courses now</h2><button mat-raised-button color="warn">Register for Learn Course</button>
+    </div>
+  </div>
+  <div fxLayout="row wrap" style="color:white;padding:1em;background-color:rgba(237,28,36,1);width:100%;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let i of coursestream"><button mat-button>{{i}}</button></div>
+  </div>
+</div>

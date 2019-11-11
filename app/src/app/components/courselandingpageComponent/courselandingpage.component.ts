@@ -17,22 +17,21 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
  */
 
 @Component({
-    selector: 'bh-instructorregistration',
-    templateUrl: './instructorregistration.template.html'
+    selector: 'bh-courselandingpage',
+    templateUrl: './courselandingpage.template.html'
 })
 
-export class instructorregistrationComponent extends NBaseComponent implements OnInit {
+export class courselandingpageComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-   // firstname;
+    coursestream=['Business','IT Software','Design','Marketing','Personal Developement'];
 
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-onSave(value){
-    console.log(value);
-}
+
     ngOnInit() {
+
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

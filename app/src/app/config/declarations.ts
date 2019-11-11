@@ -18,6 +18,8 @@ window['neutrinos'] = {
 import { riserviceService } from '../services/riservice/riservice.service';
 //CORE_REFERENCE_IMPORT-courselandingComponent
 
+//CORE_REFERENCE_IMPORT-courselandingpageComponent
+import { courselandingpageComponent } from '../components/courselandingpageComponent/courselandingpage.component';
 //CORE_REFERENCE_IMPORT-selfjoinedcoursesComponent
 import { selfjoinedcoursesComponent } from '../components/selfjoinedcoursesComponent/selfjoinedcourses.component';
 //CORE_REFERENCE_IMPORT-traineedashboardcontentComponent
@@ -91,6 +93,8 @@ export const appDeclarations = [
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselandingComponent
 
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselandingpageComponent
+courselandingpageComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selfjoinedcoursesComponent
 selfjoinedcoursesComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineedashboardcontentComponent
@@ -163,4 +167,9 @@ children: []},{path: '"', component: dashboardcontentComponent}]},{path: 'instru
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
 children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'home', component: homeComponent},{path: 'contactus', component: contactusComponent},{path: 'login', component: loginformComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
-// CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
+// export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
+// children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
+// children: [{path: 'addcourse', component: addcourseComponent,
+// children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
+// children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselandingpage', component: courselandingpageComponent},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+// // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

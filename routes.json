@@ -68,6 +68,7 @@
             ]
         },
         {
+<<<<<<< Updated upstream
             "path": "home",
             "component": "homeComponent"
         },
@@ -78,6 +79,10 @@
         {
             "path": "login",
             "component": "loginformComponent"
+=======
+            "path": "courselandingpage",
+            "component": "courselandingpageComponent"
+>>>>>>> Stashed changes
         },
         {
             "path": "''",

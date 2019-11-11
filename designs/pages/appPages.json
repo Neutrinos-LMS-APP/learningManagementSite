@@ -88,5 +88,10 @@
         "appPageName": "selfjoinedcourses",
         "componentName": "selfjoinedcoursesComponent",
         "isEntry": false
+    },
+    "3523305c-0c65-0cb5-f7fa-9ed7d2d7c1fd": {
+        "appPageName": "courselandingpage",
+        "componentName": "courselandingpageComponent",
+        "isEntry": false
     }
 }
