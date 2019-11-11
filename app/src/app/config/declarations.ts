@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-riserviceService
+import { riserviceService } from '../services/riservice/riservice.service';
 //CORE_REFERENCE_IMPORT-courselandingComponent
 import { courselandingComponent } from '../components/courselandingComponent/courselanding.component';
 //CORE_REFERENCE_IMPORT-selfjoinedcoursesComponent
@@ -143,6 +145,8 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-riserviceService
+riserviceService,
 
 ];
 
@@ -159,4 +163,5 @@ children: []},{path: '"', component: dashboardcontentComponent}]},{path: 'instru
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
 children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselanding', component: courselandingComponent},{path: 'home', component: homeComponent},{path: 'contactus', component: contactusComponent},{path: 'login', component: loginformComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselanding', component: courselandingComponent},{path: 'home', component: homeComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
