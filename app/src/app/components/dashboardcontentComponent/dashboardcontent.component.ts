@@ -4,6 +4,8 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
+
 
 /**
  * Service import Example :
@@ -24,15 +26,24 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class dashboardcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     cardlenght;
-    constructor(private bdms: NDataModelService) {
+    statusEmptyResult=[];
+    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        this.cardlenght=['a','b','c','d','e','f','g','h','i'];
+        this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
+        this.getByStatus('null');
     }
-
+    //getting data by status need to pass the status value
+    async getByStatus(status){
+      this.statusEmptyResult = this.convertObjtoArr((await this.registerServiceObj.getbystatus(status)).local.result);
+    
+   }
+   convertObjtoArr(obj) {
+       return Array.from(Object.keys(obj), k => obj[k]);
+   }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

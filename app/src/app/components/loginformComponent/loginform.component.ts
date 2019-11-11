@@ -121,6 +121,10 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import{loginservice} from '../../sd-services/loginservice';
+import { Router } from '@angular/router';
+
+
 
 /**
  * Service import Example :
@@ -140,13 +144,38 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class loginformComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    result;
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService,public loginserviceobj :loginservice,public router:Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-    onloginSubmit(value){
-        console.log(value);
+    
+    async onloginSubmit(value){
+        //console.log(value);
+       this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result;
+       console.log(this.result);
+       console.log(value.userName);
+       console.log(value.password);
+       if(value.userName=='admin@gmail.com'&& value.password=='admin123')
+       {
+           this.router.navigate(['/adminDashboard']);
+       }
+       else{
+           if(this.result.role=='instructor'){
+                this.router.navigate(['/instructordashboard/instructorDashboardContent']);
+           }
+           else{
+               if(this.result.role=='trainee')
+               {
+                    this.router.navigate(['/traineedashboard/traineedashboardcontent']);
+               }
+               else{
+                   this.router.navigate(['/home']);
+               }
+           }
+       }
+
     }
     ngOnInit() {
 

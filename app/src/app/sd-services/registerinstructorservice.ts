@@ -112,6 +112,21 @@ export class registerinstructorservice {
       throw e;
     }
   }
+  public async getbystatus(status = undefined, ...others) {
+    try {
+      let bh = { input: { status: status }, local: { result: undefined } };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_GBf7CshUcykFHJNA(bh);
+      //appendnew_next_getbystatus
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_registerinstructorservice_Start
 
   async sd_1xzg5aFC8PXUuzml(bh) {
@@ -196,6 +211,35 @@ export class registerinstructorservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_0xTQbgS6fvdXxO06
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_GBf7CshUcykFHJNA(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getbystatus?status=${bh.input.status}`;
+
+      bh = await this.sd_ZqyKL2VOGSEiOYm2(bh);
+      //appendnew_next_sd_GBf7CshUcykFHJNA
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_ZqyKL2VOGSEiOYm2(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_ZqyKL2VOGSEiOYm2
       return bh;
     } catch (e) {
       throw e;

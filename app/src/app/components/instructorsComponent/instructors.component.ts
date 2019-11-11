@@ -6,6 +6,8 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 //import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource,MatPaginator } from '@angular/material';
+import {dashboardcontentComponent} from '../dashboardcontentComponent/dashboardcontent.component';
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 
 /**
  * Service import Example :
@@ -18,55 +20,8 @@ import { MatTableDataSource,MatPaginator } from '@angular/material';
 * import { HeroService } from 'app/sd-services/HeroService';
 */
 
-export interface userData {
-    name: string;
-    position: number;
-    weight: number;
-    symbol: string;
-}
 
-const Element_data: userData[] = [
-        {
-            position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'
-        }
-        ,
-        {
-            position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'
-        }
-        ,
-        {
-            position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'
-        }
-        ,
-        {
-            position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'
-        }
-        ,
-        {
-            position: 5, name: 'Boron', weight: 10.811, symbol: 'B'
-        }
-        ,
-        {
-            position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'
-        }
-        ,
-        {
-            position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'
-        }
-        ,
-        {
-            position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'
-        }
-        ,
-        {
-            position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'
-        }
-        ,
-        {
-            position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'
-        }
-        ,
-    ];
+
 @Component({
     selector: 'bh-instructors',
     templateUrl: './instructors.template.html'
@@ -74,24 +29,35 @@ const Element_data: userData[] = [
 
 export class instructorsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    
    displayView:boolean=false;
    displaytable:boolean=true;
    username;
    tabledata;
-    @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-    dataSource=new MatTableDataSource(Element_data);
+  approvedStatusResult;
+    @ViewChild(dashboardcontentComponent, { static: true }) dashboardpage : dashboardcontentComponent ;
 
+    @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+    dataSource=new MatTableDataSource(this.approvedStatusResult);
     // Data table configuration (Sample Data)
     
     pageSize;
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
         this.dataSource.paginator = this.paginator;
+        this.getByStatus('approved');
     }
+    async getByStatus(status){
+      this.approvedStatusResult = this.convertObjtoArr((await this.registerServiceObj.getbystatus(status)).local.result);
+      console.log(this.approvedStatusResult);
+    }
+     convertObjtoArr(obj) {
+       return Array.from(Object.keys(obj), k => obj[k]);
+   }
     viewbtnclick(table)
     {
         this.displaytable=false;
@@ -109,7 +75,7 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     applyFilter(value)
     {
       //  console.log(value);
-      this.dataSource.filter = value.trim().toLowerCase();
+      //this.dataSource.filter = value.trim().toLowerCase();
     }
 
     // selectPage(pageSizeOptions){

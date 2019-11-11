@@ -2911,7 +2911,7 @@
                         },
                         {
                             "_key": "[dataSource]",
-                            "_value": "dataSource",
+                            "_value": "approvedStatusResult",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -2948,7 +2948,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Position",
+                                "_value": "firstName",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -2960,7 +2960,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.position}}",
+                                "_value": "{{table.firstName}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -3005,7 +3005,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Name",
+                                "_value": "lastName",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -3017,7 +3017,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.name}}",
+                                "_value": "{{table.lastName}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -3062,7 +3062,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Weight",
+                                "_value": "email",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -3074,7 +3074,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.weight}}",
+                                "_value": "{{table.email}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

@@ -4,6 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 
 /**
  * Service import Example :
@@ -23,16 +24,23 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class instructorregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    role='instructor';
+    
    // firstname;
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService,public registerServObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 onSave(value){
-    console.log(value);
+   // console.log(value);
+    this.dm.instructordetails=value;
+    this.registerServObj.registerinstructoradd(this.dm.instructordetails);
+
 }
     ngOnInit() {
+        this.dm.instructordetails.role = 'instructor';
+        this.dm.instructordetails.status = 'null';
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

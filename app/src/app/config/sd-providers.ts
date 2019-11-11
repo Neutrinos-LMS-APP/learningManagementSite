@@ -1,5 +1,7 @@
 import { SDBaseService } from 'app/n-services/SDBaseService';
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-loginservice
+import { loginservice } from '../sd-services/loginservice';
 //CORE_REFERENCE_IMPORT-courseservice
 import { courseservice } from '../sd-services/courseservice';
 //CORE_REFERENCE_IMPORT-registertraineeservice
@@ -10,6 +12,8 @@ import { registerinstructorservice } from '../sd-services/registerinstructorserv
 export const sdProviders = [
   SDBaseService,
   //CORE_REFERENCE_PUSH_TO_SD_ARRAY
+  //CORE_REFERENCE_PUSH_TO_SD_ARRAY-loginservice
+  loginservice,
   //CORE_REFERENCE_PUSH_TO_SD_ARRAY-courseservice
   courseservice,
   //CORE_REFERENCE_PUSH_TO_SD_ARRAY-registertraineeservice

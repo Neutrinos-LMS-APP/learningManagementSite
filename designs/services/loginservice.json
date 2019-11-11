@@ -1,0 +1,105 @@
+[
+    {
+        "id": "sd_GE0mVF482BJ14bAZ",
+        "type": "tab",
+        "createdDate": "2019-11-11T07:57:43.917Z",
+        "label": "loginservice",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "loginservice"
+    },
+    {
+        "id": "sd_MLzGFjha1VWyKoFo",
+        "type": "Start",
+        "z": "sd_GE0mVF482BJ14bAZ",
+        "name": "getLoginUser",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "email",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "getLoginUser",
+        "x": 228.20001220703125,
+        "y": 115.93749237060547,
+        "wires": [
+            [
+                "sd_6oMTuL4ALMSC1V6F"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "loginservice"
+    },
+    {
+        "id": "sd_6oMTuL4ALMSC1V6F",
+        "type": "Script",
+        "z": "sd_GE0mVF482BJ14bAZ",
+        "name": "",
+        "script": "\nbh.local.apiUrl=`http://localhost:24483/api/login?email=${bh.input.email}`;",
+        "x": 366.04998779296875,
+        "y": 114.93749237060547,
+        "wires": [
+            [
+                "sd_vIG9Vy2HLAXjQeZ7"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_vIG9Vy2HLAXjQeZ7",
+        "type": "HttpRequest",
+        "z": "sd_GE0mVF482BJ14bAZ",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 508.050048828125,
+        "y": 112.93749237060547,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

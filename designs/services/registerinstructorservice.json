@@ -100,7 +100,8 @@
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "registerinstructorservice"
     },
     {
         "id": "sd_lTJmgs59ZvXyYlpG",
@@ -290,6 +291,98 @@
         "paramMappingObj": {},
         "x": 608.03125,
         "y": 322.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_7XpR1TAT2gqbNqPT",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getbystatus",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "status",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "getbystatus",
+        "x": 260.20001220703125,
+        "y": 458.93750762939453,
+        "wires": [
+            [
+                "sd_GBf7CshUcykFHJNA"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_GBf7CshUcykFHJNA",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getbystatus?status=${bh.input.status}`",
+        "x": 408.04998779296875,
+        "y": 461.93750762939453,
+        "wires": [
+            [
+                "sd_ZqyKL2VOGSEiOYm2"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_ZqyKL2VOGSEiOYm2",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 584.050048828125,
+        "y": 462.93750762939453,
         "wires": [
             []
         ],
