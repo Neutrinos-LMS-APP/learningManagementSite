@@ -43,7 +43,7 @@ export class addcourseComponent extends NBaseComponent implements OnInit {
  }
 
     ngOnInit() {
-
+        this.dm.addcourse.createdby='Rahul';// localstorage (Username)
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

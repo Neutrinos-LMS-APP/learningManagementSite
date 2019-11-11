@@ -1,6 +1,77 @@
 {
+<<<<<<< Updated upstream
     "4949151f-5d7a-9255-3a14-ac02eaedd2a2": {
         "paletteKey": "FlexLayoutCol",
+=======
+    "1c0ff0e7-ca98-c9e3-eddc-89cc2c63085d": {
+        "paletteKey": "FlexLayoutRow",
+        "designerReference": [
+            {
+                "_key": "componentLabel",
+                "_value": "Row",
+                "_type": "kv",
+                "_attrDef": "p",
+                "_useAsLabel": true
+            },
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "wrap",
+                "_value": "wrap",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "layoutAlign",
+                "_value": "start",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "pLayoutAlign",
+                "_value": "stretch",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxShow]",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "[fxHide]",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ]
+    },
+    "0c84ff05-daf4-564a-f634-21ef3fc53255": {
+        "paletteKey": "FlexLayoutRow",
+>>>>>>> Stashed changes
         "designerReference": [
             {
                 "_key": "componentLabel",
@@ -209,7 +280,11 @@
                         },
                         {
                             "_key": "style",
+<<<<<<< Updated upstream
                             "_value": "",
+=======
+                            "_value": "Width:100%;",
+>>>>>>> Stashed changes
                             "_type": "kv",
                             "_attrDef": "p"
                         },

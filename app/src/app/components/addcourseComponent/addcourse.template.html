@@ -14,6 +14,17 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                      <input matInput [(ngModel)]="dm.addcourse.createdby" name="createdby" placeholder="Created by" required [disabled]="true">
+
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                    <mat-icon>book</mat-icon>
+                  </div>
+                  <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                       <input matInput [(ngModel)]="dm.addcourse.courseName" name="courseName" placeholder="Course Name" required [disabled]="false">
 
                     </mat-form-field>
@@ -21,7 +32,7 @@
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                    <mat-icon>person</mat-icon>
+                    <mat-icon>assignment</mat-icon>
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
@@ -32,7 +43,7 @@
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                    <mat-icon>email</mat-icon>
+                    <mat-icon>date_range</mat-icon>
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
@@ -47,12 +58,22 @@
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                    <mat-icon>lock</mat-icon>
+                    <mat-icon>attach_money</mat-icon>
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                       <input matInput [(ngModel)]="dm.addcourse.price" name="price" placeholder="Price" required [disabled]="false">
 
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                    <mat-icon>edit</mat-icon>
+                  </div>
+                  <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                    <mat-form-field>
+                      <textarea matInput [(ngModel)]="dm.addcourse.courseDescription" name="courseDescription" placeholder="Course Description" required></textarea>
                     </mat-form-field>
                   </div>
                 </div>

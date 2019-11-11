@@ -172,6 +172,12 @@
                 "fieldType": 1,
                 "isArray": false,
                 "type": "number"
+            },
+            {
+                "name": "createdby",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
             }
         ]
     }
