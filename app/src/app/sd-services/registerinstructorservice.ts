@@ -117,7 +117,7 @@ export class registerinstructorservice {
       let bh = { input: { status: status }, local: { result: undefined } };
       bh = this.__constructDefault(bh);
 
-      bh = await this.sd_GBf7CshUcykFHJNA(bh);
+      bh = await this.sd_HGySkkvsxYqCReR9(bh);
       //appendnew_next_getbystatus
       //Start formatting output variables
       let outputVariables = { input: {}, local: { result: bh.local.result } };
@@ -216,18 +216,18 @@ export class registerinstructorservice {
       throw e;
     }
   }
-  async sd_GBf7CshUcykFHJNA(bh) {
+  async sd_HGySkkvsxYqCReR9(bh) {
     try {
       bh.local.apiUrl = `http://localhost:24483/api/getbystatus?status=${bh.input.status}`;
 
-      bh = await this.sd_ZqyKL2VOGSEiOYm2(bh);
-      //appendnew_next_sd_GBf7CshUcykFHJNA
+      bh = await this.sd_7MG4TpTVsxhkVa3u(bh);
+      //appendnew_next_sd_HGySkkvsxYqCReR9
       return bh;
     } catch (e) {
       throw e;
     }
   }
-  async sd_ZqyKL2VOGSEiOYm2(bh) {
+  async sd_7MG4TpTVsxhkVa3u(bh) {
     try {
       let requestOptions = {
         url: bh.local.apiUrl,
@@ -239,7 +239,7 @@ export class registerinstructorservice {
         body: undefined
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
-      //appendnew_next_sd_ZqyKL2VOGSEiOYm2
+      //appendnew_next_sd_7MG4TpTVsxhkVa3u
       return bh;
     } catch (e) {
       throw e;

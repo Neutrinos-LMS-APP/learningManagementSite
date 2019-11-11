@@ -1,0 +1,96 @@
+[
+    {
+        "id": "sd_iGKIFCMznlVZR8ND",
+        "type": "tab",
+        "createdDate": "2019-11-11T07:15:15.008Z",
+        "label": "login",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "login"
+    },
+    {
+        "id": "sd_nwJVexFs6pfKTG14",
+        "type": "Start",
+        "z": "sd_iGKIFCMznlVZR8ND",
+        "name": "login",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "loginobj",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "functionName": "login",
+        "x": 88.20001220703125,
+        "y": 117.93749237060547,
+        "wires": [
+            [
+                "sd_36vyN00rEyzK5o5G"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "login"
+    },
+    {
+        "id": "sd_36vyN00rEyzK5o5G",
+        "type": "Script",
+        "z": "sd_iGKIFCMznlVZR8ND",
+        "name": "",
+        "script": "bh.local.apiUrl=\"http://localhost:24483/api/login\"",
+        "x": 269.04998779296875,
+        "y": 113.93749237060547,
+        "wires": [
+            [
+                "sd_dyAupRYle0tVoohZ"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_dyAupRYle0tVoohZ",
+        "type": "HttpRequest",
+        "z": "sd_iGKIFCMznlVZR8ND",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.input.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 424.04998779296875,
+        "y": 151.93749237060547,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

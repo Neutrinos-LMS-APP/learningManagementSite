@@ -54,8 +54,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "getregisterinstructordatascript",
         "script": "bh.local.apiUrl=\"http://localhost:24483/api/getregisterdata\"",
-        "x": 432.03125,
-        "y": 97.921875,
+        "x": 437.0312557220459,
+        "y": 105.92187881469727,
         "wires": [
             [
                 "sd_K8S2v4G9gstxUKHX"
@@ -298,7 +298,7 @@
         "generated": true
     },
     {
-        "id": "sd_7XpR1TAT2gqbNqPT",
+        "id": "sd_l6pMTxx8O0c4Vr0M",
         "type": "Start",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "getbystatus",
@@ -325,11 +325,11 @@
             }
         ],
         "functionName": "getbystatus",
-        "x": 260.20001220703125,
-        "y": 458.93750762939453,
+        "x": 232.20001220703125,
+        "y": 441.93750762939453,
         "wires": [
             [
-                "sd_GBf7CshUcykFHJNA"
+                "sd_HGySkkvsxYqCReR9"
             ]
         ],
         "generateNext": true,
@@ -337,23 +337,23 @@
         "serviceName": "registerinstructorservice"
     },
     {
-        "id": "sd_GBf7CshUcykFHJNA",
+        "id": "sd_HGySkkvsxYqCReR9",
         "type": "Script",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbystatus?status=${bh.input.status}`",
-        "x": 408.04998779296875,
-        "y": 461.93750762939453,
+        "x": 357.04998779296875,
+        "y": 452.93750762939453,
         "wires": [
             [
-                "sd_ZqyKL2VOGSEiOYm2"
+                "sd_7MG4TpTVsxhkVa3u"
             ]
         ],
         "generateNext": false,
         "generated": true
     },
     {
-        "id": "sd_ZqyKL2VOGSEiOYm2",
+        "id": "sd_7MG4TpTVsxhkVa3u",
         "type": "HttpRequest",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
@@ -381,8 +381,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 584.050048828125,
-        "y": 462.93750762939453,
+        "x": 552.050048828125,
+        "y": 459.93750762939453,
         "wires": [
             []
         ],

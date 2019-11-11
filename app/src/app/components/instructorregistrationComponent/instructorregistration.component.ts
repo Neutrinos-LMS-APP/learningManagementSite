@@ -6,6 +6,8 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 
+
+
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -25,24 +27,30 @@ import{registerinstructorservice} from '../../sd-services/registerinstructorserv
 export class instructorregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     role='instructor';
-    
+    statusEmptyResult;
    // firstname;
 
-    constructor(private bdms: NDataModelService,public registerServObj:registerinstructorservice) {
+    constructor(private bdms: NDataModelService,public registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 onSave(value){
    // console.log(value);
     this.dm.instructordetails=value;
-    this.registerServObj.registerinstructoradd(this.dm.instructordetails);
+    this.registerServiceObj.registerinstructoradd(this.dm.instructordetails);
 
 }
+
     ngOnInit() {
         this.dm.instructordetails.role = 'instructor';
         this.dm.instructordetails.status = 'null';
+        this.getByStatus('null');
     }
-
+    // getting data by status need to pass status value
+    async getByStatus(status){
+       this.statusEmptyResult = (await this.registerServiceObj.getbystatus(status)).local.result;
+       console.log(this.statusEmptyResult);
+    }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

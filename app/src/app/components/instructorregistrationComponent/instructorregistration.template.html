@@ -25,6 +25,7 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+<<<<<<< Updated upstream
                       <input matInput [(ngModel)]="dm.instructordetails.status" name="status" placeholder="status" value="status" [disabled]="false">
 
                     </mat-form-field>
@@ -37,6 +38,9 @@
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                       <input matInput [(ngModel)]="dm.instructordetails.role" name="role" placeholder="role" value="{{this.role}}" [disabled]="false">
+=======
+                      <input matInput [(ngModel)]="dm.instructordetails.status" name="status" placeholder="status" value="status" required [disabled]="false">
+>>>>>>> Stashed changes
 
                     </mat-form-field>
                   </div>
