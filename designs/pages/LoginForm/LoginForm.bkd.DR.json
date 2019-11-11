@@ -903,7 +903,7 @@
                                             },
                                             {
                                                 "_key": "routerLink",
-                                                "_value": "",
+                                                "_value": "/instructorregistration",
                                                 "_type": "kv",
                                                 "_attrDef": "p"
                                             }
@@ -1031,7 +1031,7 @@
                                             },
                                             {
                                                 "_key": "routerLink",
-                                                "_value": "",
+                                                "_value": "/traineeregistration",
                                                 "_type": "kv",
                                                 "_attrDef": "p"
                                             }

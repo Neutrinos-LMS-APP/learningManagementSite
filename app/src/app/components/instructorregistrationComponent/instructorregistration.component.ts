@@ -4,7 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-
+import {registerinstructorservice} from '../../sd-services/registerinstructorservice'
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -24,17 +24,22 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class instructorregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
    // firstname;
-
-    constructor(private bdms: NDataModelService) {
+    result;
+    constructor(private bdms: NDataModelService,public registerinstructorservice:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-onSave(value){
-    console.log(value);
-}
-    ngOnInit() {
+    SaveRegistorInstructor(registerinstructorvalue){
+        this.dm.instructordetails = registerinstructorvalue;
+        this.registerinstructorservice.registerinstructoradd(this.dm.instructordetails);
     }
-
+    ngOnInit() {
+        this.getinstructordata();
+    }
+    async getinstructordata(){
+        this.result = (await this.registerinstructorservice.getregisterinstructordata()).local.result;
+        console.log(this.result);
+    }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

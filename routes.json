@@ -72,8 +72,20 @@
             "component": "courselandingComponent"
         },
         {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
+            "path": "contactus",
+            "component": "contactusComponent"
+        },
+        {
+            "path": "login",
+            "component": "loginformComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "/instructorregistration",
+            "redirectTo": "/home",
             "pathMatch": "full",
             "default": true
         },

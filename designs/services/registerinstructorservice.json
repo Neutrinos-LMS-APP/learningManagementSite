@@ -1,0 +1,299 @@
+[
+    {
+        "id": "sd_7N5bSYWYw3YCGQPI",
+        "type": "tab",
+        "createdDate": "2019-11-10T17:56:11.624Z",
+        "label": "registerinstructorservice",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_KELT8KO3XseIlQwX",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getregisterinstructordata",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "getregisterinstructordata",
+        "x": 275.1875,
+        "y": 95.921875,
+        "wires": [
+            [
+                "sd_1xzg5aFC8PXUuzml"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_1xzg5aFC8PXUuzml",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getregisterinstructordatascript",
+        "script": "bh.local.apiUrl=\"http://localhost:24483/api/getregisterdata\"",
+        "x": 432.03125,
+        "y": 97.921875,
+        "wires": [
+            [
+                "sd_K8S2v4G9gstxUKHX"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_K8S2v4G9gstxUKHX",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 603.03125,
+        "y": 99.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_lTJmgs59ZvXyYlpG",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "registerinstructoradd",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "registerobject",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "registerinstructoradd",
+        "x": 268.1875,
+        "y": 207.921875,
+        "wires": [
+            [
+                "sd_TutKcQXWPi3KUjIN"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_TutKcQXWPi3KUjIN",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "registerinstructoraddscript",
+        "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";",
+        "x": 443.03125,
+        "y": 208.921875,
+        "wires": [
+            [
+                "sd_HsOD479NzRVnxbaN"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_HsOD479NzRVnxbaN",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "registerinstructorhttp",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.registerobject",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "registerobject"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 609.03125,
+        "y": 207.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_4DuZfZmGweYS1QTd",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "registerinstructordelete",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "instructorrowId",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "registerinstructordelete",
+        "x": 275.1875,
+        "y": 323.921875,
+        "wires": [
+            [
+                "sd_RiD03wZBG7fr5xs7"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_RiD03wZBG7fr5xs7",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "instructordeletescript",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?${bh.input.instructorrowId}`",
+        "x": 443.03125,
+        "y": 322.921875,
+        "wires": [
+            [
+                "sd_0xTQbgS6fvdXxO06"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_0xTQbgS6fvdXxO06",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.instructorrowId",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "instructorrowId"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 608.03125,
+        "y": 322.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

@@ -280,7 +280,7 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "#form",
+                            "_key": "#registerinstructor",
                             "_value": "ngForm",
                             "_type": "kv",
                             "_attrDef": "c"
@@ -3931,7 +3931,7 @@
                                         },
                                         {
                                             "_key": "(click)",
-                                            "_value": "onSave(form.value)",
+                                            "_value": "SaveRegistorInstructor(registerinstructor.value)",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },

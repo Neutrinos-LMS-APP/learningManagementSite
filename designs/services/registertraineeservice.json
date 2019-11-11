@@ -1,0 +1,299 @@
+[
+    {
+        "id": "sd_ROZ1AbsGG7lNme7j",
+        "type": "tab",
+        "createdDate": "2019-11-10T19:08:37.209Z",
+        "label": "registertraineeservice",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registertraineeservice"
+    },
+    {
+        "id": "sd_JuwfwD5qfMHbXOSa",
+        "type": "Start",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "getregistertraineedata",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "getregistertraineedata",
+        "x": 180,
+        "y": 68.8125,
+        "wires": [
+            [
+                "sd_Fcoabhb3JhH8f1dv"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registertraineeservice"
+    },
+    {
+        "id": "sd_Fcoabhb3JhH8f1dv",
+        "type": "Script",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "getregistertraineedatascript",
+        "script": "bh.local.apiUrl=\"http://localhost:24483/api/getregisterdata\"",
+        "x": 336.84375,
+        "y": 70.8125,
+        "wires": [
+            [
+                "sd_7thYOpAw1d9g1Nzy"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "registertraineeservice"
+    },
+    {
+        "id": "sd_7thYOpAw1d9g1Nzy",
+        "type": "HttpRequest",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 507.84375,
+        "y": 72.796875,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_JCj1n6jxZjWHjknl",
+        "type": "Start",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "registertraineeadd",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "registerobject",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "registertraineeadd",
+        "x": 173,
+        "y": 180.8125,
+        "wires": [
+            [
+                "sd_Lxx9w7Fyob2KxPgv"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registertraineeservice"
+    },
+    {
+        "id": "sd_Lxx9w7Fyob2KxPgv",
+        "type": "Script",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "registertraineeaddscript",
+        "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";",
+        "x": 347.84375,
+        "y": 181.8125,
+        "wires": [
+            [
+                "sd_VruvvTf9OSK9YSLG"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_VruvvTf9OSK9YSLG",
+        "type": "HttpRequest",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "registertraineehttp",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.registerobject",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "registerobject"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 513.84375,
+        "y": 180.796875,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_Htu65n9USLDJBq3X",
+        "type": "Start",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "registertraineedelete",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "traineerowId",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "registertraineedelete",
+        "x": 180,
+        "y": 296.8125,
+        "wires": [
+            [
+                "sd_jSF8IcRYxzCN3Qix"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registertraineeservice"
+    },
+    {
+        "id": "sd_jSF8IcRYxzCN3Qix",
+        "type": "Script",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "traineedeletescript",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?${bh.input.instructorrowId}`",
+        "x": 347.84375,
+        "y": 295.8125,
+        "wires": [
+            [
+                "sd_Z7YP4Cts7Hp17QQW"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_Z7YP4Cts7Hp17QQW",
+        "type": "HttpRequest",
+        "z": "sd_ROZ1AbsGG7lNme7j",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.traineerowId",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "traineerowId"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 512.84375,
+        "y": 295.796875,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    }
+]

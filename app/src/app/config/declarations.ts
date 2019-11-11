@@ -158,5 +158,5 @@ children: []},{path: 'courses', component: coursesComponent,
 children: []},{path: '"', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
-children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselanding', component: courselandingComponent},{path: '', redirectTo: '/instructorregistration', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'courselanding', component: courselandingComponent},{path: 'home', component: homeComponent},{path: 'contactus', component: contactusComponent},{path: 'login', component: loginformComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END
