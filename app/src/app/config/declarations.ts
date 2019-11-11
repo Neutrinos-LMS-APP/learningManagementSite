@@ -90,7 +90,7 @@ export const appDeclarations = [
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courselandingComponent
-courselandingComponent,
+
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selfjoinedcoursesComponent
 selfjoinedcoursesComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-traineedashboardcontentComponent
