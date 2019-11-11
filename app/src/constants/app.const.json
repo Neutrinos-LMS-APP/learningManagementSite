@@ -1,16 +1,3 @@
-// {
-//     "dataSource": {
-//         "instructordetails": "neutrinos-training-rt",
-//         "traineedetails": "neutrinos-training-rt",
-// <<<<<<< Updated upstream
-//         "logindetails": "neutrinos-training-rt",
-// =======
-//         "addcourse": "neutrinos-training-rt"
-// >>>>>>> Stashed changes
-//     }
-// }
-
-
 {
     "dataSource": {
         "instructordetails": "neutrinos-training-rt",
