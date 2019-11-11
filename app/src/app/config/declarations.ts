@@ -17,7 +17,7 @@ window['neutrinos'] = {
 //CORE_REFERENCE_IMPORT-riserviceService
 import { riserviceService } from '../services/riservice/riservice.service';
 //CORE_REFERENCE_IMPORT-courselandingComponent
-import { courselandingComponent } from '../components/courselandingComponent/courselanding.component';
+
 //CORE_REFERENCE_IMPORT-selfjoinedcoursesComponent
 import { selfjoinedcoursesComponent } from '../components/selfjoinedcoursesComponent/selfjoinedcourses.component';
 //CORE_REFERENCE_IMPORT-traineedashboardcontentComponent
