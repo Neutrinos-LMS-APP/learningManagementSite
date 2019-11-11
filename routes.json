@@ -68,10 +68,6 @@
             ]
         },
         {
-            "path": "courselanding",
-            "component": "courselandingComponent"
-        },
-        {
             "path": "home",
             "component": "homeComponent"
         },
