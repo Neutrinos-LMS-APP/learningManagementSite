@@ -74,6 +74,12 @@
                 "type": "string"
             },
             {
+                "name": "role",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
                 "name": "status",
                 "fieldType": 2,
                 "isArray": false,

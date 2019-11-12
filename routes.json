@@ -65,26 +65,16 @@
             ]
         },
         {
-            "path": "home",
-            "component": "homeComponent",
-            "children": [
-                {
-                    "path": "courselanding",
-                    "component": "courselandingpageComponent"
-                }
-            ]
+            "path": "login",
+            "component": "loginformComponent"
         },
         {
             "path": "contactus",
             "component": "contactusComponent"
         },
         {
-            "component": "loginformComponent",
-            "path": "login"
-        },
-        {
-            "path": "courselanding",
-            "component": "courselandingpageComponent"
+            "path": "product",
+            "component": "productComponent"
         },
         {
             "path": "''",

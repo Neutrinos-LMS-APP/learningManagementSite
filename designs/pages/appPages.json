@@ -92,6 +92,9 @@
     "3523305c-0c65-0cb5-f7fa-9ed7d2d7c1fd": {
         "appPageName": "courselandingpage",
         "componentName": "courselandingpageComponent",
+    "ad8bae95-8c84-586e-d250-700a27b4894b": {
+        "appPageName": "Product",
+        "componentName": "productComponent",
         "isEntry": false
     }
 }

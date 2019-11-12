@@ -876,7 +876,7 @@
                             },
                             {
                                 "_key": "routerLink",
-                                "_value": "instructors",
+                                "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }
