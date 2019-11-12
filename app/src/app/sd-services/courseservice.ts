@@ -109,6 +109,28 @@ export class courseservice {
       throw e;
     }
   }
+  public async getLoginApproved(
+    username = undefined,
+    status = undefined,
+    ...others
+  ) {
+    try {
+      let bh = {
+        input: { username: username, status: status },
+        local: { result: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_Bg3rAPfqFoiUAmPD(bh);
+      //appendnew_next_getLoginApproved
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_courseservice_Start
 
   async sd_7owje9LqzwiKvJcY(bh) {
@@ -193,6 +215,35 @@ export class courseservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_NCOs2Tf4QbUDh6zF
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_Bg3rAPfqFoiUAmPD(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getloginapproved?email=${bh.input.username}&&status=${bh.input.status}`;
+
+      bh = await this.sd_10JScst1osFqA05X(bh);
+      //appendnew_next_sd_Bg3rAPfqFoiUAmPD
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_10JScst1osFqA05X(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_10JScst1osFqA05X
       return bh;
     } catch (e) {
       throw e;

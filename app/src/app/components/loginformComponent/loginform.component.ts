@@ -154,6 +154,7 @@ export class loginformComponent extends NBaseComponent implements OnInit {
     async onloginSubmit(value){
         //console.log(value);
        this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result;
+       localStorage.username = value.userName;
        console.log(this.result);
        console.log(value.userName);
        console.log(value.password);

@@ -17,4 +17,10 @@ export class addcourse {
   @JsonProperty('createdby', String, true)
   public createdby: string = undefined;
 
+  @JsonProperty('coursedescription', String, true)
+  public coursedescription: string = undefined;
+
+  @JsonProperty('status', String, true)
+  public status: string = undefined;
+
 }

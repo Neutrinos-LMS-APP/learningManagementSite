@@ -992,7 +992,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;",
+                                    "_value": "margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;margin: 0px auto;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },

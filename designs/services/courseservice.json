@@ -100,7 +100,8 @@
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "courseservice"
     },
     {
         "id": "sd_abEef8l5TORYtSzy",
@@ -290,6 +291,106 @@
         "paramMappingObj": {},
         "x": 510.84375,
         "y": 288.796875,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_aKaDJKfSQyMx6RfQ",
+        "type": "Start",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "getLoginApproved",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "username",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "status",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "getLoginApproved",
+        "x": 153.1875,
+        "y": 415.921875,
+        "wires": [
+            [
+                "sd_Bg3rAPfqFoiUAmPD"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "courseservice"
+    },
+    {
+        "id": "sd_Bg3rAPfqFoiUAmPD",
+        "type": "Script",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getloginapproved?email=${bh.input.username}&&status=${bh.input.status}`",
+        "x": 316.03125,
+        "y": 417.921875,
+        "wires": [
+            [
+                "sd_10JScst1osFqA05X"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_10JScst1osFqA05X",
+        "type": "HttpRequest",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 469.03125,
+        "y": 417.90625,
         "wires": [
             []
         ],

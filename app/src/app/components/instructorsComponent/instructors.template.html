@@ -75,8 +75,8 @@
           </div>
         </div>
         <table mat-table [dataSource]="approvedStatusResult" class="table-width-fix">
-          <tr mat-header-row *matHeaderRowDef="[&apos;firstName&apos;,&apos;lastName&apos;,&apos;email&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
-          <tr mat-row *matRowDef="let row; columns: [&apos;firstName&apos;,&apos;lastName&apos;,&apos;email&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
+          <tr mat-header-row *matHeaderRowDef="[&apos;firstName&apos;,&apos;lastName&apos;,&apos;email&apos;,&apos;symbol&apos;,&apos;action&apos;]"></tr>
+          <tr mat-row *matRowDef="let row; columns: [&apos;firstName&apos;,&apos;lastName&apos;,&apos;email&apos;,&apos;symbol&apos;,&apos;action&apos;];"></tr>
 
           <ng-container matColumnDef="firstName">
             <th mat-header-cell *matHeaderCellDef>firstName</th>
@@ -94,18 +94,13 @@
           </ng-container>
 
           <ng-container matColumnDef="symbol">
-            <th mat-header-cell *matHeaderCellDef>Symbol</th>
+            <th mat-header-cell *matHeaderCellDef>country</th>
             <td mat-cell *matCellDef="let table; let i = index;">{{table.symbol}}</td>
           </ng-container>
 
           <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef></th>
             <td mat-cell *matCellDef="let table; let i = index;">{{table.action}}<button mat-raised-button color="primary" (click)="viewbtnclick(table)">View</button></td>
-          </ng-container>
-
-          <ng-container matColumnDef="action1">
-            <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.action1}}<button mat-raised-button color="warn">Delete</button></td>
           </ng-container>
         </table>
         <mat-paginator [length]="5" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">

@@ -1,5 +1,5 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="row wrap" class="class1 class6" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" class="class1" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
       <div fxLayout="row wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img style="height:50px;width:50px;"></div>
@@ -9,7 +9,13 @@
         </div>
       </div>
     </div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button routerLink="addcourse">Add Courses</button><button mat-button routerLink="courseList">Courses List</button><button mat-button>Logout</button></div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button style="font-weight:bold;font-size:16px;" routerLink="addcourse">Add Course</button></div>
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button style="font-weight:bold;font-size:16px;" routerLink="courseList">Course List</button></div>
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button style="font-weight:bold;font-size:16px;" routerLink="/home">Logout</button></div>
+      </div>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </div>

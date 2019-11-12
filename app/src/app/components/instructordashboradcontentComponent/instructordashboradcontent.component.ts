@@ -23,7 +23,8 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class instructordashboradcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    columarray=['a','b','c','d'];
+  //  columarray=['a','b','c'];
+   
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);

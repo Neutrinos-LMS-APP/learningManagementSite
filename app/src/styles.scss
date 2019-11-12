@@ -31,7 +31,12 @@ body{
 
 .class1{
 // <<<<<<< Updated upstream
-    background-color:#696969;;
+    background-color:#ea212a;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    font-family:arial;
+    box-shadow:2px 2px 6px gray;
 // =======
     
 // >>>>>>> Stashed changes
@@ -138,4 +143,26 @@ body{
     padding:12px;
     text-align: center;
     margin:5px;
+.instructordashboardcard{
+    margin-bottom: 40px;
+    width:270px;
+    height:300px;
+}
+.classmenuinstructordash{
+    font-size:1px;
+    font-weight:bold;
+    color:#fff;
+    font-family:arial;
+}
+.table_header1{
+    background-color:gray;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center !important;
+    padding: 0px 50px 0px 5px !important;
+}
+.instdel_btn{
+    margin-left:15px !important;
+}
 }

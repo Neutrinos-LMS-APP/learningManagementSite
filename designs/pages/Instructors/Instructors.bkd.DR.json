@@ -3119,7 +3119,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Symbol",
+                                "_value": "country",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -3277,63 +3277,6 @@
                             {
                                 "_key": "Mapping",
                                 "_value": "{{table.action}}<button mat-raised-button color=\"primary\" (click)=\"viewbtnclick(table)\">View</button>",
-                                "_type": "ma",
-                                "_attrDef": "p",
-                                "_useAsLabel": true
-                            },
-                            {
-                                "_key": "columnName",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p",
-                                "_visibility": false
-                            },
-                            {
-                                "_key": "headerclass",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "columnclass",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            }
-                        ]
-                    },
-                    "5e6c80c5-c019-376c-1b8a-5b8643efbccd": {
-                        "paletteKey": "ng-table-column",
-                        "parentEditorKey": "3054a20f-3f47-df98-9f91-700283bdeb83",
-                        "isAdvancedChildComponent": true,
-                        "designerReference": [
-                            {
-                                "_key": "style",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "class",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "Header Label",
-                                "_value": "",
-                                "_type": "a",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "matSortHeaderColumn",
-                                "_value": "",
-                                "_type": "a",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "Mapping",
-                                "_value": "{{table.action1}}<button mat-raised-button color=\"warn\">Delete</button>",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

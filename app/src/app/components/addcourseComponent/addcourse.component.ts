@@ -4,7 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-
+import{courseservice} from '../../sd-services/courseservice';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -24,7 +24,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class addcourseComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService,private courseService: courseservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -37,13 +37,13 @@ export class addcourseComponent extends NBaseComponent implements OnInit {
    {value: 'fiveweeks', viewValue: '5 weeks'},
    {value: 'sixweeks', viewValue: '6 weeks'},
  ];
-
- oncourseSave(value){
-     console.log(value);
- }
-
     ngOnInit() {
-        this.dm.addcourse.createdby='Rahul';// localstorage (Username)
+        this.dm.addcourse.createdby = localStorage.username;// localstorage (Username)
+       
+    }
+    addCourse(courseInfo){
+        console.log(courseInfo);
+        this.courseService.addcourse(courseInfo);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
