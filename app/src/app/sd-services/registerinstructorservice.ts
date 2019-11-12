@@ -127,6 +127,43 @@ export class registerinstructorservice {
       throw e;
     }
   }
+  public async getRoleAndStatus(
+    status = undefined,
+    role = undefined,
+    ...others
+  ) {
+    try {
+      let bh = {
+        input: { status: status, role: role },
+        local: { result: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_rJj2lgukW7xbRBE7(bh);
+      //appendnew_next_getRoleAndStatus
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async getById(id = undefined, ...others) {
+    try {
+      let bh = { input: { id: id }, local: {} };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_3pfPzkKJnMU6zK5R(bh);
+      //appendnew_next_getById
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: {} };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_registerinstructorservice_Start
 
   async sd_1xzg5aFC8PXUuzml(bh) {
@@ -144,7 +181,7 @@ export class registerinstructorservice {
     try {
       let requestOptions = {
         url: bh.local.apiUrl,
-        method: 'get',
+        method: 'post',
         responseType: 'json',
         reportProgress: undefined,
         headers: {},
@@ -189,7 +226,7 @@ export class registerinstructorservice {
   }
   async sd_RiD03wZBG7fr5xs7(bh) {
     try {
-      bh.local.apiUrl = `http://localhost:24483/api/deleteregisterdata?${bh.input.instructorrowId}`;
+      bh.local.apiUrl = `http://localhost:24483/api/deleteregisterdata?_id=${bh.input.instructorrowId}`;
 
       bh = await this.sd_0xTQbgS6fvdXxO06(bh);
       //appendnew_next_sd_RiD03wZBG7fr5xs7
@@ -240,6 +277,64 @@ export class registerinstructorservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_7MG4TpTVsxhkVa3u
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_rJj2lgukW7xbRBE7(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getroelandstatus?role=${bh.input.role}&&status=${bh.input.status}`;
+
+      bh = await this.sd_mQCCOsYlvct8oCw7(bh);
+      //appendnew_next_sd_rJj2lgukW7xbRBE7
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_mQCCOsYlvct8oCw7(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_mQCCOsYlvct8oCw7
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_3pfPzkKJnMU6zK5R(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getbyid?_id=${bh.input.id}`;
+
+      bh = await this.sd_44INLrTYO7rhd62u(bh);
+      //appendnew_next_sd_3pfPzkKJnMU6zK5R
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_44INLrTYO7rhd62u(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_44INLrTYO7rhd62u
       return bh;
     } catch (e) {
       throw e;

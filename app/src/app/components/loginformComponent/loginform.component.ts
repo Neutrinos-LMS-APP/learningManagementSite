@@ -156,6 +156,8 @@ export class loginformComponent extends NBaseComponent implements OnInit {
        this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result;
        localStorage.username = value.userName;
        console.log(this.result);
+       localStorage.username=value.userName;
+       console.log("comes from localstorage"+localStorage.username);
        console.log(value.userName);
        console.log(value.password);
        if(value.userName=='admin@gmail.com'&& value.password=='admin123')

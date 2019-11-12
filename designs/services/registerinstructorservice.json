@@ -70,7 +70,7 @@
         "type": "HttpRequest",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
-        "method": "get",
+        "method": "post",
         "methodMappingObj": {},
         "urlMapping": "bh.local.apiUrl",
         "urlMappingObj": {
@@ -164,7 +164,8 @@
             ]
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "registerinstructorservice"
     },
     {
         "id": "sd_HsOD479NzRVnxbaN",
@@ -248,7 +249,7 @@
         "type": "Script",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "instructordeletescript",
-        "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?${bh.input.instructorrowId}`",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?_id=${bh.input.instructorrowId}`",
         "x": 443.03125,
         "y": 322.921875,
         "wires": [
@@ -327,6 +328,8 @@
         "functionName": "getbystatus",
         "x": 232.20001220703125,
         "y": 441.93750762939453,
+        "x": 213.20000457763672,
+        "y": 574.9375305175781,
         "wires": [
             [
                 "sd_HGySkkvsxYqCReR9"
@@ -344,6 +347,8 @@
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbystatus?status=${bh.input.status}`",
         "x": 357.04998779296875,
         "y": 452.93750762939453,
+        "x": 406.05000591278076,
+        "y": 560.9375305175781,
         "wires": [
             [
                 "sd_7MG4TpTVsxhkVa3u"
@@ -383,6 +388,191 @@
         "paramMappingObj": {},
         "x": 552.050048828125,
         "y": 459.93750762939453,
+        "x": 591.0500564575195,
+        "y": 560.9375305175781,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_MfFtJ5N7CKnnSTrP",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getRoleAndStatus",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "status",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "role",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "getRoleAndStatus",
+        "x": 226.20000457763672,
+        "y": 723.5375804901123,
+        "wires": [
+            [
+                "sd_rJj2lgukW7xbRBE7"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_rJj2lgukW7xbRBE7",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getroelandstatus?role=${bh.input.role}&&status=${bh.input.status}`",
+        "x": 402.05000495910645,
+        "y": 720.5375823974609,
+        "wires": [
+            [
+                "sd_mQCCOsYlvct8oCw7"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_mQCCOsYlvct8oCw7",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 590.0500574111938,
+        "y": 710.5375823974609,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_BSdd6x01GSwIhf95",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getById",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "id",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "functionName": "getById",
+        "x": 216.20000457763672,
+        "y": 447.9375,
+        "wires": [
+            [
+                "sd_3pfPzkKJnMU6zK5R"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_3pfPzkKJnMU6zK5R",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getbyid?_id=${bh.input.id}`",
+        "x": 349.0500078201294,
+        "y": 460.5374984741211,
+        "wires": [
+            [
+                "sd_44INLrTYO7rhd62u"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_44INLrTYO7rhd62u",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 513.050048828125,
+        "y": 457.5374984741211,
         "wires": [
             []
         ],

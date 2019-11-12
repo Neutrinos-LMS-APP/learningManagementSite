@@ -1,58 +1,234 @@
-<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="column wrap" class="class5" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="column wrap" style="height:100px;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div>
-                <h3>Instructor Request Approvals</h3>
-              </div>
+<div fxLayout="column wrap" style="width:100%;padding:2em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <h1>
+      Instructor Approval Requests</h1>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
+      <mat-card *ngFor="let i of  instructorandrole">
+        <mat-card-content style="margin:0px;">
+          <div fxLayout="row wrap" style="width:100%;background-color:grey;color:white;padding:0.6em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <mat-icon>help_outline</mat-icon>
             </div>
             <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                <mat-card *ngFor="let i of cardlenght" class="class3">
-                  <mat-card-title>Instrcutors</mat-card-title>
-
-                  <mat-card-content></mat-card-content>
-                </mat-card>
-              </div>
+              <h3>
+                Request for Insrtructor Approval</h3>
             </div>
           </div>
-          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div>
-                <h3>Trainee Request Approvals</h3>
+          <div fxLayout="column wrap" style="padding:0.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Firstname</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.firstName}}</h4>
               </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                <mat-card *ngFor="let i of cardlenght" class="class3">
-                  <mat-card-title>Instrcutors</mat-card-title>
-
-                  <mat-card-content></mat-card-content>
-                </mat-card>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Lastname</h3>
               </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.lastName}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Date Of Birth</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.date}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Email Id</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.email}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Country</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.country}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Approved</button><button mat-raised-button color="warn">Reject</button></div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div fxLayout="column wrap" style="width:100%;padding:2em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <h1>
+      Trainees Approval Requests</h1>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
+      <mat-card *ngFor="let i of  traineeandrole">
+        <mat-card-content style="margin:0px;">
+          <div fxLayout="row wrap" style="width:100%;background-color:grey;color:white;padding:0.6em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <mat-icon>help_outline</mat-icon>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3>
+                Request for Insrtructor Approval</h3>
             </div>
           </div>
-          <div fxLayout="column wrap" style="height:600px;" class="overflow" fxFlex="33" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div>
-                <h3>Courses Request Approvals</h3>
+          <div fxLayout="column wrap" style="padding:0.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Firstname</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.firstName}}</h4>
               </div>
             </div>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                <mat-card *ngFor="let i of cardlenght" class="class3">
-                  <mat-card-title>Instrcutors</mat-card-title>
-
-                  <mat-card-content></mat-card-content>
-                </mat-card>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Lastname</h3>
               </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.lastName}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Date Of Birth</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.date}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Email Id</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.email}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Country</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.country}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Approved</button><button mat-raised-button color="warn">Reject</button></div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div fxLayout="column wrap" style="width:100%;padding:2em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <h1>
+      Courses Approval Requests</h1>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
+      <mat-card *ngFor="let i of  statusEmptyResult">
+        <mat-card-content style="margin:0px;">
+          <div fxLayout="row wrap" style="width:100%;background-color:grey;color:white;padding:0.6em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <mat-icon>help_outline</mat-icon>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3>
+                Request for Insrtructor Approval</h3>
             </div>
           </div>
-        </div>
-      </div>
+          <div fxLayout="column wrap" style="padding:0.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Firstname</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.firstName}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Lastname</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.lastName}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Date Of Birth</h3>
+              </div>
+              <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  {{i.date}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Email Id</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.email}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
+                  Country</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.country}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Approved</button><button mat-raised-button color="warn">Reject</button></div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
     </div>
   </div>
 </div>

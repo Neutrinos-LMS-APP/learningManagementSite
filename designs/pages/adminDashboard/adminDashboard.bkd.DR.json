@@ -755,7 +755,7 @@
                         }
                     }
                 },
-                "0a0a67de-b9a3-dbd7-2bdf-47dfa3130cf8": {
+                "a900959a-7843-8067-4eea-dd7c603b1814": {
                     "paletteKey": "FlexLayoutRow",
                     "parentEditorKey": "419acc81-4e81-f666-0db9-a0a402dbc305",
                     "designerReference": [
@@ -821,9 +821,9 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "7df8cd21-544f-4416-53ef-3df0500a7bfe": {
+                    "79b31775-0f6b-42ee-cf70-625ef5b42284": {
                         "paletteKey": "NG-button",
-                        "parentEditorKey": "0a0a67de-b9a3-dbd7-2bdf-47dfa3130cf8",
+                        "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -833,7 +833,7 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": "classmenuonadmindash",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -882,9 +882,9 @@
                             }
                         ]
                     },
-                    "23d87ba2-18fb-0a1b-d9a2-b49b3374d9e9": {
+                    "f522cbc9-4dbb-c6c0-dd50-2411c0cd19d8": {
                         "paletteKey": "NG-button",
-                        "parentEditorKey": "0a0a67de-b9a3-dbd7-2bdf-47dfa3130cf8",
+                        "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -894,7 +894,7 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": "classmenuonadmindash",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -943,9 +943,9 @@
                             }
                         ]
                     },
-                    "43fdccc3-1a1a-b7ae-60c2-e0afe16a62a3": {
+                    "4b9d753d-daab-c824-98eb-862d61de2160": {
                         "paletteKey": "NG-button",
-                        "parentEditorKey": "0a0a67de-b9a3-dbd7-2bdf-47dfa3130cf8",
+                        "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -955,7 +955,7 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": "classmenuonadmindash",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -1004,9 +1004,9 @@
                             }
                         ]
                     },
-                    "432c1c34-3e94-cf26-674f-d7111d2bb569": {
+                    "f03ae4c5-42b9-c596-f370-19633ed135f2": {
                         "paletteKey": "NG-button",
-                        "parentEditorKey": "0a0a67de-b9a3-dbd7-2bdf-47dfa3130cf8",
+                        "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",
                         "designerReference": [
                             {
                                 "_key": "style",
@@ -1016,7 +1016,7 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": "",
+                                "_value": "classmenuonadmindash",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },

@@ -26,7 +26,8 @@ import{registerinstructorservice} from '../../sd-services/registerinstructorserv
 export class dashboardcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     cardlenght;
-    statusEmptyResult=[];
+    instructorandrole=[];
+    traineeandrole=[];
     constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
@@ -34,13 +35,15 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
 
     ngOnInit() {
         this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
-        this.getByStatus('null');
+       
+     this.getRoleAndStatus();
     }
     //getting data by status need to pass the status value
-    async getByStatus(status){
-      this.statusEmptyResult = this.convertObjtoArr((await this.registerServiceObj.getbystatus(status)).local.result);
-    
+    async getRoleAndStatus(){
+     this.instructorandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','instructor')).local.result);
+     this.traineeandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','trainee')).local.result);
    }
+   
    convertObjtoArr(obj) {
        return Array.from(Object.keys(obj), k => obj[k]);
    }

@@ -1,1 +1,9 @@
-<div>default page template</div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row " style="overflow-x:auto;width:80%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-card *ngFor="let i of cardlenght" style="width:100px;height:100px;margin-right:20px;">
+      <mat-card-title>Card Title</mat-card-title>
+
+      <mat-card-subtitle>Card Sub-Title</mat-card-subtitle>
+    </mat-card>
+  </div>
+</div>

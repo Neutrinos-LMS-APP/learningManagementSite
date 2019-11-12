@@ -40,6 +40,8 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
     dataSource=new MatTableDataSource(this.approvedStatusResult);
     // Data table configuration (Sample Data)
+    //storing the selcted row information
+    rowData;
     
     pageSize;
     constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
@@ -58,15 +60,25 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
      convertObjtoArr(obj) {
        return Array.from(Object.keys(obj), k => obj[k]);
    }
-    viewbtnclick(table)
+   fname;lname;email;contact;gender;country;dob;pass;
+    viewInstructorInfo(selectedRowInfo)
     {
         this.displaytable=false;
         this.displayView=true;
+       // this.rowData=this.convertObjtoArr(selectedRowInfo);
+    //    this.rowData =  selectedRowInfo;
+    // console.log(this.rowData.firstName);
+       this.fname=selectedRowInfo.firstName;
+       this.lname=selectedRowInfo.lastName;
+       this.email=selectedRowInfo.email;
+       this.contact=selectedRowInfo.mobile;
+       this.gender=selectedRowInfo.gender;
+       this.country=selectedRowInfo.country;
+       this.dob=selectedRowInfo.date;
+       this.pass=selectedRowInfo.password;
         
-        this.tabledata=table;
-        console.log("button Clicked"+this.tabledata.name);
-        this.username=this.tabledata.name;
-
+        //console.log("button Clicked"+this.tabledata.name);
+        //this.username=this.tabledata.name;
     }
     displayTable(){
         this.displaytable=true;

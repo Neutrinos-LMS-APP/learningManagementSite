@@ -23,7 +23,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class traineedashboardcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-
+     cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
