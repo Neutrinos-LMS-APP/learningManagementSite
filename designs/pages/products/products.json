@@ -1,0 +1,13 @@
+{
+    "appPageId": "7e602c3e-0c98-9d7b-7969-cf45486614f8",
+    "appPageName": "products",
+    "componentName": "productsComponent",
+    "selectorName": "bh-products",
+    "htmlFileName": "products.template.html",
+    "tsFileName": "products.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

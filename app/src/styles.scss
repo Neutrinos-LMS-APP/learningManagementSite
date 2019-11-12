@@ -7,7 +7,8 @@
 /*Importing default angular material css theme. */
 /* body font */
 body{
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 20px;
     }    
 
 .mat-card.box.mat-card {
@@ -24,14 +25,10 @@ body{
     background-color: white;
     border-radius:2px;
     box-shadow: 2px 2px 4px wheat;
-    top:3;
+    margin-top:35px;
     
 }
-.divimage{
-    background-image:url('assets/Web/contact.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+
 .class1{
 // <<<<<<< Updated upstream
     background-color:#696969;;
@@ -91,7 +88,7 @@ body{
 /*Homepage login button */
 
 .btn{
-    background-color: red;
+    background-color: #df252b;
     color: white;
     font-size:15px;
     font-weight:700;

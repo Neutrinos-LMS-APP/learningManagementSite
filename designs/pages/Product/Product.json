@@ -1,6 +1,6 @@
 {
-    "appPageId": "ad8bae95-8c84-586e-d250-700a27b4894b",
-    "appPageName": "Product",
+    "appPageId": "6c3027b9-6548-a916-5dc1-2e226a90aa55",
+    "appPageName": "product",
     "componentName": "productComponent",
     "selectorName": "bh-product",
     "htmlFileName": "product.template.html",

@@ -92,9 +92,30 @@
     "3523305c-0c65-0cb5-f7fa-9ed7d2d7c1fd": {
         "appPageName": "courselandingpage",
         "componentName": "courselandingpageComponent",
-    "ad8bae95-8c84-586e-d250-700a27b4894b": {
-        "appPageName": "Product",
+        "ad8bae95-8c84-586e-d250-700a27b4894b": {
+            "appPageName": "Product",
+            "componentName": "productComponent",
+            "isEntry": false
+        }
+    },
+    "6c3027b9-6548-a916-5dc1-2e226a90aa55": {
+        "appPageName": "product",
         "componentName": "productComponent",
+        "isEntry": false
+    },
+    "7e602c3e-0c98-9d7b-7969-cf45486614f8": {
+        "appPageName": "products",
+        "componentName": "productsComponent",
+        "isEntry": false
+    },
+    "8c14b7db-f2fa-5ee2-d646-e3f740aa0353": {
+        "appPageName": "header",
+        "componentName": "headerComponent",
+        "isEntry": false
+    },
+    "42c25c87-a582-89bf-1047-391b0f85d048": {
+        "appPageName": "footer",
+        "componentName": "footerComponent",
         "isEntry": false
     }
 }

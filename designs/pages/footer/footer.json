@@ -1,0 +1,13 @@
+{
+    "appPageId": "42c25c87-a582-89bf-1047-391b0f85d048",
+    "appPageName": "footer",
+    "componentName": "footerComponent",
+    "selectorName": "bh-footer",
+    "htmlFileName": "footer.template.html",
+    "tsFileName": "footer.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -77,8 +77,20 @@
             "component": "productComponent"
         },
         {
+            "path": "home",
+            "component": "homeComponent"
+        },
+        {
+            "path": "header",
+            "component": "headerComponent"
+        },
+        {
+            "path": "footer",
+            "component": "footerComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "/instructorregistration",
+            "redirectTo": "/home",
             "pathMatch": "full",
             "default": true
         },
