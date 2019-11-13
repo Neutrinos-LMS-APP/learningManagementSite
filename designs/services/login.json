@@ -19,7 +19,15 @@
         "noerr": 0,
         "inputVariables": [
             {
-                "key": "loginobj",
+                "key": "email",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "password",
                 "defaultValue": {
                     "type": "str",
                     "value": ""
@@ -27,10 +35,19 @@
                 "output": false
             }
         ],
-        "localVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
         "functionName": "login",
-        "x": 88.20001220703125,
-        "y": 117.93749237060547,
+        "x": 82.20001220703125,
+        "y": 112.9375,
         "wires": [
             [
                 "sd_36vyN00rEyzK5o5G"
@@ -45,7 +62,7 @@
         "type": "Script",
         "z": "sd_iGKIFCMznlVZR8ND",
         "name": "",
-        "script": "bh.local.apiUrl=\"http://localhost:24483/api/login\"",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/login?email=${bh.input.email}&&password=${bh.input.password}`;",
         "x": 269.04998779296875,
         "y": 113.93749237060547,
         "wires": [
@@ -74,9 +91,9 @@
             "mapVarType": "bh.input",
             "mapVarValue": ""
         },
-        "resultMapping": "bh.input.result",
+        "resultMapping": "bh.local.result",
         "resultMappingObj": {
-            "mapVarType": "bh.input",
+            "mapVarType": "bh.local",
             "mapVarValue": "result"
         },
         "headers": {},
@@ -85,8 +102,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 424.04998779296875,
-        "y": 151.93749237060547,
+        "x": 444.0500068664551,
+        "y": 114.93749809265137,
         "wires": [
             []
         ],

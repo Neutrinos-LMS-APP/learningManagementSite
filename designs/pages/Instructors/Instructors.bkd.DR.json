@@ -8151,7 +8151,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.action1}}<button mat-raised-button color=\"warn\">Delete</button>",
+                                "_value": "{{table.action1}}<button mat-raised-button color=\"warn\"(click)='delete(table._id)'>Delete</button>",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

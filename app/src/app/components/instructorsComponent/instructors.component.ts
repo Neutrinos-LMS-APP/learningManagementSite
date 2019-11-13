@@ -149,14 +149,14 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
             })
     }
 
-    delete(dataModelName, filter) {
-        this.mm.delete(dataModelName, filter,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
+    // delete(dataModelName, filter) {
+    //     this.mm.delete(dataModelName, filter,
+    //         result => {
+    //             // On Success code here
+    //         }, error => {
+    //             // Handle errors here
+    //         })
+    // }
 
     deleteById(dataModelName, dataModelId) {
         this.mm.deleteById(dataModelName, dataModelId,

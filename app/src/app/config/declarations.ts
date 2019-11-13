@@ -23,7 +23,7 @@ import { productsComponent } from '../components/productsComponent/products.comp
 //CORE_REFERENCE_IMPORT-productComponent
 import { productComponent } from '../components/productComponent/product.component';
 //CORE_REFERENCE_IMPORT-riserviceService
-import { riserviceService } from '../services/riservice/riservice.service';
+
 //CORE_REFERENCE_IMPORT-courselandingComponent
 
 
@@ -165,7 +165,7 @@ export const appProviders = [
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-riserviceService
-riserviceService,
+
 
 ];
 

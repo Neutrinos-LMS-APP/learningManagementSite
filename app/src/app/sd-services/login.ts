@@ -58,9 +58,12 @@ export class login {
 
   //   service flows_login
 
-  public async login(loginobj = undefined, ...others) {
+  public async login(email = undefined, password = undefined, ...others) {
     try {
-      let bh = { input: { loginobj: loginobj }, local: {} };
+      let bh = {
+        input: { email: email, password: password },
+        local: { result: undefined }
+      };
       bh = this.__constructDefault(bh);
 
       bh = await this.sd_36vyN00rEyzK5o5G(bh);
@@ -77,7 +80,7 @@ export class login {
 
   async sd_36vyN00rEyzK5o5G(bh) {
     try {
-      bh.local.apiUrl = 'http://localhost:24483/api/login';
+      bh.local.apiUrl = `http://localhost:24483/api/login?email=${bh.input.email}&&password=${bh.input.password}`;
 
       bh = await this.sd_dyAupRYle0tVoohZ(bh);
       //appendnew_next_sd_36vyN00rEyzK5o5G
@@ -97,7 +100,7 @@ export class login {
         params: {},
         body: undefined
       };
-      bh.input.result = await this.sdService.nHttpRequest(requestOptions);
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_dyAupRYle0tVoohZ
       return bh;
     } catch (e) {

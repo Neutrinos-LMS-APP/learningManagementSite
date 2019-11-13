@@ -37,8 +37,8 @@
             }
         ],
         "functionName": "getregisterinstructordata",
-        "x": 275.1875,
-        "y": 95.921875,
+        "x": 126.18750381469727,
+        "y": 55.921875,
         "wires": [
             [
                 "sd_1xzg5aFC8PXUuzml"
@@ -54,8 +54,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "getregisterinstructordatascript",
         "script": "bh.local.apiUrl=\"http://localhost:24483/api/getregisterdata\"",
-        "x": 437.0312557220459,
-        "y": 105.92187881469727,
+        "x": 327.0312557220459,
+        "y": 50.921875,
         "wires": [
             [
                 "sd_K8S2v4G9gstxUKHX"
@@ -94,8 +94,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 603.03125,
-        "y": 99.90625,
+        "x": 560.0312595367432,
+        "y": 43.90625,
         "wires": [
             []
         ],
@@ -139,8 +139,8 @@
             }
         ],
         "functionName": "registerinstructoradd",
-        "x": 268.1875,
-        "y": 207.921875,
+        "x": 127.18750381469727,
+        "y": 194.92188262939453,
         "wires": [
             [
                 "sd_TutKcQXWPi3KUjIN"
@@ -156,8 +156,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "registerinstructoraddscript",
         "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";",
-        "x": 443.03125,
-        "y": 208.921875,
+        "x": 351.03125762939453,
+        "y": 183.92188262939453,
         "wires": [
             [
                 "sd_HsOD479NzRVnxbaN"
@@ -197,8 +197,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 609.03125,
-        "y": 207.90625,
+        "x": 567.0312595367432,
+        "y": 178.9062557220459,
         "wires": [
             []
         ],
@@ -233,8 +233,8 @@
             }
         ],
         "functionName": "registerinstructordelete",
-        "x": 275.1875,
-        "y": 323.921875,
+        "x": 127.18750381469727,
+        "y": 314.92186737060547,
         "wires": [
             [
                 "sd_RiD03wZBG7fr5xs7"
@@ -290,8 +290,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 608.03125,
-        "y": 322.90625,
+        "x": 584.0312585830688,
+        "y": 300.90624237060547,
         "wires": [
             []
         ],
