@@ -5,9 +5,6 @@ export class addcourse {
   @JsonProperty('courseName', String, true)
   public courseName: string = undefined;
 
-  @JsonProperty('courseStream', String, true)
-  public courseStream: string = undefined;
-
   @JsonProperty('duration', String, true)
   public duration: string = undefined;
 
@@ -22,5 +19,23 @@ export class addcourse {
 
   @JsonProperty('status', String, true)
   public status: string = undefined;
+
+  @JsonProperty('learning_outcome_1', String, true)
+  public learning_outcome_1: string = undefined;
+
+  @JsonProperty('learning_outcome_2', String, true)
+  public learning_outcome_2: string = undefined;
+
+  @JsonProperty('learning_outcome_3', String, true)
+  public learning_outcome_3: string = undefined;
+
+  @JsonProperty('learning_outcome_4', String, true)
+  public learning_outcome_4: string = undefined;
+
+  @JsonProperty('learning_outcome_5', String, true)
+  public learning_outcome_5: string = undefined;
+
+  @JsonProperty('learning_outcome_6', String, true)
+  public learning_outcome_6: string = undefined;
 
 }

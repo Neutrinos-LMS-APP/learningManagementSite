@@ -30,18 +30,33 @@ import{registerinstructorservice} from '../../sd-services/registerinstructorserv
 export class instructorsComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     
+<<<<<<< Updated upstream
     displayView:boolean=false;
     displaytable:boolean=true;
     username;
     tabledata;
     approvedInstructors;
     
+=======
+   displayView:boolean=false;
+   displaytable:boolean=true;
+   username;
+   tabledata;
+   rowData;
+  approvedStatusResult;
+>>>>>>> Stashed changes
     @ViewChild(dashboardcontentComponent, { static: true }) dashboardpage : dashboardcontentComponent ;
     @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
     dataSource;
     //storing the selcted row information
+<<<<<<< Updated upstream
     rowData;
     pageSize;
+=======
+    
+    
+    
+>>>>>>> Stashed changes
     constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
@@ -51,6 +66,7 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
          this.dataSource = new MatTableDataSource();
         this.getRoleAndStatus();     
     }
+<<<<<<< Updated upstream
     ngAfterViewInit() {
         
        this.dataSource.paginator = this.paginator;
@@ -66,6 +82,11 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     async getRoleAndStatus(){
         this.approvedInstructors = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('approved','instructor')).local.result);
         this.dataSource.data = this.approvedInstructors;
+=======
+    async getByStatus(status){
+      this.approvedStatusResult = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('approved','instructor')).local.result);
+      console.log(this.approvedStatusResult);
+>>>>>>> Stashed changes
     }
 
     //converting object of objects into araay of objects
@@ -97,8 +118,13 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     }
     applyFilter(value)
     {
+<<<<<<< Updated upstream
         this.dataSource.filterPredicate = (value, filter) => JSON.stringify(value).includes(filter);
         this.dataSource.filter = value.trim().toLowerCase();
+=======
+        console.log(value);
+     this.dataSource.filter = value.trim().toLowerCase();
+>>>>>>> Stashed changes
     }
 
     // selectPage(pageSizeOptions){

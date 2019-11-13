@@ -93,6 +93,14 @@
             "component": "cardComponent"
         },
         {
+            "path": "allcourses",
+            "component": "courselandingpageComponent"
+        },
+        {
+            "path": "coursedetail",
+            "component": "coursedetailComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/home",
             "pathMatch": "full",

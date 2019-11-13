@@ -37,6 +37,7 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
         this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
        
      this.getRoleAndStatus();
+   
     }
     //getting data by status need to pass the status value
     async getRoleAndStatus(){

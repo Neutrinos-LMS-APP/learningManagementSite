@@ -156,12 +156,6 @@
                 "type": "string"
             },
             {
-                "name": "courseStream",
-                "fieldType": 2,
-                "isArray": false,
-                "type": "string"
-            },
-            {
                 "name": "duration",
                 "fieldType": 2,
                 "isArray": false,
@@ -187,6 +181,42 @@
             },
             {
                 "name": "status",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_1",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_2",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_3",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_4",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_5",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "learning_outcome_6",
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"

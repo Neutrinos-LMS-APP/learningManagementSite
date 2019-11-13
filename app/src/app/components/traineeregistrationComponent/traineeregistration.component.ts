@@ -32,6 +32,7 @@ export class traineeregistrationComponent extends NBaseComponent implements OnIn
         this.mm = new ModelMethods(bdms);
     }
     ngOnInit() {
+        this.dm.instructordetails.status = 'null';
         this.dm.instructordetails.role = 'trainee';
         this.dm.instructordetails.status = 'null';
     }

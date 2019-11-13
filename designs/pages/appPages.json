@@ -118,6 +118,11 @@
         "componentName": "footerComponent",
         "isEntry": false
     },
+    "7593978a-8733-1c9e-3808-dd0e2a81269b": {
+        "appPageName": "coursedetail",
+        "componentName": "coursedetailComponent",
+        "isEntry": false
+    },
     "3070d158-f5f2-4294-2650-3914d108b219": {
         "appPageName": "card",
         "componentName": "cardComponent",

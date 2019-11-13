@@ -23,7 +23,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class courselandingpageComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    coursestream=['Business','IT Software','Design','Marketing','Personal Developement'];
+    courseCard = ['a', 'b', 'c', 'd'];
 
     constructor(private bdms: NDataModelService) {
         super();

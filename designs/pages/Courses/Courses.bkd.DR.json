@@ -3276,7 +3276,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.action}}<button mat-raised-button color=\"primary\" (click)=\"viewbtnclick(table)\">View</button>",
+                                "_value": "{{table.action}}<button mat-raised-button color=\"primary\" style=\"background-color:black;color:white;\" (click)=\"viewbtnclick(table)\">View</button>",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

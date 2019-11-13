@@ -1,9 +1,7 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <div fxLayout="column wrap" style="width:100%;height:80%;margin-top:5%;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
     <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="!displayView">
-      <mat-card>
-        <mat-card-title>{{username}} Details</mat-card-title>
-
+      <mat-card style="width:500px;margin:0px auto;padding:0px;">
         <mat-card-content>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -22,36 +20,158 @@
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div>
                   {{lname}}</div>
+          <div fxLayout="row wrap" style="width:100%;background-color:grey;padding:1em;color:white;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h2>
+                Selected Instructor Details</h2>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>person</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    First Name</h3>
+                </div>
               </div>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{fname}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>person</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Last Name</h3>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{lname}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>date_range</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Date of Birth</h3>
+                </div>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div>
                   {{email}}</div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{dob}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>email</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Email Id</h3>
+                </div>
               </div>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{email}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>lock</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Password</h3>
+                </div>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div>
                   {{contact}}</div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{pass}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>person</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Gender</h3>
+                </div>
               </div>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{gender}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>phone</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Mobile No</h3>
+                </div>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div>
                   {{gender}}</div>
-              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{contact}}</h3>
             </div>
           </div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>flag</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h3>
+                    Country</h3>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="color:grey;">
+                {{country}}</h3>
+            </div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:10px;background-color:black;color:white;" (click)="displayTable()">Ok</button></div>
         </mat-card-content>
 
         <mat-card-footer>
@@ -59,8 +179,8 @@
         </mat-card-footer>
       </mat-card>
     </div>
-    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
-      <div fxLayout="column" style="width:80%;">
+    <div fxLayout="column wrap" style="width:70%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
+      <div fxLayout="column" class="table" style="width:80%;">
 
         <div fxLayout="row" fxLayoutAlign="end">
           <div fxLayout="column" fxFlex="end">
@@ -85,16 +205,37 @@
 
           <ng-container matColumnDef="email">
             <th mat-header-cell *matHeaderCellDef>Email</th>
+        <table mat-table [dataSource]="approvedStatusResult" class="table-width-fix">
+          <tr mat-header-row *matHeaderRowDef="[&apos;firstName&apos;,&apos;lastName&apos;,&apos;country&apos;,&apos;email&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
+          <tr mat-row *matRowDef="let row; columns: [&apos;firstName&apos;,&apos;lastName&apos;,&apos;country&apos;,&apos;email&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
+
+          <ng-container matColumnDef="firstName">
+            <th mat-header-cell *matHeaderCellDef class="header1">First Name</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.firstName}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="lastName">
+            <th mat-header-cell *matHeaderCellDef class="header1">Lastname</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.lastName}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="country">
+            <th mat-header-cell *matHeaderCellDef class="header1">Country</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.country}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef class="header1">Date Of Birth</th>
             <td mat-cell *matCellDef="let table; let i = index;">{{table.email}}</td>
           </ng-container>
 
           <ng-container matColumnDef="action">
-            <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.action}}<button mat-raised-button color="primary" (click)="viewTraineeInfo(table)">View</button></td>
+            <th mat-header-cell *matHeaderCellDef class="header1"></th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.action}}<button mat-raised-button style="background-color:black;color:white;" (click)="viewbtnclick(table)">View</button></td>
           </ng-container>
 
           <ng-container matColumnDef="action1">
-            <th mat-header-cell *matHeaderCellDef></th>
+            <th mat-header-cell *matHeaderCellDef class="header1"></th>
             <td mat-cell *matCellDef="let table; let i = index;">{{table.action1}}<button mat-raised-button color="warn">Delete</button></td>
           </ng-container>
         </table>

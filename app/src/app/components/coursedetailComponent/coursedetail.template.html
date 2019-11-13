@@ -1,0 +1,95 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <bh-header></bh-header>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-card style="padding:0px;margin:30px 0px;color:white;" class="card_header">
+      <mat-card-content>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" style="width:25%;height:10em;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <mat-icon style="font-size:80px; margin-top:0.3em;color:black;" class="cardbooks">book</mat-icon>
+            </div>
+            <div fxLayout="column wrap" style="width:75%;background-color:black;padding-left:3em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3>
+                Professional Certificate in</h3>
+              <h1>
+                Project Heading</h1>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="width:70%;padding: 60px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <h3>
+          Learning outcomes</h3>
+        <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <h3 *ngFor="let data of demo" style="width:100%;" class="spaceallow">
+
+              * {{data}}
+
+
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="width:30%;padding-top:5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="width:10%;height:4em;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <mat-icon>account_circle</mat-icon>
+          </div>
+          <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+            <h2 style="margin-bottom:0px;">
+              Instructor-led</h2>
+            <h3 style="margin:0px;color:grey;">
+              Instructor Name</h3>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="width:10%;height:4em;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <mat-icon>alarm-on</mat-icon>
+          </div>
+          <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+            <h2 style="margin-bottom:0px;">
+              Duration</h2>
+            <h3 style="margin:0px;color:grey;">
+              Instructor Name</h3>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="width:10%;height:4em;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <mat-icon>attach_money</mat-icon>
+          </div>
+          <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+            <h2 style="margin-bottom:0px;">
+              Price</h2>
+            <h3 style="margin:0px;color:grey;">
+              Instructor Name</h3>
+          </div>
+        </div>
+        <div fxLayout="row wrap" style="margin-top:2em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="width:70%;" class="btn">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column wrap" style="width:62%;margin-left:4em;margin-bottom:4em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+
+          <mat-panel-title>
+            Program Overview
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-panel-description class="spaceallow">
+          {{daata}}
+        </mat-panel-description>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <bh-footer></bh-footer>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <router-outlet></router-outlet>
+  </div>
+</div>

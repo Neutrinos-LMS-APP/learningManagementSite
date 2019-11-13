@@ -270,3 +270,22 @@ h3{
 .Header{height:580px;}
 .Logo{width:100%;}
 }
+.coursecards:hover{
+    background-color: red;
+    color:white !important;
+}
+.cardbooks{
+    height:50px;
+    width:50px;
+    margin-right:80px;
+}
+.card_header{
+    width:100%;
+
+}
+.spaceallow{
+    width: 400px;
+    white-space: normal;
+    word-break:break-all;
+    color:#df252b;
+}
