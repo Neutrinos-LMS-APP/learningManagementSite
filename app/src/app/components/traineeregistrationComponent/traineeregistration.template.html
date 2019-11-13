@@ -1,7 +1,7 @@
 <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
   <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
     <div fxLayout="column wrap" class="Margin-tb" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-      <form #tform="ngForm" style="Width=100%">
+      <form #traineeRegistration="ngForm" style="Width=100%">
         <mat-card style="margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;">
           <mat-card-title style="text-align:center;font-weight:bold;">Trainee Registration</mat-card-title>
 
@@ -112,7 +112,7 @@
           </mat-card-content>
 
           <mat-card-actions>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" color="primary" (click)="onSubmit(tform.value)" [disabled]="false">Submit</button></div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" color="primary" (click)="put(traineeRegistration.value)" [disabled]="false">Submit</button></div>
           </mat-card-actions>
         </mat-card>
       </form>

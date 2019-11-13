@@ -250,7 +250,7 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "#tform",
+                            "_key": "#traineeRegistration",
                             "_value": "ngForm",
                             "_type": "kv",
                             "_attrDef": "c"
@@ -4299,7 +4299,7 @@
                                         },
                                         {
                                             "_key": "(click)",
-                                            "_value": "onSubmit(tform.value)",
+                                            "_value": "put(traineeRegistration.value)",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },

@@ -73,16 +73,16 @@ export class registerinstructorservice {
       throw e;
     }
   }
-  public async registerinstructoradd(registerobject = undefined, ...others) {
+  public async registerinstructor(registerobject = undefined, ...others) {
     try {
       let bh = {
         input: { registerobject: registerobject },
-        local: { result: undefined, apiUrl: undefined }
+        local: { result: undefined }
       };
       bh = this.__constructDefault(bh);
 
       bh = await this.sd_TutKcQXWPi3KUjIN(bh);
-      //appendnew_next_registerinstructoradd
+      //appendnew_next_registerinstructor
       //Start formatting output variables
       let outputVariables = { input: {}, local: {} };
       //End formatting output variables
@@ -91,10 +91,7 @@ export class registerinstructorservice {
       throw e;
     }
   }
-  public async registerinstructordelete(
-    instructorrowId = undefined,
-    ...others
-  ) {
+  public async deleteInstructor(instructorrowId = undefined, ...others) {
     try {
       let bh = {
         input: { instructorrowId: instructorrowId },
@@ -103,7 +100,7 @@ export class registerinstructorservice {
       bh = this.__constructDefault(bh);
 
       bh = await this.sd_RiD03wZBG7fr5xs7(bh);
-      //appendnew_next_registerinstructordelete
+      //appendnew_next_deleteInstructor
       //Start formatting output variables
       let outputVariables = { input: {}, local: {} };
       //End formatting output variables
@@ -156,6 +153,21 @@ export class registerinstructorservice {
 
       bh = await this.sd_3pfPzkKJnMU6zK5R(bh);
       //appendnew_next_getById
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: {} };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async updateByStatus(updateObj = undefined, ...others) {
+    try {
+      let bh = { input: { updateObj: updateObj }, local: {} };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_avGOOzakr77RlIsI(bh);
+      //appendnew_next_updateByStatus
       //Start formatting output variables
       let outputVariables = { input: {}, local: {} };
       //End formatting output variables
@@ -335,6 +347,35 @@ export class registerinstructorservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_44INLrTYO7rhd62u
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_avGOOzakr77RlIsI(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:4000/api/updatestatus`;
+
+      bh = await this.sd_9l82xOaldIHKOhf8(bh);
+      //appendnew_next_sd_avGOOzakr77RlIsI
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_9l82xOaldIHKOhf8(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.updateObj
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_9l82xOaldIHKOhf8
       return bh;
     } catch (e) {
       throw e;

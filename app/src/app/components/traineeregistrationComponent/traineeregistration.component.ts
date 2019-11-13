@@ -5,7 +5,8 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
-
+import {NSnackbarService} from 'neutrinos-seed-services';
+import { Router } from '@angular/router';
 
 /**
  * Service import Example :
@@ -26,101 +27,19 @@ import{registerinstructorservice} from '../../sd-services/registerinstructorserv
 export class traineeregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService,public registerServObj:registerinstructorservice) {
+    constructor(private bdms: NDataModelService,private registerServObj:registerinstructorservice,private snackbarService:NSnackbarService,private router:Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
-
-    onSubmit(value){
-        console.log(value);
-        this.dm.instructordetails=value;
-    this.registerServObj.registerinstructoradd(this.dm.instructordetails);
-
-
-    }
-
     ngOnInit() {
         this.dm.instructordetails.role = 'trainee';
+        this.dm.instructordetails.status = 'null';
     }
-
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            });
+    //stroing registration data into db,after registration redirecting to login page
+    put(traineeInfo){
+        this.registerServObj.registerinstructor(traineeInfo);
+        this.snackbarService.openSnackBar('Registered successfully');
+        this.router.navigate(['/login']);
     }
-
-    getById(dataModelName, dataModelId) {
-        this.mm.getById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            })
-    }
-
-    put(dataModelName, dataModelObject) {
-        this.mm.put(dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    validatePut(formObj, dataModelName, dataModelObject) {
-        this.mm.validatePut(formObj, dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    update(dataModelName, update, filter, options) {
-        const updateObject = {
-            update: update,
-            filter: filter,
-            options: options
-        };
-        this.mm.update(dataModelName, updateObject,
-            result => {
-                //  On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    delete (dataModelName, filter) {
-        this.mm.delete(dataModelName, filter,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    deleteById(dataModelName, dataModelId) {
-        this.mm.deleteById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    updateById(dataModelName, dataModelId, dataModelObj) {
-        this.mm.updateById(dataModelName, dataModelId, dataModelObj,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
 
 }

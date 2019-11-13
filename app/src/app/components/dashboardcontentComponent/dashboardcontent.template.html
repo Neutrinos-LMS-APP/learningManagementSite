@@ -20,6 +20,16 @@
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <h3>
+                  Country</h3>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4 style="color:grey;">
+                  {{i.country}}</h4>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h3>
                   Firstname</h3>
               </div>
               <div fxLayout="column wrap" style="color:grey;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -67,7 +77,7 @@
                   {{i.country}}</h4>
               </div>
             </div>
-            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Approved</button><button mat-raised-button color="warn">Reject</button></div>
+            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary" (click)="updateStatus(i._id,&apos;approved&apos;)">Approved</button><button mat-raised-button color="warn" (click)="updateStatus(i._id,&apos;reject&apos;)">Reject</button></div>
           </div>
         </mat-card-content>
 
@@ -145,7 +155,7 @@
                   {{i.country}}</h4>
               </div>
             </div>
-            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Approved</button><button mat-raised-button color="warn">Reject</button></div>
+            <div fxLayout="row wrap" style="width:100%;" fxLayoutGap="1em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary" (click)="updateStatus(i._id,&apos;approved&apos;)">Approved</button><button mat-raised-button color="warn" (click)="updateStatus(i._id,&apos;reject&apos;)">Reject</button></div>
           </div>
         </mat-card-content>
 

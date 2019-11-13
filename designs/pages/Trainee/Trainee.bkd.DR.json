@@ -791,7 +791,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "<h2>{{username}}</h2>",
+                                                    "_value": "{{fname}}",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -1241,7 +1241,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "<h2>{{username}}</h2>",
+                                                    "_value": "{{lname}}",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -1691,7 +1691,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "<h2>{{username}}</h2>",
+                                                    "_value": "{{email}}",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -2141,7 +2141,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "<h2>{{username}}</h2>",
+                                                    "_value": "{{contact}}",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -2591,7 +2591,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "<h2>{{username}}</h2>",
+                                                    "_value": "{{gender}}",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -2747,7 +2747,7 @@
                                     },
                                     {
                                         "_key": "routerLink",
-                                        "_value": "",
+                                        "_value": "/adminDashboard",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
@@ -2911,7 +2911,7 @@
                         },
                         {
                             "_key": "[dataSource]",
-                            "_value": "dataSource",
+                            "_value": "approvedTrainees",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -2948,7 +2948,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Position",
+                                "_value": "firstName",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -2960,7 +2960,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.position}}",
+                                "_value": "{{table.firstName}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -3005,7 +3005,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Name",
+                                "_value": "lastName",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -3017,7 +3017,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.name}}",
+                                "_value": "{{table.lastName}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -3062,7 +3062,7 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Weight",
+                                "_value": "Email",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -3074,64 +3074,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.weight}}",
-                                "_type": "ma",
-                                "_attrDef": "p",
-                                "_useAsLabel": true
-                            },
-                            {
-                                "_key": "columnName",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p",
-                                "_visibility": false
-                            },
-                            {
-                                "_key": "headerclass",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "columnclass",
-                                "_value": "",
-                                "_type": "dav",
-                                "_attrDef": "p"
-                            }
-                        ]
-                    },
-                    "7a60d87f-705c-6f2e-e08b-73576f30a5ff": {
-                        "paletteKey": "ng-table-column",
-                        "parentEditorKey": "22bb1efc-e7f0-7627-a649-9f7891f8c035",
-                        "isAdvancedChildComponent": true,
-                        "designerReference": [
-                            {
-                                "_key": "style",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "class",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "Header Label",
-                                "_value": "Symbol",
-                                "_type": "a",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "matSortHeaderColumn",
-                                "_value": "",
-                                "_type": "a",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "Mapping",
-                                "_value": "{{table.symbol}}",
+                                "_value": "{{table.email}}",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -3276,7 +3219,7 @@
                             },
                             {
                                 "_key": "Mapping",
-                                "_value": "{{table.action}}<button mat-raised-button color=\"primary\" (click)=\"viewbtnclick(table)\">View</button>",
+                                "_value": "{{table.action}}<button mat-raised-button color=\"primary\" (click)=\"viewTraineeInfo(table)\">View</button>",
                                 "_type": "ma",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

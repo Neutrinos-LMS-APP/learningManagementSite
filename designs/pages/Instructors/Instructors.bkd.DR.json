@@ -7726,7 +7726,7 @@
                         },
                         {
                             "_key": "[dataSource]",
-                            "_value": "approvedStatusResult",
+                            "_value": "approvedInstructors",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -7934,9 +7934,6 @@
                                 "_attrDef": "p"
                             },
                             {
-                                "_key": "Header Label",
-                                "_value": "country",
-                                "_type": "a",
                                 "_key": "[length]",
                                 "_value": "5",
                                 "_type": "kv",

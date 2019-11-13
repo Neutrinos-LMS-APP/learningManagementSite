@@ -37,8 +37,8 @@
             }
         ],
         "functionName": "getregisterinstructordata",
-        "x": 126.18750381469727,
-        "y": 55.921875,
+        "x": 110.18750190734863,
+        "y": 43.921875,
         "wires": [
             [
                 "sd_1xzg5aFC8PXUuzml"
@@ -54,8 +54,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "getregisterinstructordatascript",
         "script": "bh.local.apiUrl=\"http://localhost:24483/api/getregisterdata\"",
-        "x": 327.0312557220459,
-        "y": 50.921875,
+        "x": 328.03125381469727,
+        "y": 42.921875,
         "wires": [
             [
                 "sd_K8S2v4G9gstxUKHX"
@@ -107,7 +107,7 @@
         "id": "sd_lTJmgs59ZvXyYlpG",
         "type": "Start",
         "z": "sd_7N5bSYWYw3YCGQPI",
-        "name": "registerinstructoradd",
+        "name": "registerinstructor",
         "outputs": 1,
         "noerr": 0,
         "inputVariables": [
@@ -128,19 +128,11 @@
                     "value": ""
                 },
                 "output": false
-            },
-            {
-                "key": "apiUrl",
-                "defaultValue": {
-                    "type": "str",
-                    "value": ""
-                },
-                "output": false
             }
         ],
-        "functionName": "registerinstructoradd",
-        "x": 127.18750381469727,
-        "y": 194.92188262939453,
+        "functionName": "registerinstructor",
+        "x": 113.18750190734863,
+        "y": 165.9218807220459,
         "wires": [
             [
                 "sd_TutKcQXWPi3KUjIN"
@@ -156,8 +148,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "registerinstructoraddscript",
         "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";",
-        "x": 351.03125762939453,
-        "y": 183.92188262939453,
+        "x": 334.0312557220459,
+        "y": 165.9218807220459,
         "wires": [
             [
                 "sd_HsOD479NzRVnxbaN"
@@ -197,19 +189,20 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 567.0312595367432,
-        "y": 178.9062557220459,
+        "x": 568.0312576293945,
+        "y": 165.90625381469727,
         "wires": [
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "registerinstructorservice"
     },
     {
         "id": "sd_4DuZfZmGweYS1QTd",
         "type": "Start",
         "z": "sd_7N5bSYWYw3YCGQPI",
-        "name": "registerinstructordelete",
+        "name": "deleteInstructor",
         "outputs": 1,
         "noerr": 0,
         "inputVariables": [
@@ -232,9 +225,9 @@
                 "output": false
             }
         ],
-        "functionName": "registerinstructordelete",
-        "x": 127.18750381469727,
-        "y": 314.92186737060547,
+        "functionName": "deleteInstructor",
+        "x": 105.18750190734863,
+        "y": 281.92186737060547,
         "wires": [
             [
                 "sd_RiD03wZBG7fr5xs7"
@@ -250,8 +243,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "instructordeletescript",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?_id=${bh.input.instructorrowId}`",
-        "x": 443.03125,
-        "y": 322.921875,
+        "x": 348.0312547683716,
+        "y": 281.92186737060547,
         "wires": [
             [
                 "sd_0xTQbgS6fvdXxO06"
@@ -290,8 +283,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 584.0312585830688,
-        "y": 300.90624237060547,
+        "x": 584.0312576293945,
+        "y": 277.90624237060547,
         "wires": [
             []
         ],
@@ -326,10 +319,8 @@
             }
         ],
         "functionName": "getbystatus",
-        "x": 232.20001220703125,
-        "y": 441.93750762939453,
-        "x": 213.20000457763672,
-        "y": 574.9375305175781,
+        "x": 93.20001411437988,
+        "y": 505.93754386901855,
         "wires": [
             [
                 "sd_HGySkkvsxYqCReR9"
@@ -345,10 +336,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbystatus?status=${bh.input.status}`",
-        "x": 357.04998779296875,
-        "y": 452.93750762939453,
-        "x": 406.05000591278076,
-        "y": 560.9375305175781,
+        "x": 360.0500297546387,
+        "y": 504.9375419616699,
         "wires": [
             [
                 "sd_7MG4TpTVsxhkVa3u"
@@ -386,10 +375,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 552.050048828125,
-        "y": 459.93750762939453,
-        "x": 591.0500564575195,
-        "y": 560.9375305175781,
+        "x": 599.0500564575195,
+        "y": 497.93754386901855,
         "wires": [
             []
         ],
@@ -432,8 +419,8 @@
             }
         ],
         "functionName": "getRoleAndStatus",
-        "x": 226.20000457763672,
-        "y": 723.5375804901123,
+        "x": 93.20001411437988,
+        "y": 610.5376319885254,
         "wires": [
             [
                 "sd_rJj2lgukW7xbRBE7"
@@ -449,8 +436,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getroelandstatus?role=${bh.input.role}&&status=${bh.input.status}`",
-        "x": 402.05000495910645,
-        "y": 720.5375823974609,
+        "x": 370.0500297546387,
+        "y": 611.5376319885254,
         "wires": [
             [
                 "sd_mQCCOsYlvct8oCw7"
@@ -488,8 +475,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 590.0500574111938,
-        "y": 710.5375823974609,
+        "x": 610.0500564575195,
+        "y": 609.5376319885254,
         "wires": [
             []
         ],
@@ -515,8 +502,8 @@
         ],
         "localVariables": [],
         "functionName": "getById",
-        "x": 216.20000457763672,
-        "y": 447.9375,
+        "x": 99.20001220703125,
+        "y": 394.9374942779541,
         "wires": [
             [
                 "sd_3pfPzkKJnMU6zK5R"
@@ -532,8 +519,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbyid?_id=${bh.input.id}`",
-        "x": 349.0500078201294,
-        "y": 460.5374984741211,
+        "x": 350.0500297546387,
+        "y": 390.5374946594238,
         "wires": [
             [
                 "sd_44INLrTYO7rhd62u"
@@ -571,8 +558,92 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 513.050048828125,
-        "y": 457.5374984741211,
+        "x": 587.0500564575195,
+        "y": 392.5374946594238,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_khTWsI2JUWSd13gj",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "updateByStatus",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "updateObj",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "functionName": "updateByStatus",
+        "x": 91.20001411437988,
+        "y": 713.5375366210938,
+        "wires": [
+            [
+                "sd_avGOOzakr77RlIsI"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_avGOOzakr77RlIsI",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:4000/api/updatestatus`;",
+        "x": 359.05000495910645,
+        "y": 716.5375347137451,
+        "wires": [
+            [
+                "sd_9l82xOaldIHKOhf8"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_9l82xOaldIHKOhf8",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.updateObj",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "updateObj"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 612.0500564575195,
+        "y": 714.5375347137451,
         "wires": [
             []
         ],
