@@ -185,7 +185,7 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "",
+                            "_value": "header",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -455,7 +455,7 @@
                                         },
                                         {
                                             "_key": "imgSrc",
-                                            "_value": "Web/logo.jpeg.png",
+                                            "_value": "Web/Icons/favicon.png",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
@@ -583,7 +583,7 @@
                                     "designerReference": [
                                         {
                                             "_key": "style",
-                                            "_value": " color:#DF252B;    font-size: 35px;    font-weight: 700;    font-family:  'Courier New', Courier, monospace;   font-variant: petite-caps;",
+                                            "_value": " color:#EC1C24;    font-size: 35px;    font-weight: 700;    font-family:  'Courier New', Courier, monospace;   font-variant: petite-caps;",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },

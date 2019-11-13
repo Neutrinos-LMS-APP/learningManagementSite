@@ -1,0 +1,13 @@
+{
+    "appPageId": "3070d158-f5f2-4294-2650-3914d108b219",
+    "appPageName": "card",
+    "componentName": "cardComponent",
+    "selectorName": "bh-card",
+    "htmlFileName": "card.template.html",
+    "tsFileName": "card.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

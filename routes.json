@@ -89,6 +89,10 @@
             "component": "footerComponent"
         },
         {
+            "path": "card",
+            "component": "cardComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/home",
             "pathMatch": "full",

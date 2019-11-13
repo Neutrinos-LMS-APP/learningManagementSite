@@ -1,14 +1,10 @@
 <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <router-outlet></router-outlet>
 </div>
-<div fxLayout="column wrap" style="background-color:grey;height:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <bh-header></bh-header>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div>
-      <bh-header></bh-header>
-    </div>
-  </div>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly start" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="background-color:grey;" fxFlex="100" fxLayoutAlign="space-evenly start" [fxShow]="true" [fxHide]="false">
       <div fxLayout="row wrap" style="margin-top:5em;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
         <div fxLayout="column wrap" style="padding:20px;margin-right:20px;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -19,7 +15,7 @@
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;margin-top:20px;background-color:black;color:white;" routerLink="/traineeregistration">Trainee</button></div>
         </div>
       </div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fx.Hide.xs="true">
         <div class="linedraw">
         </div>
       </div>
@@ -27,9 +23,9 @@
         <form #lform="ngForm">
           <mat-card style="width:100%;">
             <mat-card-content>
-              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/images.jpg" style="width:100px;height:100px;"></div>
+              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.ico.png" style="width:100px;height:100px;"></div>
               <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-                <h3 style="Text-align:center;font-size:18px;">
+                <h3 style="Text-align:center;font-size:25px;color:#EC1C24;">
                   Login In</h3>
               </div>
               <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
@@ -70,9 +66,5 @@
       </div>
     </div>
   </div>
-</div>
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div>
-    <bh-footer></bh-footer>
-  </div>
+  <bh-footer></bh-footer>
 </div>

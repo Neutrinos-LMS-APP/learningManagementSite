@@ -10,11 +10,12 @@ body{
     font-size: 15px;
     line-height: 20px;
     }    
+    .mat-expansion-panel-header{
+        height:50px;
+    }
+    
 
-.mat-card.box.mat-card {
-    padding: 30px;
-     border:1px solid;
-}
+
 .gif{
     height: 300;
     width: 300;
@@ -26,7 +27,7 @@ body{
     border-radius:2px;
     box-shadow: 2px 2px 4px wheat;
     margin-top:35px;
-    
+    margin-bottom:35px;
 }
 
 .class1{
@@ -125,7 +126,7 @@ body{
 /*Homepage login button */
 
 .btn{
-    background-color: #df252b;
+    background-color:#EC1C24;
     color: white;
     font-size:15px;
     font-weight:700;
@@ -141,12 +142,12 @@ body{
  
 }
 .btn1:hover{
-    background-color: red;
+    background-color:#EC1C24;
     color: white;
 }
 
 .readmore{
-    background-color: red;
+    background-color:#EC1C24;
     color:white;
      font-size:15px;
     font-weight:700;
@@ -160,18 +161,11 @@ body{
       
 
 }
-.footer{
-    height:300px;
-    background-color: black;
-}
-.footerbtn{
-    color:white;
-}
 .box{
-    background-color:red;
+    background-color:#EC1C24;
     color:white;
     width:35%;
-    height:250px;
+    height:300px;
     padding:12px;
     text-align: center;
     margin:5px;
@@ -210,4 +204,69 @@ body{
     width:100%;
     height:400px; 
     overflow: auto;
+}
+.box h4{
+    font-size:22px;
+    line-height: 1em;
+}
+.box p{
+    line-height:1.7em;
+    font-size:15px;
+}
+
+.BannerContent{
+    position: absolute;
+    top:25%;
+    left:10%;
+    color:white;
+    width:80%;
+    font-size:25px;
+    font-weight:800;
+    word-spacing:0.1em;
+    letter-spacing:0.1em;
+    line-height:1em; 
+    text-align:justify;
+
+}
+.footer{
+    background-color: black;
+    color:white;
+}
+footer h3{
+    font-size: 25px;
+}
+footer p{
+    font-size:15px;
+    line-height: 1.8em;
+}
+h3{
+    font-size:25px;
+}
+
+/*End of home Page styling*/
+
+
+/*Product page styling */
+
+.product h4{
+    font-size: 20px;
+    color:#EC1C24;
+}
+.product p{
+    font-size: 18px;
+    line-height: 1.8em;
+    margin-top:-20px;
+}
+.Product-Content{
+    padding-left:20px;
+    margin-top: -25px;
+}
+
+/* Media Query */
+
+
+@media only screen and (max-width: 599px)
+{
+.Header{height:580px;}
+.Logo{width:100%;}
 }

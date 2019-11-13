@@ -173,7 +173,7 @@
                     },
                     {
                         "_key": "layoutAlign",
-                        "_value": "space-between",
+                        "_value": "space-evenly",
                         "_type": "a",
                         "_attrDef": "p"
                     },
@@ -221,7 +221,7 @@
                         },
                         {
                             "_key": "fxFlex",
-                            "_value": "33.33",
+                            "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -245,7 +245,7 @@
                         },
                         {
                             "_key": "pLayoutAlign",
-                            "_value": "center",
+                            "_value": "none",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -275,7 +275,7 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "margin-top:5em;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -341,7 +341,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "height: 50px;     width: 150px;",
+                                    "_value": "height: 50px;     width: 200px;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -414,7 +414,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "color:#df252b;font-size:18px;margin-top:12px;",
+                                    "_value": "color:#EC1C24;font-size:18px;margin-top:12px;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -626,7 +626,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "color:white;",
+                                    "_value": "font-size:15px;line-height:1.8em;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -824,7 +824,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "No.156, 3rd Cross End, Ashoka Pillar Rd,<br>\r\n1st Block, Jaya Nagar East,<br>\r\nBengaluru – 560011, Karnataka<br>\r\nPhone: +91 80 4171 8111",
+                                        "_value": "No.156, 3rd Cross End, Ashoka Pillar Rd,<br>\r\n1st Block, Jaya Nagar East,<br>\r\nBengaluru – 560011, Karnataka<br>\r\nPhone: <a style=\" font-size:15px;line-height: 1.8em;color:white;text-decoration:none;\" href=\"tel:+91-80-4171-8111\"> +91 80 4171 8111<br>\r\nEmail: <a style=\" font-size:15px;line-height: 1.8em;color:white;text-decoration:none;\" href=\"mailto:idea@neutrinous.com\">idea@neutrinous.com</a>",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -846,7 +846,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "margin-top: 30px;",
+                            "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -858,7 +858,7 @@
                         },
                         {
                             "_key": "fxFlex",
-                            "_value": "33.33",
+                            "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -882,7 +882,7 @@
                         },
                         {
                             "_key": "pLayoutAlign",
-                            "_value": "stretch",
+                            "_value": "none",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -912,7 +912,7 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "margin-top: 30px;",
+                                "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -942,13 +942,13 @@
                             },
                             {
                                 "_key": "layoutAlign",
-                                "_value": " ",
+                                "_value": "center",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "pLayoutAlign",
-                                "_value": "none",
+                                "_value": "center",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -972,7 +972,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "color:white;  font-size: 20px;",
+                                    "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -1250,7 +1250,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "color:white;  font-size: 25px;",
+                                        "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1448,7 +1448,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "<a style=\"color:white;font-size:14px;text-decoration:none;\" href =\"https://www.neutrinos.co/\">Company</a><br>\r\n<a style=\"color:white;font-size:14px;text-decoration:none;\" href =\"https://www.neutrinos.co/\"> Platform</a><br>\r\n<a style=\"color:white;font-size:14px;text-decoration:none;\" href =\"https://www.neutrinos.co/\">Developers</a><br>\r\n<a style=\"color:white;font-size:14px;text-decoration:none;\" href =\"https://www.neutrinos.co/\"> Community</a><br>",
+                                            "_value": "<a href=\"https://www.neutrinos.co/\" style=\"color:white;font-size:15px;text-decoration:none;line-height:1.8em;\" target=\"_blank\">Company</a><br>\r\n<a href=\"https://www.neutrinos.co/platform-neutrinos/\" style=\"color:white;font-size:15px;text-decoration:none;line-height:1.8em;\" target=\"_blank\"> Platform</a><br>\r\n<a href=\"https://www.neutrinos.co/community/#com-dev\" style=\"color:white;font-size:15px;text-decoration:none;line-height:1.8em;\" target=\"_blank\">Developers</a><br>\r\n<a href=\"https://www.neutrinos.co/community/#com-par\" style=\"color:white;font-size:15px;text-decoration:none;line-height:1.8em;\" target=\"_blank\"> Partners</a>\r\n\r\n",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -1471,7 +1471,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "margin-top:30px;",
+                            "_value": "margin-top:55px;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1483,7 +1483,7 @@
                         },
                         {
                             "_key": "fxFlex",
-                            "_value": "33.33",
+                            "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1501,13 +1501,13 @@
                         },
                         {
                             "_key": "layoutAlign",
-                            "_value": "start",
+                            "_value": "center",
                             "_type": "a",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "pLayoutAlign",
-                            "_value": "stretch",
+                            "_value": "none",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -1537,7 +1537,7 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "margin-top: 30px;",
+                                "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -1567,13 +1567,13 @@
                             },
                             {
                                 "_key": "layoutAlign",
-                                "_value": "start",
+                                "_value": " ",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "pLayoutAlign",
-                                "_value": "stretch",
+                                "_value": "center",
                                 "_type": "a",
                                 "_attrDef": "p"
                             },
@@ -1597,7 +1597,7 @@
                             "designerReference": [
                                 {
                                     "_key": "style",
-                                    "_value": "color:white;  font-size: 20px;",
+                                    "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
