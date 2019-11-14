@@ -41,9 +41,7 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     dataSource;
     //storing the selcted row information
     rowData;
-    pageSize;
-    
-    
+    pageSize;  
     
     constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();

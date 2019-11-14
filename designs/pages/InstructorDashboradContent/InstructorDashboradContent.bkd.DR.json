@@ -1133,7 +1133,7 @@
                     },
                     {
                         "_key": "*ngFor",
-                        "_value": "let i of columarray",
+                        "_value": "let i of courseCurrentStatus",
                         "_type": "kv",
                         "_attrDef": "c"
                     }

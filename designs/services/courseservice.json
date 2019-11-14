@@ -248,7 +248,7 @@
         "type": "Script",
         "z": "sd_4RHbormnXeFdwnNb",
         "name": "coursedeletescript",
-        "script": "bh.local.apiUrl=`http://localhost:24483/api/deletecourse?${bh.input.courserowId}`",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/deletecourse?_id=${bh.input.courserowId}`",
         "x": 345.84375,
         "y": 288.8125,
         "wires": [
@@ -333,8 +333,8 @@
             }
         ],
         "functionName": "getLoginApproved",
-        "x": 153.1875,
-        "y": 415.921875,
+        "x": 185.18750190734863,
+        "y": 383.9218921661377,
         "wires": [
             [
                 "sd_Bg3rAPfqFoiUAmPD"
@@ -350,8 +350,8 @@
         "z": "sd_4RHbormnXeFdwnNb",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getloginapproved?email=${bh.input.username}&&status=${bh.input.status}`",
-        "x": 316.03125,
-        "y": 417.921875,
+        "x": 358.0312547683716,
+        "y": 378.9218921661377,
         "wires": [
             [
                 "sd_10JScst1osFqA05X"
@@ -389,8 +389,100 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 469.03125,
-        "y": 417.90625,
+        "x": 528.0312576293945,
+        "y": 386.906268119812,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_COMOvO3wuaTbkbkj",
+        "type": "Start",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "getCourseByStatus",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "status",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "getCourseByStatus",
+        "x": 184.20001220703125,
+        "y": 497.73751068115234,
+        "wires": [
+            [
+                "sd_6nvrTVgE3mHO4O0w"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "courseservice"
+    },
+    {
+        "id": "sd_6nvrTVgE3mHO4O0w",
+        "type": "Script",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "script": "bh.local.apiUrl = `http://localhost:24483/api/getcoursebystatus?status=${bh.input.status}`;",
+        "x": 315.04998779296875,
+        "y": 492.53751373291016,
+        "wires": [
+            [
+                "sd_SArVrHqHIIdQiCyn"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_SArVrHqHIIdQiCyn",
+        "type": "HttpRequest",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 506.0500068664551,
+        "y": 494.5374946594238,
         "wires": [
             []
         ],

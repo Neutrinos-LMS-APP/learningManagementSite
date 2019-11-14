@@ -131,6 +131,21 @@ export class courseservice {
       throw e;
     }
   }
+  public async getCourseByStatus(status = undefined, ...others) {
+    try {
+      let bh = { input: { status: status }, local: { result: undefined } };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_6nvrTVgE3mHO4O0w(bh);
+      //appendnew_next_getCourseByStatus
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_courseservice_Start
 
   async sd_7owje9LqzwiKvJcY(bh) {
@@ -193,7 +208,7 @@ export class courseservice {
   }
   async sd_y8ht8CmV0a6gFEeU(bh) {
     try {
-      bh.local.apiUrl = `http://localhost:24483/api/deletecourse?${bh.input.courserowId}`;
+      bh.local.apiUrl = `http://localhost:24483/api/deletecourse?_id=${bh.input.courserowId}`;
 
       bh = await this.sd_NCOs2Tf4QbUDh6zF(bh);
       //appendnew_next_sd_y8ht8CmV0a6gFEeU
@@ -244,6 +259,35 @@ export class courseservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_10JScst1osFqA05X
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_6nvrTVgE3mHO4O0w(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getcoursebystatus?status=${bh.input.status}`;
+
+      bh = await this.sd_SArVrHqHIIdQiCyn(bh);
+      //appendnew_next_sd_6nvrTVgE3mHO4O0w
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_SArVrHqHIIdQiCyn(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_SArVrHqHIIdQiCyn
       return bh;
     } catch (e) {
       throw e;
