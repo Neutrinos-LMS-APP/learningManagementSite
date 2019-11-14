@@ -84,6 +84,12 @@
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"
+            },
+            {
+                "name": "registercourses",
+                "fieldType": 2,
+                "isArray": true,
+                "type": "string"
             }
         ]
     },

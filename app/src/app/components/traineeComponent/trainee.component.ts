@@ -59,7 +59,7 @@ export class traineeComponent extends NBaseComponent implements OnInit {
     }
 
 
-   fname;lname;email;contact;gender;country;dob;pass;
+   fname;lname;email1;contact;gender;country;dob;pass;
     viewbtnclick(selectedRowInfo)
     {
         this.displaytable=false;

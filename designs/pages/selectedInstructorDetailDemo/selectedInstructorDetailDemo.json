@@ -1,0 +1,13 @@
+{
+    "appPageId": "2d88b1f1-020f-f6bd-af98-a11999972643",
+    "appPageName": "selectedInstructorDetailDemo",
+    "componentName": "selectedinstructordetaildemoComponent",
+    "selectorName": "bh-selectedinstructordetaildemo",
+    "htmlFileName": "selectedinstructordetaildemo.template.html",
+    "tsFileName": "selectedinstructordetaildemo.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

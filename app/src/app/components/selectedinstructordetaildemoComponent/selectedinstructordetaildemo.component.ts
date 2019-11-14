@@ -5,10 +5,6 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import {selectedinstructordetaildemoComponent} from '../selectedinstructordetaildemoComponent/selectedinstructordetaildemo.component';
-import {selectedtraineedemodetailsComponent} from '../selectedtraineedemodetailsComponent/selectedtraineedemodetails.component';
-
 
 
 /**
@@ -23,56 +19,26 @@ import {selectedtraineedemodetailsComponent} from '../selectedtraineedemodetails
  */
 
 @Component({
-    selector: 'bh-dashboardcontent',
-    templateUrl: './dashboardcontent.template.html'
+    selector: 'bh-selectedinstructordetaildemo',
+    templateUrl: './selectedinstructordetaildemo.template.html'
 })
 
-export class dashboardcontentComponent extends NBaseComponent implements OnInit {
+export class selectedinstructordetaildemoComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    cardlenght;
-    instructorandrole=[];
-    traineeandrole=[];
-    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice,private dialog1:MatDialog,private dialog2:MatDialog) {
+
+     instructorandrole=[];
+   
+    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
-       
-     this.getRoleAndStatus();
-   
+        this.getRoleAndStatus();
     }
-
-    openDialogInstructor() {
-    const dialogRef = this.dialog1.open(selectedinstructordetaildemoComponent, {
-      width: '550px',
-      height:'500px',
-      data:'hello' 
-    });
-    
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.ngOnInit();
-    });
-  }
-
-  openDialogTrainee() {
-    const dialogRef = this.dialog1.open(selectedtraineedemodetailsComponent, {
-      width: '550px',
-      height:'500px',
-      data:'hello' 
-    });
-    
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.ngOnInit();
-    });
-  }
-    //getting data by status need to pass the status value
+      //getting data by status need to pass the status value
     async getRoleAndStatus(){
      this.instructorandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','instructor')).local.result);
-     this.traineeandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','trainee')).local.result);
    }
    
    convertObjtoArr(obj) {
@@ -83,6 +49,7 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});
          this.getRoleAndStatus();
    }
+
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

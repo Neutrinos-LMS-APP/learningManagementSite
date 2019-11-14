@@ -162,7 +162,7 @@ export class loginformComponent extends NBaseComponent implements OnInit {
        console.log(value.password);
        if(value.userName=='admin@gmail.com'&& value.password=='admin123')
        {
-           this.router.navigate(['/adminDashboard']);
+           this.router.navigate(['/adminDashboard/dashboardcontent']);
        }
        else{
            if(this.result.role=='instructor'){

@@ -6,3 +6,4 @@ export { logindetails } from './logindetails.model';
 
 export { instructordetails } from './instructordetails.model';
 
+

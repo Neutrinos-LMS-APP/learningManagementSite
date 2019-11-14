@@ -14,6 +14,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-selectedtraineedemodetailsComponent
+import { selectedtraineedemodetailsComponent } from '../components/selectedtraineedemodetailsComponent/selectedtraineedemodetails.component';
+//CORE_REFERENCE_IMPORT-selectedinstructordetaildemoComponent
+import { selectedinstructordetaildemoComponent } from '../components/selectedinstructordetaildemoComponent/selectedinstructordetaildemo.component';
 //CORE_REFERENCE_IMPORT-cardComponent
 import { cardComponent } from '../components/cardComponent/card.component';
 //CORE_REFERENCE_IMPORT-coursedetailComponent
@@ -91,6 +95,8 @@ export const appBootstrap: any = [
 */
 export const appEntryComponents: any = [
   //CORE_REFERENCE_PUSH_TO_ENTRY_ARRAY
+  selectedinstructordetaildemoComponent,
+  selectedtraineedemodetailsComponent
 ];
 
 /**
@@ -103,6 +109,10 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedtraineedemodetailsComponent
+selectedtraineedemodetailsComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedinstructordetaildemoComponent
+selectedinstructordetaildemoComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-cardComponent
 cardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-coursedetailComponent
@@ -186,5 +196,5 @@ export const appRoutes = [{path: 'instructorregistration', component: instructor
 children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: 'dashboardcontent', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
-children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'card', component: cardComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

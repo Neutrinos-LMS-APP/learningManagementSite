@@ -593,33 +593,32 @@
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }
-                                        ],
-                                        "b8303d3e-a1c0-c5bc-30b3-b0bb22116d74": {
-                                            "paletteKey": "html-editor",
-                                            "parentEditorKey": "4d3a6dfc-b030-015e-edb7-dc78e1e585c4",
-                                            "isAdvancedChildComponent": true,
-                                            "designerReference": [
-                                                {
-                                                    "_key": "style",
-                                                    "_value": "",
-                                                    "_type": "kv",
-                                                    "_attrDef": "p"
-                                                },
-                                                {
-                                                    "_key": "class",
-                                                    "_value": "",
-                                                    "_type": "kv",
-                                                    "_attrDef": "p"
-                                                },
-                                                {
-                                                    "_key": "html",
-                                                    "_value": "{{fname}}",
-                                                    "_type": "a",
-                                                    "_attrDef": "p"
-                                                }
-                                            ]
-                                        }
-                                        
+                                        ]
+                                    },
+                                    "0deac8ac-6cdb-a2fd-256e-7f635c5ffad8": {
+                                        "paletteKey": "html-editor",
+                                        "parentEditorKey": "12d162d8-108c-8067-132d-28859ca58586",
+                                        "isAdvancedChildComponent": true,
+                                        "designerReference": [
+                                            {
+                                                "_key": "style",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "html",
+                                                "_value": "",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            }
+                                        ]
                                     }
                                 }
                             }
@@ -1010,8 +1009,6 @@
                                                     "_attrDef": "p"
                                                 },
                                                 {
-                                                    "_key": "html",
-                                                    "_value": "{{lname}}",
                                                     "_key": "htmlElement",
                                                     "_value": "h3",
                                                     "_type": "dav",
@@ -6344,13 +6341,6 @@
                                                     "_visibility": false
                                                 },
                                                 {
-                                                    "_key": "html",
-                                                    "_value": "{{email}}",
-                                                    "_type": "a",
-                                                    "_attrDef": "p",
-                                                    "_visibility": false
-                                                },
-                                                {
                                                     "_key": "(audioended)",
                                                     "_value": "",
                                                     "_type": "kv",
@@ -7214,12 +7204,6 @@
                                                     "_visibility": false
                                                 },
                                                 {
-                                                    "_key": "html",
-                                                    "_value": "{{contact}}",
-                                                    "_type": "a",
-                                                    "_attrDef": "p"
-                                                },
-                                                {
                                                     "_key": "(audioended)",
                                                     "_value": "",
                                                     "_type": "kv",
@@ -7538,33 +7522,7 @@
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }
-                                        ],
-                                        "02e108cb-9b40-1918-073f-ccc1ba89bf5f": {
-                                            "paletteKey": "html-editor",
-                                            "parentEditorKey": "259cc639-6b83-a25f-872f-f57bf1f04cc9",
-                                            "isAdvancedChildComponent": true,
-                                            "designerReference": [
-                                                {
-                                                    "_key": "style",
-                                                    "_value": "",
-                                                    "_type": "kv",
-                                                    "_attrDef": "p"
-                                                },
-                                                {
-                                                    "_key": "class",
-                                                    "_value": "",
-                                                    "_type": "kv",
-                                                    "_attrDef": "p"
-                                                },
-                                                {
-                                                    "_key": "html",
-                                                    "_value": "{{gender}}",
-                                                    "_type": "a",
-                                                    "_attrDef": "p"
-                                                }
-                                            ]
-                                        }
-                                        
+                                        ]
                                     }
                                 }
                             }
@@ -7698,7 +7656,7 @@
                             },
                             "1e6b975f-76c3-0df8-c7fd-f2f9efe1161d": {
                                 "paletteKey": "NG-button",
-                                "parentEditorKey": "8ba27e6e-5d2f-1b0c-4261-345b5cf607a7",
+                                "parentEditorKey": "1715a57a-bdec-d77b-0071-73ac9c9777c0",
                                 "designerReference": [
                                     {
                                         "_key": "style",
@@ -7891,7 +7849,6 @@
                             },
                             {
                                 "_key": "Header Label",
-                               
                                 "_value": "First Name",
                                 "_type": "a",
                                 "_attrDef": "p"
@@ -7949,7 +7906,6 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "lastName",
                                 "_value": "Lastname",
                                 "_type": "a",
                                 "_attrDef": "p"
@@ -8007,8 +7963,6 @@
                             },
                             {
                                 "_key": "Header Label",
-                                "_value": "Email",
-                                "_type": "a",
                                 "_value": "Country",
                                 "_type": "a",
                                 "_attrDef": "p"
@@ -8081,23 +8035,23 @@
                                 "_key": "Mapping",
                                 "_value": "{{table.email}}",
                                 "_type": "ma",
-                                "_attrDef": "p",
+                                "_attrDef": "c",
                                 "_useAsLabel": true
                             },
                             {
                                 "_key": "columnName",
                                 "_value": "",
                                 "_type": "dav",
-                                "_attrDef": "p",
+                                "_attrDef": "c",
                                 "_visibility": false
                             },
                             {
                                 "_key": "headerclass",
                                 "_value": "",
                                 "_type": "dav",
-                                "_attrDef": "p"},
-                                {
-
+                                "_attrDef": "c"
+                            },
+                            {
                                 "_key": "[pageSizeOptions]",
                                 "_value": "[5, 10, 25, 100]",
                                 "_type": "kv",

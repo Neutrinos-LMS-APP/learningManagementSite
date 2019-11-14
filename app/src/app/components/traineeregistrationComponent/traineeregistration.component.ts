@@ -38,6 +38,7 @@ export class traineeregistrationComponent extends NBaseComponent implements OnIn
     }
     //stroing registration data into db,after registration redirecting to login page
     put(traineeInfo){
+        console.log(traineeInfo);
         this.registerServObj.registerinstructor(traineeInfo);
         this.snackbarService.openSnackBar('Registered successfully');
         this.router.navigate(['/login']);

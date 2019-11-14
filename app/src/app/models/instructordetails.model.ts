@@ -32,4 +32,7 @@ export class instructordetails {
   @JsonProperty('status', String, true)
   public status: string = undefined;
 
+  @JsonProperty('registercourses', [String], true)
+  public registercourses: string[] = [];
+
 }
