@@ -7726,7 +7726,7 @@
                         },
                         {
                             "_key": "[dataSource]",
-                            "_value": "approvedInstructors",
+                            "_value": "dataSource",
                             "_type": "kv",
                             "_attrDef": "p"
                         },

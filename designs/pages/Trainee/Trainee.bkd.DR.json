@@ -7648,7 +7648,7 @@
                                     },
                                     {
                                         "_key": "routerLink",
-                                        "_value": "/adminDashboard",
+                                        "_value": "",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }
@@ -7719,7 +7719,11 @@
                     }
                 }
             },
+<<<<<<< Updated upstream
             "176b2fbd-9ac0-6611-f508-6970d05a3497": {
+=======
+            "3e88d42a-b5ae-2a11-10bc-6d9c4ff56f2c": {
+>>>>>>> Stashed changes
                 "paletteKey": "FlexLayoutCol",
                 "parentEditorKey": "ddbef0d5-cd9b-1d35-bdae-c53384bb8432",
                 "designerReference": [
@@ -7786,9 +7790,15 @@
                         "_attrDef": "p"
                     }
                 ],
+<<<<<<< Updated upstream
                 "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba": {
                     "paletteKey": "ng-table",
                     "parentEditorKey": "176b2fbd-9ac0-6611-f508-6970d05a3497",
+=======
+                "85f75ffe-8b58-24e5-7055-f352208c695a": {
+                    "paletteKey": "ng-table",
+                    "parentEditorKey": "3e88d42a-b5ae-2a11-10bc-6d9c4ff56f2c",
+>>>>>>> Stashed changes
                     "isAdvancedComponent": true,
                     "designerReference": [
                         {
@@ -7812,7 +7822,7 @@
                         },
                         {
                             "_key": "[dataSource]",
-                            "_value": "approvedTrainees",
+                            "_value": "dataSource",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -7830,9 +7840,15 @@
                             "_visibility": true
                         }
                     ],
+<<<<<<< Updated upstream
                     "ed4257b4-4ac9-8ebb-0f2b-f45294788685": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "f5c53324-f434-7c1b-b2d5-47e9a3ba77ac": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {
@@ -7887,9 +7903,15 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "7b28a985-efbc-d20a-5ede-5d36dd6c2bbe": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "400c4ee6-9dcb-aa72-3fd2-6c5d13e4345d": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {
@@ -7944,9 +7966,15 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "11ed1927-b617-731d-ffaa-37c610bd556f": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "54ae2bf7-6ee8-2896-ebdb-c1c0a3681ce6": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {
@@ -8001,9 +8029,15 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "5746e461-479d-c826-fcbf-c0319e8aecc8": {
                         "paletteKey": "ng-table-paginator",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "9e1e4501-470b-4d79-de30-b33af2d2f44b": {
+                        "paletteKey": "ng-table-paginator",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedComponent": true,
                         "advancedSiblingType": "after",
                         "designerReference": [
@@ -8065,6 +8099,7 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "6c7d7b80-2e65-b531-5928-4b225dc5ecec": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
@@ -8125,6 +8160,11 @@
                     "64f07f1d-092e-c68d-85e2-d749a743ed8f": {
                         "paletteKey": "ng-table-filter",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "944c8efd-dc89-817b-2f05-60b089dba0a2": {
+                        "paletteKey": "ng-table-filter",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedComponent": true,
                         "advancedSiblingType": "before",
                         "designerReference": [
@@ -8166,9 +8206,15 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "b48e283a-3849-aa1c-ce28-39b335c030e9": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "252eafac-f53d-80a2-f2d6-f9e03c585a3a": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {
@@ -8223,9 +8269,15 @@
                             }
                         ]
                     },
+<<<<<<< Updated upstream
                     "e355e274-0117-d3a8-f198-6485e3f3029a": {
                         "paletteKey": "ng-table-column",
                         "parentEditorKey": "9c686dc3-bcb7-95ce-c9b9-8e44a5b766ba",
+=======
+                    "c2fa14b6-8c83-3631-ff14-6bbbab12395c": {
+                        "paletteKey": "ng-table-column",
+                        "parentEditorKey": "85f75ffe-8b58-24e5-7055-f352208c695a",
+>>>>>>> Stashed changes
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {

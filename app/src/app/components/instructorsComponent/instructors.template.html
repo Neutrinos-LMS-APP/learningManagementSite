@@ -159,7 +159,7 @@
             </mat-form-field>
           </div>
         </div>
-        <table mat-table [dataSource]="approvedInstructors" class="table-width-fix">
+        <table mat-table [dataSource]="dataSource" class="table-width-fix">
           <tr mat-header-row *matHeaderRowDef="[&apos;firstName&apos;,&apos;lastName&apos;,&apos;country&apos;,&apos;email&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
           <tr mat-row *matRowDef="let row; columns: [&apos;firstName&apos;,&apos;lastName&apos;,&apos;country&apos;,&apos;email&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
 
