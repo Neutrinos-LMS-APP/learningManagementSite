@@ -1,18 +1,16 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <bh-header></bh-header>
+  <bh-header style="margin-bottom:0px;"></bh-header>
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <mat-card style="padding:0px;margin:30px 0px;color:white;" class="card_header">
+    <mat-card style="padding:0px;margin:2em;color:white;" class="card_header">
       <mat-card-content>
         <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
           <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" style="width:25%;height:10em;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-              <mat-icon style="font-size:80px; margin-top:0.3em;color:black;" class="cardbooks">book</mat-icon>
-            </div>
+            <div fxLayout="column wrap" style="width:25%;height:10em;background-color:black;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/logo1.png"></div>
             <div fxLayout="column wrap" style="width:75%;background-color:black;padding-left:3em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <h3>
                 Professional Certificate in</h3>
               <h1>
-                Project Heading</h1>
+                {{coursename}}</h1>
             </div>
           </div>
         </div>
@@ -25,14 +23,12 @@
         <h3>
           Learning outcomes</h3>
         <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <h3 *ngFor="let data of demo" style="width:100%;" class="spaceallow">
+          <div fxLayout="column wrap" style="font-size:22px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><label *ngFor="let outcome of  outcomes" style="width:100%;margin:0.3em;" class="spaceallow">
 
-              * {{data}}
+              <mat-icon aria-hidden="false" aria-label="Example home icon" style="color:red;">label_important</mat-icon>{{outcome}}
 
 
-            </h3>
-          </div>
+            </label></div>
         </div>
       </div>
       <div fxLayout="column wrap" style="width:30%;padding-top:5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -43,8 +39,8 @@
           <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
             <h2 style="margin-bottom:0px;">
               Instructor-led</h2>
-            <h3 style="margin:0px;color:grey;">
-              Instructor Name</h3>
+            <h3 style="margin:0.3px;color:grey;font-size:22px;">
+              {{courseauthor}}</h3>
           </div>
         </div>
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -54,8 +50,8 @@
           <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
             <h2 style="margin-bottom:0px;">
               Duration</h2>
-            <h3 style="margin:0px;color:grey;">
-              Instructor Name</h3>
+            <h3 style="margin:0px;color:grey;font-size:22px;margin:0.3em;">
+              {{courseduration}}</h3>
           </div>
         </div>
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -64,12 +60,12 @@
           </div>
           <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
             <h2 style="margin-bottom:0px;">
-              Price</h2>
-            <h3 style="margin:0px;color:grey;">
-              Instructor Name</h3>
+              Course Price</h2>
+            <h3 style="margin:0.3em;color:grey;font-size:22px;">
+              {{courseprice}}</h3>
           </div>
         </div>
-        <div fxLayout="row wrap" style="margin-top:2em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="width:70%;" class="btn">Buy Now</button></div>
+        <div fxLayout="row wrap" style="margin-top:2em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="width:70%;" class="btn" (click)="buyNow()">Buy Now</button></div>
       </div>
     </div>
   </div>
@@ -78,12 +74,12 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
 
-          <mat-panel-title>
+          <mat-panel-title style="font-size:24px;font-weight:bold;">
             Program Overview
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <mat-panel-description class="spaceallow">
-          {{daata}}
+        <mat-panel-description style="font-style:18px;width:800px;line-height:2em;" class="spaceallow1">
+          {{coursedescription}}
         </mat-panel-description>
       </mat-expansion-panel>
     </mat-accordion>

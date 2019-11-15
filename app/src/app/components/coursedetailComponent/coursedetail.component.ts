@@ -4,6 +4,9 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import{courseservice} from '../../sd-services/courseservice';
+import { Router } from '@angular/router';
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 
 /**
  * Service import Example :
@@ -23,95 +26,51 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class coursedetailComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    demo=['demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1'];
-    daata="demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1";
-    constructor(private bdms: NDataModelService) {
+    courseId;
+    courseData;
+     outcomes;
+     userName;
+     userId;
+     coursename;coursedescription;courseauthor;courseduration;courseprice;
+     
+    //demo=['demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1'];
+   // daata="demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1";
+    constructor(private bdms: NDataModelService,private courseServiceObj:courseservice,public router:Router,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
+       
     }
 
     ngOnInit() {
+       this.courseId = localStorage.courseId;
+       this. userName = sessionStorage.username;
+       this.userId = sessionStorage.userid;
+        this.getCourseById(this.courseId);
+        
+    }
+    async getCourseById(id){
+        
+      this.courseData = (await this.courseServiceObj.getCourseById(id)).local.result;
+        this.outcomes=[this.courseData.learning_outcome_1,this.courseData.learning_outcome_2,this.courseData.learning_outcome_3,this.courseData.learning_outcome_4,this.courseData.learning_outcome_5,this.courseData.learning_outcome_6];
+      console.log(this.outcomes);
 
+      this.coursename=this.courseData.courseName;
+      this.coursedescription=this.courseData.coursedescription;
+      this.courseauthor=this.courseData.createdby;
+      this.courseduration=this.courseData.duration;
+      this.courseprice=this.courseData.price;
+        
     }
 
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            });
+buyNow(){
+    if(this.userName == undefined){
+         this.router.navigate(['/login']);
     }
-
-    getById(dataModelName, dataModelId) {
-        this.mm.getById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            })
+    else if(this.courseId !==null ,this.userId !==undefined ){
+        this.registerServiceObj.updateCourses({'_id':this.userId,"coursesid":this.courseId});
+        this.router.navigate(['/allcourses']);
     }
-
-    put(dataModelName, dataModelObject) {
-        this.mm.put(dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    validatePut(formObj, dataModelName, dataModelObject) {
-        this.mm.validatePut(formObj, dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    update(dataModelName, update, filter, options) {
-        const updateObject = {
-            update: update,
-            filter: filter,
-            options: options
-        };
-        this.mm.update(dataModelName, updateObject,
-            result => {
-                //  On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    delete (dataModelName, filter) {
-        this.mm.delete(dataModelName, filter,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    deleteById(dataModelName, dataModelId) {
-        this.mm.deleteById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    updateById(dataModelName, dataModelId, dataModelObj) {
-        this.mm.updateById(dataModelName, dataModelId, dataModelObj,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
+    
+}
 
 }

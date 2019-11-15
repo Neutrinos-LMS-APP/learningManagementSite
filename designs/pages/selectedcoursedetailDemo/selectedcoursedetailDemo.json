@@ -1,0 +1,13 @@
+{
+    "appPageId": "5ee612db-9196-8538-1d11-93bef2c8941d",
+    "appPageName": "selectedcoursedetailDemo",
+    "componentName": "selectedcoursedetaildemoComponent",
+    "selectorName": "bh-selectedcoursedetaildemo",
+    "htmlFileName": "selectedcoursedetaildemo.template.html",
+    "tsFileName": "selectedcoursedetaildemo.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

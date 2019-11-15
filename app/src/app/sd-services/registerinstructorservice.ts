@@ -148,13 +148,13 @@ export class registerinstructorservice {
   }
   public async getById(id = undefined, ...others) {
     try {
-      let bh = { input: { id: id }, local: {} };
+      let bh = { input: { id: id }, local: { result: undefined } };
       bh = this.__constructDefault(bh);
 
       bh = await this.sd_3pfPzkKJnMU6zK5R(bh);
       //appendnew_next_getById
       //Start formatting output variables
-      let outputVariables = { input: {}, local: {} };
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
       return outputVariables;
     } catch (e) {
@@ -170,6 +170,24 @@ export class registerinstructorservice {
       //appendnew_next_updateByStatus
       //Start formatting output variables
       let outputVariables = { input: {}, local: {} };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async updateCourses(coursesObj = undefined, ...others) {
+    try {
+      let bh = {
+        input: { coursesObj: coursesObj },
+        local: { result: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_zdQrq3fr4Zg56WGv(bh);
+      //appendnew_next_updateCourses
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
       return outputVariables;
     } catch (e) {
@@ -193,7 +211,7 @@ export class registerinstructorservice {
     try {
       let requestOptions = {
         url: bh.local.apiUrl,
-        method: 'post',
+        method: 'get',
         responseType: 'json',
         reportProgress: undefined,
         headers: {},
@@ -376,6 +394,35 @@ export class registerinstructorservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_9l82xOaldIHKOhf8
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_zdQrq3fr4Zg56WGv(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:4000/api/updatecourses`;
+
+      bh = await this.sd_1mbByqJ8pkVDcTii(bh);
+      //appendnew_next_sd_zdQrq3fr4Zg56WGv
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_1mbByqJ8pkVDcTii(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.coursesObj
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_1mbByqJ8pkVDcTii
       return bh;
     } catch (e) {
       throw e;

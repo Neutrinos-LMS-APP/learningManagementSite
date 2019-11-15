@@ -23,18 +23,31 @@ import{courseservice} from '../../sd-services/courseservice';
 
 export class instructordashboradcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-  //  columarray=['a','b','c'];
+  //columarray=['a','b','c','d','e'];
    createdby = localStorage.getItem('username');
   courseCurrentStatus=[];
    defaultCourses=[];
-   
+   showcoursedetails;
     constructor(private bdms: NDataModelService,private courseServiceObj:courseservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-          this.getCourseByStatus('null');
+          this.getCourseByStatus('approved');
+   this.showcoursedetails=true;
+          
+    }
+    selectedcourse;
+    selectedcourseDetails(course){
+        this.showcoursedetails=false;
+        
+        this.selectedcourse=course;
+        console.log(this.selectedcourse);
+    }
+    hideCourseDetails()
+    {
+         this.showcoursedetails=true;
     }
     async getCourseByStatus(status){
         console.log(this.createdby);

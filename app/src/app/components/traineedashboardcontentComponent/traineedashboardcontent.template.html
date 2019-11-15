@@ -1,9 +1,95 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="row " style="overflow-x:auto;width:80%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <mat-card *ngFor="let i of cardlenght" style="width:100px;height:100px;margin-right:20px;">
-      <mat-card-title>Card Title</mat-card-title>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="height:5em;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" style="margin:1em;margin-left:3em;" fxFlex="100" fxLayoutGap="1.2em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:black;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <h4>
+              total Registered <br>Courses<label style="margin-left:5em;font-size:2em;">2</label></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="margin-left:3em;margin-top:2em;" fxFlex="98" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <h1>
+          My Courses</h1>
+        <div>
+          <hr color="darkgray" size="1">
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" style="margin-top:1em;margin-left:3em;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="height:460px;overflow-y:auto;" fxFlex="21" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" style="width:4em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-card *ngFor="let course of  coursesInfoArray" style="margin-bottom:1em;padding:2em;background-color:black;color:white;font-weight:500;box-shadow:4px 4px  9px grey;">
+            <mat-card-title style="color:" align="center">Course</mat-card-title>
 
-      <mat-card-subtitle>Card Sub-Title</mat-card-subtitle>
-    </mat-card>
+            <mat-card-content>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                  <mat-icon style="color:#df252b;font-size:4em;margin-right:0.6em;">person</mat-icon>
+                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="selectedcourseDetails(course)">ViewCourse</button>
+              </div>
+            </mat-card-content>
+
+            <mat-card-actions></mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      <div fxLayout="column wrap" style="height:auto;" fxFlex="75" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" style="padding:3em;margin-left:5.5em;box-shadow:1px 1px 6px grey;" fxFlex="75" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="showcoursedetails" *ngIf="!showcoursedetails">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <h3>
+              Selected Course Details</h3>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+                    Course Name</label></div>
+                <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                  <div class="spaceallow">
+                    {{coursename}}</div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+                    Duration</label></div>
+                <div fxLayout="column wrap" class="spaceallow" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                  <div>
+                    {{duration}}</div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+                    Description</label></div>
+                <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                  <div class="spaceallow">
+                    {{coursedescription}}</div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+                    Price</label></div>
+                <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                  <div class="spaceallow">
+                    {{price}}</div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="color:white;" class="btn" (click)="hideCourseDetails()">Ok</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

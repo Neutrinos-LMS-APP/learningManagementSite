@@ -77,7 +77,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "margin-bottom:0px;",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -169,7 +169,7 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "padding:0px;margin:30px 0px;color:white;",
+                        "_value": "padding:0px;margin:2em;color:white;",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -355,7 +355,7 @@
                                     },
                                     {
                                         "_key": "style",
-                                        "_value": "width:25%;height:10em;",
+                                        "_value": "width:25%;height:10em;background-color:black;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -385,7 +385,7 @@
                                     },
                                     {
                                         "_key": "layoutAlign",
-                                        "_value": "start",
+                                        "_value": "center",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     },
@@ -408,37 +408,79 @@
                                         "_attrDef": "p"
                                     }
                                 ],
-                                "7776daee-cd04-58d7-4e9b-2da48a002c67": {
-                                    "paletteKey": "NG-icon",
+                                "98c3d81d-5813-610d-5b2f-a17f2040ea37": {
+                                    "paletteKey": "NG-image",
                                     "parentEditorKey": "2dcd86e0-e684-4627-fe1c-088449dcd7e5",
                                     "designerReference": [
                                         {
-                                            "_key": "style",
-                                            "_value": "font-size:80px; margin-top:0.3em;color:black;",
+                                            "_key": "componentLabel",
+                                            "_value": "Image",
                                             "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "cardbooks",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "IconName",
-                                            "_value": "book",
-                                            "_type": "a",
                                             "_attrDef": "p",
                                             "_useAsLabel": true
                                         },
                                         {
-                                            "_key": "[inline]",
+                                            "_key": "style",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "color",
+                                            "_key": "class",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "imgSrc",
+                                            "_value": "Web/logo1.png",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "alt",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[src]",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "imgSecure",
+                                            "_value": "",
+                                            "_type": "a",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[collectionName]",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[imageFilter]",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "width",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "srcset",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "sizes",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
@@ -929,7 +971,7 @@
                                             },
                                             {
                                                 "_key": "html",
-                                                "_value": "Project Heading",
+                                                "_value": "{{coursename}}",
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }
@@ -1431,7 +1473,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "",
+                                    "_value": "font-size:22px;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -1461,13 +1503,13 @@
                                 },
                                 {
                                     "_key": "layoutAlign",
-                                    "_value": "start",
+                                    "_value": "center",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 },
                                 {
                                     "_key": "pLayoutAlign",
-                                    "_value": "stretch",
+                                    "_value": "center",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 },
@@ -1491,7 +1533,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "width:100%;",
+                                        "_value": "width:100%;margin:0.3em;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1503,14 +1545,14 @@
                                     },
                                     {
                                         "_key": "htmlElement",
-                                        "_value": "h3",
+                                        "_value": "label",
                                         "_type": "dav",
                                         "_attrDef": "p",
                                         "_useAsLabel": true
                                     },
                                     {
                                         "_key": "tagType",
-                                        "_value": "h3",
+                                        "_value": "label",
                                         "_type": "a",
                                         "_attrDef": "p",
                                         "_visibility": false
@@ -1671,7 +1713,7 @@
                                     },
                                     {
                                         "_key": "*ngFor",
-                                        "_value": "let data of demo",
+                                        "_value": "let outcome of  outcomes",
                                         "_type": "kv",
                                         "_attrDef": "c"
                                     }
@@ -1695,7 +1737,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "\r\n   * {{data}}\r\n\r\n\r\n",
+                                            "_value": "\r\n   <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\" style=\"color:red;\">label_important</mat-icon>{{outcome}}\r\n\r\n\r\n",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -2226,7 +2268,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "margin:0px;color:grey;",
+                                        "_value": "margin:0.3px;color:grey;font-size:22px;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -2424,7 +2466,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "Instructor Name",
+                                            "_value": "{{courseauthor}}",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -2888,7 +2930,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "margin:0px;color:grey;",
+                                        "_value": "margin:0px;color:grey;font-size:22px;margin:0.3em;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -3086,7 +3128,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "Instructor Name",
+                                            "_value": "{{courseduration}}",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -3536,7 +3578,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "Price",
+                                            "_value": "Course Price",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -3550,7 +3592,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "margin:0px;color:grey;",
+                                        "_value": "margin:0.3em;color:grey;font-size:22px;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -3748,7 +3790,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "Instructor Name",
+                                            "_value": "{{courseprice}}",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -3854,7 +3896,7 @@
                                 },
                                 {
                                     "_key": "(click)",
-                                    "_value": "",
+                                    "_value": "buyNow()",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -4123,7 +4165,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "",
+                                    "_value": "font-size:24px;font-weight:bold;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -4148,13 +4190,13 @@
                         "designerReference": [
                             {
                                 "_key": "style",
-                                "_value": "",
+                                "_value": "font-style:18px;width:800px;line-height:2em;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
                             {
                                 "_key": "class",
-                                "_value": "spaceallow",
+                                "_value": "spaceallow1",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -4167,7 +4209,7 @@
                             },
                             {
                                 "_key": "description",
-                                "_value": "{{daata}}",
+                                "_value": "{{coursedescription}}",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }

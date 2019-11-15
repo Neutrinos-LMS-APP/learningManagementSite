@@ -1,71 +1,94 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <div fxLayout="column wrap" style="width:100%;height:80%;margin-top:5%;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="!displayView">
-      <mat-card>
-        <mat-card-title>{{username}} Details</mat-card-title>
-
-        <mat-card-content>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div>
-                  <h2>{{username}}</h2>
-                </div>
-              </div>
-            </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div>
-                  <h2>{{username}}</h2>
-                </div>
-              </div>
-            </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div>
-                  <h2>{{username}}</h2>
-                </div>
-              </div>
-            </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div>
-                  <h2>{{username}}</h2>
-                </div>
-              </div>
-            </div>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>home</mat-icon>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div>
-                  <h2>{{username}}</h2>
-                </div>
-              </div>
-            </div>
+    <div fxLayout="column wrap" style="padding:3em;margin-left:5.5em;box-shadow:1px 1px 6px grey;" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="displayView" *ngIf="!displayView">
+      <h3>
+        Selected Course Details</h3>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              Course Name</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{coursname}}</div>
           </div>
-        </mat-card-content>
-
-        <mat-card-footer>
-          <div fxLayout="row wrap" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button color="primary" (click)="displayTable()">Ok</button><button mat-button>Delete</button></div>
-        </mat-card-footer>
-      </mat-card>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              Duration</label></div>
+          <div fxLayout="column wrap" class="spaceallow" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div>
+              {{duration}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              Description</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{price}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              Price</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{description}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              1. Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l1}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              2. Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l2}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              3 . Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l3}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              5 . Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l5}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              4. Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l4}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
+              9.Learning Outcome</label></div>
+          <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+            <div class="spaceallow">
+              {{l6}}</div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="color:white;" class="btn" (click)="displayTable()">Ok</button></div>
+      </div>
     </div>
-    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
-      <div fxLayout="column" style="width:80%;">
+    <div fxLayout="column wrap" style="width:70%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
+      <div fxLayout="column" style="width:100%;">
 
         <div fxLayout="row" fxLayoutAlign="end">
           <div fxLayout="column" fxFlex="end">
@@ -75,36 +98,36 @@
           </div>
         </div>
         <table mat-table [dataSource]="dataSource" class="table-width-fix">
-          <tr mat-header-row *matHeaderRowDef="[&apos;position&apos;,&apos;name&apos;,&apos;weight&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
-          <tr mat-row *matRowDef="let row; columns: [&apos;position&apos;,&apos;name&apos;,&apos;weight&apos;,&apos;symbol&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
+          <tr mat-header-row *matHeaderRowDef="[&apos;courseName&apos;,&apos;duration&apos;,&apos;price&apos;,&apos;createdby&apos;,&apos;action&apos;,&apos;action1&apos;]"></tr>
+          <tr mat-row *matRowDef="let row; columns: [&apos;courseName&apos;,&apos;duration&apos;,&apos;price&apos;,&apos;createdby&apos;,&apos;action&apos;,&apos;action1&apos;];"></tr>
 
-          <ng-container matColumnDef="position">
-            <th mat-header-cell *matHeaderCellDef>Position</th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.position}}</td>
+          <ng-container matColumnDef="courseName">
+            <th mat-header-cell *matHeaderCellDef class="header1">Course Name</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.courseName}}</td>
           </ng-container>
 
-          <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef>Name</th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.name}}</td>
+          <ng-container matColumnDef="duration">
+            <th mat-header-cell *matHeaderCellDef class="header1">Duration</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.duration}}</td>
           </ng-container>
 
-          <ng-container matColumnDef="weight">
-            <th mat-header-cell *matHeaderCellDef>Weight</th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.weight}}</td>
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef class="header1">Course Price</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.price}}</td>
           </ng-container>
 
-          <ng-container matColumnDef="symbol">
-            <th mat-header-cell *matHeaderCellDef>Symbol</th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.symbol}}</td>
+          <ng-container matColumnDef="createdby">
+            <th mat-header-cell *matHeaderCellDef class="header1">Created By</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.createdby}}</td>
           </ng-container>
 
           <ng-container matColumnDef="action">
-            <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let table; let i = index;">{{table.action}}<button mat-raised-button color="primary" style="background-color:black;color:white;" (click)="viewCourseInfo(table)">View</button></td>
+            <th mat-header-cell *matHeaderCellDef class="header1">View</th>
+            <td mat-cell *matCellDef="let table; let i = index;" class="column1">{{table.action}}<button mat-raised-button color="primary" style="background-color:black;color:white;" (click)="viewCourseInfo(table)">View</button></td>
           </ng-container>
 
           <ng-container matColumnDef="action1">
-            <th mat-header-cell *matHeaderCellDef></th>
+            <th mat-header-cell *matHeaderCellDef class="header1">Delete</th>
             <td mat-cell *matCellDef="let table; let i = index;">{{table.action1}}<button mat-raised-button color="warn" (click)="delete(table._id)">Delete</button></td>
           </ng-container>
         </table>

@@ -146,6 +146,39 @@ export class courseservice {
       throw e;
     }
   }
+  public async updateCourseStatus(courseObj = undefined, ...others) {
+    try {
+      let bh = {
+        input: { courseObj: courseObj },
+        local: { result: undefined, apiUrl: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_d2wFTeRRghireUef(bh);
+      //appendnew_next_updateCourseStatus
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async getCourseById(id = undefined, ...others) {
+    try {
+      let bh = { input: { id: id }, local: { result: undefined } };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_Red3GNhshrqMMHVq(bh);
+      //appendnew_next_getCourseById
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_courseservice_Start
 
   async sd_7owje9LqzwiKvJcY(bh) {
@@ -288,6 +321,64 @@ export class courseservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_SArVrHqHIIdQiCyn
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_d2wFTeRRghireUef(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:4000/api/updatecoursestatus`;
+
+      bh = await this.sd_Zwc4aMcHjNU9mRzA(bh);
+      //appendnew_next_sd_d2wFTeRRghireUef
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_Zwc4aMcHjNU9mRzA(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.courseObj
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_Zwc4aMcHjNU9mRzA
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_Red3GNhshrqMMHVq(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getparticularcourse?_id=${bh.input.id}`;
+
+      bh = await this.sd_et0fl5W8vJSdJ52E(bh);
+      //appendnew_next_sd_Red3GNhshrqMMHVq
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_et0fl5W8vJSdJ52E(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.id
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_et0fl5W8vJSdJ52E
       return bh;
     } catch (e) {
       throw e;

@@ -1,16 +1,16 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" class="class1" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="padding-left:2em;" class="class1" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
       <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
         <div fxLayout="row wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img style="height:50px;width:50px;"></div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="height:50px;width:50px;"></div>
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <h2>
+            <h2 style="color:#df252b">
               LMS</h2>
           </div>
         </div>
       </div>
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="classmenuonadmindash" routerLink="instructors">Instructors</button><button mat-button class="classmenuonadmindash" routerLink="courses">Courses</button><button mat-button class="classmenuonadmindash" [disableRipple]="true" routerLink="trainee">Trainee</button><button mat-button class="classmenuonadmindash">Logout</button></div>
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="classmenuonadmindash " routerLink="instructors">Instructors</button><button mat-button class="classmenuonadmindash" routerLink="courses">Courses</button><button mat-button class="classmenuonadmindash" [disableRipple]="true" routerLink="trainee">Trainees</button><button mat-button class="classmenuonadmindash">Logout</button></div>
     </div>
   </div>
   <router-outlet></router-outlet>

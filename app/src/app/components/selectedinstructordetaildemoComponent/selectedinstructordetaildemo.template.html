@@ -5,13 +5,13 @@
         Selected Instructor Details</h1>
     </div>
   </div>
-  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let instructor of instructorandrole">
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
       <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
           Firstname</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.firstName }}</div>
+          {{dataInfo.firstName }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -19,7 +19,7 @@
           Lastname</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.lastName }}</div>
+          {{dataInfo.lastName }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -27,7 +27,7 @@
           Email Id</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.email }}</div>
+          {{dataInfo.email }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -35,15 +35,7 @@
           Contact No.</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.firstName }}</div>
-      </div>
-    </div>
-    <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="font-size:18px;font-weight:bold;">
-          FirstName</label></div>
-      <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-        <div>
-          {{instructor.mobile }}</div>
+          {{dataInfo.mobile }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -51,7 +43,7 @@
           Country</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.country }}</div>
+          {{dataInfo.country }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -59,7 +51,7 @@
           Date of Birth</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.date }}</div>
+          {{dataInfo.date }}</div>
       </div>
     </div>
     <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -67,9 +59,9 @@
           Gender</label></div>
       <div fxLayout="column wrap" fxFlex="66" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
         <div>
-          {{instructor.gender }}</div>
+          {{dataInfo.gender }}</div>
       </div>
     </div>
-    <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="color:white;" class="btn" mat-dialog-close (click)="updateStatus(instructor._id,&apos;approved&apos;)">Approve</button><button mat-button style="width:7em;background-color:black;color:white;" mat-dialog-close (click)="updateStatus(instructor._id,&apos;approved&apos;)">Reject</button></div>
+    <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="color:white;" class="btn" (click)="updateStatus(dataInfo._id,&apos;approved&apos;)">Approve</button><button mat-button style="width:7em;background-color:black;color:white;" mat-dialog-close (click)="updateStatus(instructor._id,&apos;approved&apos;)">Reject</button></div>
   </div>
 </div>

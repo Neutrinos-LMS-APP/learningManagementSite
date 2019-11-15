@@ -143,7 +143,7 @@
                     },
                     {
                         "_key": "style",
-                        "_value": "",
+                        "_value": "padding-left:2em;",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -371,7 +371,7 @@
                                 },
                                 {
                                     "_key": "layoutAlign",
-                                    "_value": "start",
+                                    "_value": "center",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 },
@@ -419,7 +419,7 @@
                                     },
                                     {
                                         "_key": "imgSrc",
-                                        "_value": "",
+                                        "_value": "Web/Icons/favicon.png",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -547,7 +547,7 @@
                                 "designerReference": [
                                     {
                                         "_key": "style",
-                                        "_value": "",
+                                        "_value": "color:#df252b",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -833,7 +833,7 @@
                             },
                             {
                                 "_key": "class",
-                                "_value": "classmenuonadmindash",
+                                "_value": "classmenuonadmindash ",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -961,7 +961,7 @@
                             },
                             {
                                 "_key": "buttonname",
-                                "_value": "Trainee",
+                                "_value": "Trainees",
                                 "_type": "a",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

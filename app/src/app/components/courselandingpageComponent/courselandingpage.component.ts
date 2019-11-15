@@ -4,6 +4,8 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
+import{courseservice} from '../../sd-services/courseservice';
+import { Router } from '@angular/router';
 
 /**
  * Service import Example :
@@ -23,15 +25,33 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
 export class courselandingpageComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    courseCard = ['a', 'b', 'c', 'd'];
+    //courseCard = ['a', 'b', 'c', 'd'];
+    approvedCourses=[];
 
-    constructor(private bdms: NDataModelService) {
+    constructor(private bdms: NDataModelService,private courseServiceObj:courseservice,public router:Router) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
+        this.getCourseByStatus('approved');
+    }
+    getSelectedCourse(id){
+        console.log(id);
+       localStorage.courseId = id;
+       this.router.navigate(['/coursedetail']);
 
+    }
+
+    async getCourseByStatus(status){
+        
+        this.approvedCourses = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);
+        console.log(this.approvedCourses);
+       
+    }
+    //converting object of objects into araay of objects
+    convertObjtoArr(obj) {
+       return Array.from(Object.keys(obj), k => obj[k]);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

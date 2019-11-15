@@ -908,7 +908,7 @@
                     },
                     {
                         "_key": "*ngFor",
-                        "_value": "let i of courseCard",
+                        "_value": "let course of approvedCourses",
                         "_type": "kv",
                         "_attrDef": "c"
                     }
@@ -942,6 +942,12 @@
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "(click)",
+                            "_value": "getSelectedCourse(course._id)",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "9ab2a59b-d176-c1e7-84af-0eb96c04408d": {

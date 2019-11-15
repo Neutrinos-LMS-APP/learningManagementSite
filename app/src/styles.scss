@@ -20,6 +20,14 @@ body{
     height: 300;
     width: 300;
 }
+
+.classmenuonadmindash:hover{
+    color: white;
+    background-color: #df252b;
+    height: 3em;
+    margin-top:0.5em;
+    border-radius: 5px;
+}
 .linedraw{
     height: 500px;
     width:4px;
@@ -32,7 +40,7 @@ body{
 
 .class1{
 // <<<<<<< Updated upstream
-    background-color:#ea212a;
+    background-color:black;
     font-size:20px;
     font-weight:bold;
     color:#fff;
@@ -58,11 +66,12 @@ body{
 .class1{
 // <<<<<<< Updated upstream
   //  background-color:#696969;
-  background-color: #ea212a;
+  background-color: black;
   font-size:20px;
   font-weight: bold;
   color: white;
   font-family: Arial;
+  
 // =======
     
 // >>>>>>> Stashed changes
@@ -288,4 +297,8 @@ h3{
     white-space: normal;
     word-break:break-all;
     
+}
+.spaceallow1{
+    width: 800px;
+    font-size: 22px;
 }

@@ -540,12 +540,6 @@
                         "_value": "false",
                         "_type": "kv",
                         "_attrDef": "p"
-                    },
-                    {
-                        "_key": "*ngFor",
-                        "_value": "let trainee of traineeandrole",
-                        "_type": "kv",
-                        "_attrDef": "c"
                     }
                 ],
                 "2c35c5f4-131f-a375-dc9a-f836768a0616": {
@@ -1164,7 +1158,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.firstName }}",
+                                        "_value": "{{dataInfo.firstName }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -1789,7 +1783,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.lastName }}",
+                                        "_value": "{{dataInfo.lastName }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -2414,7 +2408,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.email }}",
+                                        "_value": "{{dataInfo.email }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -3039,7 +3033,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.firstName }}",
+                                        "_value": "{{dataInfo.firstName }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -3664,7 +3658,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.mobile }}",
+                                        "_value": "{{dataInfo.mobile }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -4289,7 +4283,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.country }}",
+                                        "_value": "{{dataInfo.country }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -4914,7 +4908,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.date }}",
+                                        "_value": "{{dataInfo.date }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -5539,7 +5533,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "{{trainee.gender }}",
+                                        "_value": "{{dataInfo.gender }}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -5645,7 +5639,7 @@
                             },
                             {
                                 "_key": "(click)",
-                                "_value": "updateStatus(instructor._id,'approved')",
+                                "_value": "updateStatus(dataInfo._id,'approved')",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -5672,12 +5666,6 @@
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
-                            },
-                            {
-                                "_key": "mat-dialog-close",
-                                "_value": "mat-dialog-close",
-                                "_type": "a",
-                                "_attrDef": "c"
                             }
                         ]
                     },
@@ -5712,7 +5700,7 @@
                             },
                             {
                                 "_key": "(click)",
-                                "_value": "updateStatus(instructor._id,'approved')",
+                                "_value": "updateStatus(dataInfo._id,'approved')",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },

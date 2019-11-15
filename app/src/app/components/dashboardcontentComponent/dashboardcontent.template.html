@@ -1,15 +1,15 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <div fxLayout="column wrap" style="height:5em;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row wrap" style="margin:1em;margin-left:3em;" fxFlex="100" fxLayoutGap="1.2em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:black;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:#df252b;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <h4>
-          instructors Approval <br>Requests<label style="margin-left:5em;font-size:2em;">{{instructorandrole.length}}</label></h4>
+          Instructors Approval <br>Requests<label style="margin-left:5em;font-size:2em;">{{instructorandrole.length}}</label></h4>
       </div>
-      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:black;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:#df252b" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <h4>
           Trainees Approval <br>Requests<label style="margin-left:5em;font-size:2em;">{{traineeandrole.length}}</label></h4>
       </div>
-      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:black;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" style="padding-left:0.5em;height:5em;color:white;background-color:#df252b;" fxFlex="18" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <h4>
           Courses Approval <br>Requests<label style="margin-left:5em;font-size:2em;">{{instructorandrole.length}}</label></h4>
       </div>
@@ -27,13 +27,13 @@
       <div fxLayout="column wrap" style="margin-top:1em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let instructor of  instructorandrole">
         <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
           <mat-card style="padding:2em;background-color:black;color:white;font-weight:500;box-shadow:4px 4px  9px grey;" class="Card_box">
-            <mat-card-title style="color:" align="center">Instructor</mat-card-title>
+            <mat-card-title style="color:" align="center">{{instructor .firstName}}</mat-card-title>
 
             <mat-card-content>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <mat-icon style="color:#df252b;font-size:4em;margin-right:0.6em;">person</mat-icon>
-                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialogInstructor()">View Instructor</button>
+                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialog(instructor,&apos;instructor&apos;)">View Instructor</button>
               </div>
             </mat-card-content>
 
@@ -55,13 +55,13 @@
       <div fxLayout="column wrap" style="margin-top:1em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let trainee of  traineeandrole">
         <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
           <mat-card style="padding:2em;background-color:black;color:white;font-weight:500;box-shadow:4px 4px  9px grey;" class="Card_box">
-            <mat-card-title style="color:" align="center">Trainee</mat-card-title>
+            <mat-card-title style="color:" align="center">{{trainee .firstName}}</mat-card-title>
 
             <mat-card-content>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <mat-icon style="color:#df252b;font-size:4em;margin-right:0.6em;">person</mat-icon>
-                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialogTrainee()">View Trainee</button>
+                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialog(trainee,&apos;trainee&apos;)">View Trainee</button>
               </div>
             </mat-card-content>
 
@@ -72,24 +72,26 @@
     </div>
   </div>
   <div fxLayout="column wrap" style="width:100%;padding:2em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <h1>
-        Course Approval Requests</h1>
-      <div>
-        <hr color="darkgray" size="1">
+    <div fxLayout="column wrap" style="margin-top:1em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <h1>
+          Course Approval Requests</h1>
+        <div>
+          <hr color="darkgray" size="1">
+        </div>
       </div>
     </div>
     <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="column wrap" style="margin-top:1em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let trainee of  traineeandrole">
-        <div fxLayout="row wrap" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let courses of  coursesandrole">
+        <div fxLayout="row wrap" style="margin-top:1em;" class="class12" fxFlex="98" fxLayoutGap="1.5em" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="false">
           <mat-card style="padding:2em;background-color:black;color:white;font-weight:500;box-shadow:4px 4px  9px grey;" class="Card_box">
-            <mat-card-title style="color:" align="center">Course</mat-card-title>
+            <mat-card-title class="spaceallow" style="width:200px; font-size:20px;" align="center">{{courses .courseName}} </mat-card-title>
 
             <mat-card-content>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <mat-icon style="color:#df252b;font-size:4em;margin-right:0.6em;">book</mat-icon>
-                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialogInstructor()">View Course</button>
+                </div><button mat-button style="margin-top:4em;width:200px;background-color:#df252b;" (click)="openDialog(courses ,&apos;course&apos;)">View Course</button>
               </div>
             </mat-card-content>
 

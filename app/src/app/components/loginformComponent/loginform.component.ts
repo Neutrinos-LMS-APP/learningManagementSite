@@ -123,9 +123,7 @@ import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{loginservice} from '../../sd-services/loginservice';
 import { Router } from '@angular/router';
-
-
-
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -145,8 +143,8 @@ import { Router } from '@angular/router';
 export class loginformComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     result;
-
-    constructor(private bdms: NDataModelService,public loginserviceobj :loginservice,public router:Router) {
+    userId;
+    constructor(private bdms: NDataModelService,public loginserviceobj :loginservice,public router:Router,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -154,10 +152,13 @@ export class loginformComponent extends NBaseComponent implements OnInit {
     async onloginSubmit(value){
         console.log(value);
        this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result;
-       localStorage.username = value.userName;
+    sessionStorage.username = value.userName;
+    sessionStorage.userid=this.result._id;
+    
+    //sessionStorage.userId 
        console.log("getting from serve"+this.result);
        localStorage.username=value.userName;
-       console.log("comes from localstorage"+localStorage.username);
+       console.log("comes from localstorage"+sessionStorage.username);
        console.log(value.userName);
        console.log(value.password);
        if(value.userName=='admin@gmail.com'&& value.password=='admin123')
@@ -181,9 +182,13 @@ export class loginformComponent extends NBaseComponent implements OnInit {
 
     }
     ngOnInit() {
+        
 
     }
 
+    // async getAllUsers(){
+    //     this.registerServiceObj.getregisterinstructordata()
+    // }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

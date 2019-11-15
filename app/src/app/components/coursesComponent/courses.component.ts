@@ -24,7 +24,7 @@ import{courseservice} from '../../sd-services/courseservice';
 
 export class coursesComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    displayView:boolean=false;
+    displayView:boolean=true;
    displaytable:boolean=true;
    username;
    tabledata;
@@ -41,26 +41,28 @@ export class coursesComponent extends NBaseComponent implements OnInit {
         this.dataSource.paginator = this.paginator;
        this.getCourseByStatus('approved');
     }
-    fname;lname;email;contact;gender;country;dob;pass;
+    coursname;description;price;duration;l1;l2;l3;l4;l5;l6;
     viewCourseInfo(selectedRowInfo)
     {
         this.displaytable=false;
-        this.displayView=true;
+        this.displayView=false;
         this.tabledata=selectedRowInfo;
-        this.username=this.tabledata.name;
-        this.fname=selectedRowInfo.firstName;
-        this.lname=selectedRowInfo.lastName;
-        this.email=selectedRowInfo.email;
-        this.contact=selectedRowInfo.mobile;
-        this.gender=selectedRowInfo.gender;
-        this.country=selectedRowInfo.country;
-        this.dob=selectedRowInfo.date;
-        this.pass=selectedRowInfo.password;
+        this.coursname=selectedRowInfo.courseName;
+        this.description=selectedRowInfo.coursedescription;
+        this.price=selectedRowInfo.price;
+        this.duration=selectedRowInfo.duration;
+        this.l1=selectedRowInfo.learning_outcome_1;
+        this.l2=selectedRowInfo.learning_outcome_2;
+        this.l3=selectedRowInfo.learning_outcome_3;
+        this.l4=selectedRowInfo.learning_outcome_4;
+        this.l5=selectedRowInfo.learning_outcome_5;
+        this.l6=selectedRowInfo.learning_outcome_6;
+        
 
     }
     displayTable(){
         this.displaytable=true;
-        this.displayView=false;
+        this.displayView=true;
     }
     applyFilter(value)
     {

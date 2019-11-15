@@ -5,9 +5,13 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 import {selectedinstructordetaildemoComponent} from '../selectedinstructordetaildemoComponent/selectedinstructordetaildemo.component';
 import {selectedtraineedemodetailsComponent} from '../selectedtraineedemodetailsComponent/selectedtraineedemodetails.component';
+import {selectedcoursedetaildemoComponent} from '../selectedcoursedetaildemoComponent/selectedcoursedetaildemo.component';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import{courseservice} from '../../sd-services/courseservice';
+
 
 
 
@@ -32,43 +36,87 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
     cardlenght;
     instructorandrole=[];
     traineeandrole=[];
-    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice,private dialog1:MatDialog,private dialog2:MatDialog) {
+    coursesandrole=[];
+    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice,public dialog: MatDialog,private courseServiceObj:courseservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-        this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
+       // this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
        
      this.getRoleAndStatus();
-   
+    this.getCourseByStatus('null');
     }
 
-    openDialogInstructor() {
-    const dialogRef = this.dialog1.open(selectedinstructordetaildemoComponent, {
-      width: '550px',
-      height:'500px',
-      data:'hello' 
-    });
+    async getCourseByStatus(status){
+        this.coursesandrole = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);
+    }
+    openDialog(selecteddInfo,role) {
+        if(role=='instructor'){
+            const dialogConfig = new MatDialogConfig();
+      dialogConfig.disableClose = true;
+      dialogConfig.autoFocus = true;
+      dialogConfig.data={selecteddInfo};
+      const dialogRef = this.dialog.open(selectedinstructordetaildemoComponent, dialogConfig);
+      dialogRef.afterClosed().subscribe(()=>  this.getRoleAndStatus());
+        }
+        else if(role == 'trainee'){
+            const dialogConfig = new MatDialogConfig();
+      dialogConfig.disableClose = true;
+      dialogConfig.autoFocus = true;
+      dialogConfig.data={selecteddInfo};
+      const dialogRef = this.dialog.open(selectedtraineedemodetailsComponent, dialogConfig);
+      dialogRef.afterClosed().subscribe(()=>  this.getRoleAndStatus());
+        }
+        else if(role == 'course'){
+            const dialogConfig = new MatDialogConfig();
+      dialogConfig.disableClose = true;
+      dialogConfig.autoFocus = true;
+      dialogConfig.data={selecteddInfo};
+      console.log(selecteddInfo);
+      const dialogRef = this.dialog.open(selectedcoursedetaildemoComponent, dialogConfig);
+      dialogRef.afterClosed().subscribe(()=>  this.getCourseByStatus('null'));
+        }
+    }
+    // openDialogCourses()
+    // {
+    //     const dialogRef = this.dialog1.open(selectedcoursedetaildemoComponent, {
+    //   width: '700px',
+    //   height:'500px',
+    //   data:'hello' 
+    // });
     
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.ngOnInit();
-    });
-  }
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log('The dialog was closed');
+    //   this.ngOnInit();
+    // });
+    // }
+//     openDialogInstructor() {
+//     const dialogRef = this.dialog1.open(selectedinstructordetaildemoComponent, {
+//       width: '550px',
+//       height:'500px',
+//       data:'hello' 
+//     });
+    
+//     dialogRef.afterClosed().subscribe(result => {
+//       console.log('The dialog was closed');
+//       this.ngOnInit();
+//     });
+//   }
 
-  openDialogTrainee() {
-    const dialogRef = this.dialog1.open(selectedtraineedemodetailsComponent, {
-      width: '550px',
-      height:'500px',
-      data:'hello' 
-    });
+//   openDialogTrainee() {
+//     const dialogRef = this.dialog1.open(selectedtraineedemodetailsComponent, {
+//       width: '550px',
+//       height:'500px',
+//       data:'hello' 
+//     });
     
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.ngOnInit();
-    });
-  }
+//     dialogRef.afterClosed().subscribe(result => {
+//       console.log('The dialog was closed');
+//       this.ngOnInit();
+//     });
+//   }
     //getting data by status need to pass the status value
     async getRoleAndStatus(){
      this.instructorandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','instructor')).local.result);
@@ -83,84 +131,5 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});
          this.getRoleAndStatus();
    }
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            });
-    }
-
-    getById(dataModelName, dataModelId) {
-        this.mm.getById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            })
-    }
-
-    put(dataModelName, dataModelObject) {
-        this.mm.put(dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    validatePut(formObj, dataModelName, dataModelObject) {
-        this.mm.validatePut(formObj, dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    update(dataModelName, update, filter, options) {
-        const updateObject = {
-            update: update,
-            filter: filter,
-            options: options
-        };
-        this.mm.update(dataModelName, updateObject,
-            result => {
-                //  On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    delete (dataModelName, filter) {
-        this.mm.delete(dataModelName, filter,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    deleteById(dataModelName, dataModelId) {
-        this.mm.deleteById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    updateById(dataModelName, dataModelId, dataModelObj) {
-        this.mm.updateById(dataModelName, dataModelId, dataModelObj,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-
+   
 }

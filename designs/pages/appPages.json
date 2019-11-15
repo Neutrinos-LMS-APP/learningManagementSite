@@ -137,5 +137,10 @@
         "appPageName": "selectedtraineedemodetails",
         "componentName": "selectedtraineedemodetailsComponent",
         "isEntry": false
+    },
+    "5ee612db-9196-8538-1d11-93bef2c8941d": {
+        "appPageName": "selectedcoursedetailDemo",
+        "componentName": "selectedcoursedetaildemoComponent",
+        "isEntry": false
     }
 }

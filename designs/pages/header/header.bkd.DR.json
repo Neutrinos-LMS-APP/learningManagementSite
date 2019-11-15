@@ -1100,7 +1100,7 @@
                                     },
                                     {
                                         "_key": "routerLink",
-                                        "_value": "",
+                                        "_value": "/allcourses",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     }

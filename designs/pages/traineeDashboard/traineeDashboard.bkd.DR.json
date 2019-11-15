@@ -876,68 +876,7 @@
                             },
                             {
                                 "_key": "routerLink",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            }
-                        ]
-                    },
-                    "a8d4e4a0-549f-cff8-e6a3-d015fb16c4a5": {
-                        "paletteKey": "NG-button",
-                        "parentEditorKey": "c77ea4a1-f09d-4e86-c318-1cca91593b32",
-                        "designerReference": [
-                            {
-                                "_key": "style",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "class",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "buttonname",
-                                "_value": "Courses List",
-                                "_type": "a",
-                                "_attrDef": "p",
-                                "_useAsLabel": true
-                            },
-                            {
-                                "_key": "color",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "(click)",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "[disabled]",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "[disableRipple]",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "type",
-                                "_value": "",
-                                "_type": "kv",
-                                "_attrDef": "p"
-                            },
-                            {
-                                "_key": "routerLink",
-                                "_value": "selfjoinedcourses",
+                                "_value": "/allcourses",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }

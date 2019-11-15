@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-selectedcoursedetaildemoComponent
+import { selectedcoursedetaildemoComponent } from '../components/selectedcoursedetaildemoComponent/selectedcoursedetaildemo.component';
 //CORE_REFERENCE_IMPORT-selectedtraineedemodetailsComponent
 import { selectedtraineedemodetailsComponent } from '../components/selectedtraineedemodetailsComponent/selectedtraineedemodetails.component';
 //CORE_REFERENCE_IMPORT-selectedinstructordetaildemoComponent
@@ -96,7 +98,8 @@ export const appBootstrap: any = [
 export const appEntryComponents: any = [
   //CORE_REFERENCE_PUSH_TO_ENTRY_ARRAY
   selectedinstructordetaildemoComponent,
-  selectedtraineedemodetailsComponent
+  selectedtraineedemodetailsComponent,
+  selectedcoursedetaildemoComponent
 ];
 
 /**
@@ -109,6 +112,8 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedcoursedetaildemoComponent
+selectedcoursedetaildemoComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedtraineedemodetailsComponent
 selectedtraineedemodetailsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedinstructordetaildemoComponent

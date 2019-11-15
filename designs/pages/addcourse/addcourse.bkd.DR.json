@@ -215,7 +215,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "height:100%;margin-top:0em;",
+                            "_value": "height:80%;margin-top:0em;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1638,14 +1638,14 @@
                                                         },
                                                         {
                                                             "_key": "htmlElement",
-                                                            "_value": "h3",
+                                                            "_value": "label",
                                                             "_type": "dav",
                                                             "_attrDef": "p",
                                                             "_useAsLabel": true
                                                         },
                                                         {
                                                             "_key": "tagType",
-                                                            "_value": "h3",
+                                                            "_value": "label",
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": false
