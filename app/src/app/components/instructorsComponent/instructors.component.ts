@@ -46,11 +46,11 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
     constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
-        this.dataSource = new MatTableDataSource();
+        this.dataSource = new MatTableDataSource(); // data for displaying data in table
     }
     ngOnInit() {
          this.dataSource = new MatTableDataSource();
-        this.getRoleAndStatus();     
+        this.getRoleAndStatus();     // getting all instructors
     }
     ngAfterViewInit() {
         
@@ -65,13 +65,13 @@ export class instructorsComponent extends NBaseComponent implements OnInit {
 
     //getting data by status need to pass the status value
     async getRoleAndStatus(){
-        this.approvedInstructors = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('approved','instructor')).local.result);
-        this.dataSource.data = this.approvedInstructors;
+        this.approvedInstructors = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('approved','instructor')).local.result); // getting all instructors having status approved and role instructor 
+        this.dataSource.data = this.approvedInstructors; // assinging result to data
     }
 
     //converting object of objects into araay of objects
     convertObjtoArr(obj) {
-       return Array.from(Object.keys(obj), k => obj[k]);
+       return Array.from(Object.keys(obj), k => obj[k]); //
     }
    fname;lname;email;contact;gender;country;dob;pass;
    //it displays the selcted row information

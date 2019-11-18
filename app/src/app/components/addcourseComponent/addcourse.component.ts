@@ -5,6 +5,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{courseservice} from '../../sd-services/courseservice';
+import {NSnackbarService} from 'neutrinos-seed-services';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -24,7 +25,7 @@ import{courseservice} from '../../sd-services/courseservice';
 export class addcourseComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService,private courseService: courseservice) {
+    constructor(private bdms: NDataModelService,private courseService: courseservice,public snackbarService:NSnackbarService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -42,8 +43,11 @@ export class addcourseComponent extends NBaseComponent implements OnInit {
         this.dm.addcourse.status = 'null';
     }
     addCourse(courseInfo){
-        console.log(courseInfo);
+       
         this.courseService.addcourse(courseInfo);
+        this.snackbarService.openSnackBar('Course Added Successfully');
+
+
     }
     
 }

@@ -5700,7 +5700,7 @@
                             },
                             {
                                 "_key": "(click)",
-                                "_value": "updateStatus(dataInfo._id,'approved')",
+                                "_value": "updateStatus(dataInfo._id,'reject')",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },

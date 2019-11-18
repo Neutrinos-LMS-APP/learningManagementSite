@@ -33,102 +33,67 @@ import{courseservice} from '../../sd-services/courseservice';
 
 export class dashboardcontentComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
-    cardlenght;
+    
     instructorandrole=[];
     traineeandrole=[];
     coursesandrole=[];
-    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice,public dialog: MatDialog,private courseServiceObj:courseservice) {
+    constructor(private bdms: NDataModelService,      // Created Objects
+                private registerServiceObj:registerinstructorservice,
+                public dialog: MatDialog,
+                private courseServiceObj:courseservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-       // this.cardlenght=['a','b','c','d','e','f','g','h','i','j','k','l','m'];
+      
        
-     this.getRoleAndStatus();
-    this.getCourseByStatus('null');
+    this.getRoleAndStatus();  // Getting data of all user having role and status
+    this.getCourseByStatus('null'); // getting all courses having status null for getting approval requests
     }
 
     async getCourseByStatus(status){
-        this.coursesandrole = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);
+        this.coursesandrole = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);  // storing in coursesandrole of all courses  having null
     }
-    openDialog(selecteddInfo,role) {
-        if(role=='instructor'){
+    openDialog(selecteddInfo,role) {  // going for opening dialog popup
+        if(role=='instructor'){     // send data=instructor for selectedinstructordetaildemoComponent for doing approved functionality
             const dialogConfig = new MatDialogConfig();
       dialogConfig.disableClose = true;
       dialogConfig.autoFocus = true;
-      dialogConfig.data={selecteddInfo};
+      dialogConfig.data={selecteddInfo}; //assigning data of particular data
       const dialogRef = this.dialog.open(selectedinstructordetaildemoComponent, dialogConfig);
       dialogRef.afterClosed().subscribe(()=>  this.getRoleAndStatus());
         }
-        else if(role == 'trainee'){
+        else if(role == 'trainee'){  // send data=instructor for selectedtraineedemodetailsComponent for doing approved functionality
             const dialogConfig = new MatDialogConfig();
       dialogConfig.disableClose = true;
       dialogConfig.autoFocus = true;
-      dialogConfig.data={selecteddInfo};
+      dialogConfig.data={selecteddInfo}; //assigning data of particular data
       const dialogRef = this.dialog.open(selectedtraineedemodetailsComponent, dialogConfig);
       dialogRef.afterClosed().subscribe(()=>  this.getRoleAndStatus());
         }
-        else if(role == 'course'){
+        else if(role == 'course'){  // send data=instructor for selectedcoursedetaildemoComponent for doing approved functionality
             const dialogConfig = new MatDialogConfig();
       dialogConfig.disableClose = true;
       dialogConfig.autoFocus = true;
-      dialogConfig.data={selecteddInfo};
+      dialogConfig.data={selecteddInfo}; //assigning data of particular data
       console.log(selecteddInfo);
       const dialogRef = this.dialog.open(selectedcoursedetaildemoComponent, dialogConfig);
       dialogRef.afterClosed().subscribe(()=>  this.getCourseByStatus('null'));
         }
     }
-    // openDialogCourses()
-    // {
-    //     const dialogRef = this.dialog1.open(selectedcoursedetaildemoComponent, {
-    //   width: '700px',
-    //   height:'500px',
-    //   data:'hello' 
-    // });
-    
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log('The dialog was closed');
-    //   this.ngOnInit();
-    // });
-    // }
-//     openDialogInstructor() {
-//     const dialogRef = this.dialog1.open(selectedinstructordetaildemoComponent, {
-//       width: '550px',
-//       height:'500px',
-//       data:'hello' 
-//     });
-    
-//     dialogRef.afterClosed().subscribe(result => {
-//       console.log('The dialog was closed');
-//       this.ngOnInit();
-//     });
-//   }
 
-//   openDialogTrainee() {
-//     const dialogRef = this.dialog1.open(selectedtraineedemodetailsComponent, {
-//       width: '550px',
-//       height:'500px',
-//       data:'hello' 
-//     });
-    
-//     dialogRef.afterClosed().subscribe(result => {
-//       console.log('The dialog was closed');
-//       this.ngOnInit();
-//     });
-//   }
-    //getting data by status need to pass the status value
     async getRoleAndStatus(){
-     this.instructorandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','instructor')).local.result);
-     this.traineeandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','trainee')).local.result);
+     this.instructorandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','instructor')).local.result); // getting all instructors having status null
+     this.traineeandrole = this.convertObjtoArr((await this.registerServiceObj.getRoleAndStatus('null','trainee')).local.result); // getting all trainees having status null
    }
    
    convertObjtoArr(obj) {
-       return Array.from(Object.keys(obj), k => obj[k]);
+       return Array.from(Object.keys(obj), k => obj[k]);   // coverting result data in array so that we can use it for frontend
    }
     //updating the status of instructor and trainned
    updateStatus(id,status){
-        this.registerServiceObj.updateByStatus({"_id":id,"status":status});
+        this.registerServiceObj.updateByStatus({"_id":id,"status":status});  
          this.getRoleAndStatus();
    }
    

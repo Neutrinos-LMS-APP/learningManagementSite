@@ -8,6 +8,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import {dashboardcontentComponent} from '../dashboardcontentComponent/dashboardcontent.component';
 import { Router } from '@angular/router';
 import{courseservice} from '../../sd-services/courseservice';
+import {NSnackbarService} from 'neutrinos-seed-services';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -28,7 +29,7 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
     mm: ModelMethods;
     coursesandrole=[];
     dataInfo;
-    constructor(private bdms: NDataModelService,public router:Router,private courseServiceObj:courseservice,private dialogRef: MatDialogRef<dashboardcontentComponent>,@Inject(MAT_DIALOG_DATA) data) {
+    constructor(private bdms: NDataModelService,public router:Router,private courseServiceObj:courseservice,private dialogRef: MatDialogRef<dashboardcontentComponent>,@Inject(MAT_DIALOG_DATA) data,public snackbarService:NSnackbarService) {
         super();
         this.mm = new ModelMethods(bdms);
          this.dataInfo = data.selecteddInfo;
@@ -54,7 +55,13 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
       
         this.courseServiceObj.updateCourseStatus({"_id":id,"status":status});
         //  this.router.navigate(['/adminDashboard/dashboardcontent']);
-    this.cancle();
+       if(status=='approved'){
+             this.snackbarService.openSnackBar('Updated Successfully');
+        }
+        else if(status=='reject'){
+             this.snackbarService.openSnackBar('Removed Successfully');
+        }
+        this.cancle();
         
         
         // this.getRoleAndStatus();

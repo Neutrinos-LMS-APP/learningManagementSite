@@ -1031,7 +1031,7 @@
                             },
                             {
                                 "_key": "Title",
-                                "_value": "Course Name",
+                                "_value": "{{course .courseName}}",
                                 "_type": "a",
                                 "_attrDef": "p",
                                 "_useAsLabel": true

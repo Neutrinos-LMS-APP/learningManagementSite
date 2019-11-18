@@ -1,143 +1,151 @@
-<div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" class="Margin-tb" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-      <form #traineeRegistration="ngForm" style="Width=100%">
-        <mat-card style="margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;">
-          <mat-card-title style="text-align:center;font-weight:bold;">Trainee Registration</mat-card-title>
+<div fxLayout="column wrap" style="margin-bottom:50px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" style="margin-right:50px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <bh-header_nobuttons></bh-header_nobuttons>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" style="margin-left:6em;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" class="Margin-tb" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+          <form #form1="ngForm" style="Width=100%">
+            <mat-card style="margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;">
+              <mat-card-title style="text-align:center;font-weight:bold;">Trainee Registration</mat-card-title>
 
-          <mat-card-content>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.instructordetails.registercourses" name="registercourses" placeholder="registercourse" value="registercourses" required [disabled]="false">
+              <mat-card-content>
+                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="height:70px;width:70px;">
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>person</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.instructordetails.registercourses" name="registercourses" placeholder="registercourse" value="registercourses" required [disabled]="false">
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.instructordetails.status" name="status" placeholder="status" value="status" required [disabled]="false">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>person</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.instructordetails.status" name="status" placeholder="status" value="status" required [disabled]="false">
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.instructordetails.role" name="role" placeholder="role" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>person</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.instructordetails.role" name="role" placeholder="role" required>
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.firstName" name="firstName" placeholder="First Name" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>person</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.firstName" name="firstName" placeholder="First Name" required>
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.lastName" name="lastName" placeholder="Last Name" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>person</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.lastName" name="lastName" placeholder="Last Name" required>
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" style="margin-left: 5%;" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>date_range</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;">
-                    <input matInput placeholder="Date of birth" [matDatepicker]="picker" [(ngModel)]="dm.traineedetails.date" name="date" required [disabled]="false">
-                    <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
-                    <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" style="margin-left: 5%;" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>date_range</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;">
+                        <input matInput placeholder="Date of birth" [matDatepicker]="picker" [(ngModel)]="dm.traineedetails.date" name="date" required [disabled]="false">
+                        <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+                        <mat-datepicker #picker [disabled]="false"></mat-datepicker>
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>email</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.email" name="email" placeholder="Email ID" required [disabled]="false">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>email</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.email" name="email" placeholder="Email ID" required [disabled]="false">
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>lock</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.password" name="password" type="password" placeholder="Password" required [disabled]="false">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>lock</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.password" name="password" type="password" placeholder="Password" required [disabled]="false">
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>call</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.mobile" name="mobile" placeholder="Mobile" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>call</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.mobile" name="mobile" placeholder="Mobile" required>
 
-                  </mat-form-field>
-                </div>
-              </div>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>home</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.traineedetails.country" name="country" placeholder="Country" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>home</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.traineedetails.country" name="country" placeholder="Country" required>
 
-                  </mat-form-field>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" style="margin-right:11%;margin-top: 1%;" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>wc</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                      <mat-radio-group [(ngModel)]="dm.traineedetails.gender" name="gender">
+                        <mat-radio-button value="male" required name="male">male</mat-radio-button>
+                        <mat-radio-button value="female" style="margin-left:7px;" required name="female">Female</mat-radio-button>
+                      </mat-radio-group>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div fxLayout="row wrap" style="margin-right:11%;margin-top: 1%;" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                  <mat-icon>wc</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                  <mat-radio-group [(ngModel)]="dm.traineedetails.gender" name="gender">
-                    <mat-radio-button value="male" required name="male">male</mat-radio-button>
-                    <mat-radio-button value="female" style="margin-left:7px;" required name="female">Female</mat-radio-button>
-                  </mat-radio-group>
-                </div>
-              </div>
-            </div>
-          </mat-card-content>
+              </mat-card-content>
 
-          <mat-card-actions>
-            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" color="primary" (click)="put(traineeRegistration.value)" [disabled]="false">Submit</button></div>
-          </mat-card-actions>
-        </mat-card>
-      </form>
+              <mat-card-actions>
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" class="btn" (click)="put(form1.value)">Submit</button></div>
+              </mat-card-actions>
+            </mat-card>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<bh-footer></bh-footer>

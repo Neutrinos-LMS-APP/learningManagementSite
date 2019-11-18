@@ -34,8 +34,8 @@ export class instructordashboradcontentComponent extends NBaseComponent implemen
     }
 
     ngOnInit() {
-          this.getCourseByStatus('approved');
-   this.showcoursedetails=true;
+    this.getCourseByStatus('approved');
+    this.showcoursedetails=true;
           
     }
     selectedcourse;

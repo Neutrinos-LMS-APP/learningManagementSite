@@ -7,6 +7,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{courseservice} from '../../sd-services/courseservice';
 import { Router } from '@angular/router';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
+import {NSnackbarService} from 'neutrinos-seed-services';
 
 /**
  * Service import Example :
@@ -35,7 +36,7 @@ export class coursedetailComponent extends NBaseComponent implements OnInit {
      
     //demo=['demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1dem1emo1demo1','demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1'];
    // daata="demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1demo1";
-    constructor(private bdms: NDataModelService,private courseServiceObj:courseservice,public router:Router,private registerServiceObj:registerinstructorservice) {
+    constructor(private bdms: NDataModelService,private courseServiceObj:courseservice,public router:Router,private registerServiceObj:registerinstructorservice,public snackbarService:NSnackbarService) {
         super();
         this.mm = new ModelMethods(bdms);
        
@@ -64,10 +65,13 @@ export class coursedetailComponent extends NBaseComponent implements OnInit {
 
 buyNow(){
     if(this.userName == undefined){
+          this.snackbarService.openSnackBar('please login for course');
          this.router.navigate(['/login']);
     }
     else if(this.courseId !==null ,this.userId !==undefined ){
+
         this.registerServiceObj.updateCourses({'_id':this.userId,"coursesid":this.courseId});
+         this.snackbarService.openSnackBar('courses added successfully');
         this.router.navigate(['/allcourses']);
     }
     

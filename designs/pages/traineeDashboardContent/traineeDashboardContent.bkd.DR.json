@@ -341,7 +341,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "padding-left:0.5em;height:5em;color:white;background-color:black;",
+                                    "_value": "padding-left:0.5em;height:5em;color:white;background-color:#df252b;",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },

@@ -1,14 +1,6 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="row wrap" class="class1" fxFlex="100" fxLayoutAlign="space-between stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="row wrap" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img style="height:50px;width:50px;"></div>
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <h2>
-            LMS</h2>
-        </div>
-      </div>
-    </div>
+  <div fxLayout="row wrap" style="margin-bottom:30px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <bh-header_nobuttons></bh-header_nobuttons>
   </div>
   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false" fxFill>
@@ -18,7 +10,7 @@
             <mat-card-title style="text-align:center;font-weight:bold;">Instructor Registration</mat-card-title>
 
             <mat-card-content>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="height:70px;width:70px;">
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
                     <mat-icon>person</mat-icon>
@@ -135,11 +127,12 @@
             </mat-card-content>
 
             <mat-card-actions>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" color="primary" (click)="put(form.value)">Submit</button></div>
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" class="btn" (click)="put(form.value)" [disabled]="!form.valid">Submit</button></div>
             </mat-card-actions>
           </mat-card>
         </form>
       </div>
     </div>
   </div>
+  <bh-footer style="margin-top:30px;"></bh-footer>
 </div>

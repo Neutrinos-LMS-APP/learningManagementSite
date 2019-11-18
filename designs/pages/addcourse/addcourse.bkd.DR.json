@@ -7046,7 +7046,7 @@
                                             },
                                             {
                                                 "_key": "routerLink",
-                                                "_value": "",
+                                                "_value": "/instructordashboard/instructorDashboardContent",
                                                 "_type": "kv",
                                                 "_attrDef": "p"
                                             }

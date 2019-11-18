@@ -124,6 +124,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{loginservice} from '../../sd-services/loginservice';
 import { Router } from '@angular/router';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
+import {NSnackbarService} from 'neutrinos-seed-services';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -144,37 +145,42 @@ export class loginformComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     result;
     userId;
-    constructor(private bdms: NDataModelService,public loginserviceobj :loginservice,public router:Router,private registerServiceObj:registerinstructorservice) {
+    constructor(private bdms: NDataModelService,public loginserviceobj :loginservice,public snackbarService:NSnackbarService,public router:Router,private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
     
     async onloginSubmit(value){
         console.log(value);
-       this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result;
-    sessionStorage.username = value.userName;
-    sessionStorage.userid=this.result._id;
+       this.result=(await this.loginserviceobj.getLoginUser(value.userName)).local.result; // for login implementation
+    sessionStorage.username = value.userName;// storing for all courses list
+    sessionStorage.userid=this.result._id; // storing for course detail implementation
     
     //sessionStorage.userId 
-       console.log("getting from serve"+this.result);
+      // console.log("getting from serve"+this.result);
        localStorage.username=value.userName;
-       console.log("comes from localstorage"+sessionStorage.username);
-       console.log(value.userName);
-       console.log(value.password);
+      // console.log(value.password);
+      // console.log("comes from localstorage"+sessionStorage.username);
+      // console.log(value.userName);
+      // console.log(value.password);
+
+
+      
        if(value.userName=='admin@gmail.com'&& value.password=='admin123')
        {
            this.router.navigate(['/adminDashboard/dashboardcontent']);
        }
        else{
-           if(this.result.role=='instructor'){
+           if(this.result.role=='instructor'&& this.result.password==value.password && this.result.status=='approved'){
                 this.router.navigate(['/instructordashboard/instructorDashboardContent']);
            }
            else{
-               if(this.result.role=='trainee')
+               if(this.result.role=='trainee'&& this.result.password==value.password && this.result.status=='approved')
                {
                     this.router.navigate(['/traineedashboard/traineedashboardcontent']);
                }
                else{
+                    this.snackbarService.openSnackBar('Invalid credentials');
                    this.router.navigate(['/home']);
                }
            }

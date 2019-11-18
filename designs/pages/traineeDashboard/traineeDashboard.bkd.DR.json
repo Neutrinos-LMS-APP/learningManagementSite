@@ -371,7 +371,7 @@
                                 },
                                 {
                                     "_key": "layoutAlign",
-                                    "_value": "start",
+                                    "_value": "center",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 },
@@ -419,7 +419,7 @@
                                     },
                                     {
                                         "_key": "imgSrc",
-                                        "_value": "",
+                                        "_value": "Web/Icons/favicon.png",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -937,7 +937,7 @@
                             },
                             {
                                 "_key": "routerLink",
-                                "_value": "",
+                                "_value": "/home",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             }

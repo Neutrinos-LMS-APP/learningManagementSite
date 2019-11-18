@@ -7,8 +7,6 @@
           <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="column wrap" style="width:25%;height:10em;background-color:black;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/logo1.png"></div>
             <div fxLayout="column wrap" style="width:75%;background-color:black;padding-left:3em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <h3>
-                Professional Certificate in</h3>
               <h1>
                 {{coursename}}</h1>
             </div>
@@ -45,12 +43,12 @@
         </div>
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" style="width:10%;height:4em;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-            <mat-icon>alarm-on</mat-icon>
+            <mat-icon>update</mat-icon>
           </div>
           <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
             <h2 style="margin-bottom:0px;">
-              Duration</h2>
-            <h3 style="margin:0px;color:grey;font-size:22px;margin:0.3em;">
+              Course Duration</h2>
+            <h3 style="margin:0.3px;color:grey;font-size:22px;">
               {{courseduration}}</h3>
           </div>
         </div>
@@ -61,11 +59,11 @@
           <div fxLayout="column wrap" style="width:90%;height:4em;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
             <h2 style="margin-bottom:0px;">
               Course Price</h2>
-            <h3 style="margin:0.3em;color:grey;font-size:22px;">
+            <h3 style="margin:0.3px;color:grey;font-size:22px;">
               {{courseprice}}</h3>
           </div>
         </div>
-        <div fxLayout="row wrap" style="margin-top:2em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="width:70%;" class="btn" (click)="buyNow()">Buy Now</button></div>
+        <div fxLayout="row wrap" style="margin-top:2em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="width:70%;" class="btn" (click)="buyNow()" routerLink="/allcourses">Buy Now</button></div>
       </div>
     </div>
   </div>

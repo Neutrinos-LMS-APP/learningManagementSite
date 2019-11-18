@@ -8,6 +8,7 @@ import{registerinstructorservice} from '../../sd-services/registerinstructorserv
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import {dashboardcontentComponent} from '../dashboardcontentComponent/dashboardcontent.component';
 import { Router } from '@angular/router';
+import {NSnackbarService} from 'neutrinos-seed-services';
 
 /**
  * Service import Example :
@@ -29,7 +30,7 @@ export class selectedtraineedemodetailsComponent extends NBaseComponent implemen
     mm: ModelMethods;
     traineeandrole=[];
     dataInfo;
-    constructor(private bdms: NDataModelService,public router:Router,private registerServiceObj:registerinstructorservice,private dialogRef: MatDialogRef<dashboardcontentComponent>,@Inject(MAT_DIALOG_DATA) data) {
+    constructor(private bdms: NDataModelService,public router:Router,private registerServiceObj:registerinstructorservice,private dialogRef: MatDialogRef<dashboardcontentComponent>,@Inject(MAT_DIALOG_DATA) data,public snackbarService:NSnackbarService) {
         super();
         this.mm = new ModelMethods(bdms);
          this.dataInfo = data.selecteddInfo;
@@ -48,6 +49,12 @@ export class selectedtraineedemodetailsComponent extends NBaseComponent implemen
    updateStatus(id,status){
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});
          //this.getRoleAndStatus();
+         if(status=='approved'){
+             this.snackbarService.openSnackBar('Updated Successfully');
+        }
+        else if(status=='reject'){
+             this.snackbarService.openSnackBar('Removed Successfully');
+        }
          this.cancle();
           //this.router.navigate(['/adminDashboard/dashboardcontent']);
    }

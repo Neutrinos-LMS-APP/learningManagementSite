@@ -142,5 +142,10 @@
         "appPageName": "selectedcoursedetailDemo",
         "componentName": "selectedcoursedetaildemoComponent",
         "isEntry": false
+    },
+    "c7cfe07f-967f-9c24-002b-4aa92a51a769": {
+        "appPageName": "header_nobuttons",
+        "componentName": "header_nobuttonsComponent",
+        "isEntry": false
     }
 }
