@@ -64,20 +64,20 @@
                 "_attrDef": "p"
             }
         ],
-        "77afba97-33b9-bd95-849a-2245bb60648f": {
-            "paletteKey": "FlexLayoutRow",
+        "c264a951-0df2-e02b-842b-afa6038109ae": {
+            "paletteKey": "NEUTRINOS_VIEW_header_nobuttons",
             "parentEditorKey": "e80cfcff-1269-65d3-efd5-8e5f2a573554",
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Row",
+                    "_value": "header_nobuttons",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
                 },
                 {
                     "_key": "style",
-                    "_value": "margin-right:50px;",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -86,75 +86,8 @@
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
-                },
-                {
-                    "_key": "fxFlex",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "fxLayoutGap",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "wrap",
-                    "_value": "wrap",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "layoutAlign",
-                    "_value": "start",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "pLayoutAlign",
-                    "_value": "stretch",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[fxShow]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[fxHide]",
-                    "_value": "false",
-                    "_type": "kv",
-                    "_attrDef": "p"
                 }
-            ],
-            "fd8759b4-226b-218c-f012-6b03ac22bf2f": {
-                "paletteKey": "NEUTRINOS_VIEW_header_nobuttons",
-                "parentEditorKey": "77afba97-33b9-bd95-849a-2245bb60648f",
-                "designerReference": [
-                    {
-                        "_key": "componentLabel",
-                        "_value": "header_nobuttons",
-                        "_type": "kv",
-                        "_attrDef": "p",
-                        "_useAsLabel": true
-                    },
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            }
+            ]
         },
         "7865747a-7082-68d3-c63a-0957172fe989": {
             "paletteKey": "FlexLayoutRow",
@@ -463,7 +396,7 @@
                                 },
                                 {
                                     "_key": "(ngSubmit)",
-                                    "_value": "",
+                                    "_value": "put(mytraineeGroup.value)",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },
@@ -474,8 +407,8 @@
                                     "_attrDef": "p"
                                 },
                                 {
-                                    "_key": "#form1",
-                                    "_value": "ngForm",
+                                    "_key": "[formGroup]",
+                                    "_value": "mytraineeGroup",
                                     "_type": "kv",
                                     "_attrDef": "c"
                                 }
@@ -993,7 +926,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.instructordetails.registercourses",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -1107,6 +1040,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "registercourses",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -1393,7 +1332,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.instructordetails.status",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -1507,6 +1446,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "status",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -1792,7 +1737,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.instructordetails.role",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -1906,6 +1851,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "role",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -2191,7 +2142,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.firstName",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -2245,7 +2196,24 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.firstName.errors?.required",
+                                                                    "input2": "First Name is required",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.firstName.errors?.minlength",
+                                                                    "input2": "Cant be less than 3 characters",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -2305,6 +2273,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "firstName",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -2591,7 +2565,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.lastName",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -2645,7 +2619,24 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.lastName.errors?.required",
+                                                                    "input2": "Last name is required",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.lastName.errors?.minlength",
+                                                                    "input2": "Cant be less than 3 characters",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -2705,6 +2696,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "lastName",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -3098,13 +3095,13 @@
                                                         },
                                                         {
                                                             "_key": "formControlName",
-                                                            "_value": "",
+                                                            "_value": "date",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.date",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -3170,7 +3167,16 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.date.errors?.required",
+                                                                    "input2": "Invalid Input",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -3467,7 +3473,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.email",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -3521,7 +3527,24 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.email.errors?.required",
+                                                                    "input2": "Invalid Input",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.email.errors?.minlength",
+                                                                    "input2": "Cant be less than 8 characters",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -3581,6 +3604,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "email",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -3867,7 +3896,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.password",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -3921,7 +3950,16 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.password.errors?.required",
+                                                                    "input2": "Invalid Input",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -3981,6 +4019,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "password",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -4267,7 +4311,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.mobile",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -4321,7 +4365,24 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.mobile.errors?.required",
+                                                                    "input2": "Invalid Input",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.mobile.errors?.minlength",
+                                                                    "input2": "Cant be less than 10 number",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -4381,6 +4442,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "mobile",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -4667,7 +4734,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.country",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -4721,7 +4788,24 @@
                                                         },
                                                         {
                                                             "_key": "matError",
-                                                            "_value": [],
+                                                            "_value": [
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.country.errors?.required",
+                                                                    "input2": "Invalid Input",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "input1": "mytraineeGroup.controls.country.errors?.minlength",
+                                                                    "input2": "Cant be less than 4 characters",
+                                                                    "toggle": {
+                                                                        "toggleData": [],
+                                                                        "selected": "start"
+                                                                    }
+                                                                }
+                                                            ],
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
@@ -4781,6 +4865,12 @@
                                                             "_type": "a",
                                                             "_attrDef": "p",
                                                             "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "country",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ]
                                                 }
@@ -5053,7 +5143,7 @@
                                                         },
                                                         {
                                                             "_key": "[(ngModel)]",
-                                                            "_value": "dm.traineedetails.gender",
+                                                            "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -5092,6 +5182,12 @@
                                                             "_value": "",
                                                             "_type": "a",
                                                             "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "formControlName",
+                                                            "_value": "gender",
+                                                            "_type": "kv",
+                                                            "_attrDef": "c"
                                                         }
                                                     ],
                                                     "70f2b4cc-a76b-adc6-5aee-64a377eef677": {
@@ -5402,21 +5498,23 @@
                                                 },
                                                 {
                                                     "_key": "(click)",
-                                                    "_value": "put(form1.value)",
+                                                    "_value": "",
                                                     "_type": "kv",
                                                     "_attrDef": "p"
                                                 },
                                                 {
                                                     "_key": "[disabled]",
-                                                    "_value": "",
+                                                    "_value": "!mytraineeGroup.valid",
                                                     "_type": "kv",
-                                                    "_attrDef": "p"
+                                                    "_attrDef": "p",
+                                                    "_customAttributeFlag": true
                                                 },
                                                 {
                                                     "_key": "[disableRipple]",
                                                     "_value": "",
                                                     "_type": "kv",
-                                                    "_attrDef": "p"
+                                                    "_attrDef": "p",
+                                                    "_customAttributeFlag": true
                                                 },
                                                 {
                                                     "_key": "type",

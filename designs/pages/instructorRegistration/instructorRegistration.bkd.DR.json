@@ -64,20 +64,20 @@
                 "_attrDef": "p"
             }
         ],
-        "9fdd492f-8b50-9c85-2c63-ab20ef7dea89": {
-            "paletteKey": "FlexLayoutRow",
+        "a2a7c06d-c4d5-c422-5de3-ab4f98ff25eb": {
+            "paletteKey": "NEUTRINOS_VIEW_header_nobuttons",
             "parentEditorKey": "4949151f-5d7a-9255-3a14-ac02eaedd2a2",
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "Row",
+                    "_value": "header_nobuttons",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
                 },
                 {
                     "_key": "style",
-                    "_value": "margin-bottom:30px;",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -86,75 +86,8 @@
                     "_value": "",
                     "_type": "kv",
                     "_attrDef": "p"
-                },
-                {
-                    "_key": "fxFlex",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "fxLayoutGap",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "wrap",
-                    "_value": "wrap",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "layoutAlign",
-                    "_value": "start",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "pLayoutAlign",
-                    "_value": "stretch",
-                    "_type": "a",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[fxShow]",
-                    "_value": "true",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[fxHide]",
-                    "_value": "false",
-                    "_type": "kv",
-                    "_attrDef": "p"
                 }
-            ],
-            "a2a7c06d-c4d5-c422-5de3-ab4f98ff25eb": {
-                "paletteKey": "NEUTRINOS_VIEW_header_nobuttons",
-                "parentEditorKey": "9fdd492f-8b50-9c85-2c63-ab20ef7dea89",
-                "designerReference": [
-                    {
-                        "_key": "componentLabel",
-                        "_value": "header_nobuttons",
-                        "_type": "kv",
-                        "_attrDef": "p",
-                        "_useAsLabel": true
-                    },
-                    {
-                        "_key": "style",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    },
-                    {
-                        "_key": "class",
-                        "_value": "",
-                        "_type": "kv",
-                        "_attrDef": "p"
-                    }
-                ]
-            }
+            ]
         },
         "0c84ff05-daf4-564a-f634-21ef3fc53255": {
             "paletteKey": "FlexLayoutRow",
@@ -397,7 +330,7 @@
                             },
                             {
                                 "_key": "style",
-                                "_value": "Width:100%",
+                                "_value": "Width:100%;margin-top:2em;",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -427,7 +360,7 @@
                             },
                             {
                                 "_key": "(ngSubmit)",
-                                "_value": "",
+                                "_value": "put(myGroup.value)",
                                 "_type": "kv",
                                 "_attrDef": "p"
                             },
@@ -438,8 +371,8 @@
                                 "_attrDef": "p"
                             },
                             {
-                                "_key": "#form",
-                                "_value": "ngForm",
+                                "_key": "[formGroup]",
+                                "_value": "myGroup",
                                 "_type": "kv",
                                 "_attrDef": "c"
                             }
@@ -957,7 +890,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.role",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1071,6 +1004,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "role",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -1357,7 +1296,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.status",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1471,6 +1410,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "status",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -1752,12 +1697,11 @@
                                                         "_key": "required",
                                                         "_value": "required",
                                                         "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_customAttributeFlag": true
+                                                        "_attrDef": "p"
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.firstName",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -1811,7 +1755,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.firstName.errors?.required",
+                                                                "input2": "First name is required",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.firstName.errors?.minlength",
+                                                                "input2": "Cant be less than 3 characters",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -1871,6 +1832,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "firstName",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -2157,7 +2124,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.lastName",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -2211,7 +2178,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.lastName.errors?.required",
+                                                                "input2": "Last name is required",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.lastName.errors?.minlength",
+                                                                "input2": "Not less than 3 characters",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -2271,6 +2255,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "lastName",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -2664,13 +2654,13 @@
                                                     },
                                                     {
                                                         "_key": "formControlName",
-                                                        "_value": "",
+                                                        "_value": "date",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.date",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -2736,7 +2726,16 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.date.errors?.required",
+                                                                "input2": "Invalid Input",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -3033,7 +3032,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.email",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -3087,7 +3086,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.email.errors?.minlength",
+                                                                "input2": "Cant be less than 8 characters",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.email.errors?.required",
+                                                                "input2": "Invalid Input",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -3147,6 +3163,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "email",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -3388,7 +3410,7 @@
                                                     "_attrDef": "p"
                                                 }
                                             ],
-                                            "e57cbdf0-5665-4856-b0db-1b77f591ef49": {
+                                            "57a98a2a-676e-0f86-cc38-720fa89f9707": {
                                                 "paletteKey": "NG-Input",
                                                 "parentEditorKey": "0f448f95-df4e-69a5-7515-2284df3d6e10",
                                                 "isAdvancedComponent": true,
@@ -3428,12 +3450,11 @@
                                                         "_key": "required",
                                                         "_value": "required",
                                                         "_type": "a",
-                                                        "_attrDef": "p",
-                                                        "_customAttributeFlag": true
+                                                        "_attrDef": "p"
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.password",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -3469,7 +3490,7 @@
                                                     },
                                                     {
                                                         "_key": "[disabled]",
-                                                        "_value": "false",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -3487,7 +3508,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.password.errors?.required",
+                                                                "input2": "Invalid Input",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.email.errors?.minlength",
+                                                                "input2": "Cant be less than 10 characters",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -3547,6 +3585,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "password",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -3833,7 +3877,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.mobile",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -3887,7 +3931,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.mobile.errors?.required",
+                                                                "input2": "Invalid Input",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.mobile.errors?.minlength",
+                                                                "input2": "Cant be less than 10 number",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -3947,6 +4008,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "mobile",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -4233,7 +4300,7 @@
                                                     },
                                                     {
                                                         "_key": "[(ngModel)]",
-                                                        "_value": "dm.instructordetails.country",
+                                                        "_value": "",
                                                         "_type": "kv",
                                                         "_attrDef": "p"
                                                     },
@@ -4287,7 +4354,24 @@
                                                     },
                                                     {
                                                         "_key": "matError",
-                                                        "_value": [],
+                                                        "_value": [
+                                                            {
+                                                                "input1": "myGroup.controls.country.errors?.required",
+                                                                "input2": "Invalid Input",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            },
+                                                            {
+                                                                "input1": "myGroup.controls.country.errors?.minlength",
+                                                                "input2": "Cant be less than 4 characters",
+                                                                "toggle": {
+                                                                    "toggleData": [],
+                                                                    "selected": "start"
+                                                                }
+                                                            }
+                                                        ],
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
@@ -4347,6 +4431,12 @@
                                                         "_type": "a",
                                                         "_attrDef": "p",
                                                         "_visibility": true
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "country",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ]
                                             }
@@ -4658,6 +4748,12 @@
                                                         "_value": "",
                                                         "_type": "a",
                                                         "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "formControlName",
+                                                        "_value": "gender",
+                                                        "_type": "kv",
+                                                        "_attrDef": "c"
                                                     }
                                                 ],
                                                 "00d14b06-01ec-c736-9313-6d703111fc91": {
@@ -4968,13 +5064,13 @@
                                             },
                                             {
                                                 "_key": "(click)",
-                                                "_value": "put(form.value)",
+                                                "_value": "",
                                                 "_type": "kv",
                                                 "_attrDef": "p"
                                             },
                                             {
                                                 "_key": "[disabled]",
-                                                "_value": "!form.valid",
+                                                "_value": "!myGroup.valid",
                                                 "_type": "kv",
                                                 "_attrDef": "p",
                                                 "_customAttributeFlag": true

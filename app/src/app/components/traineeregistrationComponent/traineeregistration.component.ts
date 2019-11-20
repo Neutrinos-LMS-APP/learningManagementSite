@@ -7,6 +7,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 import {NSnackbarService} from 'neutrinos-seed-services';
 import { Router } from '@angular/router';
+import{FormGroup,FormControl,FormBuilder,Validators} from '@angular/forms';
 
 /**
  * Service import Example :
@@ -26,22 +27,40 @@ import { Router } from '@angular/router';
 
 export class traineeregistrationComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
+    statusEmptyResult;
 
-    constructor(private bdms: NDataModelService,private registerServObj:registerinstructorservice,private snackbarService:NSnackbarService,private router:Router) {
+    mytraineeGroup = this.fb.group({
+        registercourses: new FormControl(''),
+        role:new FormControl(''),
+        status:new FormControl(''),
+        firstName:new FormControl('',Validators.minLength(3)),
+        lastName:new FormControl('',Validators.minLength(3)),
+        date:new FormControl(''),
+        email:new FormControl('',Validators.minLength(8)),
+        password:new FormControl(''),
+        mobile:new FormControl('',Validators.minLength(10)),
+        country:new FormControl('',Validators.minLength(4)),
+        gender:new FormControl('')
+    })
+
+
+    constructor(private bdms: NDataModelService,private registerServiceObj:registerinstructorservice,private snackbarService:NSnackbarService,private router:Router,private fb:FormBuilder) {
         super();
         this.mm = new ModelMethods(bdms);
     }
     ngOnInit() {
-        this.dm.instructordetails.status = 'null';
-        this.dm.instructordetails.role = 'trainee';
-        this.dm.instructordetails.status = 'null';
+         this.mytraineeGroup.patchValue({
+           role:'trainee',
+           status:'null',
+           registercourses:'null'
+       })
     }
     //stroing registration data into db,after registration redirecting to login page
     put(traineeInfo){
-        console.log(traineeInfo);
-        this.registerServObj.registerinstructor(traineeInfo);
-        this.snackbarService.openSnackBar('Registered successfully');
-        this.router.navigate(['/login']);
+       this.dm.instructordetails=traineeInfo;
+        console.log(this.dm.instructordetails);
+        this.registerServiceObj.registerinstructor(this.dm.instructordetails);
+        this.router.navigate(['/home']);
     }
 
 }

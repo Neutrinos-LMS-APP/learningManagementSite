@@ -102,7 +102,10 @@
         },
         {
             "path": "products",
-            "component": "productsComponent"
+            "component": "productsComponent"},
+            
+           { "path": "no",
+            "component": "header_nobuttonsComponent"
         },
         {
             "path": "''",

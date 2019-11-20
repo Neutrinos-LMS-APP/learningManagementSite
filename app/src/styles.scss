@@ -9,8 +9,7 @@
 body{
     font-size: 15px;
     line-height: 20px;
-    font-family: Roboto Helvetic Neve, sans-serif !important
-    
+    font-family: Roboto "Helvetic Neve", sans-serif;
     }    
     .mat-expansion-panel-header{
         height:50px;
@@ -223,6 +222,29 @@ body{
 .box p{
     line-height:1.7em;
     font-size:15px;
+}
+.menu{
+    background-color: black;
+    width:100%;
+}
+.btn{
+    background-color:#EC1C24;
+    color: white;
+    font-size:15px;
+    font-weight:700;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn1{
+    color:white;
+    font-size:15px;
+    font-weight:700;
+}
+.btn1:hover{
+    background-color:#EC1C24;
+    color: white;
 }
 
 .bg{

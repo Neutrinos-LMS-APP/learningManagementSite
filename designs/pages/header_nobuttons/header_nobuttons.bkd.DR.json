@@ -1,5 +1,5 @@
 {
-    "c99a05c2-a8ae-4a94-4136-129e21c333f8": {
+    "a1175fd9-dcae-61f3-dc23-616284c70042": {
         "paletteKey": "FlexLayoutCol",
         "designerReference": [
             {
@@ -66,7 +66,7 @@
         ],
         "ff609eea-abee-26a8-9130-2d568f8783b9": {
             "paletteKey": "FlexLayoutRow",
-            "parentEditorKey": "c99a05c2-a8ae-4a94-4136-129e21c333f8",
+            "parentEditorKey": "a1175fd9-dcae-61f3-dc23-616284c70042",
             "designerReference": [
                 {
                     "_key": "componentLabel",
@@ -107,13 +107,13 @@
                 },
                 {
                     "_key": "layoutAlign",
-                    "_value": "start",
+                    "_value": " ",
                     "_type": "a",
                     "_attrDef": "p"
                 },
                 {
                     "_key": "pLayoutAlign",
-                    "_value": "stretch",
+                    "_value": "none",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -589,7 +589,7 @@
                                     "designerReference": [
                                         {
                                             "_key": "style",
-                                            "_value": " color:#EC1B24;    font-size: 35px;    font-weight: 700;    font-family:  'Courier New', Courier, monospace;   font-variant: petite-caps;",
+                                            "_value": " color:#EC1B24;    font-size: 35px;    font-weight: 700;      ",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },

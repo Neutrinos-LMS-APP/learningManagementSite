@@ -91,7 +91,7 @@ export class dashboardcontentComponent extends NBaseComponent implements OnInit 
    convertObjtoArr(obj) {
        return Array.from(Object.keys(obj), k => obj[k]);   // coverting result data in array so that we can use it for frontend
    }
-    //updating the status of instructor and trainned
+    //updating the status of instructor and trainne
    updateStatus(id,status){
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});  
          this.getRoleAndStatus();

@@ -1,11 +1,9 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="row wrap" style="margin-bottom:30px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <bh-header_nobuttons></bh-header_nobuttons>
-  </div>
+  <bh-header_nobuttons></bh-header_nobuttons>
   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false" fxFill>
       <div fxLayout="column wrap" class="Margin-tb" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.gt-md="80" fxFlex.sm="80" fxFlex.md="80" fxFlex.xs="100">
-        <form #form="ngForm" style="Width:100%">
+        <form [formGroup]="myGroup" style="Width:100%;margin-top:2em;" (ngSubmit)="put(myGroup.value)">
           <mat-card style="margin-top:10%;width:400px;box-shadow: 3px 5px 3px 5px #888888;margin: 0px auto;">
             <mat-card-title style="text-align:center;font-weight:bold;">Instructor Registration</mat-card-title>
 
@@ -17,7 +15,7 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.role" name="role" placeholder="role" value="role" required [disabled]="false">
+                      <input matInput name="role" placeholder="role" value="role" required formControlName="role" [disabled]="false">
 
                     </mat-form-field>
                   </div>
@@ -28,7 +26,7 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.status" name="status" placeholder="status" value="status" required [disabled]="false">
+                      <input matInput name="status" placeholder="status" value="status" required formControlName="status" [disabled]="false">
 
                     </mat-form-field>
                   </div>
@@ -39,8 +37,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.firstName" name="firstName" placeholder="First Name" required [disabled]="false">
-
+                      <input matInput name="firstName" placeholder="First Name" required formControlName="firstName" [disabled]="false">
+                      <mat-error align="start" *ngIf="myGroup.controls.firstName.errors?.required">First name is required</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.firstName.errors?.minlength">Cant be less than 3 characters</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -50,8 +49,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.lastName" name="lastName" placeholder="Last Name" required [disabled]="false">
-
+                      <input matInput name="lastName" placeholder="Last Name" required formControlName="lastName" [disabled]="false">
+                      <mat-error align="start" *ngIf="myGroup.controls.lastName.errors?.required">Last name is required</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.lastName.errors?.minlength">Not less than 3 characters</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -61,10 +61,10 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;">
-                      <input matInput placeholder="Date of birth" [matDatepicker]="picker" [(ngModel)]="dm.instructordetails.date" name="date" required [disabled]="false">
+                      <input matInput placeholder="Date of birth" [matDatepicker]="picker" formControlName="date" name="date" required [disabled]="false">
                       <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
                       <mat-datepicker #picker [disabled]="false"></mat-datepicker>
-
+                      <mat-error align="start" *ngIf="myGroup.controls.date.errors?.required">Invalid Input</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -74,8 +74,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.email" name="email" placeholder="Email ID" required [disabled]="false">
-
+                      <input matInput name="email" placeholder="Email ID" required formControlName="email" [disabled]="false">
+                      <mat-error align="start" *ngIf="myGroup.controls.email.errors?.minlength">Cant be less than 8 characters</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.email.errors?.required">Invalid Input</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -85,8 +86,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.password" name="password" type="password" placeholder="Password" required [disabled]="false">
-
+                      <input matInput name="password" type="password" placeholder="Password" required formControlName="password">
+                      <mat-error align="start" *ngIf="myGroup.controls.password.errors?.required">Invalid Input</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.email.errors?.minlength">Cant be less than 10 characters</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -96,8 +98,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.mobile" name="mobile" placeholder="Mobile" required [disabled]="false">
-
+                      <input matInput name="mobile" placeholder="Mobile" required formControlName="mobile" [disabled]="false">
+                      <mat-error align="start" *ngIf="myGroup.controls.mobile.errors?.required">Invalid Input</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.mobile.errors?.minlength">Cant be less than 10 number</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -107,8 +110,9 @@
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
                     <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                      <input matInput [(ngModel)]="dm.instructordetails.country" name="country" placeholder="Country" required [disabled]="false">
-
+                      <input matInput name="country" placeholder="Country" required formControlName="country" [disabled]="false">
+                      <mat-error align="start" *ngIf="myGroup.controls.country.errors?.required">Invalid Input</mat-error>
+                      <mat-error align="start" *ngIf="myGroup.controls.country.errors?.minlength">Cant be less than 4 characters</mat-error>
                     </mat-form-field>
                   </div>
                 </div>
@@ -117,7 +121,7 @@
                     <mat-icon style="margin-left:10px;">wc</mat-icon>
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
-                    <mat-radio-group [(ngModel)]="dm.instructordetails.gender" name="gender">
+                    <mat-radio-group [(ngModel)]="dm.instructordetails.gender" formControlName="gender" name="gender">
                       <mat-radio-button value="male" required name="male">Male</mat-radio-button>
                       <mat-radio-button value="female" style="margin-left:7px;" required name="female">Female</mat-radio-button>
                     </mat-radio-group>
@@ -127,7 +131,7 @@
             </mat-card-content>
 
             <mat-card-actions>
-              <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" class="btn" (click)="put(form.value)" [disabled]="!form.valid">Submit</button></div>
+              <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" class="btn" [disabled]="!myGroup.valid">Submit</button></div>
             </mat-card-actions>
           </mat-card>
         </form>

@@ -84,7 +84,7 @@ export class registerinstructorservice {
       bh = await this.sd_TutKcQXWPi3KUjIN(bh);
       //appendnew_next_registerinstructor
       //Start formatting output variables
-      let outputVariables = { input: {}, local: {} };
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
       return outputVariables;
     } catch (e) {
@@ -228,6 +228,7 @@ export class registerinstructorservice {
   async sd_TutKcQXWPi3KUjIN(bh) {
     try {
       bh.local.apiUrl = 'http://localhost:24483/api/registerdata';
+      console.log(bh.input.registerobject);
 
       bh = await this.sd_HsOD479NzRVnxbaN(bh);
       //appendnew_next_sd_TutKcQXWPi3KUjIN

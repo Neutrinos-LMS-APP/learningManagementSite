@@ -127,7 +127,7 @@
                     "type": "str",
                     "value": ""
                 },
-                "output": false
+                "output": true
             }
         ],
         "functionName": "registerinstructor",
@@ -147,7 +147,7 @@
         "type": "Script",
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "registerinstructoraddscript",
-        "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";",
+        "script": "bh.local.apiUrl = \"http://localhost:24483/api/registerdata\";\nconsole.log(bh.input.registerobject);",
         "x": 334.0312557220459,
         "y": 165.9218807220459,
         "wires": [
