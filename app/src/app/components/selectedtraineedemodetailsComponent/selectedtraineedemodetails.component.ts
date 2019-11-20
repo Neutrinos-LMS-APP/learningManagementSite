@@ -50,10 +50,10 @@ export class selectedtraineedemodetailsComponent extends NBaseComponent implemen
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});
          //this.getRoleAndStatus();
          if(status=='approved'){
-             this.snackbarService.openSnackBar('Updated Successfully');
+            // this.snackbarService.openSnackBar('Updated Successfully');
         }
         else if(status=='reject'){
-             this.snackbarService.openSnackBar('Removed Successfully');
+           //  this.snackbarService.openSnackBar('Removed Successfully');
         }
          this.cancle();
           //this.router.navigate(['/adminDashboard/dashboardcontent']);

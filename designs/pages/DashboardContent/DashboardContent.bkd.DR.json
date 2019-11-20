@@ -467,7 +467,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "Instructors Approval </br>Requests<label style=\"margin-left:5em;font-size:2em;\">{{instructorandrole.length}}</label>",
+                                    "_value": "Instructors Approval </br>Requests<label style=\"font-size:2em; margin-left:5em;\" >{{instructorandrole.length}}</label>",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -746,7 +746,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "Trainees Approval </br>Requests<label style=\"margin-left:5em;font-size:2em;\">{{traineeandrole.length}}</label>",
+                                    "_value": "Trainees Approval </br>Requests<label style=\"font-size:2em; margin-left:5em;\" >{{traineeandrole.length}}</label>",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -1025,7 +1025,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "Courses Approval </br>Requests<label style=\"margin-left:5em;font-size:2em;\">{{instructorandrole.length}}</label>",
+                                    "_value": "Courses Approval </br>Requests  <label style=\"font-size:2em; margin-left:5em;\">{{instructorandrole.length}}</label>",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

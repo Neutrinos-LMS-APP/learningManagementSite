@@ -401,7 +401,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "Selected Instructor Details",
+                                "_value": "Instructor Details",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }

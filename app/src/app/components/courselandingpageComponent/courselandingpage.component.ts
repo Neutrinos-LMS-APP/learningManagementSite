@@ -37,7 +37,7 @@ export class courselandingpageComponent extends NBaseComponent implements OnInit
         this.getCourseByStatus('approved');
     }
     getSelectedCourse(id){
-        console.log(id);
+     //   console.log(id);
        localStorage.courseId = id;
        this.router.navigate(['/coursedetail']);
 

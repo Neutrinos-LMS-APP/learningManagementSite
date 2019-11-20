@@ -147,5 +147,10 @@
         "appPageName": "header_nobuttons",
         "componentName": "header_nobuttonsComponent",
         "isEntry": false
+    },
+    "b142fa0b-ad0d-18b1-9b28-4a5a415d7c6e": {
+        "appPageName": "forgotPassword",
+        "componentName": "forgotpasswordComponent",
+        "isEntry": false
     }
 }

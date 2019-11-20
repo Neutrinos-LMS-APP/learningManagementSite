@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-forgotpasswordComponent
+import { forgotpasswordComponent } from '../components/forgotpasswordComponent/forgotpassword.component';
 //CORE_REFERENCE_IMPORT-header_nobuttonsComponent
 import { header_nobuttonsComponent } from '../components/header_nobuttonsComponent/header_nobuttons.component';
 //CORE_REFERENCE_IMPORT-selectedcoursedetaildemoComponent
@@ -114,6 +116,8 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forgotpasswordComponent
+forgotpasswordComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-header_nobuttonsComponent
 header_nobuttonsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedcoursedetaildemoComponent
@@ -205,5 +209,5 @@ export const appRoutes = [{path: 'instructorregistration', component: instructor
 children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: 'dashboardcontent', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
 children: [{path: 'addcourse', component: addcourseComponent,
 children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
-children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'card', component: cardComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: 'products', component: productsComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'card', component: cardComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: 'forgotpassword', component: forgotpasswordComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

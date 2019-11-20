@@ -71,7 +71,7 @@ buyNow(){
     else if(this.courseId !==null ,this.userId !==undefined ){
 
         this.registerServiceObj.updateCourses({'_id':this.userId,"coursesid":this.courseId});
-         this.snackbarService.openSnackBar('courses added successfully');
+        //this.snackbarService.openSnackBar('courses added successfully');
         this.router.navigate(['/allcourses']);
     }
     

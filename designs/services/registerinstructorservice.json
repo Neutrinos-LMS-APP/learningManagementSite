@@ -131,8 +131,8 @@
             }
         ],
         "functionName": "registerinstructor",
-        "x": 113.18750190734863,
-        "y": 165.9218807220459,
+        "x": 91.18750190734863,
+        "y": 149.92187690734863,
         "wires": [
             [
                 "sd_TutKcQXWPi3KUjIN"
@@ -189,10 +189,12 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 568.0312576293945,
-        "y": 165.90625381469727,
+        "x": 542.0312576293945,
+        "y": 141.9062557220459,
         "wires": [
-            []
+            [
+                "sd_A6X9pAWTbfgXgSYF"
+            ]
         ],
         "generateNext": false,
         "generated": true,
@@ -226,8 +228,8 @@
             }
         ],
         "functionName": "deleteInstructor",
-        "x": 105.18750190734863,
-        "y": 281.92186737060547,
+        "x": 88.18750190734863,
+        "y": 254.92189407348633,
         "wires": [
             [
                 "sd_RiD03wZBG7fr5xs7"
@@ -243,15 +245,16 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "instructordeletescript",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/deleteregisterdata?_id=${bh.input.instructorrowId}`",
-        "x": 348.0312547683716,
-        "y": 281.92186737060547,
+        "x": 344.03125381469727,
+        "y": 250.921875,
         "wires": [
             [
                 "sd_0xTQbgS6fvdXxO06"
             ]
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "registerinstructorservice"
     },
     {
         "id": "sd_0xTQbgS6fvdXxO06",
@@ -283,13 +286,14 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 584.0312576293945,
-        "y": 277.90624237060547,
+        "x": 637.0312585830688,
+        "y": 248.90629196166992,
         "wires": [
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "registerinstructorservice"
     },
     {
         "id": "sd_l6pMTxx8O0c4Vr0M",
@@ -320,7 +324,7 @@
         ],
         "functionName": "getbystatus",
         "x": 93.20001411437988,
-        "y": 505.93754386901855,
+        "y": 609.9375324249268,
         "wires": [
             [
                 "sd_HGySkkvsxYqCReR9"
@@ -336,8 +340,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbystatus?status=${bh.input.status}`",
-        "x": 360.0500297546387,
-        "y": 504.9375419616699,
+        "x": 365.0500297546387,
+        "y": 606.9375324249268,
         "wires": [
             [
                 "sd_7MG4TpTVsxhkVa3u"
@@ -375,8 +379,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 599.0500564575195,
-        "y": 497.93754386901855,
+        "x": 628.0500583648682,
+        "y": 603.9375324249268,
         "wires": [
             []
         ],
@@ -419,8 +423,8 @@
             }
         ],
         "functionName": "getRoleAndStatus",
-        "x": 93.20001411437988,
-        "y": 610.5376319885254,
+        "x": 95.20001411437988,
+        "y": 701.5376682281494,
         "wires": [
             [
                 "sd_rJj2lgukW7xbRBE7"
@@ -436,8 +440,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getroelandstatus?role=${bh.input.role}&&status=${bh.input.status}`",
-        "x": 370.0500297546387,
-        "y": 611.5376319885254,
+        "x": 366.0500297546387,
+        "y": 701.5376682281494,
         "wires": [
             [
                 "sd_mQCCOsYlvct8oCw7"
@@ -475,8 +479,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 610.0500564575195,
-        "y": 609.5376319885254,
+        "x": 631.0500583648682,
+        "y": 697.5376682281494,
         "wires": [
             []
         ],
@@ -511,8 +515,8 @@
             }
         ],
         "functionName": "getById",
-        "x": 99.20001220703125,
-        "y": 394.9374942779541,
+        "x": 91.20001411437988,
+        "y": 519.9374465942383,
         "wires": [
             [
                 "sd_3pfPzkKJnMU6zK5R"
@@ -528,8 +532,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:24483/api/getbyid?_id=${bh.input.id}`",
-        "x": 350.0500297546387,
-        "y": 390.5374946594238,
+        "x": 358.0500297546387,
+        "y": 520.5374813079834,
         "wires": [
             [
                 "sd_44INLrTYO7rhd62u"
@@ -567,8 +571,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 587.0500564575195,
-        "y": 392.5374946594238,
+        "x": 627.0500564575195,
+        "y": 520.5374794006348,
         "wires": [
             []
         ],
@@ -592,10 +596,19 @@
                 "output": false
             }
         ],
-        "localVariables": [],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
         "functionName": "updateByStatus",
-        "x": 91.20001411437988,
-        "y": 713.5375366210938,
+        "x": 93.20001411437988,
+        "y": 790.5375709533691,
         "wires": [
             [
                 "sd_avGOOzakr77RlIsI"
@@ -611,8 +624,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:4000/api/updatestatus`;",
-        "x": 359.05000495910645,
-        "y": 716.5375347137451,
+        "x": 217.05002975463867,
+        "y": 792.537633895874,
         "wires": [
             [
                 "sd_9l82xOaldIHKOhf8"
@@ -651,10 +664,12 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 612.0500564575195,
-        "y": 714.5375347137451,
+        "x": 360.05005645751953,
+        "y": 792.5376319885254,
         "wires": [
-            []
+            [
+                "sd_2kosDHAtz8BrMB0b"
+            ]
         ],
         "generateNext": false,
         "generated": true
@@ -687,8 +702,8 @@
             }
         ],
         "functionName": "updateCourses",
-        "x": 64.20001220703125,
-        "y": 837.1375045776367,
+        "x": 93.20001411437988,
+        "y": 994.1375122070312,
         "wires": [
             [
                 "sd_zdQrq3fr4Zg56WGv"
@@ -704,8 +719,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "",
         "script": "bh.local.apiUrl=`http://localhost:4000/api/updatecourses`;",
-        "x": 222.04998779296875,
-        "y": 865.1375198364258,
+        "x": 263.0500297546387,
+        "y": 1000.1375389099121,
         "wires": [
             [
                 "sd_1mbByqJ8pkVDcTii"
@@ -744,8 +759,341 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 442.04998779296875,
-        "y": 856.1375198364258,
+        "x": 467.0500087738037,
+        "y": 1001.1375389099121,
+        "wires": [
+            [
+                "sd_3w1uCgwj6fVdvMGi"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_wV5SG1ooKGQNLrIe",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getByUserName",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "useremail",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "getByUserName",
+        "x": 84.20001220703125,
+        "y": 389.93750762939453,
+        "wires": [
+            [
+                "sd_7Amme13eigxzNF3E"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_7Amme13eigxzNF3E",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "getUserEmail",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getemail?email=${bh.input.useremail}`",
+        "x": 348.05000495910645,
+        "y": 388.93749237060547,
+        "wires": [
+            [
+                "sd_Wa0t8vtDeGCCtote"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_Wa0t8vtDeGCCtote",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 633.050048828125,
+        "y": 383.93750762939453,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_By1EMek3X1gC2KlT",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "updatepassbyemail",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "useremail",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "updatepassbyemail",
+        "x": 90.20001220703125,
+        "y": 894.1375198364258,
+        "wires": [
+            [
+                "sd_M8ZN83h3bW6ayzHd"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_M8ZN83h3bW6ayzHd",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "updatepasswordbyuseremail",
+        "script": "bh.local.apiUrl=`http://localhost:4000/api/updatepassword`",
+        "x": 273.0500297546387,
+        "y": 900.1375370025635,
+        "wires": [
+            [
+                "sd_RR7IaKWHPpPVSUTi"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_RR7IaKWHPpPVSUTi",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.useremail",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "useremail"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 466.05005645751953,
+        "y": 902.1375389099121,
+        "wires": [
+            [
+                "sd_yFq3jKucubrP6qh6"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_A6X9pAWTbfgXgSYF",
+        "type": "SnackBar",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "snackBar",
+        "message": {
+            "type": "bh.local",
+            "value": "result.message"
+        },
+        "action": {
+            "type": "str",
+            "value": "close"
+        },
+        "duration": {
+            "type": "num",
+            "value": "2000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": "custom"
+        },
+        "direction": "ltr",
+        "x": 731.2001075744629,
+        "y": 147.93749809265137,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_2kosDHAtz8BrMB0b",
+        "type": "SnackBar",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "snackBar",
+        "message": {
+            "type": "bh.local",
+            "value": "result.data"
+        },
+        "action": {
+            "type": "str",
+            "value": "close"
+        },
+        "duration": {
+            "type": "num",
+            "value": "2000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": "custom"
+        },
+        "direction": "ltr",
+        "x": 595.2001571655273,
+        "y": 796.537633895874,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_yFq3jKucubrP6qh6",
+        "type": "SnackBar",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "message": {
+            "type": "bh.local",
+            "value": "result.data"
+        },
+        "action": {
+            "type": "str",
+            "value": "close"
+        },
+        "duration": {
+            "type": "num",
+            "value": "2000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": "custom"
+        },
+        "direction": "ltr",
+        "x": 590.2000732421875,
+        "y": 894.537483215332,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_3w1uCgwj6fVdvMGi",
+        "type": "SnackBar",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "message": {
+            "type": "bh.local",
+            "value": "result.data"
+        },
+        "action": {
+            "type": "str",
+            "value": "close"
+        },
+        "duration": {
+            "type": "num",
+            "value": "2000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": "custom"
+        },
+        "direction": "ltr",
+        "x": 612.2001070976257,
+        "y": 995.5375385284424,
         "wires": [
             []
         ],

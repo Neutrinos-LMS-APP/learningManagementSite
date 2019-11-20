@@ -163,13 +163,16 @@ export class registerinstructorservice {
   }
   public async updateByStatus(updateObj = undefined, ...others) {
     try {
-      let bh = { input: { updateObj: updateObj }, local: {} };
+      let bh = {
+        input: { updateObj: updateObj },
+        local: { result: undefined }
+      };
       bh = this.__constructDefault(bh);
 
       bh = await this.sd_avGOOzakr77RlIsI(bh);
       //appendnew_next_updateByStatus
       //Start formatting output variables
-      let outputVariables = { input: {}, local: {} };
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
       return outputVariables;
     } catch (e) {
@@ -186,6 +189,42 @@ export class registerinstructorservice {
 
       bh = await this.sd_zdQrq3fr4Zg56WGv(bh);
       //appendnew_next_updateCourses
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async getByUserName(useremail = undefined, ...others) {
+    try {
+      let bh = {
+        input: { useremail: useremail },
+        local: { result: undefined, apiUrl: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_7Amme13eigxzNF3E(bh);
+      //appendnew_next_getByUserName
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async updatepassbyemail(useremail = undefined, ...others) {
+    try {
+      let bh = {
+        input: { useremail: useremail },
+        local: { apiUrl: undefined, result: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_M8ZN83h3bW6ayzHd(bh);
+      //appendnew_next_updatepassbyemail
       //Start formatting output variables
       let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
@@ -249,7 +288,23 @@ export class registerinstructorservice {
         body: bh.input.registerobject
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_A6X9pAWTbfgXgSYF(bh);
       //appendnew_next_sd_HsOD479NzRVnxbaN
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_A6X9pAWTbfgXgSYF(bh) {
+    try {
+      this.matSnackBar.open(bh.local.result.message, 'close', {
+        duration: 2000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        direction: 'ltr',
+        panelClass: ['custom']
+      });
+      //appendnew_next_sd_A6X9pAWTbfgXgSYF
       return bh;
     } catch (e) {
       throw e;
@@ -394,7 +449,23 @@ export class registerinstructorservice {
         body: bh.input.updateObj
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_2kosDHAtz8BrMB0b(bh);
       //appendnew_next_sd_9l82xOaldIHKOhf8
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_2kosDHAtz8BrMB0b(bh) {
+    try {
+      this.matSnackBar.open(bh.local.result.data, 'close', {
+        duration: 2000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        direction: 'ltr',
+        panelClass: ['custom']
+      });
+      //appendnew_next_sd_2kosDHAtz8BrMB0b
       return bh;
     } catch (e) {
       throw e;
@@ -423,7 +494,97 @@ export class registerinstructorservice {
         body: bh.input.coursesObj
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_3w1uCgwj6fVdvMGi(bh);
       //appendnew_next_sd_1mbByqJ8pkVDcTii
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_3w1uCgwj6fVdvMGi(bh) {
+    try {
+      this.matSnackBar.open(bh.local.result.data, 'close', {
+        duration: 2000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        direction: 'ltr',
+        panelClass: ['custom']
+      });
+      //appendnew_next_sd_3w1uCgwj6fVdvMGi
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_7Amme13eigxzNF3E(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getemail?email=${bh.input.useremail}`;
+
+      bh = await this.sd_Wa0t8vtDeGCCtote(bh);
+      //appendnew_next_sd_7Amme13eigxzNF3E
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_Wa0t8vtDeGCCtote(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: undefined
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_Wa0t8vtDeGCCtote
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_M8ZN83h3bW6ayzHd(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:4000/api/updatepassword`;
+
+      bh = await this.sd_RR7IaKWHPpPVSUTi(bh);
+      //appendnew_next_sd_M8ZN83h3bW6ayzHd
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_RR7IaKWHPpPVSUTi(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.useremail
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_yFq3jKucubrP6qh6(bh);
+      //appendnew_next_sd_RR7IaKWHPpPVSUTi
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_yFq3jKucubrP6qh6(bh) {
+    try {
+      this.matSnackBar.open(bh.local.result.data, 'close', {
+        duration: 2000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        direction: 'ltr',
+        panelClass: ['custom']
+      });
+      //appendnew_next_sd_yFq3jKucubrP6qh6
       return bh;
     } catch (e) {
       throw e;

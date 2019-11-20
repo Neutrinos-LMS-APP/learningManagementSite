@@ -501,6 +501,24 @@
      "file": "C:\\Users\\hi\\neutrinos-studio\\learningManagementSite\\flows\\user-data\\node_modules\\node-red-contrib-objectid\\objectid.js"
     }
    }
+  },
+  "node-red-contrib-auth": {
+   "name": "node-red-contrib-auth",
+   "version": "0.1.7",
+   "local": true,
+   "nodes": {
+    "JsonWebToken": {
+     "name": "JsonWebToken",
+     "types": [
+      "JsonWebToken",
+      "JsonWebToken_config"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-auth",
+     "file": "C:\\Users\\hi\\neutrinos-studio\\learningManagementSite\\flows\\user-data\\node_modules\\node-red-contrib-auth\\jsonWebToken.js"
+    }
+   }
   }
  },
  "_credentialSecret": "15d670d80413d4ec7d1bad00876b29d4d76eae20e68b7e5ad92ec2da452a8c0b",
@@ -508,7 +526,7 @@
   "_": {
    "editor": {
     "view": {
-     "view-grid-size": 20,
+     "view-grid-size": "20",
      "view-node-status": true,
      "view-node-show-label": true,
      "view-show-tips": true,

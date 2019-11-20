@@ -159,6 +159,7 @@ export class courseservice {
       //Start formatting output variables
       let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
+      console.log(outputVariables.local.result.data);
       return outputVariables;
     } catch (e) {
       throw e;
@@ -349,7 +350,23 @@ export class courseservice {
         body: bh.input.courseObj
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      bh = await this.sd_4eCSnCPqtLyQQ6Bz(bh);
       //appendnew_next_sd_Zwc4aMcHjNU9mRzA
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_4eCSnCPqtLyQQ6Bz(bh) {
+    try {
+      this.matSnackBar.open(bh.local.result.data, 'close', {
+        duration: 2000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        direction: 'ltr',
+        panelClass: ['custom']
+      });
+      //appendnew_next_sd_4eCSnCPqtLyQQ6Bz
       return bh;
     } catch (e) {
       throw e;

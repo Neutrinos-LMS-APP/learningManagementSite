@@ -91,6 +91,10 @@
                       <mat-error align="start" *ngIf="myGroup.controls.email.errors?.minlength">Cant be less than 10 characters</mat-error>
                     </mat-form-field>
                   </div>
+                  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <mat-icon *ngIf="passwordshow" (click)="togglePassword()">visibility</mat-icon>
+                    <mat-icon (click)="togglePassword()" *ngIf="!passwordshow">visibility_off</mat-icon>
+                  </div>
                 </div>
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">

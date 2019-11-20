@@ -55,6 +55,21 @@ export class traineeregistrationComponent extends NBaseComponent implements OnIn
            registercourses:'null'
        })
     }
+
+    passwordtype:string='password';
+    passwordshow:boolean=false;
+    togglePassword()
+    {
+        if(this.passwordshow){
+            this.passwordshow=false;
+            this.passwordtype='password';   
+        }
+        else{
+             this.passwordshow=true;
+            this.passwordtype='text'; 
+        }
+       
+    }
     //stroing registration data into db,after registration redirecting to login page
     put(traineeInfo){
        this.dm.instructordetails=traineeInfo;

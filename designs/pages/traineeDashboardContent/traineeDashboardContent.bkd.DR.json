@@ -2129,7 +2129,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "Selected Course Details",
+                                            "_value": "Course Details",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }

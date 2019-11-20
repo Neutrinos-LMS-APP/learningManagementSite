@@ -56,10 +56,10 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
         this.courseServiceObj.updateCourseStatus({"_id":id,"status":status});
         //  this.router.navigate(['/adminDashboard/dashboardcontent']);
        if(status=='approved'){
-             this.snackbarService.openSnackBar('Updated Successfully');
+           //  this.snackbarService.openSnackBar('Updated Successfully');
         }
         else if(status=='reject'){
-             this.snackbarService.openSnackBar('Removed Successfully');
+           //  this.snackbarService.openSnackBar('Removed Successfully');
         }
         this.cancle();
         

@@ -105,7 +105,9 @@
             "component": "productsComponent"},
             
            { "path": "no",
-            "component": "header_nobuttonsComponent"
+            "component": "header_nobuttonsComponent"},
+            {"path": "forgotpassword",
+            "component": "forgotpasswordComponent"
         },
         {
             "path": "''",

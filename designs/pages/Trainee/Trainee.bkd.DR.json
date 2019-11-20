@@ -589,32 +589,7 @@
                                             },
                                             {
                                                 "_key": "html",
-                                                "_value": "Selected Instructor Details",
-                                                "_type": "a",
-                                                "_attrDef": "p"
-                                            }
-                                        ]
-                                    },
-                                    "0deac8ac-6cdb-a2fd-256e-7f635c5ffad8": {
-                                        "paletteKey": "html-editor",
-                                        "parentEditorKey": "12d162d8-108c-8067-132d-28859ca58586",
-                                        "isAdvancedChildComponent": true,
-                                        "designerReference": [
-                                            {
-                                                "_key": "style",
-                                                "_value": "",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            },
-                                            {
-                                                "_key": "class",
-                                                "_value": "",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            },
-                                            {
-                                                "_key": "html",
-                                                "_value": "",
+                                                "_value": "Trainee Details",
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }

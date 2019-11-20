@@ -12,7 +12,9 @@
               Register Here</h3>
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;" routerLink="/instructorregistration" class="btn">Instructor</button></div>
-          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;margin-top:20px;background-color:black;color:white;" routerLink="/traineeregistration">Trainee</button></div>
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;margin-top:20px;background-color:black;color:white;" routerLink="/traineeregistration">Trainee</button>
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
+          </div>
         </div>
       </div>
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fx.Hide.xs="true" fxHide.xs="true">
@@ -33,7 +35,7 @@
                   <mat-icon style="color:black;margin-right:10px;">person</mat-icon>
                 </div>
                 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <mat-form-field style="width:270px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                     <input matInput [(ngModel)]="dm.logindetails.userName" name="userName" placeholder="UserName" required>
 
                   </mat-form-field>
@@ -44,10 +46,22 @@
                   <mat-icon style="color:black;">lock</mat-icon>
                 </div>
                 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.logindetails.password" name="password" type="password" placeholder="Password" required>
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.logindetails.password" name="password" type="password" placeholder="Password" required [type]="passwordtype">
 
-                  </mat-form-field>
+                      </mat-form-field>
+                    </div>
+                    <div fxLayout="row wrap" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false">
+                      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                        <mat-icon (click)="togglePassword()" *ngIf="!passwordshow">visibility_off</mat-icon>
+                      </div>
+                      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                        <mat-icon *ngIf="passwordshow" (click)="togglePassword()">visibility</mat-icon>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div fxLayout="row wrap" style="margin-left:20px;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
@@ -59,7 +73,8 @@
                     Remember Me</h4>
                 </div>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:130px;" class="btn" (click)="onloginSubmit(lform.value)">Submit</button><button mat-raised-button style="width:130px;margin-left:20px;background-color:black;" routerLink="/home" class="btn" color="warn">Cancel</button></div>
+              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:130px;" class="btn" (click)="onloginSubmit(lform.value)">Submit</button><button mat-raised-button style="background:black;color:white;margin-left:15px;" routerLink="/home" color="warn">Cancel</button></div>
+              <div fxLayout="row wrap" style="margin-top:15px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button class="btn2" routerLink="/forgotpassword">Forgot password?</button></div>
             </mat-card-content>
           </mat-card>
         </form>

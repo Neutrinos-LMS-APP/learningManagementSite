@@ -56,10 +56,10 @@ export class selectedinstructordetaildemoComponent extends NBaseComponent implem
    updateStatus(id,status){
         this.registerServiceObj.updateByStatus({"_id":id,"status":status});
         if(status=='approved'){
-             this.snackbarService.openSnackBar('Updated Successfully');
+            // this.snackbarService.openSnackBar('Updated Successfully');
         }
         else if(status=='reject'){
-             this.snackbarService.openSnackBar('Removed Successfully');
+            // this.snackbarService.openSnackBar('Removed Successfully');
         }
        
         // this.router.navigate(['/adminDashboard/dashboardcontent']);
