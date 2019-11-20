@@ -9,6 +9,8 @@
 body{
     font-size: 15px;
     line-height: 20px;
+    font-family: Roboto Helvetic Neve, sans-serif !important
+    
     }    
     .mat-expansion-panel-header{
         height:50px;
@@ -57,12 +59,7 @@ body{
     padding:0px 50px 0px 5px !important;
     
 }
-    
-.divimage{
-    background-image:url('assets/Web/contact.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+
 .class1{
 // <<<<<<< Updated upstream
   //  background-color:#696969;
@@ -70,7 +67,7 @@ body{
   font-size:20px;
   font-weight: bold;
   color: white;
-  font-family: Arial;
+  
   
 // =======
     
@@ -87,7 +84,6 @@ body{
      font-size:18px;
   font-weight: bold;
   color: white;
-  font-family: Arial;
 }
 .class2{
    position: absolute;
@@ -134,18 +130,23 @@ body{
 }
 /*Homepage login button */
 
+.menu{
+    background: black;
+}
+
 .btn{
     background-color:#EC1C24;
     color: white;
     font-size:15px;
     font-weight:700;
+    
 }
 .btn:hover{
     background-color: white;
     color: black;
 }
 .btn1{
-    color:black;
+    color:white;
     font-size:15px;
     font-weight:700;
  
@@ -173,11 +174,12 @@ body{
 .box{
     background-color:#EC1C24;
     color:white;
-    width:35%;
-    height:300px;
     padding:12px;
     text-align: center;
     margin:5px;
+    overflow: hidden;
+  
+   
 }
 .instructordashboardcard{
     margin-bottom: 40px;
@@ -223,19 +225,27 @@ body{
     font-size:15px;
 }
 
+.bg{
+    text-align: justify;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image:url('assets/Web/b4.jpg');
+    
+}
+
 .BannerContent{
-    position: absolute;
-    top:25%;
-    left:10%;
     color:white;
-    width:80%;
+    width:100%;
     font-size:25px;
     font-weight:800;
     word-spacing:0.1em;
     letter-spacing:0.1em;
     line-height:1em; 
-    text-align:justify;
-
+    text-align: justify;
+    padding:20px;
 }
 .footer{
     background-color: black;
@@ -270,15 +280,32 @@ h3{
     padding-left:20px;
     margin-top: -25px;
 }
+.MobMenu{
+    background: lightgrey;
+    opacity: 1;
+    left:66%;
+    position: absolute;
+    top:7%;
+   
 
-/* Media Query */
-
-
-@media only screen and (max-width: 599px)
-{
-.Header{height:580px;}
-.Logo{width:100%;}
 }
+.Mbtn{
+color:white;
+    font-size:15px;
+    font-weight:700;
+    cursor: pointer;
+
+ 
+}
+.Mbtn:hover{
+    background-color:#EC1C24;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Dashboard  styling*/
+
 .coursecards:hover{
     background-color: #EC1C24;
     color:white !important;
@@ -302,3 +329,6 @@ h3{
     width: 800px;
     font-size: 22px;
 }
+/* End of Dashboard */
+
+

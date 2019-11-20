@@ -33,6 +33,23 @@ export class headerComponent extends NBaseComponent implements OnInit {
 
     }
 
+    displaymenu:boolean=false;
+
+    togglemenu(){
+        console.log("Hie")
+        if(this.displaymenu)
+        {
+            this.displaymenu =false;
+        }
+        else{
+            this.displaymenu = true;
+        }
+    }
+
+
+
+
+
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

@@ -2,144 +2,134 @@
   <router-outlet></router-outlet>
 </div>
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <bh-header></bh-header>
-  <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <h3 style="color:#e22127;">
-        The Platform
-      </h3>
-    </div>
-    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-      <p style="font-size:20px;">
-        Accelerate Transformation. Redefine Productivity.
-      </p>
-    </div>
-  </div>
-  <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="row wrap" style="padding:0px 10px;" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
-        <mat-grid-list cols="2" style="width:50%;">
-          <div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  Acceleration<br>
-                  #NeutrinosFast</h4>
+  <mat-card>
+    <mat-card-title style="Text-align:Center;font-size:25px;color:#EC1C24;">The Platform</mat-card-title>
+
+    <mat-card-subtitle style="Text-align:Center;font-size:20px;">Accelerate Transformation. Redefine Productivity.</mat-card-subtitle>
+
+    <mat-card-content>
+      <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+          <mat-grid-list cols="2" fxFLex.md="100" fxCol.xs="1" style="width:50%;">
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+              <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+                <div fxLayout="row wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    Acceleration<br>
+                    #NeutrinosFast</h4>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+                  <p style="line-height:1.7em;font-size:15px;">
+                    We transform app backlog into a high-octane app factory with the fastest ``time-to-monetisation`` with no compromise on enterprise-grade <br>quality.</p>
+                </div>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
-                <p style="line-height:1.7em;font-size:15px;">
-                  We transform app backlog into a high-octane app factory with the fastest ``time-to-monetisation`` with no compromise on enterprise-grade quality.</p>
-              </div>
-            </div>
-            <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  Solutions<br>
-                  #NeutrinosSolved</h4>
-              </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p>
-                  We understand your unique challenges. We develop custom, state of the art solutions and implement them with unwavering follow up &amp; support.</p>
+              <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    Solutions<br>
+                    #NeutrinosSolved</h4>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p>
+                    We understand your unique challenges. We develop custom, state of the art solutions and implement them with unwavering follow up &amp; support.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  Enablement<br>
-                  #NeutrinosTogether</h4>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    Enablement<br>
+                    #NeutrinosTogether</h4>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p>
+                    With state-of-the art security and seamless platform integration, we ensure your peace of mind. Boost productivity without the costs and typically long lead times.</p>
+                </div>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p>
-                  With state-of-the art security and seamless platform integration, we ensure your peace of mind. Boost productivity without the costs and typically long lead times.</p>
+              <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4 style="font-size:20.5px;">
+                    Enablement<br>
+                    #NeutrinosTogether</h4>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p style="line-height:none;">
+                    Our Platform, Tools &amp; Support are available to developers from all walks of life. Join our community to unleash creativity, productivity and commercial success.</p>
+                </div>
               </div>
             </div>
-            <div fxLayout="column wrap" class="box" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4 style="font-size:20.5px;">
-                  Enablement<br>
-                  #NeutrinosTogether</h4>
-              </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p style="line-height:none;">
-                  Our Platform, Tools &amp; Support are available to developers from all walks of life. Join our community to unleash creativity, productivity and commercial success.</p>
-              </div>
+          </mat-grid-list>
+          <mat-grid-list cols="0.5" fxFlex.xs="100" fxCol.xs="1" style="width:50%;" class="product">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="line-height:1.5em;">
+                Delivering value to everyone from Enterprises to Citizen Developers</h3>
             </div>
-          </div>
-        </mat-grid-list>
-        <mat-grid-list cols="0.5" style="width:50%" class="product">
-          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <h3 style="font-size:25px; line-height:1.5em;">
-              Delivering value to everyone from Enterprises to Citizen Developers</h3>
-          </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  <ul>
-                    <li>Large Enterprises</li>
-                  </ul>
-                </h4>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    <ul>
+                      <li>Large Enterprises</li>
+                    </ul>
+                  </h4>
+                </div>
+                <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p style="padding-left:20px;;">
+                    Accelerate your development cycles and hand over app development capabilities to the entire organization</p>
+                </div>
               </div>
-              <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p style="padding-left:20px;;">
-                  Accelerate your development cycles and hand over app development capabilities to the entire organization</p>
+              <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    <ul>
+                      <li>SMME/Start-Ups
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+                <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p style="padding-left:20px;">
+                    Reach for the stars without the budget for a space program! Simple, powerful apps to unlock your value, delivered in days.</p>
+                </div>
+              </div>
+              <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    <ul>
+                      <li>Enterprise App Developers
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+                <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p style="padding-left:20px;">
+                    Unleash your creative potential while leveraging the collaborative productivity of the whole community - best of both worlds</p>
+                </div>
+              </div>
+              <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <h4>
+                    <ul>
+                      <li>Citizen Developers
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+                <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <p style="padding-left:20px;">
+                    Scale from zero to Enterprise quality apps in a matter of days
+                  </p>
+                </div>
               </div>
             </div>
-            <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  <ul>
-                    <li>SMME/Start-Ups
-                    </li>
-                  </ul>
-                </h4>
-              </div>
-              <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p style="padding-left:20px;">
-                  Reach for the stars without the budget for a space program! Simple, powerful apps to unlock your value, delivered in days.</p>
-              </div>
-            </div>
-            <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  <ul>
-                    <li>Enterprise App Developers
-                    </li>
-                  </ul>
-                </h4>
-              </div>
-              <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p style="padding-left:20px;">
-                  Unleash your creative potential while leveraging the collaborative productivity of the whole community - best of both worlds</p>
-              </div>
-            </div>
-            <div fxLayout="column wrap" style="margin-top:-20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <h4>
-                  <ul>
-                    <li>Citizen Developers
-                    </li>
-                  </ul>
-                </h4>
-              </div>
-              <div fxLayout="row wrap" class="Product-Content" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <p style="padding-left:20px;">
-                  Scale from zero to Enterprise quality apps in a matter of days
-                </p>
-              </div>
-            </div>
-          </div>
-        </mat-grid-list>
+          </mat-grid-list>
+        </div>
       </div>
-    </div>
-  </div>
+    </mat-card-content>
+  </mat-card>
   <div fxLayout="column wrap" style="margin:30px;" fxFlex="100" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
     <div>
       <a href="https://www.neutrinos.co/" style="color:white;font-size:18px;text-decoration:none;background-color:#e22127;padding:10px;font-size15px;" target="_blank">Readmore</a></div>
   </div>
-</div>
-<div fxLayout="column wrap" class="footer" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <bh-footer></bh-footer>
 </div>

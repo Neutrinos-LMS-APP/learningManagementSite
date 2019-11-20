@@ -395,6 +395,12 @@
                             "_value": "false",
                             "_type": "kv",
                             "_attrDef": "p"
+                        },
+                        {
+                            "_key": "fxLayoutAlign.xs",
+                            "_value": "center center",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "1554b08c-04aa-de69-5a47-56f2c2b83a0e": {
@@ -1070,6 +1076,12 @@
                             "_value": "true",
                             "_type": "kv",
                             "_attrDef": "c"
+                        },
+                        {
+                            "_key": "fxHide.xs",
+                            "_value": "true",
+                            "_type": "kv",
+                            "_attrDef": "c"
                         }
                     ],
                     "a51a2dd0-515d-6109-3e57-a40b61e9820d": {
@@ -1298,7 +1310,7 @@
                         },
                         {
                             "_key": "style",
-                            "_value": "margin-top:5em;",
+                            "_value": "margin-top:5em;margin-bottom:10px;",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1334,7 +1346,7 @@
                         },
                         {
                             "_key": "pLayoutAlign",
-                            "_value": "center",
+                            "_value": "none",
                             "_type": "a",
                             "_attrDef": "p"
                         },
@@ -1409,6 +1421,12 @@
                                 "_value": "ngForm",
                                 "_type": "kv",
                                 "_attrDef": "c"
+                            },
+                            {
+                                "_key": "fxFLexFill",
+                                "_value": "true",
+                                "_type": "kv",
+                                "_attrDef": "c"
                             }
                         ],
                         "8fd07571-c15a-7596-5854-1bbf371d6002": {
@@ -1425,7 +1443,7 @@
                                 },
                                 {
                                     "_key": "style",
-                                    "_value": "width:100%;",
+                                    "_value": "",
                                     "_type": "kv",
                                     "_attrDef": "p"
                                 },

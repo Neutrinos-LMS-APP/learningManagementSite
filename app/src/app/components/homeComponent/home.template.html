@@ -3,31 +3,34 @@
 </div>
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <bh-header></bh-header>
-  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/b4.jpg" style="width:100%;height:500px;"></div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <h2 class="BannerContent">
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="bg" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <h2 fxFlex-Wrap.xs="true" fxFlexWrap.xs="true" style="text-align:left;" class="BannerContent">
         Neutrinos Developer Certification<br><br><small>Get certified from Neutrinos which validates your Application Development skills &amp; expertise in using the Neutrinos platform. Explore different levels of certifications at the Courses page and enroll yourself for learning.</small></h2>
     </div>
   </div>
-  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutGap="10px;" fxLayoutAlign="space-evenly center" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="row wrap" style="padding:20px;" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxflex.xs="100">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <h3 style="color:#EC1C24;">
-            Learning Neutrinos Platform</h3>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <p style="text-align:justify;line-height:1.8em;font-size:18px;">
-              Neutrinos is a low-code rapid application development platform that provides the capability for you to build enterprise grade applications for web, mobile, and IoT capabilities in a matter of days.</p>
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-card>
+      <mat-card-content>
+        <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-evenly none" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="80" fxFlex.sm="50" fxFlex.md="50">
+            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.xs="100">
+              <h3 style="color:#EC1C24;line-height:1.5em;font-family: &apos;Courier New&apos;, Courier, monospace;">
+                Learning Neutrinos Platform</h3>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <p style="text-align:justify;line-height:1.8em;font-size:18px;">
+                  Neutrinos is a low-code rapid application development platform that provides the capability for you to build enterprise grade applications for web, mobile, and IoT capabilities in a matter of days.</p>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                <p style="text-align:justify;">
+                  <a style="color:white;font-size:18px;text-decoration:none;background-color:#EC1C24;padding:10px;font-size15px;" href="https://www.neutrinos.co/">Readmore</a></p>
+              </div>
+            </div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-            <p style="text-align:justify;">
-              <a style="color:white;font-size:18px;text-decoration:none;background-color:#EC1C24;padding:10px;font-size15px;" href="https://www.neutrinos.co/">Readmore</a></p>
-          </div>
+          <div fxLayout="row wrap" style="padding:20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/desktop.gif" style="width:100%;height:250px;"></div>
         </div>
-      </div>
-      <div fxLayout="row wrap" style="padding:20px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/desktop.gif" style="height:300px; width:400px;"></div>
-    </div>
+      </mat-card-content>
+    </mat-card>
   </div>
   <bh-footer></bh-footer>
 </div>

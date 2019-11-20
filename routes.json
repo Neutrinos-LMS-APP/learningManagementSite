@@ -101,6 +101,10 @@
             "component": "coursedetailComponent"
         },
         {
+            "path": "products",
+            "component": "productsComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "/home",
             "pathMatch": "full",

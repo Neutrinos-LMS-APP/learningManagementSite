@@ -1,19 +1,18 @@
-<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
-    <mat-toolbar style="background-color:white;">
-      <div fxLayout="row " class="header" fxLayoutAlign="space-between none" [fxShow]="true" [fxHide]="false">
-        <div fxLayout="column " fxLayoutAlign="  start" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" style="width:100%;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-toolbar fxFlexFill="true" class="menu">
+      <div fxLayout="row " class="header" fxFlex="100" fxLayoutAlign="space-between none" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="width:50px;"></div>
             <div fxLayout="row wrap" style="padding-left:5px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <h2 style=" color:#EC1C24;    font-size: 35px;    font-weight: 700;    font-family:  &apos;Courier New&apos;, Courier, monospace;   font-variant: petite-caps;" class="logo">
+              <h2 style=" color:#EC1B24;    font-size: 35px;    font-weight: 700;    font-family:  &apos;Courier New&apos;, Courier, monospace;   font-variant: petite-caps;" class="logo">
                 LMS</h2>
             </div>
           </div>
         </div>
         <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/home">Home</button><button mat-button class="btn1" routerLink="/product">Product</button><button mat-button class="btn1" routerLink="/allcourses">Courses</button><button mat-button class="btn1" routerLink="/contactus">Contact Us</button></div>
+          <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/home">Home</button><button mat-button class="btn1" routerLink="/product">Product</button><button mat-button class="btn1" routerLink="/allcourses">Courses</button><button mat-button class="btn1" routerLink="/contactus">Contact Us</button></div>
         </div>
       </div>
     </mat-toolbar>

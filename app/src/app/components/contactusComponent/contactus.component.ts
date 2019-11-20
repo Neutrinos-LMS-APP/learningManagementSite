@@ -4,7 +4,13 @@ import { ModelMethods } from '../../lib/model.methods';
 // import { BDataModelService } from '../service/bDataModel.service';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
-
+//import { contactdetails } from '../../models/contactdetails.models'; 
+import {FormGroup, FormControl} from '@angular/forms';
+import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
+// import { contactdetails} from '../../models/contactdetails.model';
+import { ReactiveFormsModule } from '@angular/forms';
+import {NSnackbarService} from 'neutrinos-seed-services';
+import { Router } from '@angular/router';
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -24,7 +30,15 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class contactusComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
-    constructor(private bdms: NDataModelService) {
+    contactdetails = new FormGroup({
+        fullName : new FormControl(''),
+        emailid : new FormControl(''),
+        msg :new FormControl('')
+
+    });
+
+    constructor(private bdms: NDataModelService, private contact: registerinstructorservice,public router:Router,public snackbarService:NSnackbarService)
+     {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -33,84 +47,20 @@ export class contactusComponent extends NBaseComponent implements OnInit {
 
     }
 
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
-        this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            });
-    }
+    result;
+//    async enquirySubmit(data){
+//        console.log("entered into"+data);
+//         this.dm.contactdetails = data;
+//         this.result=(await this.contact.contactdetails(this.dm.contactdetails)).local.result;
+        
+//         this.contactdetails.reset();
+//         this.router.navigate(['/home']);
+        
 
-    getById(dataModelName, dataModelId) {
-        this.mm.getById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            },
-            error => {
-                // Handle errors here
-            })
-    }
+//     }
 
-    put(dataModelName, dataModelObject) {
-        this.mm.put(dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
+   
 
-    validatePut(formObj, dataModelName, dataModelObject) {
-        this.mm.validatePut(formObj, dataModelName, dataModelObject,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    update(dataModelName, update, filter, options) {
-        const updateObject = {
-            update: update,
-            filter: filter,
-            options: options
-        };
-        this.mm.update(dataModelName, updateObject,
-            result => {
-                //  On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    delete (dataModelName, filter) {
-        this.mm.delete(dataModelName, filter,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    deleteById(dataModelName, dataModelId) {
-        this.mm.deleteById(dataModelName, dataModelId,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
-
-    updateById(dataModelName, dataModelId, dataModelObj) {
-        this.mm.updateById(dataModelName, dataModelId, dataModelObj,
-            result => {
-                // On Success code here
-            }, error => {
-                // Handle errors here
-            })
-    }
 
 
 }
