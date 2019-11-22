@@ -128,16 +128,6 @@
         "componentName": "cardComponent",
         "isEntry": false
     },
-    "2d88b1f1-020f-f6bd-af98-a11999972643": {
-        "appPageName": "selectedInstructorDetailDemo",
-        "componentName": "selectedinstructordetaildemoComponent",
-        "isEntry": false
-    },
-    "cce3e2c2-de20-e902-7372-8b427044bb22": {
-        "appPageName": "selectedtraineedemodetails",
-        "componentName": "selectedtraineedemodetailsComponent",
-        "isEntry": false
-    },
     "5ee612db-9196-8538-1d11-93bef2c8941d": {
         "appPageName": "selectedcoursedetailDemo",
         "componentName": "selectedcoursedetaildemoComponent",
@@ -151,6 +141,11 @@
     "b142fa0b-ad0d-18b1-9b28-4a5a415d7c6e": {
         "appPageName": "forgotPassword",
         "componentName": "forgotpasswordComponent",
+        "isEntry": false
+    },
+    "b6ff58ad-b05f-e959-a5a9-8e32b602479e": {
+        "appPageName": "CourseAccessStatus",
+        "componentName": "courseaccessstatusComponent",
         "isEntry": false
     }
 }

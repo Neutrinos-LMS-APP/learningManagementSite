@@ -226,6 +226,12 @@
                 "fieldType": 2,
                 "isArray": false,
                 "type": "string"
+            },
+            {
+                "name": "access",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
             }
         ]
     }

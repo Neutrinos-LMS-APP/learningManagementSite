@@ -19,6 +19,25 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="true">
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                      <mat-icon>book</mat-icon>
+                    </div>
+                    <div fxLayout="column wrap" style="width: 675px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                        <input matInput [(ngModel)]="dm.addcourse.access" name="access" placeholder="access" value="access" required>
+
+                      </mat-form-field>
+                    </div>
+                    <div fxLayout="column wrap" style="margin-left: 1em;margin-right:1em;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                      <h3>
+                        Course Name</h3>
+                    </div>
+                  </div>
+                </div>
                 <div fxLayout="column wrap" style="width: 675px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                   <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                     <input matInput [(ngModel)]="dm.addcourse.createdby" name="createdby" placeholder="input" value="createdby" required>

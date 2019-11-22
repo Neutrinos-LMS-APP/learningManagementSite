@@ -1,0 +1,13 @@
+{
+    "appPageId": "b6ff58ad-b05f-e959-a5a9-8e32b602479e",
+    "appPageName": "CourseAccessStatus",
+    "componentName": "courseaccessstatusComponent",
+    "selectorName": "bh-courseaccessstatus",
+    "htmlFileName": "courseaccessstatus.template.html",
+    "tsFileName": "courseaccessstatus.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

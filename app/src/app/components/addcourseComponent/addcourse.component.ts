@@ -41,11 +41,12 @@ export class addcourseComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
         this.dm.addcourse.createdby = localStorage.username;// localstorage (Username)
         this.dm.addcourse.status = 'null';
+        this.dm.addcourse.access='private';
     }
     addCourse(courseInfo){
        
         this.courseService.addcourse(courseInfo);
-        this.snackbarService.openSnackBar('Course Added Successfully');
+        this.snackbarService.openSnackBar('Course Added Successfully'); 
 
 
     }

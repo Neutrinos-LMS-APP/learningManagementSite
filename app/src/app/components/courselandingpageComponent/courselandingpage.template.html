@@ -10,7 +10,7 @@
     </div>
   </div>
   <div fxLayout="row wrap" style="    margin: 77px 0px 77px 77px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="column wrap" style="margin:77px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let course of approvedCourses">
+    <div fxLayout="column wrap" style="margin:77px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let course of publicCourses">
       <mat-card (click)="getSelectedCourse(course._id)" style="width: 250px;border:2px solid red;border-radius: 61px;height: 250px;text-align: center;color:darkred;cursor:pointer;" class="coursecards">
         <mat-card-content align="center">
           <mat-icon style="font-size:80px; width:0px;" class="cardbooks">book</mat-icon>

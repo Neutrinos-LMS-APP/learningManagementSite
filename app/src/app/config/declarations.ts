@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-courseaccessstatusComponent
+import { courseaccessstatusComponent } from '../components/courseaccessstatusComponent/courseaccessstatus.component';
 //CORE_REFERENCE_IMPORT-forgotpasswordComponent
 import { forgotpasswordComponent } from '../components/forgotpasswordComponent/forgotpassword.component';
 //CORE_REFERENCE_IMPORT-header_nobuttonsComponent
@@ -21,9 +23,7 @@ import { header_nobuttonsComponent } from '../components/header_nobuttonsCompone
 //CORE_REFERENCE_IMPORT-selectedcoursedetaildemoComponent
 import { selectedcoursedetaildemoComponent } from '../components/selectedcoursedetaildemoComponent/selectedcoursedetaildemo.component';
 //CORE_REFERENCE_IMPORT-selectedtraineedemodetailsComponent
-import { selectedtraineedemodetailsComponent } from '../components/selectedtraineedemodetailsComponent/selectedtraineedemodetails.component';
 //CORE_REFERENCE_IMPORT-selectedinstructordetaildemoComponent
-import { selectedinstructordetaildemoComponent } from '../components/selectedinstructordetaildemoComponent/selectedinstructordetaildemo.component';
 //CORE_REFERENCE_IMPORT-cardComponent
 import { cardComponent } from '../components/cardComponent/card.component';
 //CORE_REFERENCE_IMPORT-coursedetailComponent
@@ -101,9 +101,9 @@ export const appBootstrap: any = [
 */
 export const appEntryComponents: any = [
   //CORE_REFERENCE_PUSH_TO_ENTRY_ARRAY
-  selectedinstructordetaildemoComponent,
-  selectedtraineedemodetailsComponent,
-  selectedcoursedetaildemoComponent
+ 
+  selectedcoursedetaildemoComponent,
+  courseaccessstatusComponent
 ];
 
 /**
@@ -116,6 +116,8 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courseaccessstatusComponent
+courseaccessstatusComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forgotpasswordComponent
 forgotpasswordComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-header_nobuttonsComponent
@@ -123,9 +125,7 @@ header_nobuttonsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedcoursedetaildemoComponent
 selectedcoursedetaildemoComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedtraineedemodetailsComponent
-selectedtraineedemodetailsComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedinstructordetaildemoComponent
-selectedinstructordetaildemoComponent,
+
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-cardComponent
 cardComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-coursedetailComponent

@@ -38,4 +38,7 @@ export class addcourse {
   @JsonProperty('learning_outcome_6', String, true)
   public learning_outcome_6: string = undefined;
 
+  @JsonProperty('access', String, true)
+  public access: string = undefined;
+
 }

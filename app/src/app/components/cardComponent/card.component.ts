@@ -5,7 +5,6 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import {dashboardcontentComponent} from '../dashboardcontentComponent/dashboardcontent.component';
-import {selectedinstructordetaildemoComponent} from '../selectedinstructordetaildemoComponent/selectedinstructordetaildemo.component';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 /**
  * Service import Example :
@@ -35,18 +34,18 @@ export class cardComponent extends NBaseComponent implements OnInit {
 
     }
 
-openDialog() {
-    const dialogRef = this.dialog.open(selectedinstructordetaildemoComponent, {
-      width: '650px',
-      height:'650px',
-      data:'hello' 
-    });
+// openDialog() {
+//     const dialogRef = this.dialog.open(selectedinstructordetaildemoComponent, {
+//       width: '650px',
+//       height:'650px',
+//       data:'hello' 
+//     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+//     dialogRef.afterClosed().subscribe(result => {
+//       console.log('The dialog was closed');
       
-    });
-  }
+//     });
+//   }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

@@ -27,6 +27,7 @@ export class courselandingpageComponent extends NBaseComponent implements OnInit
     mm: ModelMethods;
     //courseCard = ['a', 'b', 'c', 'd'];
     approvedCourses=[];
+    publicCourses=[];
 
     constructor(private bdms: NDataModelService,private courseServiceObj:courseservice,public router:Router) {
         super();
@@ -35,6 +36,8 @@ export class courselandingpageComponent extends NBaseComponent implements OnInit
 
     ngOnInit() {
         this.getCourseByStatus('approved');
+        this.getCourseByAccess('public');
+       
     }
     getSelectedCourse(id){
      //   console.log(id);
@@ -47,6 +50,13 @@ export class courselandingpageComponent extends NBaseComponent implements OnInit
         
         this.approvedCourses = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);
         console.log(this.approvedCourses);
+       
+    }
+    
+    async getCourseByAccess(access){
+        
+        this.publicCourses = this.convertObjtoArr((await this.courseServiceObj. getCourseByAccess(access)).local.result);
+        console.log(this.publicCourses);
        
     }
     //converting object of objects into araay of objects

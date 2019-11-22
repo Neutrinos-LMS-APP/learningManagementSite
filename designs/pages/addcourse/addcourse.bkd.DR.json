@@ -439,6 +439,590 @@
                                         "_attrDef": "p"
                                     }
                                 ],
+                                "34f440df-a38e-4590-2b48-657e9bf4021b": {
+                                    "paletteKey": "FlexLayoutRow",
+                                    "parentEditorKey": "bb0a8437-54f7-86b7-5c6a-ec3211ced550",
+                                    "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Row",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
+                                        {
+                                            "_key": "style",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "class",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "fxFlex",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "fxLayoutGap",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "wrap",
+                                            "_value": "wrap",
+                                            "_type": "a",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "layoutAlign",
+                                            "_value": "start",
+                                            "_type": "a",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "pLayoutAlign",
+                                            "_value": "stretch",
+                                            "_type": "a",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[fxShow]",
+                                            "_value": "true",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[fxHide]",
+                                            "_value": "true",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        }
+                                    ],
+                                    "0c3a633e-968c-7f9f-0c2d-9e733c147ba6": {
+                                        "paletteKey": "FlexLayoutCol",
+                                        "parentEditorKey": "34f440df-a38e-4590-2b48-657e9bf4021b",
+                                        "designerReference": [
+                                            {
+                                                "_key": "componentLabel",
+                                                "_value": "Column",
+                                                "_type": "kv",
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
+                                            },
+                                            {
+                                                "_key": "style",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "fxFlex",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "fxLayoutGap",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "wrap",
+                                                "_value": "wrap",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "layoutAlign",
+                                                "_value": "start",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "pLayoutAlign",
+                                                "_value": "stretch",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[fxShow]",
+                                                "_value": "true",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[fxHide]",
+                                                "_value": "false",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            }
+                                        ],
+                                        "574c4712-5d93-1f90-bc85-75a53af21d86": {
+                                            "paletteKey": "FlexLayoutRow",
+                                            "parentEditorKey": "0c3a633e-968c-7f9f-0c2d-9e733c147ba6",
+                                            "designerReference": [
+                                                {
+                                                    "_key": "componentLabel",
+                                                    "_value": "Row",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p",
+                                                    "_useAsLabel": true
+                                                },
+                                                {
+                                                    "_key": "style",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "class",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxFlex",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxLayoutGap",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "wrap",
+                                                    "_value": "wrap",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "layoutAlign",
+                                                    "_value": "start",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "pLayoutAlign",
+                                                    "_value": "stretch",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "[fxShow]",
+                                                    "_value": "true",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "[fxHide]",
+                                                    "_value": "false",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                }
+                                            ],
+                                            "b1d7ac96-97da-c5af-d703-324aa934ce7d": {
+                                                "paletteKey": "FlexLayoutCol",
+                                                "parentEditorKey": "574c4712-5d93-1f90-bc85-75a53af21d86",
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "Column",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxFlex",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxLayoutGap",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "wrap",
+                                                        "_value": "wrap",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "layoutAlign",
+                                                        "_value": "center",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "pLayoutAlign",
+                                                        "_value": "center",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxShow]",
+                                                        "_value": "true",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxHide]",
+                                                        "_value": "false",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ],
+                                                "e619af32-a3b6-670b-8e23-53dc317278d2": {
+                                                    "paletteKey": "NG-icon",
+                                                    "parentEditorKey": "b1d7ac96-97da-c5af-d703-324aa934ce7d",
+                                                    "designerReference": [
+                                                        {
+                                                            "_key": "style",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "class",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "IconName",
+                                                            "_value": "book",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_useAsLabel": true
+                                                        },
+                                                        {
+                                                            "_key": "[inline]",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "color",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "8a7cc7d0-fd41-a67a-ee0d-eb8001fbc5c1": {
+                                                "paletteKey": "FlexLayoutCol",
+                                                "parentEditorKey": "574c4712-5d93-1f90-bc85-75a53af21d86",
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "Column",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "margin-left: 1em;margin-right:1em;",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxFlex",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxLayoutGap",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "wrap",
+                                                        "_value": "wrap",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "layoutAlign",
+                                                        "_value": "center",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "pLayoutAlign",
+                                                        "_value": "center",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxShow]",
+                                                        "_value": "true",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxHide]",
+                                                        "_value": "false",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ],
+                                                "dfc8b8b7-6700-d9a3-91d2-3083d1d1ba6c": {
+                                                    "paletteKey": "Html5",
+                                                    "parentEditorKey": "8a7cc7d0-fd41-a67a-ee0d-eb8001fbc5c1",
+                                                    "isAdvancedComponent": true,
+                                                    "designerReference": [
+                                                        {
+                                                            "_key": "style",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "class",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "htmlElement",
+                                                            "_value": "h3",
+                                                            "_type": "dav",
+                                                            "_attrDef": "p",
+                                                            "_useAsLabel": true
+                                                        },
+                                                        {
+                                                            "_key": "tagType",
+                                                            "_value": "h3",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "name",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "sandbox",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "src",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "srcdoc",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "width",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "[autoplay]",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "[loop]",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "data",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "audioSource",
+                                                            "_value": [],
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "videoSource",
+                                                            "_value": [],
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "audioDatasource",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "audioSrc",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "audioType",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "videoDatasource",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "videoSrc",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "videoType",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(audioplay)",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(videoplay)",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(audiopause)",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(videopause)",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(audioended)",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        },
+                                                        {
+                                                            "_key": "(videoended)",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_visibility": false
+                                                        }
+                                                    ],
+                                                    "539cb205-2b6a-ff7e-975c-a50e569e67ad": {
+                                                        "paletteKey": "html-editor",
+                                                        "parentEditorKey": "dfc8b8b7-6700-d9a3-91d2-3083d1d1ba6c",
+                                                        "isAdvancedChildComponent": true,
+                                                        "designerReference": [
+                                                            {
+                                                                "_key": "style",
+                                                                "_value": "",
+                                                                "_type": "kv",
+                                                                "_attrDef": "p"
+                                                            },
+                                                            {
+                                                                "_key": "class",
+                                                                "_value": "",
+                                                                "_type": "kv",
+                                                                "_attrDef": "p"
+                                                            },
+                                                            {
+                                                                "_key": "html",
+                                                                "_value": "Course Name",
+                                                                "_type": "a",
+                                                                "_attrDef": "p"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
                                 "be177d0f-118c-cc79-9a8e-7d73ee438499": {
                                     "paletteKey": "FlexLayoutRow",
                                     "parentEditorKey": "bb0a8437-54f7-86b7-5c6a-ec3211ced550",
@@ -737,6 +1321,234 @@
                                                             "_value": "",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "30ec98b0-2565-bc04-a60b-bc423c8ac161": {
+                                                "paletteKey": "FlexLayoutCol",
+                                                "parentEditorKey": "f44fc003-a44a-7096-0aee-bea314d17bf0",
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "Column",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "width: 675px;",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxFlex",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "fxLayoutGap",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "wrap",
+                                                        "_value": "wrap",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "layoutAlign",
+                                                        "_value": "start",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "pLayoutAlign",
+                                                        "_value": "stretch",
+                                                        "_type": "a",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxShow]",
+                                                        "_value": "true",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "[fxHide]",
+                                                        "_value": "false",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ],
+                                                "bcd465b5-684d-7c44-d726-77d60e128793": {
+                                                    "paletteKey": "NG-Input",
+                                                    "parentEditorKey": "30ec98b0-2565-bc04-a60b-bc423c8ac161",
+                                                    "isAdvancedComponent": true,
+                                                    "designerReference": [
+                                                        {
+                                                            "_key": "style",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "class",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "placeholder",
+                                                            "_value": "access",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p",
+                                                            "_useAsLabel": true
+                                                        },
+                                                        {
+                                                            "_key": "value",
+                                                            "_value": "access",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "[appearance]",
+                                                            "_value": "'legacy'",
+                                                            "_type": "a",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "required",
+                                                            "_value": "required",
+                                                            "_type": "a",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "[(ngModel)]",
+                                                            "_value": "dm.addcourse.access",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "color",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "name",
+                                                            "_value": "access",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "type",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "[formControl]",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "readonly",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "[disabled]",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "id",
+                                                            "_value": "",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "[floatLabel]",
+                                                            "_value": "'auto'",
+                                                            "_type": "kv",
+                                                            "_attrDef": "p"
+                                                        },
+                                                        {
+                                                            "_key": "matError",
+                                                            "_value": [],
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "inputHint",
+                                                            "_value": [],
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "Label",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "Suffix Icon",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "(suffixIconClick)",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "Prefix Icon",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "(prefixIconClick)",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "Prefix",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
+                                                        },
+                                                        {
+                                                            "_key": "Suffix",
+                                                            "_value": "",
+                                                            "_type": "a",
+                                                            "_attrDef": "p",
+                                                            "_visibility": true
                                                         }
                                                     ]
                                                 }

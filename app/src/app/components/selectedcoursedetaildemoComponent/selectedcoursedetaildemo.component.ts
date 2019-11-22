@@ -29,6 +29,7 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
     mm: ModelMethods;
     coursesandrole=[];
     dataInfo;
+    showapproved:boolean=false;
     constructor(private bdms: NDataModelService,public router:Router,private courseServiceObj:courseservice,private dialogRef: MatDialogRef<dashboardcontentComponent>,@Inject(MAT_DIALOG_DATA) data,public snackbarService:NSnackbarService) {
         super();
         this.mm = new ModelMethods(bdms);
@@ -37,7 +38,9 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
     }
 
     ngOnInit() {
-        //this.getCourseByStatus('null');
+        if(this.dataInfo.status=="null"){
+            this.showapproved=true;
+        }
        
     }
     convertObjtoArr(obj) {
@@ -46,29 +49,15 @@ export class selectedcoursedetaildemoComponent extends NBaseComponent implements
     async getCourseByStatus(status){
         
         this.coursesandrole = this.convertObjtoArr((await this.courseServiceObj.getCourseByStatus(status)).local.result);
-        //console.log(this.coursesandrole);
-        //this.dataSource.data = this.approvedCourses;
         console.log(this.coursesandrole);
         }
 
-    updateStatus(id,status){
-      
+    updateStatus(id,status)
+    {
         this.courseServiceObj.updateCourseStatus({"_id":id,"status":status});
-        //  this.router.navigate(['/adminDashboard/dashboardcontent']);
-       if(status=='approved'){
-           //  this.snackbarService.openSnackBar('Updated Successfully');
-        }
-        else if(status=='reject'){
-           //  this.snackbarService.openSnackBar('Removed Successfully');
-        }
-        this.cancle();
-        
-        
-        // this.getRoleAndStatus();
-   }
-    cancle() {
-   this.dialogRef.close();
- }
+        this.dialogRef.close();    
+    }
+   
 
    
 

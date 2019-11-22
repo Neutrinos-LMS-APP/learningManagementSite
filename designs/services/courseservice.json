@@ -259,7 +259,8 @@
             ]
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "courseservice"
     },
     {
         "id": "sd_NCOs2Tf4QbUDh6zF",
@@ -713,6 +714,208 @@
         "direction": "ltr",
         "x": 552.2000732421875,
         "y": 661.5375137329102,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_EiTJiOIhjkuQnsMl",
+        "type": "Start",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "updateCourseAccess",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "obj",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "updateCourseAccess",
+        "x": 138.20001220703125,
+        "y": 820.337532043457,
+        "wires": [
+            [
+                "sd_BbP0OGfZu2DNLX5P"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "courseservice"
+    },
+    {
+        "id": "sd_BbP0OGfZu2DNLX5P",
+        "type": "Script",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:4000/api/updateaccess`;",
+        "x": 307.04998779296875,
+        "y": 817.337532043457,
+        "wires": [
+            [
+                "sd_fNj2vdIr5Nu68aAr"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_fNj2vdIr5Nu68aAr",
+        "type": "HttpRequest",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.obj",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "obj"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 471.04998779296875,
+        "y": 816.337532043457,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_3NAxMY5FvsYdOlSV",
+        "type": "Start",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "getCourseByAccess",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "access",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            },
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "getCourseByAccess",
+        "x": 116.20001220703125,
+        "y": 939.9375076293945,
+        "wires": [
+            [
+                "sd_jvXFCumVcEvxJKkJ"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "courseservice"
+    },
+    {
+        "id": "sd_jvXFCumVcEvxJKkJ",
+        "type": "Script",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:24483/api/getcoursebyaccess?access=${bh.input.access}`;",
+        "x": 266.04998779296875,
+        "y": 941.1375045776367,
+        "wires": [
+            [
+                "sd_odrRBr7kEksBaqUO"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_odrRBr7kEksBaqUO",
+        "type": "HttpRequest",
+        "z": "sd_4RHbormnXeFdwnNb",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.access",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "access"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 426.04998779296875,
+        "y": 940.1375198364258,
         "wires": [
             []
         ],

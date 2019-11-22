@@ -987,7 +987,7 @@
                     },
                     {
                         "_key": "*ngFor",
-                        "_value": "let course of approvedCourses",
+                        "_value": "let course of publicCourses",
                         "_type": "kv",
                         "_attrDef": "c"
                     }

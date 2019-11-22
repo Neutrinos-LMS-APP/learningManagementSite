@@ -159,7 +159,6 @@ export class courseservice {
       //Start formatting output variables
       let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
-      console.log(outputVariables.local.result.data);
       return outputVariables;
     } catch (e) {
       throw e;
@@ -172,6 +171,42 @@ export class courseservice {
 
       bh = await this.sd_Red3GNhshrqMMHVq(bh);
       //appendnew_next_getCourseById
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async updateCourseAccess(obj = undefined, ...others) {
+    try {
+      let bh = {
+        input: { obj: obj },
+        local: { apiUrl: undefined, result: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_BbP0OGfZu2DNLX5P(bh);
+      //appendnew_next_updateCourseAccess
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
+  public async getCourseByAccess(access = undefined, ...others) {
+    try {
+      let bh = {
+        input: { access: access },
+        local: { result: undefined, apiUrl: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_jvXFCumVcEvxJKkJ(bh);
+      //appendnew_next_getCourseByAccess
       //Start formatting output variables
       let outputVariables = { input: {}, local: { result: bh.local.result } };
       //End formatting output variables
@@ -396,6 +431,64 @@ export class courseservice {
       };
       bh.local.result = await this.sdService.nHttpRequest(requestOptions);
       //appendnew_next_sd_et0fl5W8vJSdJ52E
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_BbP0OGfZu2DNLX5P(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:4000/api/updateaccess`;
+
+      bh = await this.sd_fNj2vdIr5Nu68aAr(bh);
+      //appendnew_next_sd_BbP0OGfZu2DNLX5P
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_fNj2vdIr5Nu68aAr(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.obj
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_fNj2vdIr5Nu68aAr
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_jvXFCumVcEvxJKkJ(bh) {
+    try {
+      bh.local.apiUrl = `http://localhost:24483/api/getcoursebyaccess?access=${bh.input.access}`;
+
+      bh = await this.sd_odrRBr7kEksBaqUO(bh);
+      //appendnew_next_sd_jvXFCumVcEvxJKkJ
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_odrRBr7kEksBaqUO(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.apiUrl,
+        method: 'get',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.access
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_odrRBr7kEksBaqUO
       return bh;
     } catch (e) {
       throw e;
