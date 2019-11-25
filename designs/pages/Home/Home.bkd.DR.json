@@ -173,7 +173,7 @@
                 "_attrDef": "p"
             }
         ],
-        "43d8dc5d-9ae8-feb9-2f4b-4d485db32f26": {
+        "edd215e0-7436-aaf0-57f6-908b56c9b311": {
             "paletteKey": "NEUTRINOS_VIEW_header",
             "parentEditorKey": "4cdb4c12-dd57-a553-0a9f-20103721617d",
             "designerReference": [
@@ -198,7 +198,7 @@
                 }
             ]
         },
-        "744d5a5d-8cb9-7b07-1454-b9e7d251090e": {
+        "373f9311-4e38-b6a5-98d3-9ba590c2cb37": {
             "paletteKey": "FlexLayoutCol",
             "parentEditorKey": "4cdb4c12-dd57-a553-0a9f-20103721617d",
             "designerReference": [
@@ -265,9 +265,9 @@
                     "_attrDef": "p"
                 }
             ],
-            "337573fc-653c-5c2a-9039-88e8c1f75104": {
+            "a088c00f-bfd3-04bb-7f23-9492aedf02f9": {
                 "paletteKey": "FlexLayoutRow",
-                "parentEditorKey": "744d5a5d-8cb9-7b07-1454-b9e7d251090e",
+                "parentEditorKey": "373f9311-4e38-b6a5-98d3-9ba590c2cb37",
                 "designerReference": [
                     {
                         "_key": "componentLabel",
@@ -314,7 +314,7 @@
                     },
                     {
                         "_key": "pLayoutAlign",
-                        "_value": "stretch",
+                        "_value": "start",
                         "_type": "a",
                         "_attrDef": "p"
                     },
@@ -331,14 +331,14 @@
                         "_attrDef": "p"
                     }
                 ],
-                "9c75e709-7ee0-4df7-28b3-39247569b7d3": {
+                "36d77f39-c462-b49d-ba97-df6e806d7f3a": {
                     "paletteKey": "Html5",
-                    "parentEditorKey": "337573fc-653c-5c2a-9039-88e8c1f75104",
+                    "parentEditorKey": "a088c00f-bfd3-04bb-7f23-9492aedf02f9",
                     "isAdvancedComponent": true,
                     "designerReference": [
                         {
                             "_key": "style",
-                            "_value": "text-align:left;",
+                            "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -529,9 +529,9 @@
                             "_attrDef": "c"
                         }
                     ],
-                    "ee24b9cc-8b57-603a-d951-3c1ebd9f8d8a": {
+                    "9c82dd9d-f93d-b607-83c1-252fb611a931": {
                         "paletteKey": "html-editor",
-                        "parentEditorKey": "9c75e709-7ee0-4df7-28b3-39247569b7d3",
+                        "parentEditorKey": "36d77f39-c462-b49d-ba97-df6e806d7f3a",
                         "isAdvancedChildComponent": true,
                         "designerReference": [
                             {
@@ -548,7 +548,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "Neutrinos Developer Certification<br><br><small>Get certified from Neutrinos which validates your Application Development skills & expertise in using the Neutrinos platform. Explore different levels of certifications at the Courses page and enroll yourself for learning.</small>",
+                                "_value": "Neutrinos<br> <br>Developer<br><br> Certification",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
@@ -557,7 +557,7 @@
                 }
             }
         },
-        "076c565b-e27e-3616-ca95-dbb509720af8": {
+        "5e86771a-13af-06b0-0c89-629dd88b3cd6": {
             "paletteKey": "FlexLayoutCol",
             "parentEditorKey": "4cdb4c12-dd57-a553-0a9f-20103721617d",
             "designerReference": [
@@ -624,9 +624,9 @@
                     "_attrDef": "p"
                 }
             ],
-            "252c569f-1702-d110-8861-a9761c7c7f01": {
+            "78fb9e9d-7590-0556-d787-a78733be6055": {
                 "paletteKey": "ad-card",
-                "parentEditorKey": "076c565b-e27e-3616-ca95-dbb509720af8",
+                "parentEditorKey": "5e86771a-13af-06b0-0c89-629dd88b3cd6",
                 "isAdvancedComponent": true,
                 "designerReference": [
                     {
@@ -655,9 +655,9 @@
                         "_attrDef": "p"
                     }
                 ],
-                "694b463e-df80-37d6-6d3e-5a6b4fbe5c2a": {
+                "c0990c02-4258-4b25-d21a-f47898e442d4": {
                     "paletteKey": "ng-card-content",
-                    "parentEditorKey": "252c569f-1702-d110-8861-a9761c7c7f01",
+                    "parentEditorKey": "78fb9e9d-7590-0556-d787-a78733be6055",
                     "isAdvancedChildComponent": true,
                     "designerReference": [
                         {
@@ -679,9 +679,9 @@
                             "_attrDef": "p"
                         }
                     ],
-                    "603da8f4-e7a2-992a-216b-f83947811dc0": {
+                    "400ea303-af48-ccc0-b495-e682c88c72a4": {
                         "paletteKey": "FlexLayoutRow",
-                        "parentEditorKey": "694b463e-df80-37d6-6d3e-5a6b4fbe5c2a",
+                        "parentEditorKey": "c0990c02-4258-4b25-d21a-f47898e442d4",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -745,9 +745,9 @@
                                 "_attrDef": "p"
                             }
                         ],
-                        "cf8ff65c-d7d7-60eb-4f94-2e619b6efc42": {
+                        "8490b8ee-f767-d545-1b56-5f2d948071b1": {
                             "paletteKey": "FlexLayoutRow",
-                            "parentEditorKey": "603da8f4-e7a2-992a-216b-f83947811dc0",
+                            "parentEditorKey": "400ea303-af48-ccc0-b495-e682c88c72a4",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -829,9 +829,9 @@
                                     "_attrDef": "c"
                                 }
                             ],
-                            "662e2da3-662f-4f55-d439-8aa4ea9f1dac": {
+                            "7d2a7a6e-f3d2-368e-bbde-12e4ff2b633d": {
                                 "paletteKey": "FlexLayoutCol",
-                                "parentEditorKey": "cf8ff65c-d7d7-60eb-4f94-2e619b6efc42",
+                                "parentEditorKey": "8490b8ee-f767-d545-1b56-5f2d948071b1",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
@@ -901,14 +901,14 @@
                                         "_attrDef": "c"
                                     }
                                 ],
-                                "07495c12-6016-a9f9-bab5-13af1427d726": {
+                                "4ca31995-d981-b40e-4de1-6a49707794d4": {
                                     "paletteKey": "Html5",
-                                    "parentEditorKey": "662e2da3-662f-4f55-d439-8aa4ea9f1dac",
+                                    "parentEditorKey": "7d2a7a6e-f3d2-368e-bbde-12e4ff2b633d",
                                     "isAdvancedComponent": true,
                                     "designerReference": [
                                         {
                                             "_key": "style",
-                                            "_value": "color:#EC1C24;line-height:1.5em;font-family: 'Courier New', Courier, monospace;",
+                                            "_value": "color:#EC1C24;line-height:1.5em;font-family: 'Orbitron', sans-serif;",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
@@ -1087,9 +1087,9 @@
                                             "_visibility": false
                                         }
                                     ],
-                                    "8f1d6e46-10b3-a279-5976-296bf69f270c": {
+                                    "6bf30fb7-0a15-af6b-1866-f70aa6ef594a": {
                                         "paletteKey": "html-editor",
-                                        "parentEditorKey": "07495c12-6016-a9f9-bab5-13af1427d726",
+                                        "parentEditorKey": "4ca31995-d981-b40e-4de1-6a49707794d4",
                                         "isAdvancedChildComponent": true,
                                         "designerReference": [
                                             {
@@ -1113,9 +1113,9 @@
                                         ]
                                     }
                                 },
-                                "3dd6f920-6ceb-1f03-caf8-187e8e62b951": {
+                                "4a4a3171-1f70-722b-3d3c-c078cf60a9f2": {
                                     "paletteKey": "FlexLayoutCol",
-                                    "parentEditorKey": "662e2da3-662f-4f55-d439-8aa4ea9f1dac",
+                                    "parentEditorKey": "7d2a7a6e-f3d2-368e-bbde-12e4ff2b633d",
                                     "designerReference": [
                                         {
                                             "_key": "componentLabel",
@@ -1179,9 +1179,9 @@
                                             "_attrDef": "p"
                                         }
                                     ],
-                                    "dde08fa8-af5d-a3a9-2350-645e7145899b": {
+                                    "8e08f4cb-de39-03d9-6dc8-cce3c57ba4ef": {
                                         "paletteKey": "Html5",
-                                        "parentEditorKey": "3dd6f920-6ceb-1f03-caf8-187e8e62b951",
+                                        "parentEditorKey": "4a4a3171-1f70-722b-3d3c-c078cf60a9f2",
                                         "isAdvancedComponent": true,
                                         "designerReference": [
                                             {
@@ -1365,9 +1365,9 @@
                                                 "_visibility": false
                                             }
                                         ],
-                                        "e1408027-1890-996c-c401-458e80069b90": {
+                                        "77acbb75-592b-6c95-7a53-494da21768ff": {
                                             "paletteKey": "html-editor",
-                                            "parentEditorKey": "dde08fa8-af5d-a3a9-2350-645e7145899b",
+                                            "parentEditorKey": "8e08f4cb-de39-03d9-6dc8-cce3c57ba4ef",
                                             "isAdvancedChildComponent": true,
                                             "designerReference": [
                                                 {
@@ -1384,7 +1384,7 @@
                                                 },
                                                 {
                                                     "_key": "html",
-                                                    "_value": "Neutrinos is a low-code rapid application development platform that provides the capability for you to build enterprise grade applications for web, mobile, and IoT capabilities in a matter of days.",
+                                                    "_value": "Get certified from Neutrinos which validates your Application Development skills & expertise in using the Neutrinos platform. Explore different levels of certifications at the Courses page and enroll yourself for learning.<br><br>Neutrinos is a low-code rapid application development platform that provides the capability for you to build enterprise grade applications for web, mobile, and IoT capabilities in a matter of days.",
                                                     "_type": "a",
                                                     "_attrDef": "p"
                                                 }
@@ -1392,9 +1392,9 @@
                                         }
                                     }
                                 },
-                                "c854725a-754b-a6ef-9391-af64df7ef92b": {
+                                "3cbc77ea-3af7-ea07-6dda-5517a3f15c9d": {
                                     "paletteKey": "FlexLayoutCol",
-                                    "parentEditorKey": "662e2da3-662f-4f55-d439-8aa4ea9f1dac",
+                                    "parentEditorKey": "7d2a7a6e-f3d2-368e-bbde-12e4ff2b633d",
                                     "designerReference": [
                                         {
                                             "_key": "componentLabel",
@@ -1458,9 +1458,9 @@
                                             "_attrDef": "p"
                                         }
                                     ],
-                                    "7e0d4370-ab74-ba73-3e1a-b222c96f01b0": {
+                                    "b89173b0-f3ba-a259-45ae-4e489bdbb3b5": {
                                         "paletteKey": "Html5",
-                                        "parentEditorKey": "c854725a-754b-a6ef-9391-af64df7ef92b",
+                                        "parentEditorKey": "3cbc77ea-3af7-ea07-6dda-5517a3f15c9d",
                                         "isAdvancedComponent": true,
                                         "designerReference": [
                                             {
@@ -1644,9 +1644,9 @@
                                                 "_visibility": false
                                             }
                                         ],
-                                        "f66bf57d-58a7-3daa-1ac5-737394d3ea26": {
+                                        "dfea2e6e-e10e-aa6c-b576-90b86cd23695": {
                                             "paletteKey": "html-editor",
-                                            "parentEditorKey": "7e0d4370-ab74-ba73-3e1a-b222c96f01b0",
+                                            "parentEditorKey": "b89173b0-f3ba-a259-45ae-4e489bdbb3b5",
                                             "isAdvancedChildComponent": true,
                                             "designerReference": [
                                                 {
@@ -1722,9 +1722,9 @@
                                 }
                             }
                         },
-                        "3e29072c-83e4-6db7-2f71-6f6d0c201b07": {
+                        "0bea126b-21cf-7fea-7560-888ecd14a326": {
                             "paletteKey": "FlexLayoutRow",
-                            "parentEditorKey": "603da8f4-e7a2-992a-216b-f83947811dc0",
+                            "parentEditorKey": "400ea303-af48-ccc0-b495-e682c88c72a4",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -1765,7 +1765,7 @@
                                 },
                                 {
                                     "_key": "layoutAlign",
-                                    "_value": "start",
+                                    "_value": "end",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 },
@@ -1788,9 +1788,9 @@
                                     "_attrDef": "p"
                                 }
                             ],
-                            "78fd7987-02c2-79d4-1286-a71196fc984e": {
+                            "285dded2-4e21-8345-cdab-02f78c4bb3f9": {
                                 "paletteKey": "NG-image",
-                                "parentEditorKey": "3e29072c-83e4-6db7-2f71-6f6d0c201b07",
+                                "parentEditorKey": "0bea126b-21cf-7fea-7560-888ecd14a326",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
@@ -1801,7 +1801,7 @@
                                     },
                                     {
                                         "_key": "style",
-                                        "_value": "width:100%;height:250px;",
+                                        "_value": "width:80%;height:250px;",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1872,7 +1872,99 @@
                 }
             }
         },
-        "59352d3d-beb4-79ed-a441-0c47a178a170": {
+        "6b3e3ba5-21b6-d79d-cd00-8db19be37870": {
+            "paletteKey": "FlexLayoutCol",
+            "parentEditorKey": "4cdb4c12-dd57-a553-0a9f-20103721617d",
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "Column",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxFlex",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "fxLayoutGap",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "wrap",
+                    "_value": "wrap",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "layoutAlign",
+                    "_value": "start",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "pLayoutAlign",
+                    "_value": "stretch",
+                    "_type": "a",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxShow]",
+                    "_value": "true",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[fxHide]",
+                    "_value": "false",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                }
+            ],
+            "347fca62-3332-6cf5-d035-8570a0cab1cb": {
+                "paletteKey": "NEUTRINOS_VIEW_Coursespages",
+                "parentEditorKey": "6b3e3ba5-21b6-d79d-cd00-8db19be37870",
+                "designerReference": [
+                    {
+                        "_key": "componentLabel",
+                        "_value": "Coursespages",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_useAsLabel": true
+                    },
+                    {
+                        "_key": "style",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    },
+                    {
+                        "_key": "class",
+                        "_value": "",
+                        "_type": "kv",
+                        "_attrDef": "p"
+                    }
+                ]
+            }
+        },
+        "ec0175c9-d383-c677-3e30-717f55389232": {
             "paletteKey": "NEUTRINOS_VIEW_footer",
             "parentEditorKey": "4cdb4c12-dd57-a553-0a9f-20103721617d",
             "designerReference": [

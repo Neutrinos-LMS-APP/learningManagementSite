@@ -1,0 +1,13 @@
+{
+    "appPageId": "f081afde-0c70-6bd5-0638-5688fdf64534",
+    "appPageName": "Coursespages",
+    "componentName": "coursespagesComponent",
+    "selectorName": "bh-coursespages",
+    "htmlFileName": "coursespages.template.html",
+    "tsFileName": "coursespages.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

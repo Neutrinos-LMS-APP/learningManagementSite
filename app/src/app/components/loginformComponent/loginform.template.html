@@ -3,43 +3,25 @@
 </div>
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <bh-header></bh-header>
-  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" style="background-color:grey;" fxFlex="100" fxLayoutAlign="space-evenly start" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="row wrap" style="margin-top:5em;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false" fxLayoutAlign.xs="center center">
-        <div fxLayout="column wrap" style="padding:20px;margin-right:20px;" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <h3 style="font-size:35px;color:white;text-slign:center;">
-              Register Here</h3>
-          </div>
-          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;" routerLink="/instructorregistration" class="btn">Instructor</button></div>
-          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:300px;margin-top:20px;background-color:black;color:white;" routerLink="/traineeregistration">Trainee</button>
-            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
-          </div>
-        </div>
-      </div>
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fx.Hide.xs="true" fxHide.xs="true">
-        <div class="linedraw">
-        </div>
-      </div>
-      <div fxLayout="row wrap" style="margin-top:5em;margin-bottom:10px;" fxLayoutAlign="center none" [fxShow]="true" [fxHide]="false">
-        <form #lform="ngForm" fxFLexFill="true">
-          <mat-card>
-            <mat-card-content>
-              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.ico.png" style="width:100px;height:100px;"></div>
-              <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-                <h3 style="Text-align:center;font-size:25px;color:#EC1C24;">
-                  Login In</h3>
+  <div fxLayout="column wrap" style="background:grey;height:557px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" style="margin-top:5em;margin-bottom:10px;" fxLayoutAlign="center none" [fxShow]="true" [fxHide]="false">
+      <form #lform="ngForm" fxFLexFill="true">
+        <mat-card>
+          <mat-card-content>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.ico.png" style="width:100px;height:100px;"></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <h3 style="Text-align:center;font-size:25px;color:#EC1C24;">
+                Sign In</h3>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon style="margin-right:10px;" class="icon">person</mat-icon>
               </div>
-              <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-icon style="color:black;margin-right:10px;">person</mat-icon>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-form-field style="width:270px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
-                    <input matInput [(ngModel)]="dm.logindetails.userName" name="userName" placeholder="UserName" required>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:250px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput [(ngModel)]="dm.logindetails.userName" name="userName" placeholder="UserName" required>
 
-                  </mat-form-field>
-                </div>
+                </mat-form-field>
               </div>
               <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="column wrap" style="margin-right:10px;color:blue;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
@@ -64,14 +46,9 @@
                   </div>
                 </div>
               </div>
-              <div fxLayout="row wrap" style="margin-left:20px;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="column wrap" style="margin-right:10px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-checkbox required></mat-checkbox>
-                </div>
-                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <h4>
-                    Remember Me</h4>
-                </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Remember Me</h4>
               </div>
               <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:130px;" class="btn" (click)="onloginSubmit(lform.value)">Submit</button><button mat-raised-button style="background:black;color:white;margin-left:15px;" routerLink="/home" color="warn">Cancel</button></div>
               <div fxLayout="row wrap" style="margin-top:15px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-button class="btn2" routerLink="/forgotpassword">Forgot password?</button></div>

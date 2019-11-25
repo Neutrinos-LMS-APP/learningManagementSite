@@ -6,14 +6,16 @@
           <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="width:50px;"></div>
             <div fxLayout="row wrap" style="padding-left:5px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-              <h2 style=" color:#EC1B24;    font-size: 35px;    font-weight: 700;      font-variant: petite-caps;" class="logo">
-                LMS</h2>
+              <h2 style="font-size:30px; font-weight:700;    color:#EC1C24;     font-family: &apos;Orbitron&apos;, sans-serif;font-variant: petite-caps;word-spacing:0.5em;">
+                Academy</h2>
             </div>
           </div>
         </div>
         <div fxLayout="column " fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxHide.xs="true"><button mat-button class="btn1" routerLink="/home">Home</button><button mat-button class="btn1" routerLink="/product">Product</button><button mat-button class="btn1" routerLink="/allcourses">Courses</button><button mat-button class="btn1" routerLink="/contactus">Contact Us</button><button mat-button class="btn" routerLink="/login">Login/Register</button></div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap=".5em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxHide.xs="true"><button mat-button class="btn1" routerLink="/home">Home</button><button mat-button class="btn1" routerLink="/contactus">Contact Us</button><button mat-button class="btn1" routerLink="/traineeregistration">Sign Up</button><button mat-button class="btn1" routerLink="/login">Sign In</button><button mat-button class="btn1" [matMenuTriggerFor]="dropdown">Platform</button>
+              <mat-menu style="background:black;" #dropdown="matMenu"><button mat-menu-item (click)="opensites(&apos;product&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Product </button><button mat-menu-item (click)="opensites(&apos;developer&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Developers </button><button mat-menu-item (click)="opensites(&apos;partners&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Partners </button><button mat-menu-item (click)="opensites(&apos;company&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Company </button></mat-menu>
+            </div>
             <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="true" fxShow.xs="true">
               <mat-icon style="color:Red;margin-top:10px;margin-right:20px" (click)="togglemenu()">menu</mat-icon>
             </div>
@@ -22,11 +24,13 @@
       </div>
     </mat-toolbar>
   </div>
-  <div fxLayout="column wrap" class="MobMenu" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false" *ngIf="displaymenu">
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="Mbtn" routerLink="/home">Home</button></div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="Mbtn" routerLink="/product">Product</button></div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="Mbtn" routerLink="/allcourses">Courses</button></div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="Mbtn" routerLink="/contactus">Contact Us</button></div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="btn" routerLink="/login">Login/Register</button></div>
+  <div fxLayout="column wrap" class="MobMenu" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false" *ngIf="displaymenu">
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/home">Home</button></div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/contactus">Contact Us</button></div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/home">Sign Up</button></div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="btn1" routerLink="/login">Sign In</button></div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-menu #dropdown="matMenu"><button mat-menu-item (click)="opensites(&apos;product&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Product </button><button mat-menu-item (click)="opensites(&apos;developers&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Developers </button><button mat-menu-item (click)="opensites(&apos;partners&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Partners </button><button mat-menu-item (click)="opensites(&apos;company&apos;)" style="font-size:15px;     font-weight:700;     font-family: &apos;Orbitron&apos;, sans-serif;text-align:right;"> Company </button></mat-menu><button mat-button class="btn1" [matMenuTriggerFor]="dropdown">Platform</button>
+    </div>
   </div>
 </div>

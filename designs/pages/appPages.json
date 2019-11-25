@@ -145,7 +145,11 @@
     },
     "b6ff58ad-b05f-e959-a5a9-8e32b602479e": {
         "appPageName": "CourseAccessStatus",
-        "componentName": "courseaccessstatusComponent",
+        "componentName": "courseaccessstatusComponent"
+    },
+    "f081afde-0c70-6bd5-0638-5688fdf64534": {
+        "appPageName": "Coursespages",
+        "componentName": "coursespagesComponent",
         "isEntry": false
     }
 }

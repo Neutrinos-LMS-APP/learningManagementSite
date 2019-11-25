@@ -2,6 +2,7 @@
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 
 /*Importing default angular material css theme. */
@@ -9,14 +10,20 @@
 body{
     font-size: 15px;
     line-height: 20px;
-    font-family: Roboto "Helvetic Neve", sans-serif;
-    font-family: Roboto Helvetic Neve, sans-serif !important;
+    font-family: 'Orbitron', sans-serif;  
     }    
-
-h1,h4{
-         font-family: Roboto Helvetic Neve, sans-serif;
-
+  p{
+      font-family: 'Orbitron', sans-serif;
+  }  
+ .icon{
+     color:#EC1C24;
+ } 
+.logo{
+    font-size:36px;
+    color:#EC1C24;
+    font-family: 'Orbitron', sans-serif;
 }
+
     .mat-expansion-panel-header{
         height:50px;
     }
@@ -137,6 +144,7 @@ h1,h4{
 
 .menu{
     background: black;
+    background-position: fixed;
 }
 
 .btn{
@@ -144,20 +152,35 @@ h1,h4{
     color: white;
     font-size:15px;
     font-weight:700;
+    font-family: 'Orbitron', sans-serif;
     
 }
 .btn:hover{
-    background-color: white;
-    color: black;
+    background-color:black;
+    color: white;
 }
 .btn1{
     color:white;
     font-size:15px;
     font-weight:700;
+    font-family: 'Orbitron', sans-serif;
  
 }
 .btn1:hover{
     background-color:#EC1C24;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+.btn2{
+    
+    color: black;
+    font-size:15px;
+    font-weight:700;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+.btn2:hover{
+    background-color:black;
     color: white;
 }
 .btn2{
@@ -195,7 +218,7 @@ h1,h4{
     padding:12px;
     text-align: center;
     margin:5px;
-    overflow: hidden;
+   
   
    
 }
@@ -267,26 +290,26 @@ h1,h4{
 }
 
 .bg{
-    text-align: justify;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-image:url('assets/Web/b4.jpg');
+   height: 450px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-image:url('assets/Web/b8.jpg');
+    opacity:0.9;
     
 }
 
 .BannerContent{
-    color:white;
+    color:black;
     width:100%;
-    font-size:25px;
-    font-weight:800;
+    font-size:35px;
+    font-weight:bold;
     word-spacing:0.1em;
     letter-spacing:0.1em;
     line-height:1em; 
-    text-align: justify;
+    
     padding:20px;
+    text-align: left;
 }
 .footer{
     background-color: black;
@@ -322,8 +345,8 @@ h3{
     margin-top: -25px;
 }
 .MobMenu{
-    background: lightgrey;
-    opacity: 1;
+    background: black;
+    z-index: 1;
     left:66%;
     position: absolute;
     top:7%;
@@ -346,7 +369,14 @@ color:white;
 }
 
 /* Dashboard  styling*/
-
+.coursecards{
+    width: 250px;border:2px solid red;
+    border-radius: 61px;
+    height: 250px;
+    text-align: center;
+    color:darkred;
+    cursor:pointer;
+}
 .coursecards:hover{
     background-color: #EC1C24;
     color:white !important;

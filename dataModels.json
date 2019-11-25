@@ -234,5 +234,31 @@
                 "type": "string"
             }
         ]
+    },
+    "0e4839ee-585e-4659-8a83-3b331405d70a": {
+        "dataModelId": "0e4839ee-585e-4659-8a83-3b331405d70a",
+        "name": "contactdetails",
+        "description": "enquiry message",
+        "dataSource": "neutrinos-training-rt",
+        "fields": [
+            {
+                "name": "fullName",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "emailid",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            },
+            {
+                "name": "msg",
+                "fieldType": 2,
+                "isArray": false,
+                "type": "string"
+            }
+        ]
     }
 }

@@ -18,6 +18,8 @@ window['neutrinos'] = {
 import { courseaccessstatusComponent } from '../components/courseaccessstatusComponent/courseaccessstatus.component';
 //CORE_REFERENCE_IMPORT-forgotpasswordComponent
 import { forgotpasswordComponent } from '../components/forgotpasswordComponent/forgotpassword.component';
+//CORE_REFERENCE_IMPORT-coursespagesComponent
+import { coursespagesComponent } from '../components/coursespagesComponent/coursespages.component';
 //CORE_REFERENCE_IMPORT-header_nobuttonsComponent
 import { header_nobuttonsComponent } from '../components/header_nobuttonsComponent/header_nobuttons.component';
 //CORE_REFERENCE_IMPORT-selectedcoursedetaildemoComponent
@@ -120,6 +122,8 @@ export const appDeclarations = [
 courseaccessstatusComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forgotpasswordComponent
 forgotpasswordComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-coursespagesComponent
+coursespagesComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-header_nobuttonsComponent
 header_nobuttonsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedcoursedetaildemoComponent

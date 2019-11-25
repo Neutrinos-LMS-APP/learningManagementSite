@@ -7,7 +7,7 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 //import { contactdetails } from '../../models/contactdetails.models'; 
 import {FormGroup, FormControl} from '@angular/forms';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
-// import { contactdetails} from '../../models/contactdetails.model';
+import { contactdetails} from '../../models/contactdetails.model';
 import { ReactiveFormsModule } from '@angular/forms';
 import {NSnackbarService} from 'neutrinos-seed-services';
 import { Router } from '@angular/router';
@@ -46,18 +46,35 @@ export class contactusComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
 
     }
+    openurl(url){
+       if(url=='fb')
+       {
+        window.location.href="https://www.facebook.com/Neutrinos.co/";
+       }
+       if(url=='insta')
+       {
+           window.location.href="https://www.instagram.com/neutrinos.co/?hl=en";
+       }
+       if(url=="twitter"){
+           window.location.href="https://twitter.com/Neutrinos_co";
+       }
+       if(url=="linkedlin"){
+           window.location.href="https://www.linkedin.com/company/neutrinosindsa/?originalSubdomain=in";
+       }
+   }
+
 
     result;
-//    async enquirySubmit(data){
-//        console.log("entered into"+data);
-//         this.dm.contactdetails = data;
-//         this.result=(await this.contact.contactdetails(this.dm.contactdetails)).local.result;
+   async enquirySubmit(data){
+       console.log("entered into"+data);
+        this.dm.contactdetails = data;
+        this.result=(await this.contact.contactdetails(this.dm.contactdetails)).local.result;
         
-//         this.contactdetails.reset();
-//         this.router.navigate(['/home']);
+        this.contactdetails.reset();
+        this.router.navigate(['/home']);
         
 
-//     }
+    }
 
    
 

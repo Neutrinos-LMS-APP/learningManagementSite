@@ -1,0 +1,15 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" style="    margin: 77px 0px 77px 77px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" style="margin:77px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngFor="let course of approvedCourses">
+      <mat-card (click)="getSelectedCourse(course._id)" class="coursecards">
+        <mat-card-content align="center">
+          <mat-icon style="font-size:80px; width:0px;" class="cardbooks">book</mat-icon>
+        </mat-card-content>
+
+        <mat-card-title>{{course .courseName}}</mat-card-title>
+
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

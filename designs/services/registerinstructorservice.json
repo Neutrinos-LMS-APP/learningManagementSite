@@ -1099,5 +1099,106 @@
         ],
         "generateNext": false,
         "generated": true
+    },
+    {
+        "id": "sd_AXbnrkqpmpBVbB8e",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "Contactdetails",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "obj",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            },
+            {
+                "key": "modularapi",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "functionName": "contactdetails",
+        "x": 98.1875,
+        "y": 1044.921875,
+        "wires": [
+            [
+                "sd_c5gF3UHlpKM4CY6F"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_c5gF3UHlpKM4CY6F",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "Contact Us",
+        "script": "bh.local.modularapi=\"http://localhost:24483/api/email\";",
+        "x": 261.03125,
+        "y": 1052.921875,
+        "wires": [
+            [
+                "sd_XHIwn9vVoJl4ST1X"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_XHIwn9vVoJl4ST1X",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "Contact us http",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.modularapi",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "modularapi"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.obj",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "obj"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 455.03125,
+        "y": 1037.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
     }
 ]

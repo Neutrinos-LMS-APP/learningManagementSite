@@ -3,61 +3,23 @@
 </div>
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
   <bh-header></bh-header>
-  <div fxLayout="column wrap" style="margin-bottom:2em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-    <div fxLayout="row wrap" fxLayoutGap="5em;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" style="margin-bottom:9em;margin-top:8em;" fxLayoutAlign="start none" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" fxLayoutGap="5em;" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlexFill="true" fxLayoutAlign.xs="space-around center">
-            <div fxLayout="row wrap" style="text-align:center;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <mat-card style="margin:15px;background:#EC1C24;" class="card">
-                <mat-card-content>
-                  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-                      <mat-icon style="font-size:40px;color:white;">email</mat-icon>
-                    </div>
-                    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                      <h4 style="color:white;">
-                        Write to us :<br><br>Emialid:idea@neutrinous.com</h4>
-                    </div>
-                  </div>
-                </mat-card-content>
-              </mat-card>
-            </div>
-            <div fxLayout="row wrap" style="text-align:center;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-              <mat-card style="margin:15px;background:black;" class="card">
-                <mat-card-content>
-                  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-                      <mat-icon style="font-size:40px;color:white;">phone_iphone</mat-icon>
-                    </div>
-                    <div fxLayout="row wrap" style="margin-left:5px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
-                      <h4 style="color:white;">
-                        Phone:<br><br>Phone No:+91-924-626-1337</h4>
-                    </div>
-                  </div>
-                </mat-card-content>
-              </mat-card>
-            </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <h3 style="font-variant: petite-caps; font-size:25px; font-weight:700;    color:#EC1C24;     font-family: &apos;Orbitron&apos;, sans-serif;font-variant: petite-caps;word-spacing:0.5em;">
+              Our Office</h3><span style="color:#EC1C24;font-size:18px;margin-top:12px;">
+                India</span>
+            <p style="font-size:15px;line-height:1.8em;">
+              No.156, 3rd Cross End, Ashoka Pillar Rd,<br>
+              1st Block, Jaya Nagar East,<br>
+              Bengaluru &#x2013; 560011, Karnataka<br>
+              Phone: <a style=" font-size:15px;line-height: 1.8em;color:black;text-decoration:none;" href="tel:+91-80-4171-8111"> +91 80 4171 8111</a><br>
+              Email: <a style=" font-size:15px;line-height: 1.8em;color:black;text-decoration:none;" href="mailto:channels@neutrinos.com">channels@neutrinos.com</a></p>
           </div>
         </div>
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
-        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-          <mat-card style="margin:15px;background:grey;" class="card">
-            <mat-card-content>
-              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
-                  <mat-icon style="font-size:40px;color:white;">business</mat-icon>
-                </div>
-                <div fxLayout="row wrap" style="text-align:Center;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                  <h4 style="color:white;">
-                    Address:<br><br>No.156, 3rd Cross End, Ashoka Pillar Rd,
-                    1st Block, Jaya Nagar East,<br>
-                    Bengaluru &#x2013; 560011, Karnataka<br></h4>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/facebook (2).png" style="margin-right:15px;" (click)="openurl(&apos;fb&apos;)"><img imgSrc="Web/instagram.png" style="margin-right:15px;" (click)="openurl(&apos;insta&apos;)"><img imgSrc="Web/linkedin.png" style="margin-right:15px;" (click)="openurl(&apos;linkedlin&apos;)"><img imgSrc="Web/twitter.png" (click)="openurl(&apos;twitter&apos;)"></div>
       </div>
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <h3 style="Color:#EC1C24;text-align:center;font-size:20px;">
@@ -66,10 +28,10 @@
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>person</mat-icon>
+                <mat-icon class="icon">person</mat-icon>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-form-field style="width:350px;margin-left:15px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-form-field style="width:300px;margin-left:15px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                   <input matInput placeholder="Full Name" required formControlName="fullName">
 
                 </mat-form-field>
@@ -77,10 +39,10 @@
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>email</mat-icon>
+                <mat-icon class="icon">email</mat-icon>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-form-field style="width:350px;margin-left:15px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                <mat-form-field style="width:300px;margin-left:15px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
                   <input matInput placeholder="Enter Your MailId" required formControlName="emailid">
 
                 </mat-form-field>
@@ -88,15 +50,15 @@
             </div>
             <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-icon>message</mat-icon>
+                <mat-icon class="icon">message</mat-icon>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-                <mat-form-field style="width:350px;margin-left:15px;">
+                <mat-form-field style="width:300px;margin-left:15px;">
                   <textarea matInput formControlName="msg" placeholder="Leave Your Message" required></textarea>
                 </mat-form-field>
               </div>
             </div>
-            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:350px;margin-left:10px;" routerLink="/home" class="btn" (click)="enquirySubmit(contactdetails.value)">Submit</button></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="width:350px;margin-left:10px;" routerLink="/home" class="btn" (click)="enquirySubmit(contactdetails.value)">Contact Us</button></div>
           </div>
         </form>
       </div>

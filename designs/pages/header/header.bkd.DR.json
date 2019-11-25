@@ -589,13 +589,13 @@
                                     "designerReference": [
                                         {
                                             "_key": "style",
-                                            "_value": " color:#EC1B24;    font-size: 35px;    font-weight: 700;      font-variant: petite-caps;",
+                                            "_value": "font-size:30px; font-weight:700;    color:#EC1C24;     font-family: 'Orbitron', sans-serif;font-variant: petite-caps;word-spacing:0.5em;",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
                                             "_key": "class",
-                                            "_value": "logo",
+                                            "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
@@ -787,7 +787,7 @@
                                             },
                                             {
                                                 "_key": "html",
-                                                "_value": "LMS",
+                                                "_value": "Academy",
                                                 "_type": "a",
                                                 "_attrDef": "p"
                                             }
@@ -1001,8 +1001,8 @@
                                         "_attrDef": "c"
                                     }
                                 ],
-                                "cff27dd9-61e7-5f29-b3ef-50ce8a78767a": {
-                                    "paletteKey": "NG-button",
+                                "46c3a8e7-4fdc-9e8e-5d22-1ee58ff96734": {
+                                    "paletteKey": "NG-MenuButton",
                                     "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
                                     "designerReference": [
                                         {
@@ -1018,7 +1018,7 @@
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "buttonname",
+                                            "_key": "MenuName",
                                             "_value": "Home",
                                             "_type": "a",
                                             "_attrDef": "p",
@@ -1031,25 +1031,7 @@
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
+                                            "_key": "[matMenuTriggerFor]",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
@@ -1058,12 +1040,12 @@
                                             "_key": "routerLink",
                                             "_value": "/home",
                                             "_type": "kv",
-                                            "_attrDef": "p"
+                                            "_attrDef": "c"
                                         }
                                     ]
                                 },
-                                "2b8af2c9-a182-66c7-8e1c-9e7fe2a0f12e": {
-                                    "paletteKey": "NG-button",
+                                "bdbb9aa3-3d68-72b8-6373-e02b9da68992": {
+                                    "paletteKey": "NG-MenuButton",
                                     "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
                                     "designerReference": [
                                         {
@@ -1079,129 +1061,7 @@
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "buttonname",
-                                            "_value": "Product",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "/product",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "c5d7dd1a-c123-6a94-ca3b-798f04564caa": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "btn1",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
-                                            "_value": "Courses",
-                                            "_type": "a",
-                                            "_attrDef": "p",
-                                            "_useAsLabel": true
-                                        },
-                                        {
-                                            "_key": "color",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "routerLink",
-                                            "_value": "/allcourses",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        }
-                                    ]
-                                },
-                                "fb7e4a8a-2b54-7db8-dc41-bec41de2cb4e": {
-                                    "paletteKey": "NG-button",
-                                    "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "class",
-                                            "_value": "btn1",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "buttonname",
+                                            "_key": "MenuName",
                                             "_value": "Contact Us",
                                             "_type": "a",
                                             "_attrDef": "p",
@@ -1214,25 +1074,7 @@
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "(click)",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disabled]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "[disableRipple]",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "type",
+                                            "_key": "[matMenuTriggerFor]",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
@@ -1241,12 +1083,12 @@
                                             "_key": "routerLink",
                                             "_value": "/contactus",
                                             "_type": "kv",
-                                            "_attrDef": "p"
+                                            "_attrDef": "c"
                                         }
                                     ]
                                 },
-                                "3eda7472-de26-06e2-d7da-332d026cb725": {
-                                    "paletteKey": "NG-button",
+                                "bbed5f9e-87b5-0662-c0f1-3deb39276a00": {
+                                    "paletteKey": "NG-MenuButton",
                                     "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
                                     "designerReference": [
                                         {
@@ -1257,13 +1099,13 @@
                                         },
                                         {
                                             "_key": "class",
-                                            "_value": "btn",
+                                            "_value": "btn1",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "buttonname",
-                                            "_value": "Login/Register",
+                                            "_key": "MenuName",
+                                            "_value": "Sign Up",
                                             "_type": "a",
                                             "_attrDef": "p",
                                             "_useAsLabel": true
@@ -1275,25 +1117,50 @@
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "(click)",
+                                            "_key": "[matMenuTriggerFor]",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "[disabled]",
+                                            "_key": "routerLink",
+                                            "_value": "/traineeregistration",
+                                            "_type": "kv",
+                                            "_attrDef": "c"
+                                        }
+                                    ]
+                                },
+                                "af96fb8f-69eb-fb40-7b72-d3f8a3e03574": {
+                                    "paletteKey": "NG-MenuButton",
+                                    "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
+                                    "designerReference": [
+                                        {
+                                            "_key": "style",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "[disableRipple]",
+                                            "_key": "class",
+                                            "_value": "btn1",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "MenuName",
+                                            "_value": "Sign In",
+                                            "_type": "a",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
+                                        {
+                                            "_key": "color",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
-                                            "_key": "type",
+                                            "_key": "[matMenuTriggerFor]",
                                             "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
@@ -1302,9 +1169,303 @@
                                             "_key": "routerLink",
                                             "_value": "/login",
                                             "_type": "kv",
+                                            "_attrDef": "c"
+                                        }
+                                    ]
+                                },
+                                "ab7ed792-a1f1-a79c-f390-a7e64b0837fb": {
+                                    "paletteKey": "NG-MenuButton",
+                                    "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
+                                    "designerReference": [
+                                        {
+                                            "_key": "style",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "class",
+                                            "_value": "btn1",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "MenuName",
+                                            "_value": "Platform",
+                                            "_type": "a",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
+                                        {
+                                            "_key": "color",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "[matMenuTriggerFor]",
+                                            "_value": "dropdown",
+                                            "_type": "kv",
                                             "_attrDef": "p"
                                         }
                                     ]
+                                },
+                                "c303ca6c-182d-38c6-e4cb-526d94432f2f": {
+                                    "paletteKey": "NG-Menu",
+                                    "parentEditorKey": "802181bb-cbf8-9174-9a02-6b6fd45edbc9",
+                                    "designerReference": [
+                                        {
+                                            "_key": "componentLabel",
+                                            "_value": "Menu",
+                                            "_type": "kv",
+                                            "_attrDef": "p",
+                                            "_useAsLabel": true
+                                        },
+                                        {
+                                            "_key": "style",
+                                            "_value": "background:black;",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "class",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "xPosition",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "yPosition",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "templateRef",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "items",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "matMenu",
+                                            "_value": "dropdown",
+                                            "_type": "vk",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "hasBackdrop",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "overlapTrigger",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "(closed)",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "direction",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        },
+                                        {
+                                            "_key": "parentMenu",
+                                            "_value": "",
+                                            "_type": "kv",
+                                            "_attrDef": "p"
+                                        }
+                                    ],
+                                    "7d9d5f3c-219a-d39d-8c88-1995bf182fda": {
+                                        "paletteKey": "NG-MenuItem",
+                                        "parentEditorKey": "c303ca6c-182d-38c6-e4cb-526d94432f2f",
+                                        "designerReference": [
+                                            {
+                                                "_key": "componentLabel",
+                                                "_value": "Product",
+                                                "_type": "kv",
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
+                                            },
+                                            {
+                                                "_key": "style",
+                                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "MenuItemName",
+                                                "_value": "Product",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[disabled]",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "(click)",
+                                                "_value": "opensites('product')",
+                                                "_type": "kv",
+                                                "_attrDef": "c"
+                                            }
+                                        ]
+                                    },
+                                    "d2da0ab7-ad50-c0da-f08b-8378f37b2f27": {
+                                        "paletteKey": "NG-MenuItem",
+                                        "parentEditorKey": "c303ca6c-182d-38c6-e4cb-526d94432f2f",
+                                        "designerReference": [
+                                            {
+                                                "_key": "componentLabel",
+                                                "_value": "Developers",
+                                                "_type": "kv",
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
+                                            },
+                                            {
+                                                "_key": "style",
+                                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "MenuItemName",
+                                                "_value": "Developers",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[disabled]",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "(click)",
+                                                "_value": "opensites('developer')",
+                                                "_type": "kv",
+                                                "_attrDef": "c"
+                                            }
+                                        ]
+                                    },
+                                    "2108897a-d7f1-ad0a-be94-b4efae53bf41": {
+                                        "paletteKey": "NG-MenuItem",
+                                        "parentEditorKey": "c303ca6c-182d-38c6-e4cb-526d94432f2f",
+                                        "designerReference": [
+                                            {
+                                                "_key": "componentLabel",
+                                                "_value": "Partners",
+                                                "_type": "kv",
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
+                                            },
+                                            {
+                                                "_key": "style",
+                                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "MenuItemName",
+                                                "_value": "Partners",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[disabled]",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "(click)",
+                                                "_value": "opensites('partners')",
+                                                "_type": "kv",
+                                                "_attrDef": "c"
+                                            }
+                                        ]
+                                    },
+                                    "ddf421cf-cfe5-06bf-4b05-559fc9e709dc": {
+                                        "paletteKey": "NG-MenuItem",
+                                        "parentEditorKey": "c303ca6c-182d-38c6-e4cb-526d94432f2f",
+                                        "designerReference": [
+                                            {
+                                                "_key": "componentLabel",
+                                                "_value": "Company",
+                                                "_type": "kv",
+                                                "_attrDef": "p",
+                                                "_useAsLabel": true
+                                            },
+                                            {
+                                                "_key": "style",
+                                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "class",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "MenuItemName",
+                                                "_value": "Company",
+                                                "_type": "a",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "[disabled]",
+                                                "_value": "",
+                                                "_type": "kv",
+                                                "_attrDef": "p"
+                                            },
+                                            {
+                                                "_key": "(click)",
+                                                "_value": "opensites('company')",
+                                                "_type": "kv",
+                                                "_attrDef": "c"
+                                            }
+                                        ]
+                                    }
                                 }
                             },
                             "dad6272b-3e32-7689-4f9b-48e523ca37a6": {
@@ -1477,7 +1638,7 @@
                 },
                 {
                     "_key": "pLayoutAlign",
-                    "_value": "center",
+                    "_value": "end",
                     "_type": "a",
                     "_attrDef": "p"
                 },
@@ -1566,8 +1727,8 @@
                         "_attrDef": "p"
                     }
                 ],
-                "131c2c9c-fad3-6086-cb23-122a49178b52": {
-                    "paletteKey": "NG-button",
+                "c5825fb0-504e-abfa-ed9e-e232cb03cc5e": {
+                    "paletteKey": "NG-MenuButton",
                     "parentEditorKey": "22ba68d6-afa1-ddc4-c50d-6d1a466e9c2d",
                     "designerReference": [
                         {
@@ -1578,12 +1739,12 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "Mbtn",
+                            "_value": "btn1",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
+                            "_key": "MenuName",
                             "_value": "Home",
                             "_type": "a",
                             "_attrDef": "p",
@@ -1596,25 +1757,7 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
+                            "_key": "[matMenuTriggerFor]",
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
@@ -1623,7 +1766,7 @@
                             "_key": "routerLink",
                             "_value": "/home",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "c"
                         }
                     ]
                 }
@@ -1694,8 +1837,8 @@
                         "_attrDef": "p"
                     }
                 ],
-                "70f9df4a-2991-2796-62d1-80881243f87b": {
-                    "paletteKey": "NG-button",
+                "e934ec3f-fd7a-a403-5e32-4ced5b08f5de": {
+                    "paletteKey": "NG-MenuButton",
                     "parentEditorKey": "ef1ad78d-272d-230b-6401-ea2e12bed9b2",
                     "designerReference": [
                         {
@@ -1706,13 +1849,13 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "Mbtn",
+                            "_value": "btn1",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Product",
+                            "_key": "MenuName",
+                            "_value": "Contact Us",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -1724,34 +1867,16 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
+                            "_key": "[matMenuTriggerFor]",
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "routerLink",
-                            "_value": "/product",
+                            "_value": "/contactus",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "c"
                         }
                     ]
                 }
@@ -1822,8 +1947,8 @@
                         "_attrDef": "p"
                     }
                 ],
-                "6425f5bd-e207-b93a-cf39-d93192adf9d6": {
-                    "paletteKey": "NG-button",
+                "8c0e0d7c-294a-f32c-2fc1-32cac16e84cc": {
+                    "paletteKey": "NG-MenuButton",
                     "parentEditorKey": "dcb7ed87-d809-98f0-82ae-a7a72cdbf73d",
                     "designerReference": [
                         {
@@ -1834,13 +1959,13 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "Mbtn",
+                            "_value": "btn1",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Courses",
+                            "_key": "MenuName",
+                            "_value": "Sign Up",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -1852,34 +1977,16 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
+                            "_key": "[matMenuTriggerFor]",
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "routerLink",
-                            "_value": "/allcourses",
+                            "_value": "/home",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "c"
                         }
                     ]
                 }
@@ -1950,8 +2057,8 @@
                         "_attrDef": "p"
                     }
                 ],
-                "15ea34d8-0d70-6358-6b03-6d829d07b911": {
-                    "paletteKey": "NG-button",
+                "2a7026d1-7282-cfd4-b927-110c2e04bc04": {
+                    "paletteKey": "NG-MenuButton",
                     "parentEditorKey": "449a4b4d-a7bc-22ab-e0d2-094d9f7cfa8b",
                     "designerReference": [
                         {
@@ -1962,13 +2069,13 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "Mbtn",
+                            "_value": "btn1",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Contact Us",
+                            "_key": "MenuName",
+                            "_value": "Sign In",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -1980,34 +2087,16 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
+                            "_key": "[matMenuTriggerFor]",
                             "_value": "",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
                             "_key": "routerLink",
-                            "_value": "/contactus",
+                            "_value": "/login",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "c"
                         }
                     ]
                 }
@@ -2078,8 +2167,265 @@
                         "_attrDef": "p"
                     }
                 ],
-                "f6d9371f-1739-e3f5-d2bf-6158338b812d": {
-                    "paletteKey": "NG-button",
+                "411f5350-a9a1-5b65-b897-8f38260da896": {
+                    "paletteKey": "NG-Menu",
+                    "parentEditorKey": "1ecbb589-6a9f-9215-bc4a-854819cbc0cd",
+                    "designerReference": [
+                        {
+                            "_key": "componentLabel",
+                            "_value": "Menu",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_useAsLabel": true
+                        },
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "xPosition",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "yPosition",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "templateRef",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "items",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "matMenu",
+                            "_value": "dropdown",
+                            "_type": "vk",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "hasBackdrop",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "overlapTrigger",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "(closed)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "direction",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "parentMenu",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        }
+                    ],
+                    "6758b09c-08d3-bac2-00cc-2f238105f02b": {
+                        "paletteKey": "NG-MenuItem",
+                        "parentEditorKey": "411f5350-a9a1-5b65-b897-8f38260da896",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Product",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "MenuItemName",
+                                "_value": "Product",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "opensites('product')",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    },
+                    "ccbeaa18-6261-647b-b4d6-bbab3fefd0a7": {
+                        "paletteKey": "NG-MenuItem",
+                        "parentEditorKey": "411f5350-a9a1-5b65-b897-8f38260da896",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Developers",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "MenuItemName",
+                                "_value": "Developers",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "opensites('developers')",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    },
+                    "6f606935-8fbb-bc02-ea08-6979e6d19e19": {
+                        "paletteKey": "NG-MenuItem",
+                        "parentEditorKey": "411f5350-a9a1-5b65-b897-8f38260da896",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Partners",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "MenuItemName",
+                                "_value": "Partners",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "opensites('partners')",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    },
+                    "5df3ec13-5ffe-a000-30c2-25887b6ffeb9": {
+                        "paletteKey": "NG-MenuItem",
+                        "parentEditorKey": "411f5350-a9a1-5b65-b897-8f38260da896",
+                        "designerReference": [
+                            {
+                                "_key": "componentLabel",
+                                "_value": "Company",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "style",
+                                "_value": "font-size:15px;     font-weight:700;     font-family: 'Orbitron', sans-serif;text-align:right;",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "MenuItemName",
+                                "_value": "Company",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "opensites('company')",
+                                "_type": "kv",
+                                "_attrDef": "c"
+                            }
+                        ]
+                    }
+                },
+                "e294dd1b-f3ab-ff18-17db-dfdcda543e73": {
+                    "paletteKey": "NG-MenuButton",
                     "parentEditorKey": "1ecbb589-6a9f-9215-bc4a-854819cbc0cd",
                     "designerReference": [
                         {
@@ -2090,13 +2436,13 @@
                         },
                         {
                             "_key": "class",
-                            "_value": "btn",
+                            "_value": "btn1",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "buttonname",
-                            "_value": "Login/Register",
+                            "_key": "MenuName",
+                            "_value": "Platform",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
@@ -2108,32 +2454,8 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "(click)",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disabled]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "[disableRipple]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "type",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
-                        },
-                        {
-                            "_key": "routerLink",
-                            "_value": "/login",
+                            "_key": "[matMenuTriggerFor]",
+                            "_value": "dropdown",
                             "_type": "kv",
                             "_attrDef": "p"
                         }

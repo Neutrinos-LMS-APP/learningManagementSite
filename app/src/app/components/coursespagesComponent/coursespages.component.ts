@@ -5,13 +5,23 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 
+/**
+ * Service import Example :
+ * import { HeroService } from '../../services/hero/hero.service';
+ */
+
+ /**
+ * 
+ * Serivice Designer import Example - Service Name - HeroService
+ * import { HeroService } from 'app/sd-services/HeroService';
+ */
 
 @Component({
-    selector: 'bh-header',
-    templateUrl: './header.template.html'
+    selector: 'bh-coursespages',
+    templateUrl: './coursespages.template.html'
 })
 
-export class headerComponent extends NBaseComponent implements OnInit {
+export class coursespagesComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
     constructor(private bdms: NDataModelService) {
@@ -22,40 +32,6 @@ export class headerComponent extends NBaseComponent implements OnInit {
     ngOnInit() {
 
     }
-
-    displaymenu:boolean=false;
-
-    togglemenu(){
-        console.log("Hie")
-        if(this.displaymenu)
-        {
-            this.displaymenu =false;
-        }
-        else{
-            this.displaymenu = true;
-        }
-    }
-
-    opensites(url){
-        if(url=="product")
-        {
-            window.location.href="https://www.neutrinos.co/platform-neutrinos/";
-        }
-        if(url=="developer")
-        {
-            window.location.href="https://www.neutrinos.co/community/#com-dev";
-        }
-        if(url=="partners")
-        {
-            window.location.href="https://www.neutrinos.co/community/#com-par";
-        }
-        if(url=="company")
-        {
-            window.location.href="https://www.neutrinos.co/";
-        }
-    }
-
-
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
