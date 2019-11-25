@@ -1,10 +1,6 @@
 {
     "routes": [
         {
-            "path": "instructorregistration",
-            "component": "instructorregistrationComponent"
-        },
-        {
             "path": "traineeregistration",
             "component": "traineeregistrationComponent"
         },
@@ -27,6 +23,10 @@
                 {
                     "path": "dashboardcontent",
                     "component": "dashboardcontentComponent"
+                },
+                {
+                    "path": "instructorregistration",
+                    "component": "instructorregistrationComponent"
                 }
             ]
         },
@@ -45,7 +45,12 @@
                 },
                 {
                     "path": "courseList",
-                    "component": "courselistComponent"
+                    "component": "courselistComponent",
+                    "children": []
+                },
+                {
+                    "path": "instructorProfile",
+                    "component": "instructorprofileComponent"
                 }
             ],
             "redirectTo": ""
@@ -107,7 +112,9 @@
            { "path": "no",
             "component": "header_nobuttonsComponent"},
             {"path": "forgotpassword",
-            "component": "forgotpasswordComponent"
+            "component": "forgotpasswordComponent"},
+            {"path": "no",
+            "component": "header_nobuttonsComponent"
         },
         {
             "path": "''",

@@ -30,7 +30,8 @@ export class instructorregistrationComponent extends NBaseComponent implements O
         password:new FormControl(''),
         mobile:new FormControl('',Validators.minLength(10)),
         country:new FormControl('',Validators.minLength(4)),
-        gender:new FormControl('')
+        gender:new FormControl(''),
+        skills:new FormControl('')
     });
 
     constructor(private bdms: NDataModelService,
@@ -44,12 +45,12 @@ export class instructorregistrationComponent extends NBaseComponent implements O
     ngOnInit() {
        this.myGroup.patchValue({
            role:'instructor',
-           status:'null'
+           status:'approved'
        })
     }
     put(data){
     this.dm.instructordetails=data;
-    console.log(this.dm.instructordetails);
+    console.log("while registering instructor"+this.dm.instructordetails);
      this.registerServiceObj.registerinstructor(this.dm.instructordetails);
     this.router.navigate(['/home']);
     }

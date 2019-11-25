@@ -821,6 +821,67 @@
                             "_attrDef": "p"
                         }
                     ],
+                    "d61ba9f8-5b9e-1977-ed87-47e1bf5f916a": {
+                        "paletteKey": "NG-button",
+                        "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "classmenuonadmindash ",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "buttonname",
+                                "_value": "Add Instructor",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "color",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "(click)",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disabled]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "[disableRipple]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "type",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "routerLink",
+                                "_value": "instructorregistration",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    },
                     "79b31775-0f6b-42ee-cf70-625ef5b42284": {
                         "paletteKey": "NG-button",
                         "parentEditorKey": "a900959a-7843-8067-4eea-dd7c603b1814",

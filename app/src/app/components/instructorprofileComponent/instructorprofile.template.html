@@ -1,0 +1,272 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="!profileshow">
+    <mat-card style="width: 500px;margin: 50px auto;box-shadow: 3px 5px 3px 5px #888888">
+      <mat-card-content>
+        <div fxLayout="row wrap" style="width:100%;background-color:grey;padding:1em;color:white;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <h2>
+              Profile Information</h2>
+          </div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  First Name</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.firstName}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Last Name</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.lastName}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>date_range</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Date of birth</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.date}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>email</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  email</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.email}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>lock</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Password</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.password}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Gender</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.gender}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>phone</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Contact no</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.mobile}}</label></div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" style="margin:0 1.5em;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <mat-icon>flag</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <h4>
+                  Country</h4>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><label style="color:black;font-weight:bold;">
+              {{selectedUserDetails.country}}</label></div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions><button mat-raised-button style="float:right;background-color:gray;font-weight:bold;border-radius:5px;color:white;" (click)="updateProfileform()">Update</button></mat-card-actions>
+    </mat-card>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="profileshow">
+    <form [formGroup]="myGroup" style="Width:100%;margin-top:2em;margin-bottom:2em;" (ngSubmit)="updateProfile(myGroup.value)">
+      <mat-card style="margin-top:10%;width:500px;box-shadow: 3px 5px 3px 5px #888888;margin: 0px auto;">
+        <mat-card-title style="text-align:center;font-weight:bold;">Profile Update Information</mat-card-title>
+
+        <mat-card-content align="left">
+          <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start start" [fxShow]="false" [fxHide]="true">
+              <div fxLayout="column wrap" fxLayoutAlign="  none" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="false" [fxHide]="true">
+                <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="role" placeholder="role" value="role" required formControlName="role" [disabled]="false">
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="firstName" placeholder="First Name" required formControlName="firstName" [disabled]="false">
+                  <mat-error align="start" *ngIf="myGroup.controls.firstName.errors?.required">First name is required</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.firstName.errors?.minlength">Cant be less than 3 characters</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>person</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="lastName" placeholder="Last Name" required formControlName="lastName" [disabled]="false">
+                  <mat-error align="start" *ngIf="myGroup.controls.lastName.errors?.required">Last name is required</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.lastName.errors?.minlength">Not less than 3 characters</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>date_range</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" (click)="picker.open()">
+                  <input matInput placeholder="Date of birth" [matDatepicker]="picker" formControlName="date" name="date" required [disabled]="false" readonly="readonly">
+                  <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+                  <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+                  <mat-error align="start" *ngIf="myGroup.controls.date.errors?.required">Invalid Input</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>email</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="email" placeholder="Email ID" required formControlName="email" [disabled]="false">
+                  <mat-error align="start" *ngIf="myGroup.controls.email.errors?.minlength">Cant be less than 8 characters</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.email.errors?.required">Invalid Input</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>lock</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="password" type="password" placeholder="Password" required formControlName="password">
+                  <mat-error align="start" *ngIf="myGroup.controls.password.errors?.required">Invalid Input</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.email.errors?.minlength">Cant be less than 10 characters</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>call</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="mobile" placeholder="Mobile" required formControlName="mobile" [disabled]="false">
+                  <mat-error align="start" *ngIf="myGroup.controls.mobile.errors?.required">Invalid Input</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.mobile.errors?.minlength">Cant be less than 10 number</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <mat-form-field style="width:380px;" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <input matInput name="country" placeholder="Country" required formControlName="country" [disabled]="false">
+                  <mat-error align="start" *ngIf="myGroup.controls.country.errors?.required">Invalid Input</mat-error>
+                  <mat-error align="start" *ngIf="myGroup.controls.country.errors?.minlength">Cant be less than 4 characters</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" style="margin-right:50%;" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+                <mat-icon style="margin-left:10px;">wc</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+                <mat-radio-group [(ngModel)]="dm.instructordetails.gender" formControlName="gender" name="gender">
+                  <mat-radio-button value="male" required name="male">Male</mat-radio-button>
+                  <mat-radio-button value="female" style="margin-left:7px;" required name="female">Female</mat-radio-button>
+                </mat-radio-group>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div>
+                <mat-form-field class="example-chip-list">
+                  <mat-chip-list #chipList aria-label="skills selection">
+                    <mat-chip *ngFor="let skill of skills" [selectable]="selectable" [removable]="removable" (removed)="remove(skill)">
+                      {{skill}}
+                      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                    </mat-chip>
+                    <input placeholder="Add skills..." [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+                  </mat-chip-list>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button style="margin:0px auto;font-weight:bold;" class="btn">Submit</button></div>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+</div>

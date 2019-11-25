@@ -619,7 +619,11 @@
                                     "_attrDef": "c"
                                 }
                             ],
+<<<<<<< Updated upstream
                             "46d25c7d-925b-8fcd-ea4c-5d82ab61ac8a": {
+=======
+                            "a06a9d43-e3f2-fe7e-caf8-4dd79b427000": {
+>>>>>>> Stashed changes
                                 "paletteKey": "Html5",
                                 "parentEditorKey": "8b068318-78d3-0fda-e924-07a6f9d2a479",
                                 "isAdvancedComponent": true,
@@ -627,16 +631,28 @@
                                     {
                                         "_key": "style",
                                         "_value": "font-size:18px;font-weight:bold;",
+<<<<<<< Updated upstream
+=======
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
                                         "_key": "class",
                                         "_value": "",
+>>>>>>> Stashed changes
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
                                     {
+<<<<<<< Updated upstream
+                                        "_key": "class",
+                                        "_value": "",
+                                        "_type": "kv",
+                                        "_attrDef": "p"
+                                    },
+                                    {
+=======
+>>>>>>> Stashed changes
                                         "_key": "htmlElement",
                                         "_value": "label",
                                         "_type": "dav",
@@ -805,9 +821,15 @@
                                         "_visibility": false
                                     }
                                 ],
+<<<<<<< Updated upstream
                                 "d75a8068-135d-1fd4-41b0-b778bf191b0f": {
                                     "paletteKey": "html-editor",
                                     "parentEditorKey": "46d25c7d-925b-8fcd-ea4c-5d82ab61ac8a",
+=======
+                                "08d84d74-3ae1-0f5c-c481-7127fe7aa529": {
+                                    "paletteKey": "html-editor",
+                                    "parentEditorKey": "a06a9d43-e3f2-fe7e-caf8-4dd79b427000",
+>>>>>>> Stashed changes
                                     "isAdvancedChildComponent": true,
                                     "designerReference": [
                                         {
@@ -7601,5 +7623,5 @@
                 }
             }
         }
-    }
+    
 

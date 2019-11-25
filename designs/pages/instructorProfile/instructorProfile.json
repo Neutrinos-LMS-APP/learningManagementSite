@@ -1,0 +1,13 @@
+{
+    "appPageId": "c9e860de-bf63-e30b-1836-0468ec651c7e",
+    "appPageName": "instructorProfile",
+    "componentName": "instructorprofileComponent",
+    "selectorName": "bh-instructorprofile",
+    "htmlFileName": "instructorprofile.template.html",
+    "tsFileName": "instructorprofile.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

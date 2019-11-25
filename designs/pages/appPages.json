@@ -150,6 +150,9 @@
     "f081afde-0c70-6bd5-0638-5688fdf64534": {
         "appPageName": "Coursespages",
         "componentName": "coursespagesComponent",
+    "c9e860de-bf63-e30b-1836-0468ec651c7e": {
+        "appPageName": "instructorProfile",
+        "componentName": "instructorprofileComponent",
         "isEntry": false
-    }
-}
+    }}}
+

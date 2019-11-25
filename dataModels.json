@@ -80,13 +80,7 @@
                 "type": "string"
             },
             {
-                "name": "status",
-                "fieldType": 2,
-                "isArray": false,
-                "type": "string"
-            },
-            {
-                "name": "registercourses",
+                "name": "skills",
                 "fieldType": 2,
                 "isArray": true,
                 "type": "string"

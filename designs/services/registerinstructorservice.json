@@ -1200,5 +1200,106 @@
         ],
         "generateNext": false,
         "generated": true
+    },
+    {
+        "id": "sd_L421Yh7yTeZjkvl1",
+        "type": "Start",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "updateProfile",
+        "outputs": 1,
+        "noerr": 0,
+        "inputVariables": [
+            {
+                "key": "profileObj",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "apiUrl",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "result",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "functionName": "updateProfile",
+        "x": 63.1875,
+        "y": 978.921875,
+        "wires": [
+            [
+                "sd_0Uz0v2lTKNOOtzvC"
+            ]
+        ],
+        "generateNext": true,
+        "generated": false,
+        "serviceName": "registerinstructorservice"
+    },
+    {
+        "id": "sd_0Uz0v2lTKNOOtzvC",
+        "type": "Script",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "script": "bh.local.apiUrl=`http://localhost:4000/api/updateprofile`;\nconsole.log(bh.input.profileObj);",
+        "x": 234.03125,
+        "y": 976.921875,
+        "wires": [
+            [
+                "sd_zXhserOXeb3DgDC2"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_zXhserOXeb3DgDC2",
+        "type": "HttpRequest",
+        "z": "sd_7N5bSYWYw3YCGQPI",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.apiUrl",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "apiUrl"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBody": "bh.input.profileObj",
+        "reqBodyObj": {
+            "mapVarType": "bh.input",
+            "mapVarValue": "profileObj"
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "x": 453.03125,
+        "y": 973.90625,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
     }
 ]

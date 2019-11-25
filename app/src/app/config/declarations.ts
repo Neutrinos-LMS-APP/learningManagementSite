@@ -20,6 +20,8 @@ import { courseaccessstatusComponent } from '../components/courseaccessstatusCom
 import { forgotpasswordComponent } from '../components/forgotpasswordComponent/forgotpassword.component';
 //CORE_REFERENCE_IMPORT-coursespagesComponent
 import { coursespagesComponent } from '../components/coursespagesComponent/coursespages.component';
+//CORE_REFERENCE_IMPORT-instructorprofileComponent
+import { instructorprofileComponent } from '../components/instructorprofileComponent/instructorprofile.component';
 //CORE_REFERENCE_IMPORT-header_nobuttonsComponent
 import { header_nobuttonsComponent } from '../components/header_nobuttonsComponent/header_nobuttons.component';
 //CORE_REFERENCE_IMPORT-selectedcoursedetaildemoComponent
@@ -124,6 +126,8 @@ courseaccessstatusComponent,
 forgotpasswordComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-coursespagesComponent
 coursespagesComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-instructorprofileComponent
+instructorprofileComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-header_nobuttonsComponent
 header_nobuttonsComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-selectedcoursedetaildemoComponent
@@ -209,9 +213,10 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'instructorregistration', component: instructorregistrationComponent},{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
-children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: 'dashboardcontent', component: dashboardcontentComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
+export const appRoutes = [{path: 'traineeregistration', component: traineeregistrationComponent},{path: 'adminDashboard', component: admindashboardComponent,
+children: [{path: 'instructors', component: instructorsComponent},{path: 'trainee', component: traineeComponent},{path: 'courses', component: coursesComponent},{path: 'dashboardcontent', component: dashboardcontentComponent},{path: 'instructorregistration', component: instructorregistrationComponent}]},{path: 'instructordashboard', component: instructordashboardComponent,
 children: [{path: 'addcourse', component: addcourseComponent,
-children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
-children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'card', component: cardComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: 'forgotpassword', component: forgotpasswordComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: []},{path: 'instructorDashboardContent', component: instructordashboradcontentComponent},{path: 'courseList', component: courselistComponent,
+children: []},{path: 'instructorProfile', component: instructorprofileComponent}]},{path: 'traineedashboard', component: traineedashboardComponent,
+children: [{path: 'traineedashboardcontent', component: traineedashboardcontentComponent},{path: 'selfjoinedcourses', component: selfjoinedcoursesComponent}]},{path: 'login', component: loginformComponent},{path: 'contactus', component: contactusComponent},{path: 'product', component: productComponent},{path: 'home', component: homeComponent},{path: 'header', component: headerComponent},{path: 'footer', component: footerComponent},{path: 'card', component: cardComponent},{path: 'allcourses', component: courselandingpageComponent},{path: 'coursedetail', component: coursedetailComponent},{path: 'no', component: header_nobuttonsComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

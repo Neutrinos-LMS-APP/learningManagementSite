@@ -463,7 +463,7 @@
                                         },
                                         {
                                             "_key": "Title",
-                                            "_value": "Trainee Registration",
+                                            "_value": "Developer Registration",
                                             "_type": "a",
                                             "_attrDef": "p",
                                             "_useAsLabel": true
@@ -3053,7 +3053,7 @@
                                                         },
                                                         {
                                                             "_key": "[opened]",
-                                                            "_value": "",
+                                                            "_value": "false",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },
@@ -3155,7 +3155,7 @@
                                                         },
                                                         {
                                                             "_key": "(click)",
-                                                            "_value": "",
+                                                            "_value": "picker.open()",
                                                             "_type": "kv",
                                                             "_attrDef": "p"
                                                         },

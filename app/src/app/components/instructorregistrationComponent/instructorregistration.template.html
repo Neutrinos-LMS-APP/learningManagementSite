@@ -1,5 +1,4 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-  <bh-header_nobuttons></bh-header_nobuttons>
   <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row " fxLayoutAlign="center start" [fxShow]="true" [fxHide]="false" fxFill>
       <div fxLayout="column wrap" class="Margin-tb" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFlex.gt-md="80" fxFlex.sm="80" fxFlex.md="80" fxFlex.xs="100">
@@ -9,6 +8,17 @@
 
             <mat-card-content>
               <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/favicon.png" style="height:70px;width:70px;">
+                <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
+                  <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
+                    <mat-icon>person</mat-icon>
+                  </div>
+                  <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                    <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                      <input matInput name="skills" placeholder="role" value="skills" required formControlName="role" [disabled]="false">
+
+                    </mat-form-field>
+                  </div>
+                </div>
                 <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="1.25em" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="true">
                   <div fxLayout="column wrap" fxLayoutAlign="end end" [fxShow]="true" [fxHide]="false">
                     <mat-icon>person</mat-icon>
@@ -60,8 +70,8 @@
                     <mat-icon>date_range</mat-icon>
                   </div>
                   <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                    <mat-form-field [appearance]="&apos;legacy&apos;">
-                      <input matInput placeholder="Date of birth" [matDatepicker]="picker" formControlName="date" name="date" required [disabled]="false">
+                    <mat-form-field [appearance]="&apos;legacy&apos;" (click)="picker.open()">
+                      <input matInput placeholder="Date of birth" [matDatepicker]="picker" formControlName="date" name="date" required [disabled]="false" readonly="readonly">
                       <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
                       <mat-datepicker #picker [disabled]="false"></mat-datepicker>
                       <mat-error align="start" *ngIf="myGroup.controls.date.errors?.required">Invalid Input</mat-error>
@@ -142,5 +152,4 @@
       </div>
     </div>
   </div>
-  <bh-footer style="margin-top:30px;"></bh-footer>
 </div>

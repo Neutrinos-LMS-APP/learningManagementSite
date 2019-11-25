@@ -29,10 +29,7 @@ export class instructordetails {
   @JsonProperty('role', String, true)
   public role: string = undefined;
 
-  @JsonProperty('status', String, true)
-  public status: string = undefined;
-
-  @JsonProperty('registercourses', [String], true)
-  public registercourses: string[] = [];
+  @JsonProperty('skills', [String], true)
+  public skills: string[] = [];
 
 }

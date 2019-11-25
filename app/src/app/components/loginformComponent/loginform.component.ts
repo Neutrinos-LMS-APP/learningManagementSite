@@ -59,7 +59,9 @@ export class loginformComponent extends NBaseComponent implements OnInit {
        localStorage.setItem('Token',this.result);
     sessionStorage.username = value.userName;// storing for all courses list
     sessionStorage.userid=this.result._id; // storing for course detail implementation
-    
+
+    localStorage.userDetails = JSON.stringify(this.result);
+   
     //sessionStorage.userId 
       // console.log("getting from serve"+this.result);
        localStorage.username=value.userName;
