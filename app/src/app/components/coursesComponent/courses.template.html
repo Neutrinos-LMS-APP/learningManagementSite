@@ -86,6 +86,61 @@
         </div>
         <div fxLayout="row wrap" style="margin-top:1em;" fxFlex="100" fxLayoutGap="1.5em" fxLayoutAlign="end stretch" [fxShow]="true" [fxHide]="false"><button mat-button style="color:white;" class="btn" (click)="displayTable()">Ok</button></div>
       </div>
+    <div fxLayout="column wrap" style="width:50%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="!displayView">
+      <mat-card style="background-color:rgba(200,200,200,.4);">
+        <mat-card-title>Card Title</mat-card-title>
+
+        <mat-card-content>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <mat-icon>home</mat-icon>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon>home</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button (click)="displayTable()">Ok</button><button mat-button>Delete</button></div>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
     <div fxLayout="column wrap" style="width:70%;" fxLayoutAlign="center center" [fxShow]="displaytable" [fxHide]="false">
       <div fxLayout="column" style="width:100%;">
