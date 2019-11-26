@@ -49,11 +49,6 @@
         "componentName": "homeComponent",
         "isEntry": false
     },
-    "8fad8db2-9847-993c-feae-1f36d901c916": {
-        "appPageName": "LoginForm",
-        "componentName": "loginformComponent",
-        "isEntry": false
-    },
     "b6873d0b-e765-5bbc-b276-c34bbb654e41": {
         "appPageName": "Contactus",
         "componentName": "contactusComponent",
@@ -154,5 +149,11 @@
         "appPageName": "instructorProfile",
         "componentName": "instructorprofileComponent",
         "isEntry": false
-    }}}
-
+    },
+    "4d29fd9f-a857-aa0c-a899-3d994886e339": {
+        "appPageName": "LoginForm",
+        "componentName": "loginformComponent",
+        "isEntry": false
+    }
+}
+}

@@ -233,6 +233,24 @@ export class registerinstructorservice {
       throw e;
     }
   }
+  public async contactdetails(obj = undefined, ...others) {
+    try {
+      let bh = {
+        input: { obj: obj },
+        local: { result: undefined, modularapi: undefined }
+      };
+      bh = this.__constructDefault(bh);
+
+      bh = await this.sd_c5gF3UHlpKM4CY6F(bh);
+      //appendnew_next_contactdetails
+      //Start formatting output variables
+      let outputVariables = { input: {}, local: { result: bh.local.result } };
+      //End formatting output variables
+      return outputVariables;
+    } catch (e) {
+      throw e;
+    }
+  }
   //appendnew_flow_registerinstructorservice_Start
 
   async sd_1xzg5aFC8PXUuzml(bh) {
@@ -585,6 +603,35 @@ export class registerinstructorservice {
         panelClass: ['custom']
       });
       //appendnew_next_sd_yFq3jKucubrP6qh6
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_c5gF3UHlpKM4CY6F(bh) {
+    try {
+      bh.local.modularapi = 'http://localhost:24483/api/email';
+
+      bh = await this.sd_XHIwn9vVoJl4ST1X(bh);
+      //appendnew_next_sd_c5gF3UHlpKM4CY6F
+      return bh;
+    } catch (e) {
+      throw e;
+    }
+  }
+  async sd_XHIwn9vVoJl4ST1X(bh) {
+    try {
+      let requestOptions = {
+        url: bh.local.modularapi,
+        method: 'post',
+        responseType: 'json',
+        reportProgress: undefined,
+        headers: {},
+        params: {},
+        body: bh.input.obj
+      };
+      bh.local.result = await this.sdService.nHttpRequest(requestOptions);
+      //appendnew_next_sd_XHIwn9vVoJl4ST1X
       return bh;
     } catch (e) {
       throw e;

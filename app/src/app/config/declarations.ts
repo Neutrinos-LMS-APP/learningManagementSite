@@ -14,6 +14,8 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-loginformComponent
+//import { loginformComponent } from '../components/loginformComponent/loginform.component';
 //CORE_REFERENCE_IMPORT-courseaccessstatusComponent
 import { courseaccessstatusComponent } from '../components/courseaccessstatusComponent/courseaccessstatus.component';
 //CORE_REFERENCE_IMPORT-forgotpasswordComponent
@@ -120,6 +122,8 @@ export const appDeclarations = [
   NMapComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginformComponent
+loginformComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-courseaccessstatusComponent
 courseaccessstatusComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forgotpasswordComponent

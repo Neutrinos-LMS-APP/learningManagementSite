@@ -113,9 +113,8 @@
             "component": "header_nobuttonsComponent"},
             {"path": "forgotpassword",
             "component": "forgotpasswordComponent"},
-            {"path": "no",
-            "component": "header_nobuttonsComponent"
-        },
+          
+        
         {
             "path": "''",
             "redirectTo": "/home",

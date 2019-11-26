@@ -1,5 +1,3 @@
-
-
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../../lib/model.methods';
@@ -10,6 +8,7 @@ import{loginservice} from '../../sd-services/loginservice';
 import { Router } from '@angular/router';
 import{registerinstructorservice} from '../../sd-services/registerinstructorservice';
 import {NSnackbarService} from 'neutrinos-seed-services';
+
 /**
  * Service import Example :
  * import { HeroService } from '../../services/hero/hero.service';
@@ -29,12 +28,10 @@ import {NSnackbarService} from 'neutrinos-seed-services';
 export class loginformComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
     result;
-    userId;
-    constructor(private bdms: NDataModelService,
-                public loginserviceobj :loginservice,
-                public snackbarService:NSnackbarService,
-                public router:Router,
-                private registerServiceObj:registerinstructorservice) {
+    constructor(private bdms: NDataModelService, public loginserviceobj :loginservice,
+        public snackbarService:NSnackbarService,
+        public router:Router,
+        private registerServiceObj:registerinstructorservice) {
         super();
         this.mm = new ModelMethods(bdms);
     }
@@ -94,13 +91,9 @@ export class loginformComponent extends NBaseComponent implements OnInit {
 
     }
     ngOnInit() {
-        
 
     }
 
-    // async getAllUsers(){
-    //     this.registerServiceObj.getregisterinstructordata()
-    // }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, filter, keys, sort, pagenumber, pagesize,
             result => {

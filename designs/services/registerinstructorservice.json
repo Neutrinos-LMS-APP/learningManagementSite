@@ -1136,8 +1136,8 @@
             }
         ],
         "functionName": "contactdetails",
-        "x": 98.1875,
-        "y": 1044.921875,
+        "x": 100.1875,
+        "y": 1096.921875,
         "wires": [
             [
                 "sd_c5gF3UHlpKM4CY6F"
@@ -1153,8 +1153,8 @@
         "z": "sd_7N5bSYWYw3YCGQPI",
         "name": "Contact Us",
         "script": "bh.local.modularapi=\"http://localhost:24483/api/email\";",
-        "x": 261.03125,
-        "y": 1052.921875,
+        "x": 319.03125,
+        "y": 1124.921875,
         "wires": [
             [
                 "sd_XHIwn9vVoJl4ST1X"
@@ -1193,8 +1193,8 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "x": 455.03125,
-        "y": 1037.90625,
+        "x": 598.03125,
+        "y": 1106.90625,
         "wires": [
             []
         ],
